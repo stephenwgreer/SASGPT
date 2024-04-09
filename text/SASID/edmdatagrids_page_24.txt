@@ -1,0 +1,15 @@
+DefaultYESRestrictionThis option is valid only if the output table is written to a CAS library.
+Examples
+Example 1: Converting Data Grid JSON to Standard 
+JSON
+The following code creates a temporary file that contains a data grid JSON string. 
+The macro converts this string to standard JSON and writes it to the file /My Folder/stdJSONfile.txt
+.filename gridFile temp;filename jsonFile filesrvc folderpath='/Users/userID/My Folder' filename='stdJSONfile.txt';data _null_;   file gridFile;   put '[{"metadata":[{"ASSETTYPE":"string"},         {"ASSETVALUE":"double"}]},         {"data":[["Bank Account",47465],                  ["Retirement Fund",3.29875E+06],                  ["CASH",163],                  ["Investment Account",2.29051E+06],                  ["Auto",2669]]}]';run;%dcm_json_to_datagrid(jsonFile=jsonfile,   gridFile=gridfile,    convertType=GRIDtoJSON);
+The output file STDJSONFILE.TXT contains the following JSON:[{"ASSETTYPE":"Bank Account","ASSETVALUE":47465},{"ASSETTYPE":"Retirement Fund","ASSETVALUE":3298750},{"ASSETTYPE":"CASH","ASSETVALUE":163},{"ASSETTYPE":"Investment Account","ASSETVALUE":2290510},{"ASSETTYPE":"Auto","ASSETVALUE":2669}]
+Example 2: Converting Standard JSON to Data Grid 
+JSON
+The following program creates a temporary file that contains standard JSON that 
+includes nested JSON structures. It calls the %DCM_JSON_TO_GRID macro to 
+convert the standard JSON to data grid JSON. It writes the data grid JSON, 
+including the nested data, to the CAS table named Public.STDTOGRID.cas mycas;caslib _all_ assign;
+20Chapter 2 / Data Grid Macros

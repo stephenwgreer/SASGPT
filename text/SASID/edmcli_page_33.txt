@@ -1,0 +1,18 @@
+3
+Transferring Version Comments
+Transfer Version Comments  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Transfer Version Comments
+When you use the transfer plug-in to the sas-viya CLI to transfer objects between 
+SAS Viya environments, all of the content is transferred except for notes that are 
+associated with specific versions of the objects. To transfer the version notes for an 
+object, complete these steps:
+1Export a transfer package from the source environment that contains the version 
+notes that are associated with the object:sas-viya transfer export   --resource-uri /comments/comments?filter=startsWith(resourceUri,'object-uri')
+The object URI is displayed on the Properties  tab for the object in SAS 
+Intelligent Decisioning, or you can retrieve object URIs by using the SAS 
+Intelligent Decisioning REST API. Object URIs have the following format:/businessRules/ruleSets/rule-set-ID/decisions/flows/decision-ID/referenceData/domains/lookup-table-ID/treatmentDefinitions/definitions/treatment-ID/treatmentDefinitions/definitionGroups/treatment-group-ID
+Record the transfer package ID.
+2Download the package to your local machine, and store it in a JSON file named 
+MyPackage.json:sas-viya transfer download --id transfer-package-ID --file /tmp/MyPackage.json
+3Upload the JSON file to the target environment:sas-viya transfer upload --file /tmp/MyPackage.json
+Record the upload package ID.29

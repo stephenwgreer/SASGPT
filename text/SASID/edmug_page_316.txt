@@ -1,0 +1,10 @@
+Note: The value in the Rule Order  column is the ordinal number of the rule as it 
+occurs in the decision diagram. The values in this column do not indicate the 
+order in which the rules in the decision fired. For decisions that use cross-branch 
+links, click  to switch the diagram between two different views of cross-branch 
+links. It might be easier to correlate the rule order numbers with their location in 
+the diagram by displaying the cross-branch links as nodes.
+4Click Close  to close the Rule Fired Count  window.
+5Click Plot in the navigation panel. SAS Intelligent Decisioning  displays a bar 
+chart that shows how many times each rule fired. Position your cursor over a bar 
+to display the name of the rule and the number of times that the rule fired.300 Chapter 8 / Working with Decisions

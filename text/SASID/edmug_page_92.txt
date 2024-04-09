@@ -1,0 +1,8 @@
+Export a Rule Set
+IMPORTANT Do not modify the file structure or the header row in the 
+exported CSV file. You can modify the data values.
+To export a rule set, open the rule set and click Export . The result depends on 
+which browser you are using and the browser’s default download actions. The 
+browser might automatically download the file and display a notification in the bar at 
+the bottom of the browser window. Alternatively, the browser might prompt you to 
+save the file or open it with a specific application.Importing and Exporting Rule Sets 81

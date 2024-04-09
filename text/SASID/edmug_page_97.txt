@@ -1,0 +1,23 @@
+1Uses the subject ID to issue a web service call or to query the company 
+database in order to retrieve additional customer data, such as name, address, 
+and household income, if such information exists.
+2Determines the set of offers for which the subject qualifies.
+3Arbitrates the set of offers to determine which ones the subject is most likely to 
+respond to.
+4Generates a response tracking code and subject contact history data. The 
+subject contact history data typically includes the set of offers from step 3.
+5Returns to the calling application the response tracking code and the set of 
+offers for which the subject qualifies.
+At this point, the calling application or a customer service representative can present 
+the offers to the customer. The calling application can use the response tracking 
+code to update the subject contact history data. For example, it can record which 
+treatments are presented to the customer and the subject’s response to the 
+treatments.
+“Example: A Decision That Includes a Treatment Group” on page 85 shows how to 
+accomplish the tasks listed above by using a decision in SAS Intelligent Decisioning .
+Example: A Decision That Includes a 
+Treatment Group
+Figure 3.1  shows a basic decision that defines offers, arbitrates these offers, and 
+updates the subject contact history.  This example contains only one treatment group 
+and one record contacts node, but decisions can include multiple treatment groups 
+and record contacts nodes.Example: A Decision That Includes a Treatment Group 85

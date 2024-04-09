@@ -1,0 +1,11 @@
+The following figure shows the properties panel for this branch:
+For more information, see “Add Equals, Range, or Like Branches” on page 241.
+About Range Branches
+A Range branch compares the value of the branch expression against one or more 
+ranges of values. You can specify range values by using variables or constants. 
+This branch has an outgoing path for each range, plus a branch labeled Other  for 
+any values that are not included in the branches that you create.
+For example, the following branch compares the value of the expression credit-balance
+ to three ranges. The first range has no minimum value, so it is treated as if 
+the minimum is negative infinity. The third branch has no maximum value, so it is 
+treated as if the maximum is positive infinity.Adding Objects to a Decision 239

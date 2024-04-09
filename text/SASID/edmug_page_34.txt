@@ -1,0 +1,27 @@
+Delete Variables
+Note: You cannot delete a variable if it is used in the current version of an object. 
+You can delete variables from the current version if they are used only in locked 
+versions, but those variables are still included in the locked versions.
+1On the Variables  tab, click the Rule Set Variables  subtab.
+2Select the check box for the variables that you want to delete, click , and 
+select Delete .
+Edit Variable Properties
+On the Variables  tab, click the Rule Set Variables  subtab, and click on the name of 
+the variable that you want to edit. The Edit Variable  window appears. Edit the 
+properties as needed, and then click OK.
+Note: When you rename a variable, references to that variable within the same 
+object change to use the new name. You cannot change the name or data type of a 
+variable that is used in locked versions. 
+See “The Properties of a Variable” on page 16 for additional information.
+Edit Metadata for Data Grid Variables
+For information, see “Editing Data Grid Variable Metadata” in SAS Intelligent 
+Decisioning: Using Data Grids .
+Determine Which Objects Use a Particular Variable
+On either the Rule Set Variables  subtab or the Global Variables  subtab, select the 
+check box for the variable, click , and select View used by report .
+In the report, you can use the Filter  field to filter the list of objects based on the 
+object names. If the variable that was selected in Step 1 above is a data grid 
+variable, and if you are interested only in a specific column within the data grid, you 
+can select the column in the Column name  field, and then click Apply . SAS 
+Intelligent Decisioning  narrows the search results to only the objects that use the 
+data grid with the selected column.Managing the Variables in a Rule Set 23

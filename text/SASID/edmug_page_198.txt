@@ -1,0 +1,35 @@
+Concurrently Checking Out and Committing Code 
+File Versions
+The ability for multiple users to check out the same code file at the same time is 
+controlled by the sas.decisions.checkout.allowConcurrentCheckout  configuration 
+option.  This option is turned on by default.
+When this option is turned on, different users can check out the same version of the 
+same object at the same time. Because the objects that are checked out are saved 
+in each user’s My Folder
+ location, the default permissions allow individual users to 
+see only the copies that they have checked out.
+When this option is turned off and a user has checked out an object, the Check Out 
+button for that object is disabled for all other users.
+If multiple users check out the same version of the same object at the same time, 
+each user’s changes are preserved in a new version when they commit their 
+changes. One user’s changes do not overwrite another user’s changes.
+IMPORTANT If two users attempt to commit changes to the same object 
+simultaneously, the first user's attempt will succeed but the second user 
+might see an error message that the commit has failed. If the second user 
+subsequently commits their changes, the Modified By  column on the 
+Versions  tab for both the version committed by the first user and the version 
+committed by the second user displays the user ID of the second user.
+Check Out and Commit a Custom Code File 
+Version
+1On the Versions  tab, click Check Out . 
+SAS Intelligent Decisioning  updates the Properties  tab to indicate that the 
+version is checked out.
+2Modify the checked-out version as needed, and save it.
+TIP To discard the changes and delete the checked-out version from My Folder
+, you can commit the object without saving it first. However, 
+committing the object without saving creates a new version of the object 
+whose contents match the contents of the previous version. For 
+information on undoing a check out, see “Undoing a Check Out” on page 
+185.
+3On the Versions  tab, click Commit . The Commit Code File Version Commit 
+Code File Version  window appears.184 Chapter 6 / Using Custom Code Files

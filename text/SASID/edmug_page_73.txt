@@ -1,0 +1,37 @@
+TIP This rule-fired data is recorded in the ruleFiredFlags column in 
+the output table. The rule-fired data that is recorded when you select 
+Record rule-fired data  for a record contacts node is recorded in the 
+subject contact history.
+This option is disabled if you are publishing content to a SAS Micro 
+Analytic Service destination, a Git destination, or a container 
+destination.
+7Publish the rule sets.
+To publish content to a SAS Cloud Analytic Services (CAS) destination, you must 
+reload the CAS destination table in order to make the newly published items 
+available to other applications. You do not need to reload the destination table 
+when you publish content to other destination types.
+Select one of the following options:
+Publish
+publishes the rule sets and, if you are publishing content to a CAS 
+destination, automatically reloads the CAS destination table. If another user 
+is executing the code for an item that was previously published to CAS while 
+the destination table is being reloaded, reloading the table might cause 
+temporary problems with accessing the table content. After the table is 
+reloaded, all authorized users can access all items in the table.
+Publish without reloading
+publishes the rule sets but does not reload the CAS destination table. You 
+must manually reload the table in order for the newly published items to be 
+accessible.
+Publish and lock
+locks and publishes the rule set and creates a new minor version, but does 
+not reload the CAS destination table. You must manually reload the table in 
+order for the newly published items to be accessible.
+Note: This option is not available unless you chose Publish and Lock  in 
+Step 4 .
+The Publishing Results  window appears. It displays the names of the published 
+items, their status, and a link to the log that was generated during the publishing 
+process.
+8After the status changes to Published successfully , click Close  to close the 
+Publishing Results  window.
+TIP To view the publishing history for a rule set, click the History  tab.
+9(Optional) Click Close  to close the rule set.62Chapter 2 / Working with Rule Sets

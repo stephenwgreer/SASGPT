@@ -1,0 +1,40 @@
+Import Scenario Test Definitions
+You can import scenario test values from a comma-delimited (CSV) file. Each line in 
+the CSV file is imported as one scenario test. In the CSV file, add a column of 
+values for each variable. In the header row, enter the names of the input variables 
+and of the output variables with _expected
+ appended to the name.
+For example, suppose your scenario test has the input variables policyholder
+, cscore
+, and claims
+, and it has the output variables eligible
+ and policies
+. An 
+import file for this test might appear in a spreadsheet application as shown in the 
+following figure.
+The policies output variable in this example is a data grid variable. To enter values 
+for data grid variables, use the JSON string format described in “Introduction to Data 
+Grids” in SAS Intelligent Decisioning: Using Data Grids .
+The format for date and datetime variables depends on your locale. Use the same 
+format that is created by the date and datetime pickers when you click  or  to 
+enter initial values for custom variables on the Variables  tab.
+To import scenario test definitions:
+1On the Scoring  tab, click the Scenarios  subtab, and then click Import 
+Scenarios . The Import Scenarios  window appears.
+2In the Import from  field, click  and select the CSV file that contains the 
+scenario test values.
+Note: The import file is limited to 10 MB.
+3Select or enter the encoding of the CSV file.
+4Enter a prefix for the scenario test definitions. SAS Intelligent Decisioning 
+appends a number to this prefix for each test definition. The prefix can include 
+double-byte characters and special characters, including single quotation marks.
+5(Optional) Click  for the Folder location  field, and select the folder where you 
+want to save the test definitions.
+6Click  for the Output table location  field, and select the folder where you want 
+to save the test results.
+7(Optional) Select Enable variable change path logging  to enable variable 
+change path logging for the imported tests. For more information, see “Using 
+Variable Change Path Logging” on page 294.
+8Select Enable variable assignment logging  to enable variable assignment 
+logging for the imported tests. For more information, see “Using Variable 
+Assignment Logging” on page 296.Testing Decisions 293

@@ -1,0 +1,35 @@
+Granting Access to Tests That Were Created in SAS Decision 
+Manager 5.1 or 5.2 on SAS Viya
+In SAS Decision Manager 5.1 and 5.2, you could not save test definitions and test results in a folder. 
+By default, SAS Decision Manager created rules that gave only the user who created a test 
+permission to view, update, or delete the test definition and to run the test. Only a user who ran a test 
+could view the test results and run rule-fired analyses or decision-path tracking analyses.
+To grant other users access to test definitions or test results that were created in SAS Decision 
+Manager 5.1 or 5.2, do one of the following:
+nAdd the users to the SASScoreUsers group. SAS Intelligent Decisioning configures the 
+SASScoreUsers group automatically. Members of this group have full access to test definitions 
+and results. These permissions enable access through the user interface, the score definition 
+service, and the score execution service. For instructions on adding users to a group, see 
+“Manage Custom Groups” in SAS Environment Manager: User’s Guide .
+nCreate rules in SAS Environment Manager that grant the users access to the URIs that were 
+generated when a particular test was run. The Test Results  page, Rule-Fired Analysis  page, and 
+Decision Path Tracking  page for a test list the URIs to all of the test results. Specify the URIs of 
+the results in the Object URI  field in the New Rule  window. See “Rules Page” in SAS Environment 
+Manager: User’s Guide  for more information. 
+Note: Each time a test is run, the IDs for the test results are regenerated. Therefore, the URI to 
+the test results changes.
+Define Asset Approval Workflow User Groups
+If you enable the SID Asset Approval workflow by turning on the sas.decisions.workflow.enabled 
+configuration property, then you must define the custom user groups shown in Table 7 on page 58. 
+Define these groups in SAS Environment Manager, and assign the appropriate users to each group.
+Membership in these groups is required to be able to set the workflow status values for a decision 
+version. The group determines which status changes the group’s members can make for a version 
+that is under development.
+To create the workflow user groups:
+1Sign in to SAS Environment Manager as an administrator.
+Note: If you are already logged in to SAS Intelligent Decisioning as an administrator, access SAS 
+Environment Manager by clicking  and selecting Manage Environment .
+2Click  to navigate to the Users category view.
+3In the View  menu, select Custom groups .
+4Complete the following steps for each group listed in Table 7 on page 58:
+aClick . The New Custom Group  window appears.57

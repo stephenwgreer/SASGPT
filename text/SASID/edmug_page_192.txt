@@ -1,0 +1,20 @@
+Delete Code Files
+In the Code Files  category view, select the code files that you want to delete, click 
+, and select Delete . SAS Intelligent Decisioning  moves the files to the recycle bin. 
+For more information, see “Manage Folders and Folder Content” on page 9.
+Rename a Code File
+Note: You cannot rename a code file if it is open. 
+1In the Code Files  category view, select the code file that you want to rename.
+2Click  and select Rename . The Rename  window appears.
+3Enter a new name for the code file, and click Rename .
+Move Code Files to a Different Folder
+1In the Code Files  category view, select the code files that you want to move.
+2Click  and select Move . The Choose a Location  window appears.
+3Select the location to which you want to move the code files, and click OK.
+Managing Versions of Code Files
+Set the Displayed Version
+The displayed version is the version whose information is displayed on the other 
+tabs, such as the Code , Properties , and Variables  tabs. On the Versions  tab, a 
+in the Displayed Version  column indicates the displayed version. To change the 
+displayed version, click the version number for the version that you want to view. 
+The displayed version is shown in the title bar.178 Chapter 6 / Using Custom Code Files

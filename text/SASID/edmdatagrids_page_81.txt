@@ -1,0 +1,31 @@
+sort_order_n
+specifies whether the target data grid is sorted in ascending or descending order 
+according to the values in the column specified by sort_column_n . Specify A
+ for 
+ascending order or D
+ for descending order. If you specify a variable for the sort 
+order, and the variable value is an empty character string, the function returns a 
+null value.
+You can specify up to six pairs of sort_column_n  and sort_order_n  parameters.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.
+DATAGRID_NMISS Function
+Returns the number of missing values for the specified column of the specified data grid.
+Category: Statistical
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_NMISS  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_NVALID Function
+Returns the number of valid nonmissing numeric values in the specified column of the specified data grid.
+Category: Information
+Returned data 
+type:INTEGERDATAGRID_NVALID Function 75

@@ -1,0 +1,41 @@
+Syntax
+sas-viya  <global-options > sid-functions  command  <command-options >
+Commands
+In addition to the global commands in “Global Commands” on page 3, you can 
+specify the following commands:
+add <- -replace > category-name  path-to-DS2-input-file
+adds the function (method) that is defined in the input file to the specified 
+category. If you specify the - -replace
+ option, the function definition in the input 
+file replaces the current definition of the function with the same name. Function 
+names must be unique within an environment or tenant and are limited to 250 
+characters. Function names must be valid DS2 identifiers. For more information, 
+see “DS2 Identifiers” in SAS DS2 Programmer’s Guide .
+categories subcommand  <arguments >
+creates and manages custom function categories. Category names must be 
+unique within an environment or tenant and are limited to 250 characters. For 
+information about each subcommand, see “Subcommands for the categories 
+Command” on page 24.
+delete function-name
+deletes the specified function. If the function does not exist, this command has 
+no effect.
+download-code
+downloads the code for all of the custom functions in the environment and sends 
+the output to stdout.
+list
+lists the names and parameters for all of the custom functions that are defined in 
+the environment.
+Subcommands for the categories Command
+create <options > category-name
+- -description " category-description "
+specifies a description for the category.
+- -replace category-name  <category-description >
+enables you to add, delete, or modify the description of a category. To delete 
+the existing description of a category, omit the - -description
+ option:sas-viya sid-functions --replace myCategory
+delete category-name
+deletes the specified category and all of the functions in that category.
+help
+displays help information for the categories command.
+list
+lists the custom function categories that are defined in the environment.24Chapter 2 / SAS Intelligent Decisioning CLIs

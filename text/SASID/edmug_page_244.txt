@@ -1,0 +1,26 @@
+4Specify the encoding of the CSV file.
+5Select Add variables  to append the variables to the current list of variables, or 
+select Replace variables  to replace the current list of variables with the 
+imported variables.
+TIP To add new columns to an existing data grid variable, select 
+Replace variables .
+Note: If you replace the list of variables in a decision and a variable is used in 
+the decision is not included in the import file, the variable is removed from the list 
+of variables. An error marker is added to the nodes that use that variable in the 
+diagram on the Decision Flow  tab.
+6Click Import , and then click  to import the variables and save the decision.
+Export Variables
+1Open the decision from which you want to export variables.
+2On the Decision Variables  tab, select the variables that you want to export.
+3Click Export , and select the file type to which you want to export the variables. 
+The result depends on which browser you are using and the browser’s default 
+download actions. The browser might automatically download the file and display 
+a notification in the bar at the bottom of the browser window. Alternatively, the 
+browser might prompt you to save the file or open it with a specific application.
+Delete Variables
+Note: You cannot delete a variable if it is used in the current version of an object. 
+You can delete variables from the current version if they are used only in locked 
+versions, but those variables are still included in the locked versions.
+1On the Variables  tab, click the Decision Variables  subtab.
+2Select the check box for the variables that you want to delete, click , and 
+select Delete .228 Chapter 8 / Working with Decisions

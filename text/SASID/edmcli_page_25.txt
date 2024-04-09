@@ -1,0 +1,27 @@
+output file that this utility creates is the input file for this CLI. For instructions, see 
+“Transfer Treatments from SAS 9.4 to SAS Viya” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+2Log on to the machine where SAS Viya is running. For example, on Linux 
+systems, you can use the ssh
+ command:ssh -y machine-name
+3Use the cd
+ command to change to the directory where you downloaded the plug-
+in files.
+4Create a default profile if you have not already done so:sas-viya profile init
+The CLI prompts you for the target URL (service endpoint) where SAS Viya is 
+running, for the output type that you want, and whether you want to enable color 
+output. The target URL is the destination to which you want to import the objects. 
+For more information, see “Creating and Using Profiles” on page 2.
+5Log on to the SAS Viya environment:sas-viya auth login
+The CLI prompts you for the user ID and password for the SAS Viya 
+environment.
+6Import the objects into the SAS Viya environment:sas-viya rtdmobjectmigration start--input sasmaextract-output-file --folder folder-GUID--type treatment
+If an object of the same name as the object in the extract file already exists in the 
+destination folder, the CLI does not import the object.
+The CLI displays the results of the import process. For example:Total objects migrated: 6Succeeded: 5Failed: 0Completed with errors: 0Skipped due to name conflict: 1
+Note: When you view imported content in SAS Intelligent Decisioning, any 
+errors in the content are marked with the error icon .
+7Log off from the SAS Viya environment:sas-viya auth logout
+Example
+The following examples use the default profile. For information about defining and 
+specifying a profile, see “Creating and Using Profiles” on page 2.rtdmobjectmigration Plug-In 21

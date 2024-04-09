@@ -1,0 +1,17 @@
+IMPORTANT A delay of up to one minute can occur between the time when 
+you define or modify (replace) a function and the time when the function is 
+available to be executed.
+When SAS Intelligent Decisioning generates code, it inserts the custom function 
+definition ahead of the code that it generates for the rule set logic or code file logic. 
+In the rule set or code file, you can reference custom functions in the same way that 
+you reference functions that are provided by SAS.
+Examples
+The following examples use the default profile. For information about defining and 
+specifying a profile, see “Creating and Using Profiles” on page 2.
+Example 1
+The following command creates the custom function category named Exponential:sas-viya sid-functions categories create "Exponential"
+Example 2
+The following command adds a description to the existing category Exponential:sas-viya sid-functions categories create --replace --description "Custom exponential functions" "Exponential"
+Example 3
+The following command adds the function defined in the squareFx.ds2 file to the 
+category named Exponential:26Chapter 2 / SAS Intelligent Decisioning CLIs

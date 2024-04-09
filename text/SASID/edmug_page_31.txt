@@ -1,0 +1,29 @@
+4(Optional) Select the Output  check box if you want the value of the variable to 
+be written to the output table that is generated when the rule set is run.
+Note: If the rule set will be included in and run as part of a decision, it is 
+recommended that you do not select the Output  check box for global variables 
+in the rule set. Instead, select the Output  check box for the decision variable of 
+the same name after you add the rule set to the decision. For more information, 
+see “Using Global Variables” on page 141.
+TIP In the Global Variables  category view, the Value  column displays the 
+value of the latest version of the variable. The Activated Value  column 
+displays the value of the currently active version. A check mark in the 
+Deleted  column indicates that the variable has been deleted from the list of 
+global variables.
+Create a Custom Variable Dynamically
+To create a variable in a rule set, you can enter the new variable name in any 
+condition variable field and in the variable field of assignment statements. By 
+default, SAS Intelligent Decisioning  creates a variable of type Decimal. To create a 
+variable of a different type, enter the variable name, a space, and then the data 
+type. If you enter the name in a condition variable field, SAS Intelligent Decisioning 
+creates the variable as an input-output variable. If you enter the name in an 
+assignment statement, SAS Intelligent Decisioning  creates the variable as an output 
+variable. For example, you can create an input-output variable of type Character 
+that is named address  by entering it in the condition variable field:
+You can create an output-only variable of type Boolean named approve  by entering 
+it in an assignment statement, followed by a space and the data type:
+Create Custom Variables on the Variables Tab
+Note: For information about data grid variables, see “Defining Data Grid Variables” 
+in SAS Intelligent Decisioning: Using Data Grids .
+To create custom variables on the Variables  tab:
+1Click the Rule Set Variables  subtab.20Chapter 2 / Working with Rule Sets

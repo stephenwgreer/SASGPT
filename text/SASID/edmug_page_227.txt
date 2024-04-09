@@ -1,0 +1,33 @@
+8
+Working with Decisions
+About Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+Using SAS Workflow with SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . . . . . . . 216
+About the SID Asset Approval Workflow  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+User Roles in the Workflow  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 216
+Decision Status Values in the Workflow  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 218
+View the Status Change History  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
+Display and Export the Included Object Report for Decisions That 
+Are in a Workflow  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 219
+Create a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+Views for Editing a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+The Decision Flow Tab versus the Decision Tab  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+Controlling the Tab Display  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+Managing the Variables in a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+About Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+Add Variables from a Data Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 224
+Add Variables from a Rule Set, Decision, or Code File  . . . . . . . . . . . . . . . . . . . . . . . . . 225
+Add Global Variables to a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 225
+Create Custom Variables on the Variables Tab  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226
+Duplicate a Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227
+Importing and Exporting Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 227
+Delete Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 228
+Edit Variable Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 229
+Edit Metadata for Data Grid Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 229
+Determine Which Objects Use a Particular Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . 229
+Adding Objects to a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230
+Add an Existing Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230
+Create and Add a New Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 232
+Adding Record Contacts Nodes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 233
+Adding Branches to a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 235
+Adding Cross-Branch Links  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 244
+Add a Micro Analytic Module  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246

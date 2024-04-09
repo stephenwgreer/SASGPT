@@ -1,0 +1,34 @@
+Permissions TypeWhen to UseThe ability to store tests outside of folders is supported for legacy 
+purposes only. If you choose not to store test definitions and test results 
+in a folder, then you must use rules-based permissions to control access 
+to these files.
+For more information, see “Rules-Based Permissions” on page 53.
+Best Practices for Setting Permissions
+To the extent possible, base your permission settings on the folders in which objects are stored. Use 
+folders to organize objects according to which group of users need access to the objects. Customize 
+the permission settings for your folders based on user groups, not on individual users.
+If your site needs separate folders that are enabled for the check-out and commit feature, it is 
+recommended that you create these folders in the /Decision Repository
+ folder. Subfolders in the 
+repository inherit the default settings for the /Decision Repository
+ folder.
+TIP Rules for which the setting is Prohibit  take precedence over all other rules for that URI. 
+For example, if the same user belongs to a prohibited group and to an authorized group, the 
+prohibited assignment takes precedence over the authorized assignment.
+When you enter a rule that specifies Prohibit , make the URI for that rule as specific as 
+possible.
+Folder-Based Permissions
+Setting Folder-Based Permissions
+You must set permissions in SAS Environment Manager for any folder that is created as a new top-
+level folder under SAS Content
+. For default folders such as the My Folder
+ folder or the Decision Repository
+ folder, you must modify the permissions of folders that you create within these two 
+folders if you do not want them to inherit the permissions of the parent folder.
+1Click , and select Manage Environment  to switch to SAS Environment Manager.
+2Click  to navigate to the Content  page.
+3Navigate to the folder for which you want to set permissions.
+4Right-click the folder name, and select Edit authorization . The Edit Authorization  window 
+appears.
+5For any permission setting that you want to change, click the effective access icon in the column 
+for that permission, and change the setting in the pop-up window. For more information about 51

@@ -1,0 +1,42 @@
+cIn the Edit Columns  window, click Add. SAS Intelligent Decisioning  adds all 
+of the columns in the data table to the table of columns.
+d(Optional) Click  for any columns that you do not want to add to your data 
+grid.
+e(Optional) For character string values, enter a length if you do not want to use 
+the default length.
+5(Optional) To add columns from another data grid variable in the same object:
+aSelect Add columns from a data grid , and click Browse . The Edit Columns 
+window appears.
+bSelect the data grid that contains the column that you want to add.
+cIn the Available items  list, select the columns that you want to add , and 
+click  or .
+dClick OK to return to the Edit Columns  window.
+6(Optional) Select the Data does not contain column metadata  check box. The 
+JSON character string for each row in a data grid normally contains metadata 
+that defines the columns in the data grid and the data for each column. 
+Depending on the data types and the number of columns in the data grid, the 
+metadata can increase the size of the data grid considerably. 
+For output-only variables, select Data does not contain column metadata  if 
+you do not want column metadata to be included in the output JSON string for 
+the data grid.
+For input-only variables and input-output variables, select this check box if the 
+input JSON string for the data grid does not contain column metadata. In order to 
+select this option, you must click  and define the columns in the data grid. Do 
+not select this check box if the input JSON contains column metadata. If the 
+column definitions that you enter in the user interface do not match the input 
+data, SAS Intelligent Decisioning  does not know what the column names are. 
+The column names are set to placeholder values such as COL_X
+. If this checkbox 
+is selected but the JSON for the input data grid contains column metadata, 
+execution might fail or produce inaccurate results.
+7(Optional) Select the Create Column  check box for the new columns if you want 
+SAS Intelligent Decisioning  to create the new columns at run time. At run time, if 
+a column already exists in the input data grid, SAS Intelligent Decisioning  does 
+not add a new column or overwrite the existing column. For more information, 
+see “When Are Data Grid Columns Created?” on page 3.
+8Click OK to add the selected columns to your data grid variable and return to the 
+Edit Variable  window.
+9Click OK.
+Delete Columns from a Data Grid
+1On the Variables  tab of a decision, click on the data grid variable that you want 
+to edit. The Edit Variable  window appears.8Chapter 1 / Using Data Grids in SAS Intelligent Decisioning

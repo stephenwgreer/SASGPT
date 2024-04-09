@@ -1,0 +1,21 @@
+View Attribute Aliases for a Treatment Group
+You can view attribute aliases in two ways:
+nClick the Attribute Aliases  tab in a treatment group.
+nOn the Treatments  tab, click Set Attributes , and then click  for a specific 
+attribute.
+Remove an Attribute Alias from a Treatment Group
+On the Attribute Aliases  tab of a treatment group, select the attributes whose 
+aliases you want to remove, click , and select Remove alias .
+Determine Which Treatments Use an Attribute
+On the Attribute Aliases  tab of a treatment group, select the attribute for which you 
+want treatment information, click , and select Used by . SAS Intelligent 
+Decisioning  opens the Used By Treatments  window, which lists the treatments that 
+use the attribute.
+Delete Treatments from a Treatment 
+Group
+On the Treatments  tab of the treatment group, select the treatments that you want 
+to remove from the group, click , and select Delete .
+Managing Eligibility Rules for a 
+Treatment
+For additional information about eligibility rules, see “About Attributes, Eligibility 
+Rules, and Effective Dates” on page 88 and “Specify Eligibility Rules” on page 91.Managing Eligibility Rules for a Treatment 97

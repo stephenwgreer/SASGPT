@@ -1,0 +1,5 @@
+if (contentType != "text/plain"):        reqBody = json.loads(body)        res = sess.put(url1, json=reqBody, headers=headers)    else:        res = sess.put(url1, body, headers=headers)    return res# Specify the URL, user ID, and password required to access your server.baseUrl1 = 'host-URL'userid = 'user-ID'password = 'password'# Get an access token.accessToken1 = getAccessToken(baseUrl1);# Create a connection session.sess = requests.Session()# Add statements to submit your API requests here.
+See Also
+nSAS Viya REST APIs: Authentication to SAS Viya
+nSAS Viya REST APIs: Authorization
+nThe Client ID and SecretSee Also 9

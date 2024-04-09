@@ -1,0 +1,25 @@
+1
+Using Data Grids in SAS 
+Intelligent Decisioning
+Introduction to Data Grids  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+What Is a Data Grid?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+How Are Data Grids Stored?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+When Are Data Grid Columns Created?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Processing Data In A Data Grid  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Serialize and Import Data Grids Into a Table Column  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+Working with Data Grids  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Data Grids and Publishing Destinations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Ways to Work with Data Grids  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Defining Data Grid Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Scoring Rows in a Data Grid  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Mapping Data Grid Variables in a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Editing Data Grid Variable Metadata  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Using Data Grid Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Using Data Grids in a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Working with Data Grids in SAS Studio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Introduction to Data Grids
+What Is a Data Grid?
+A data grid is a table. A data grid variable is a variable of type DATAGRID whose 
+value is a table. For example, suppose you have a table that contains the data for 
+all of the insurance policies for all of your customers. This table might look like the 
+table shown in Table 1.1 .1

@@ -1,0 +1,38 @@
+2(Optional) Select a specific version of the code file. SAS Intelligent Decisioning 
+narrows the list to include only the objects that use the selected version of the 
+code file.
+Note: The View used by report  option is also available from within an open code 
+file.
+In the report, you can use the Filter  field to filter the list of objects based on the 
+object names. Click on an object name to open the object. Click  next to an object 
+name to display the date on which the object was last modified and the ID of the 
+user who modified the object. For decisions and code files that have been checked 
+out, SAS Intelligent Decisioning  also displays the IDs of the users that have checked 
+out the objects. For decisions, SAS Intelligent Decisioning  includes the decision’s 
+workflow status.
+Click Export  to export the Used By report to a PDF file. In the PDF file, you can 
+click on an object name to open the object in a new browser tab.
+Checking Out and Committing Code File 
+Versions
+About Checking Out and Committing Versions
+Your administrator can enable the check-out and commit feature for custom code 
+files that are in any folder by specifying the folder in the 
+sas.decisions.checkout.checkoutEnabledFolderPaths configuration option. Enabling 
+this feature for a folder does not automatically modify the permissions for the folder 
+or for the objects in it. You can still modify a code file in the folder without checking it 
+out, but you are expected to check out the latest version before you edit it. However, 
+your administrator might also set permissions that require you to check out code 
+files in these folders before you can edit them. For more information, see 
+“sas.decisions.checkout” in SAS Intelligent Decisioning: Administrator’s Guide  and 
+“Set Permissions for Check-Out Folders” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+By default, SAS Intelligent Decisioning  defines a folder where you can store code 
+files that must be checked out before they can be edited. This folder is the Decision Repository
+ folder, and it is the default value for the 
+sas.decisions.checkout.checkoutEnabledFolderPaths configuration option. The 
+default permissions for this folder require that non-administrative users check out a 
+version and commit their changes to the checked-out version. Users who do not 
+have administrative permissions cannot edit the code files in Decision Repository 
+without first checking them out.
+IMPORTANT When you create a custom code file in a folder for which the 
+check-out feature is enabled, you must check out the code file before you can 182 Chapter 6 / Using Custom Code Files

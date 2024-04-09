@@ -1,0 +1,41 @@
+Model Score 
+Code TypeCAS 
+Destinat
+ionsGit DestinationsSAS Micro 
+Analytic 
+Service 
+DestinationsHadoop and 
+Teradata 
+DestinationsContainer 
+DestinationsPythonyesyesyesnoyes1
+1You can publish decisions that include a model node for a Python model that is stored in the common model repository. 
+The packages that are used by the model must be specified in the requirements.json file. For more information, see 
+“Scoring Python Models” in SAS Model Manager: User’s Guide .
+SAS Model Manager supports publishing some additional model types 
+independently (not in a decision). For additional information, see “Model Score Code 
+Types and Publishing Destinations” in SAS Model Manager: User’s Guide .
+For more information about publishing destinations, see “Configuring Publishing 
+Destinations” in SAS Intelligent Decisioning: Administrator’s Guide .
+Publishing Decisions That Include Analytic Store 
+Models
+If you are publishing a decision that includes an analytic store model, the model’s 
+analytic store (ASTORE) file must be in the /opt/sas/viya/config/data/modelsvr/astore
+ directory on the CAS server for the destination to which you are 
+publishing the decision. The ASTORE file is copied to that location when you do any 
+of the following:
+nrun a decision test for the decision that uses the analytic store model
+nset the model as a project champion in SAS Model Manager
+npublish the model to SAS Micro Analytic Service from SAS Model Manager
+If you are publishing a decision that includes an analytic store model and the model 
+has not been set as a project champion or published from SAS Model Manager, you 
+must test the decision before you publish it. For more information, see “Testing 
+Decisions” on page 284.
+Publish Decisions
+Note: You must validate decisions and correct any errors that are found by the 
+validation process before you publish the decisions. For information, see “Validate a 
+Decision in the Decision Editor” on page 254.
+1Open the decision, and click the Versions  tab.
+By default, the version that is published when you click Publish  is the displayed 
+version.
+2(Optional) Click the version number  to change the displayed version to the 
+version that you want to publish.Publishing a Decision 281

@@ -1,0 +1,34 @@
+Executing Published Content
+How you execute published content depends on the destination to which the content 
+is published.
+Executing Content Published to SAS Micro Analytic 
+Service Destinations
+The user who is executing the published content must be authenticated. In SAS 
+Viya, authentication options vary, based on which interface and operating system 
+are used in your environment. External mechanisms include direct LDAP 
+authentication, host authentication, Kerberos, Security Assertion Markup Language 
+(SAML), and OAuth 2.0 with OpenID Connect. For additional information, see SAS 
+Viya Platform: Authentication
+When a rule set is published from SAS Intelligent Decisioning  to a SAS Micro 
+Analytic Service destination, an EXECUTE step is created in the published module. 
+For information about the request and response data formats used in this step, see 
+Execute a step  in the REST API documentation for the Micro Analytic Score API.
+IMPORTANT If the SAS Micro Analytic Service configuration property service.removetrailingunderscoresfrominputs
+ is set to False
+, add an 
+underscore to the name of each input variable. If this option is set to True
+, do 
+not add underscores. Your administrator can add this property to the supplementalProperties
+ section in the sas.microanalyticservice.system
+ configuration definition in SAS 
+Environment Manager. The default value for this option is False
+. For 
+additional information, see “sas.microanalyticservice.system: 
+supplementalProperties” in SAS Micro Analytic Service: Programming and 
+Administration Guide .
+Executing Content That Has Been Published to 
+SAS Cloud Analytic Services Destinations
+To execute content that has been published to SAS Cloud Analytic Services (CAS), 
+use the CAS Model Publishing and Scoring action set. For example, the following 
+code runs a model named Evaluate_Loans on the local CAS server./* Start a CAS session named _mmcas_. */cas _mmcas_;/* Create librefs for all existing caslibs so that they */
+Executing Published Content 77

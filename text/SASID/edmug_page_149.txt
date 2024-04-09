@@ -1,0 +1,29 @@
+Activate a Lookup Table
+Activating a lookup table locks it. If you activate the only unlocked version of a 
+lookup table, SAS Intelligent Decisioning  automatically creates a new unlocked 
+version.
+You cannot activate a lookup table that has been checked out. You must commit the 
+changes to the lookup table before you can activate it.
+To activate the latest version of a lookup table that is not in a folder for which the 
+check-out feature has been enabled, open the lookup table, and click Activate  at 
+the top of the window.
+To activate a specific version of the lookup table, or to activate a lookup table that is 
+in a folder for which the check-out feature is enabled, you must activate the lookup 
+table on the Versions  tab:
+1Open the lookup table that you want to activate.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2On the Versions  tab, select the version that you want to activate, and click Set 
+Version  to set it as the displayed version. See “Set the Displayed Version” on 
+page 125 for more information.
+3Click Activate . 
+Dictionary
+LOOKUP Function
+Determines whether a lookup key exists in a lookup table.
+Restrictions: You can specify the LOOKUP function only in condition expressions.
+If an expression contains the LOOKUP function, then the expression cannot contain 
+anything else.
+Returned data 
+type:BooleanLOOKUP Function 137

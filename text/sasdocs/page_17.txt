@@ -1,0 +1,16 @@
+Solution Investment  
+Model Execution Proposal Page 14 HMS Assumptions/Exclusions  
+♦ All work assumed to be conducted remotely  
+♦ HMS pricing is based on standard services and terms – any deviation is non -standard and 
+requires revised/custom pricing  
+♦ FCB will not transmit personal/sensitive data to the SAS hosted environment without 
+following the Data Classification/Transmission process  
+♦ FCB will not transmit clear -text PAN/PCI data into the SAS hosted environment ; such data  
+must be tokenized and follow the Data Classification/Transmission process  
+♦ HMS fees do not include any services for development, migration, or upgrades; SAS 
+Professional Services are required for such activities  
+♦ Any item of scope which is not stated clearl y in this document as in -scope is deemed out of 
+scope; such undocumented requirement(s) may be addressed via detailed assessment and additional fees may apply  
+♦ Should information become available that impacts the scope, time frame, or cost estimates of this  project, SAS will review and assess changes to this proposal/pricing  
+ 
+SAS® Cloud Value

@@ -1,0 +1,27 @@
+3Enter a new name for the duplicate custom function.
+4(Optional) Enter a description for the custom function.
+5Select the category for the function, and click Duplicate .
+To duplicate multiple custom functions:
+1In the Custom Functions  view, select the custom functions that you want to 
+duplicate.
+2Click  and select Duplicate . SAS Intelligent Decisioning  duplicates the custom 
+functions and appends _Copy
+ to the names of the duplicate copies.
+Hide Custom Functions
+When you hide a custom function, it is removed from the category list. It is hidden 
+from view, but it is not moved to the recycle bin or deleted. You cannot create new 
+functions that have the same names as the hidden functions unless you delete the 
+hidden functions. You can unhide (restore) or permanently delete the hidden 
+functions  by using the Manage hidden functions  menu option.
+To hide custom functions, select the functions in the Custom Functions  category 
+view, click , and select Hide .
+Rename a Custom Function
+Note: You cannot rename a custom function if it is open. 
+1In the Custom Functions  category view, select the custom function that you want 
+to rename.
+2Click  and select Rename . The Rename  window appears.
+3Enter a new name for the custom function, and click Rename .
+Change a Function’s Category
+1In the Custom Functions  category view, select the custom function, click , and 
+select Change category . The Change Category  window appears.
+2Select the new category, and click OK.210 Chapter 7 / Using Custom Functions

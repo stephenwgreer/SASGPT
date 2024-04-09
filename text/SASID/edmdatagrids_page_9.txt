@@ -1,0 +1,28 @@
+Working with Data Grids
+Data Grids and Publishing Destinations
+You can publish rule sets and decisions that use data grids to any destination. 
+However, it is unlikely that rule sets or decisions that use data grids can be executed 
+successfully on Teradata because of limitations on row sizes.
+You must use the %DCM_SERIALIZEGRID macro to serialize your data grid if it is 
+used in a rule set or in a decision that will be deployed to Apache Hadoop, Teradata, 
+or SAS Cloud Analytic Services (CAS). For more information, see “Serialize and 
+Import Data Grids Into a Table Column” on page 4.
+Ways to Work with Data Grids
+You can work with data grids in two ways:
+nUse data grid functions. For more information, see “Using Data Grid Functions” 
+on page 9.
+nExecute the model, rule set, or subdecision against each row in a data grid by 
+selecting Score rows in this data grid  when you map the object’s input 
+variables in a decision. For more information, see “Scoring Rows in a Data Grid” 
+on page 6.
+In custom code files, you use data grid functions to process the data in a data grid. 
+For more information, see “Using Data Grids in a Code File” on page 9.
+In data query files, you can specify whether the query returns a data grid or a single 
+row of scalar variables. You can select what the query returns by specifying the 
+output type on the properties panel of the query file after you add the query file to a 
+decision. See “Add an Existing Object” in SAS Intelligent Decisioning: User’s Guide
+and “Create and Add a New Object” in SAS Intelligent Decisioning: User’s Guide .
+Note: You cannot use data grids in branch condition expressions. If you need to 
+use a value calculated from a data grid in a branch condition expression, calculate 
+the value in a rule set, assign the value to a variable, and then use the variable in a 
+subsequent branch condition expression.Working with Data Grids 5

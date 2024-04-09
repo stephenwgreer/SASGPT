@@ -1,0 +1,25 @@
+The following command imports the treatments that are in the file treatments_extracted.xml
+ and writes the treatments to the folder with the ID 
+a750925f-2749-4c8c-94c6-dd93a471d427:sas-viya rtdmobjectmigration start--input /extractFiles/treatments_extracted.xml --folder a750925f-2749-4c8c-94c6-dd93a471d427--type treatment
+scoreexecution Plug-In
+Lists or deletes resources such as log files, code files, jobs, and SAS Cloud Analytic Services (CAS) tables 
+that were not deleted when the associated rule set, decision, or model test was deleted.
+Requirement: You must create a profile and sign in before you use the CLI. See “Creating and Using 
+Profiles” on page 2 for more information.
+See: “Global Options” on page 4
+“Global Commands” on page 3
+Syntax
+sas-viya  <global-options > scoreexecution  command  <command-options >
+Commands
+In addition to the global commands in “Global Commands” on page 3, you can 
+specify the following commands:
+list-hanging-resources
+lists the resources that are no longer used by the score execution service.
+--file filename
+specifies the file to write the list of resources to. You can use this file with the remove-hanging-resources
+ command to delete the resources.Alias-f
+remove-hanging-resources
+deletes resources that are no longer used by the score execution service.
+--file filename
+Specifies the file that contains the URIs of the resources that you want to 
+remove.Alias-f 22Chapter 2 / SAS Intelligent Decisioning CLIs

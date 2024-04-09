@@ -1,0 +1,24 @@
+AliashExamplesas-viya scoreexecution help
+plugins list
+displays the list of command line plugins for a CLI.NoteNo plugins are available for the SAS Intelligent Decisioning CLIs.Examplesas-viya plugins list
+profile
+creates or displays the connection profile that defines your SAS Viya 
+deployment. This command asks you to enter the SAS Viya service endpoint, 
+your preferred output type, and whether you want to enable colored output. 
+Running the PROFILE global command creates a config.json file and a 
+credentials.json file in the directory home-directory/.sas
+. The config.json file 
+contains information about your SAS Viya deployment, and the credentials.json 
+file contains the authentication tokens that are created when you log in.AliasprofSee“Global Command: Profile” in SAS Viya: Using the Command-Line 
+Interface“Command-Line Interface: Preliminary Instructions” in SAS Viya: Using 
+the Command-Line Interface
+Global Options
+The following options apply to all CLIs.
+--colors-enabled true|false
+enables or disables ANSI-colored output.NoteThis option does not work in all environments.TipYou can set the environment variable $SAS_CLI_COLOR instead of 
+specifying this option.
+--help
+displays the list of commands and options that are available for a CLI. If this 
+option is specified after a command, it displays the Help for that command.Alias-hExamplesas-viya dcmtransfer authenticate9x –help
+--insecure
+allows connections to TLS sites without validating the server certificates.Alias-k 4Chapter 2 / SAS Intelligent Decisioning CLIs

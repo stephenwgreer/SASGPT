@@ -1,0 +1,22 @@
+2
+SAS Intelligent Decisioning CLIs
+Global Commands  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Global Options  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+dcmtransfer Plug-In . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+decisiongitdeploy Plug-In . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+rtdmobjectmigration Plug-In . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+scoreexecution Plug-In . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+sid-functions Plug-In . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Global Commands
+The following commands are available for all CLIs:
+authenticate
+enables you to log on to and log off from the environment. When you log on, this 
+command prompts you for your SAS Viya user ID and password.AliasauthNoteWhen you run the AUTH LOGOUT global command, a bearer token is 
+written to the credentials.json file. For more information, see “Global 
+Command: Profile” in SAS Viya: Using the Command-Line Interface .See“Global Command: Authenticate” in SAS Viya: Using the Command-Line 
+Interface“Command-Line Interface: Preliminary Instructions” in SAS Viya: Using 
+the Command-Line Interface
+help <command >
+displays the list of commands that are available for a CLI or, if you specify a 
+command, displays help for that command.3

@@ -1,0 +1,27 @@
+sas.treatmentdefinitions.checkout
+sas.treatmentdefinitions.checkout.allowConcurrentCheckout
+Controls whether the same treatment or treatment group can be checked-out by multiple users at 
+the same time.DefaultONSee“Concurrently Checking Out and Committing a Treatment or Treatment Group Versions” 
+in SAS Intelligent Decisioning: User’s Guide
+sas.treatmentdefinitions.checkout.checkoutEnabledFolderPaths
+Specifies the list of folder paths whose treatments and treatment groups can be or must be 
+checked out before they can be edited. Separate path names with commas.Default/Decision Repository
+TipPermissions are set on the default folder, /Decision Repository
+, so that users are 
+required to check out the objects in this folder before they can be edited. Similar 
+permissions are not automatically set on any additional folders that you specify with this 
+configuration option. You must explicitly set the permissions in order to require that the 
+objects in the additional folders are checked out before they are modified. See “Set 
+Permissions for Check-Out Folders” on page 59 for more information.Example/Public/checkout
+sas.treatmentdefinitions.datagrid
+sas.treatmentdefinitions.datagrid.length
+Specifies the default length of the serialized data grid, including the JSON syntax, that is 
+generated for treatment groups. Specifying a shorter length can reduce memory usage and might 
+improve performance. For more information, see “Introduction to Data Grids” in SAS Intelligent 
+Decisioning: Using Data Grids .Default10,485,760
+sas.treatmentdefinitions.import
+sas.treatmentdefinitions.import.resetActiveVersionOfTreatmentGroupOnImport
+Specifies whether the status of a treatment group is set to Active when it is imported by using the 
+SAS Viya  Command-Line (sas-viya)SAS administrative CLI (sas-admin). This option is useful 
+when you are importing a treatment group that was already active when it was exported. The 
+treatment group is not reactivated. Only the status is changed.DefaultOffSee“Activate a Treatment Group” in SAS Intelligent Decisioning: User’s Guide “sas.treatmentdefinitions.activation.activateTreatmentGroupOnImport ” on page 19 20

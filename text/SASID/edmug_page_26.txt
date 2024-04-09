@@ -1,0 +1,32 @@
+Create a New Rule Set
+1Click  to navigate to the Rule Sets category view.
+2Click New Rule Set . The New Rule Set  window appears.
+3Enter a name for the rule set if you do not want to use the default name. Rule set 
+names are limited to 100 characters and must be unique within a folder. Rule set 
+names are case-sensitive.
+Note: Some publishing destinations restrict the characters that can be used in 
+the published name of a rule set. For more information, see Table 2.5 on page 
+61.
+4Select the rule set type. See “About Rules and Rule Set Types” on page 13 for 
+descriptions of each rule set type.
+IMPORTANT You can publish decisions that include filtering rule sets to 
+SAS Micro Analytic Service destinations and to container destinations, but 
+you cannot publish the filtering rule sets themselves to SAS Micro Analytic 
+Service destinations, to Git destinations, or to container destinations.
+5(Optional) Enter a description for the new rule set. Descriptions are limited to 
+1000 characters.
+TIP You can edit the description later on the Properties  tab.
+6Click , and select the folder where you want to save the rule set.
+7Click Save . SAS Intelligent Decisioning  opens the new rule set and displays the 
+Variables  tab.
+TIP Objects that are saved in a folder for which the check-out and 
+commit feature is enabled, such as the Decision Repository
+ folder, 
+must be checked out before they can be edited. 
+8(Optional) If the rule set is in a folder for which the check-out and commit feature 
+is enabled, click the Versions  tab and check out the latest version of the rule set. 
+For more information, see “Check Out and Commit a Rule Set Version” on page 
+56.
+9Add variables and rules to the rule set. For more information, see the following 
+topics:
+n“Managing the Variables in a Rule Set” on page 16Create a New Rule Set 15

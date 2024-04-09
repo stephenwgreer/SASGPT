@@ -1,0 +1,15 @@
+"metadata": [         {"Node Name": "string"},          {"additionalDiscount": "double"},          {"age": "double"},          {"cost": "double"},          {"currentPhone": "double"},          {"score": "double"},          {"treatmentName": "double"},          {"ServicePlans_out": "string"},          {"newScore": "double"},          {"probability": "double"},          {"scoreProbDataGrid": "string"}      ]   }, {      "data": [         ["Code_1", null, 42, 699.99, null, 1, null, null, 1.1, 0.625547, null],         ["Code_2", null, 42, 699.99, null, 1, null, null, 1.1, 0.625547, null],         ["Code_3", null, 42, 699.99, null, 1, null, null, 1.1, 0.625547,             "{\"Data Grid\":[{\"metadata\":[{\"score\":\"double\"},             {\"probability\":\"double\"}]},{\"data\":[[1.23,4.56]]}]}"],         ["Rule_set_1", 99.99, 42, 699.99, null, 1.25, null, null, 1.1, 0.625547,            "{\"Data Grid\":[{\"metadata\":[{\"score\":\"double\"},             {\"probability\":\"double\"}]},{\"data\":[[1.23,4.56]]}]}"],         ["Combined_Treatments", 99.99, 42, 699.99, null, 1.25, null, null, 1.1, 0.625547,            "{\"Data Grid\":[{\"metadata\":[{\"score\":\"double\"},             {\"probability\":\"double\"}]},{\"data\":[[1.23,4.56]]}]}"]      ]   }]}
+Note: Value tracing increases the amount of code that is generated for a decision 
+and the time required to execute the decision. The magnitude of the increases 
+depend on the number of variables and complexity of the decision.
+Test a Scenario
+Create and Run a Scenario Test
+IMPORTANT If you are testing a decision that uses functions that are 
+defined in a custom context file, verify that the context file is specified in the 
+Custom context  field on the Properties  before running the test.
+If you are testing a decision that uses treatment groups and both the decision 
+and the treatment group are checked out, the test uses the checked-out 
+version of the treatment group. If the treatment group is not checked out, the 
+test uses the activated version of the treatment group.
+If the decision uses a rule set that uses a lookup table and all three objects 
+(the decision, the treatment group, and the lookup table) are checked out, the Testing Decisions 289

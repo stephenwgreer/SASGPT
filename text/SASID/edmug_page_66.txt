@@ -1,0 +1,38 @@
+assignment rule set is modified to use the newly committed versions of the common 
+rule sets. Any additional assignment rule sets that use the same common rule sets 
+and that are still checked out are also modified to use the newly committed versions 
+of the common rule sets.
+To check out or commit a common rule set from within a checked-out assignment 
+rule set, click  to open the context menu for the common rule set reference, and 
+select Check out common rule set  or Commit common rule set .
+Checking Out and Committing a Lookup Table from 
+within a Rule Set
+You can check out a lookup table from within a rule set if the following conditions are 
+true:
+nThe rule set is checked out.
+nThe lookup table is stored in a folder for which the check-out feature is enabled.
+nThe rule set does not have any unsaved changes. If the rule set contains any 
+unsaved changes, the Check out lookup  option is disabled.
+To check out or commit a lookup table from within a checked-out rule set, right-click 
+on the LOOKUP or LOOKUPVALUE expression, and select Check out lookup  or 
+Commit lookup . SAS Intelligent Decisioning  displays as asterisk in front of the 
+name of any lookup table that is checked out.
+When you check out a lookup table from within a rule set, the checked-out rule set is 
+modified to use the checked-out copy of the lookup table, and SAS Intelligent 
+Decisioning  enables the Commit lookup  option in the menu. When you commit the 
+rule set, all of the checked-out lookup tables that are used in the rule set are also 
+committed.
+The newly committed versions of the lookup tables are not automatically activated 
+when they are committed. You must activate the newly committed versions of the 
+lookup tables. For more instructions, see “Activate a Lookup Table” on page 137.
+Rule sets that are not checked out always use the activated versions of lookup 
+tables. If you do not activate the newly committed versions of the lookup tables, all 
+rule sets that use the lookup tables will continue to use the previously activated 
+versions of each table.
+To cancel the check out of a lookup table, right-click on the LOOKUP or 
+LOOKUPVALUE expression, and select Cancel check out .
+Committing a Lookup Table Together with a Rule 
+Set
+If you check out a lookup table from within a rule set and then commit the rule set, 
+the lookup table is also committed. For more information, see “Checking Out and 
+Committing a Lookup Table from within a Rule Set” on page 55.Checking Out and Committing Rule Set Versions 55

@@ -1,0 +1,24 @@
+2Click  to open the Edit Columns  window.
+3Click  for each column that you want to delete.
+4Click OK.
+Using Data Grid Functions
+For objects that iterate over a data grid, you do not need to use data grid functions. 
+For more information, see “Ways to Work with Data Grids” on page 5 and “Scoring 
+Rows in a Data Grid” on page 6.
+In all other cases, you must use SAS Intelligent Decisioning  data grid functions to 
+process data grid variables. SAS Intelligent Decisioning  supplies several functions 
+for use with data grids. These functions are described in “Data Grid Functions” on 
+page 29.
+Using Data Grids in a Code File
+You can create a local data grid variable in a custom DS2 code file. However, the 
+column metadata for the local data grid variable in the DS2 code is not passed to 
+the corresponding decision data grid variable. In this case, you must edit the 
+metadata for the decision variable and add the columns. For instructions, see “Add 
+Columns to a Data Grid” on page 7.
+You can create custom DS2 code files that process the values in a data grid and 
+include the code file in a decision. For example, the following DS2 code uses the 
+DATAGRID_COUNT function to determine how many rows are in the data grid, then 
+loops through the data grid to process each row. It uses the DATAGRID_GET 
+function to retrieve the values for the data grid variables. The values of the data grid 
+variables are passed to the assessLoanRequest method./* Use the DATAGRID_COUNT function to determine the *//* number of rows that are in the data grid.        */"numRows" = DATAGRID_COUNT("loanrequests");if "numRows" > 0 then do;   do "loopIndex" = 1 to "numRows";      /* Use the DATAGRID_GET function to retrieve the values    */      /* in the data grid. The assessLoanRequest method invokes  */      /* a published rule set to evaluate each loan request.    */          assessLoanRequest(DATAGRID_GET("loanrequests",'annualSalary',loopIndex),                        DATAGRID_GET("loanrequests",'incomeThreshhold',loopIndex));           /* Continue processing the data. */
+Using Data Grids in a Code File 9

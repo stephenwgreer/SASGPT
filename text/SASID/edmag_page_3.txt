@@ -1,0 +1,14 @@
+Full Access and Service Endpoints  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Tasks Enabled by Default Rules for Object URIs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Granting Access to Test Results  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+Define Asset Approval Workflow User Groups  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57
+Granting Access to the History of Workflow Status Changes  . . . . . . . . . . . . . . . . . . . . . . . . 58
+Set Permissions for Check-Out Folders  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Grant Permission to Create Versions in Check-Out Folders by Using Tags  . . . . . . . . . . . 62
+Reloading Lookup Tables When CAS Is Restarted  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+Managing Test Data  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+Performing Post-installation Tasks
+General post-installation tasks for SAS Viya are in the deployment guide for your environment. 
+Deployment guides for SAS Viya are available at https://support.sas.com//en/software/sas-viya.html .
+After you install SAS Intelligent Decisioning, complete the following steps:
+1Verify configuration properties .2

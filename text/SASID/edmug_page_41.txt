@@ -1,0 +1,35 @@
+5Define the condition expression for the rule. See “About Defining Expressions” 
+on page 33 for additional information.
+To add additional condition expressions to the selected rule, select Add ð 
+Condition .
+TIP To move condition expressions up or down within an IF clause, 
+select the expression and click  or .
+6(Optional) Change the order of the rules. Rules are evaluated sequentially. To 
+move a rule up or down within a rule set, select the rule and click  or .
+7(Optional) Change the name of the rule. Rule names are limited to 100 
+characters and must be unique within a rule set. For instructions, see “Rename a 
+Rule” on page 42.
+TIP Assigning logical names to the rules makes it easier to determine 
+which rules fired when you review rule-fired data.
+8(Optional) Clear the Record rule-fired data  check box if you do not want a rule-
+fired record to be written each time this rule fires. See “How Rules Are Evaluated 
+and When Rule-Fired Records Are Generated” on page 32 for more 
+information.
+9Click  to save the rule set. SAS Intelligent Decisioning  validates the syntax of 
+the expressions. If it does not detect any problems, it saves the rule set. 
+Copy Rules From Another Rule Set
+The menu option Copy from rule set  appears in the Add menu for a rule set. The 
+rule set must contain at least one rule in order for this menu option to appear. 
+Adding a rule from another rule set does not replace any of the rules in the rule set 
+that you are editing.
+1Open the rule set into which you want to add the rule, and click the Rule Set  tab.
+2If the rule set does not already contain a rule, click Add rule . 
+3Select the existing rule after which you want to add IF rules or to which you want 
+to add an ELSE rule. If you do not select a rule, then SAS Intelligent Decisioning 
+adds copied rules to the end of the rule set.
+4Click Add and select Copy from rule set . The Copy Rules  window appears. 
+This window displays the latest version of every rule in every rule set that you 
+have permission to view.
+5Select the rules that you want to copy, and click Copy .
+SAS Intelligent Decisioning  adds the selected rules to the rule set together with 
+any new variables that these rules need.30Chapter 2 / Working with Rule Sets

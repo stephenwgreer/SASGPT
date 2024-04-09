@@ -1,0 +1,42 @@
+Table 8.2 Decision Objects and the Destinations to Which Decisions Can Be Published
+Objects in the DecisionSAS Micro 
+Analytic 
+Service and 
+Compatible Git 
+DestinationsSAS Cloud 
+Analytic 
+Services (CAS) 
+and Compatible 
+Git DestinationsTeradata and 
+Hadoop 
+DestinationsContainer 
+DestinationsAssignment rule sets, 
+treatment groups, models, 
+nested decisions, or DS2 
+code files and custom 
+context files that do not 
+contain SQL queries1, 2yesyesyesyesFiltering rule set nodes1 yesyesyesyesPython code filesyesyesnoyesData query files, DS2 code 
+files that contain SQL 
+queries, or custom context 
+files that contain SQL 
+queriesyesnonoyes3Record contacts nodesyesyesyesnoMicro Analytic Module 
+nodesyesnonono
+1Rule sets and nested decisions can use lookup tables, custom functions, and global variables.
+2The score code type of a model determines the destination types to which you can publish a decision that contains the 
+model. See Table 8.3 on page 280.
+3In container destinations, Oracle is the only database that can be queried by using data query files, DS2 code files that 
+contain SQL queries, or custom context files that contain SQL queries.
+The score code type of a model determines the destination types to which you can 
+publish a decision that contains those models. The following table lists the score 
+code types a model can have when it is used in a decision that is published to a 
+specific destination type.Table 8.3 Model Score Code Types and the Destinations to Which Decisions Can Be Published
+Model Score 
+Code TypeCAS 
+Destinat
+ionsGit DestinationsSAS Micro 
+Analytic 
+Service 
+DestinationsHadoop and 
+Teradata 
+DestinationsContainer 
+DestinationsDATA stepyesyesyesyesyesDS2 multi-typeyesyesyesyesyesDS2 packagenoyesyesnoyes 280 Chapter 8 / Working with Decisions

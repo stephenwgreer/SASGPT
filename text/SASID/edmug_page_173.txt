@@ -1,0 +1,35 @@
+When you publish the decision, SAS Intelligent Decisioning  passes the name and pip3
+ install command for each package to the model publish service. The model 
+publish service uses this information to install the packages in the container that is 
+published to the destination.
+For information about the Python base image that is included in published 
+containers, see “About a SAS Container Runtime Image” in SAS Container 
+Runtime: Programming and Administration Guide .
+Note: Do not specify package aliases or the names of built-in packages in this 
+docstring. If you include the name of a built-in package or of a package alias, SAS 
+Intelligent Decisioning  writes the following message to the log when you publish the 
+decision:ERROR: No matching distribution found for name
+Verify whether a package is built in to the Python distribution that will be used by the 
+executing decision before you add a package name to this docstring. Verify that the 
+docstring is correct by running a publishing validation test for your decision before 
+you deploy your decision in a production environment. For information about the 
+standard libraries that are distributed with specific versions of Python, see https://
+docs.python.org .
+Data Query Files
+Using Data Query Files
+A query enables you to extract data from one or more tables according to criteria 
+that you specify. When you create the query, you can choose which editor you want 
+to use to create the file. Your choice of editor affects whether the data query can 
+return scalar variables. For more information, see “Query Output Types and Editors” 
+on page 160.
+IMPORTANT You can publish decisions that contain data query files to SAS 
+Micro Analytic Service destinations or to container destinations. For SAS 
+Micro Analytic Service destinations, you can query only the data sources that 
+are supported by SAS Micro Analytic Service. For more information, see 
+“Data Sources Supported for Use with SAS Micro Analytic Service” in SAS 
+Micro Analytic Service: Programming and Administration Guide . 
+In container destinations, Oracle is the only database that can be queried by 
+using data query files.
+In order to test decisions that contain data query files, an administrator must 
+configure support for SQL query files. See “Configuring Support for Data Query 
+Files” in SAS Intelligent Decisioning: Administrator’s Guide .Data Query Files 159

@@ -1,0 +1,40 @@
+ready, it is recommended that the author verify that the objects used in the 
+decision are locked and cannot be edited.
+Authors must be included in the SIDWFAuthor custom user group.
+Reviewer
+reviews the new version and decides whether to approve it. For example, the 
+reviewer might compare the new version against the previously approved 
+version and review the tests that were run by the author. The reviewer approves 
+the decision by setting the status to Approved. The reviewer rejects the decision 
+by setting the status back to Developing.
+Reviewers must be included in the SIDWFReviewer custom user group.
+TIP If the sas.decisions.workflow.authorMayApprove  configuration 
+option is turned on, then users who are a member of both the 
+SIDWFAuthor and the SIDWFReviewer custom user groups can approve 
+work that they authored.
+Deployer
+determines whether the new version can be published and promoted to other 
+environments for additional testing and production. If the version can be 
+deployed, this user sets the status to Deployment-ready. When the version is 
+ready to be deployed, the deployer can publish and promote the version, and set 
+the status to Deployed.
+Deployers must be included in the SIDWFDeployer custom user group.
+Auditor
+view workflow status change histories and produce audit reports.
+Auditors must be in at least one of the four user groups described in “Granting 
+Access to the History of Workflow Status Changes” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+Administrator
+can perform any task that the author, reviewer, auditor, or deployer can perform. 
+SAS Intelligent Decisioning  workflow administrators must be included in the 
+SIDWFAdmin custom user group.
+TIP Members of the SAS Administrators group also have permission to 
+make all status changes.
+Note: Users in all roles can publish a decision, but it is strongly recommended that 
+only users who have the role of Deployer or Administrator be permitted to publish 
+decisions to testing and production environments. In cases where decisions are 
+published to a Git repository, it is recommended that only users with the roles of 
+Deployer or Administrator have access to the Git repository.
+For information about defining custom user groups for the workflow, see “Define 
+Asset Approval Workflow User Groups” in SAS Intelligent Decisioning: 
+Administrator’s Guide .Using SAS Workflow with SAS Intelligent Decisioning 217

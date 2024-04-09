@@ -1,0 +1,36 @@
+Python Code Files
+About Publishing Destinations and Python 
+Distributions
+IMPORTANT You can publish decisions that contain Python code files only 
+to SAS Micro Analytic Service destinations, SAS Cloud Analytic Services 
+(CAS) destinations, and container destinations.
+When you publish a decision that contains a Python code file, SAS Intelligent 
+Decisioning  generates a private DS2 PyMAS package. The package is assigned a 
+random name. Your Python program is encapsulated inside a DS2 EXECUTE 
+method. When the decision is executed, the DS2 process sends the Python 
+program to a Python process to be executed.
+In SAS Micro Analytic Service and CAS destinations, an executing decision uses 
+the Python distribution that is installed at your site. In container destinations, 
+executing decisions use the Python base image that is included in the published 
+container. For information about the Python base image that is included in published 
+containers, see “About a SAS Container Runtime Image” in SAS Container 
+Runtime: Programming and Administration Guide . For information about the 
+standard libraries that are distributed with specific versions of Python, see https://
+docs.python.org .
+Rules For Developing Python Code Files
+When you are developing your Python code, follow these rules:
+nYour Python code must define an EXECUTE function. This function is the only 
+public function allowed.
+nAn Output:
+ docstring is required. This string must immediately follow the Python 
+EXECUTE function declaration, and it must be indented within the EXECUTE 
+function definition. In the docstring, list all of the output variables produced by the 
+program. For example, if your program has two output variables named prediction
+ and probability
+, your docstring would appear as follows:'''Output: prediction, probability'''
+nIf your Python code uses packages that are not built-in packages, list these 
+packages in the DependentPackages:
+ docstring. For more information, see 
+“Required Dependencies For Python Files in SAS Container Runtime 
+Destinations” on page 158.
+nOptional input arguments to the Python EXECUTE function are not supported.Python Code Files 157

@@ -1,0 +1,19 @@
+Enable the Check-Out and Commit 
+Feature
+To enable the check-out and commit feature for a folder:
+1Specify the folder path in the checkout.checkoutEnabledFolderPaths configuration option for the 
+appropriate service. Set the option for the services that are associated with the object types that 
+you want to save in the folder.Table 2 Check-Out and Commit Configuration Options Object TypesConfiguration PropertiesRule sets“sas.businessrules.checkout”Decisions
+Code files“sas.decisions.checkout”Lookup tables“sas.referencedata.checkout”Treatments
+Treatment groups“sas.treatmentdefinitions.checkout”
+2(Optional) Set the permissions for the folders that you add to the 
+checkout.checkoutEnabledFolderPaths configuration properties if you want to force users to check 
+out objects in those folders before they are modified. For instructions, see “Set Permissions for 
+Check-Out Folders” on page 59.
+Enabling Performance Logging
+About Performance Logging
+When performance logging is enabled, the Micro Analytic Score service records the total execution 
+time for decisions. The service also records individual times for each node in the decisions except for 
+branch nodes and condition nodes. Times are also logged for nodes that are inside subdecisions. The 
+service writes these times to the SAS Micro Analytic Service log file.
+Log entries can include the following information:36

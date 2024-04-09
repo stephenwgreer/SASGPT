@@ -1,0 +1,28 @@
+Syntax
+sas-viya  <global-options > decisiongitdeploy  deploy <command-options > path-to-
+object-directory
+Command
+In addition to the global commands in “Global Commands” on page 3, you can 
+specify the following command:
+deploy < command-options > path-to-object-directory
+deploys the object from the specified directory into the target destination.
+This command supports the following options:
+--destinationtype MAS  | CAS
+Specifies the type of destination to which you want to deploy the published 
+object. Specify MAS
+ for the maslocal SAS Micro Analytic Service destination 
+or CAS
+ for SAS Cloud Analytic Services destinations. (The option values are 
+case insensitive.)Alias-dDefaultMAS
+--force false  | true
+Specifies whether to overwrite a previously deployed object that has the 
+same name as the object that you are deploying.Alias-fDefaultFalse
+--libname caslib
+Specifies the name of the CAS library to which you want to deploy the object.Alias-lDefaultPublicRequirementThe specified library must exist. See “Specifying CAS 
+Destination Properties” on page 18.InteractionThis option is used only if you specify --destinationType=CAS
+.
+--server server_name
+Specifies the server on which the library specified by the --library
+ option is 
+located.Alias-sDefaultcas-shared-defaultInteractionThis option is used only if you specify --destinationType=CAS
+. decisiongitdeploy Plug-In 17

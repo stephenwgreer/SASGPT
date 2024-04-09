@@ -1,0 +1,35 @@
+Benefits of SAS® Viya® Model Execution Solution  
+Model Execution Proposal Page 4 ♦ Optimized and governed business processes  
+– Manage user configurable, repeatable  processes  with auditability  utilizing business -
+defined governance, controls  (data, model,  and business process) , and process 
+automation  including downstream dependency management  
+– Reduce manual handoffs and e nable connectivity  across organizations , processes,  and 
+technology infrastructure  
+– Meet/exceed operational performance requirements of both business line and 
+technology stakeholders  
+– Monitor model perf ormance  and a ddress model decay/performance issues quickly and 
+efficiently  
+♦ Higher Return on Investment  
+– Reduce  technical debt  with optimize d infrastructure and operation s 
+– Own , manage , and control end -to-end critical business and technology change , without 
+reliance on third party vendors especially with continuous improvement on business 
+processes, model enhancements and other business and regulatory transformation 
+projects  
+ 
+Our solution is adopted by 200+ financial institutions globally. The f ollowing are high level quotes 
+from our clients:  
+♦ “SAS is a proven solution to handle massive volume s of data and models with desired 
+performance.  It truly integrates well with SAS and third-party programming models to deliver 
+regulatory and BAU analytics. ” 
+♦ “Any third-party model execution solution performs only data exchanges (hand- offs) with SAS 
+models rather any meaningful integration.  Customers will still require investing in SAS ’ 
+solution t o perform scenario analysis, sensitivity analysis, attribution analysis, etc. ” 
+♦ “The SAS solution provides and passes regulatory scrutiny/examination with reduced or 
+reasonable regulatory feedback. Also, it has helped us reduce the number of controls and se lf-
+assessments through transparent implementation. ” 
+♦ “To be compliant with CECL, Stress Test, and use cases of risk and finance integration, the SAS 
+solution is an exclusive choice for the financial institutions which provides excellent ROI at the 
+organizat ion level. ” 
+♦ “The SAS solution provides a controlled environment , which allows for documentation of the 
+entire calculation process and logic, which is fully exposed, modifiable, and governed at customers’  discretion based on regulatory and audit needs. ” 
+♦ “The solution is flexible to have it installed on premise environments and on the cloud. ”

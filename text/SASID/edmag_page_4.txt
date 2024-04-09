@@ -1,0 +1,28 @@
+2Configure publishing destinations .
+3(Optional) Configure support for SQL query files .
+4(Optional) Configure support for Python code files .
+5(Optional) Set the creation_dttm values in the subject contacts database .
+6(Optional) Set up third-party databases for subject contacts or treatments or both:
+aConfigure the subject contacts database or the treatment definition database or both 
+databases .
+b(Optional) Partition the subject contacts database .
+7(Optional) Enable the check-out and commit feature .
+8(Optional) Enable performance logging .
+9(Optional) Enable variable assignment logging .
+10(Optional) Enable the asset approval workflow .
+11(Optional) Transfer content to the new environment .
+12(Optional) Enable lookup tables to be reloaded automatically .
+13Verify that permissions are correct for your site .
+Verify Configuration Properties
+View or Set Configuration Properties for SAS 
+Intelligent Decisioning  Services
+After you install SAS Intelligent Decisioning, review the configuration properties to ensure that the 
+values are appropriate for your environment.
+1Sign in to SAS Environment Manager as an administrator.
+Note: If you are already logged in to SAS Intelligent Decisioning as an administrator, access SAS 
+Environment Manager by clicking  and selecting Manage Environment .
+2Click  to navigate to the Configuration category view.
+3In the View  menu, select All Services .
+4Select a service to view its properties. Click  to edit the properties. Verify the property settings 
+for each of the following services:
+nBusiness Rules3

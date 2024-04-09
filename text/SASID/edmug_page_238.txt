@@ -1,0 +1,32 @@
+nClick  to switch between displaying cross-branch links as either dashed lines 
+or as nodes. See “Overview of Cross-Branch Links” on page 244 for more 
+information.
+nClick  to switch between displaying decision node titles on one line or on two 
+lines. 
+On the Decision  tab:
+nClick  or  to collapse or expand a single node in the decision.
+nClick  or  to collapse or expand all of the nodes in the decision.
+Managing the Variables in a Decision
+About Variables
+The Properties of a Variable
+Note: For information about data grid variables, see “Using Data Grids in SAS 
+Intelligent Decisioning” in SAS Intelligent Decisioning: Using Data Grids .PropertyDescriptionNameVariable names must start with a letter or an underscore (_), and they 
+can contain only alphanumeric characters and the underscore. 
+Variable names can be up to 32 characters long. They must be unique 
+within a decision.
+Note: SAS Intelligent Decisioning  does not support double-byte 
+character set (DBCS) characters in variable names.
+Note: Do not use any of these operators or keywords as variable 
+names: AND, OR, IN, NOT, LIKE, TRUE, or FALSE. Do not use _N_ 
+or any DS2 reserved word as a variable name. See “Reserved Words 
+in the DS2 Language” in SAS DS2 Programmer’s Guide  for 
+information about reserved words in the DS2 language.Data typeSAS Intelligent Decisioning  supports the following data types: 
+Boolean, character, data grid, date, datetime, decimal, and integer. 
+Binary and varying-length binary variables are supported only in 
+decisions. Binary variables are supported only as input variables or 
+temporary variables in order to support models that require binary 
+data.
+For Boolean variables, you can select True
+ or False
+ for the initial 
+value. However, SAS Intelligent Decisioning  represents Boolean 222 Chapter 8 / Working with Decisions

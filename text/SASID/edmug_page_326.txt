@@ -1,0 +1,40 @@
+Destination 
+TypeContent That Is Executed by Published DecisionsFor Micro Analytic Module nodes, the decision always uses the most 
+recently published version of the specified module.SAS Cloud 
+Analytic 
+ServicesMost of the published decision’s content is locked. Updates to rule 
+sets, models, treatment groups, custom functions, or custom code 
+files that are used in the decision do not affect the published 
+decision.
+The current values of global variables are included in generated 
+code if the inlineGlobalVariableValues configuration option is turned 
+on, and published modules do not use newly activated versions of 
+global variables. If this option is turned off, the generated code uses 
+a SAS format to retrieve the current value of the global variable 
+when the published module is run. For more information, see 
+“sas.decisions.inlineGlobalVariableValues” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+Lookup tables are locked if the lookupStaticBinding configuration 
+option is turned on. If this option is off, lookup tables are not locked, 
+and published modules use newly activated versions of lookup 
+tables. For more information, see 
+“sas.businessrules.lookupStaticBinding” in SAS Intelligent 
+Decisioning: Administrator’s Guide .Teradata, 
+Hadoop, and 
+Container 
+DestinationsAll of the published decision’s content, including treatment groups, 
+custom functions, lookup tables, and global variables is included 
+inline in the published module. Updates to the objects used in the 
+decision are not used by the published module.
+View All Published Decisions
+The Deployments category view is a dashboard that provides a centralized view of 
+information about all the decisions that are being used in your environment.
+Click  to navigate to the Deployments category view.
+The tiles at the top of this view visually display key metrics about the total number of 
+decisions in your environment. For example, the tiles display information such as 
+destination types, deployments to single destinations or to multiple destinations, and 
+deployments with and without models.
+TIP You can click  to hide the tiles.
+The tabular view below the tiles displays details about each published decision in 
+your environment. For example, details include information such as the decision 
+name, the published destination, the published date, the number of nodes, and 310 Chapter 8 / Working with Decisions

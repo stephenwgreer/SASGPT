@@ -1,0 +1,32 @@
+2Select the versions that you want to compare, and click Compare . SAS 
+Intelligent Decisioning  opens the two objects side-by-side in the Compare Code 
+window and highlights the differences.
+3(Optional) Click Export  to export the results of the comparison to a PDF file. The 
+result depends on which browser you are using and the browser’s default 
+download actions. The browser might automatically download the file and display 
+a notification in the bar at the bottom of the browser window. Alternatively, the 
+browser might prompt you to save the file or open it with a specific application.
+Generate PDF Documentation for a Rule 
+Set
+You can generate detailed documentation for a rule set as a PDF document. The 
+PDF includes the rule set properties, details about each of the rules, and a table of 
+the variables that are used in the rule set. You can download additional documents 
+for lookup tables that are used in the rule set.
+1Open the rule set.
+2Click , and select Create document . The Create Document  window appears.
+TIP If this option is disabled, there might be unsaved changes. Click .
+3(Optional) Enter a name for the document if you do not want to use the default 
+name.
+4(Optional) Select Choose additional documents to download  to display a 
+window from which you can download additional documents. You can download 
+documents for any lookup tables that are used in the rule set.
+5Click Create . SAS Intelligent Decisioning  creates the PDF. The result depends 
+on which browser you are using and the browser’s default download actions. 
+The browser might automatically download the file and display a notification in 
+the bar at the bottom of the browser window. Alternatively, the browser might 
+prompt you to save the file or open it with a specific application.
+If you download additional documents in Step 4 , the Download Additional 
+Documents  window appears.
+6(Optional) Click Download  for each additional document that you want to 
+download.
+7(Optional) Click Close  to close the Download Additional Documents  window.46Chapter 2 / Working with Rule Sets

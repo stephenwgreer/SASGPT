@@ -1,0 +1,33 @@
+decision authoring and publishing
+You can combine rule sets, analytical models, treatment groups, custom code 
+files, record contacts nodes, and branches (conditional logic) into decisions. You 
+can also add a decision to another decision. You can investigate various 
+scenarios, test and refine the decision logic, and then publish the decisions for 
+use in batch applications and online transactions. After a decision has been 
+published, it is available for use by other applications.
+Support for Models in Decisions
+Support for a model depends on the tool that you use to create the model and the 
+model’s score code type. For example, decisions that use certain model score code 
+types cannot be published or can be published only to SAS Micro Analytic Service 
+destinations. For more information, see “High-Level Model Support Matrix for 
+Primary Functions” in SAS Model Manager: User’s Guide .
+Sign in to SAS Intelligent Decisioning
+Note: If you are already signed in to SAS Drive, you can access SAS Intelligent 
+Decisioning  by clicking  and selecting Build Decisions .
+To sign in to SAS Intelligent Decisioning :
+1In the address bar of your web browser, enter the URL for SAS Intelligent 
+Decisioning  and press Enter . The Sign In  page appears.
+Note: Contact your system administrator if you need the URL for SAS Intelligent 
+Decisioning . The default URL is http:// host_name /SASDecisionManager.
+2Enter a user ID and password.
+3Click Sign In . If this is your first time signing in to SAS Intelligent Decisioning , 
+the Welcome to SAS  window appears.
+4Do one of the following:
+nSet up a profile and customize user-specific settings. For more information, 
+see “Settings” in SAS Viya Platform: General Usage Help for Web 
+Applications  under General Usage in the Help Center  and “SAS Intelligent 
+Decisioning Settings” on page 8.
+nClick Skip setup  if you do not want to set up a profile.You can edit your 
+profile settings later by clicking the user icon in the upper right.
+After you exit the profile setup page, the SAS Intelligent Decisioning home page 
+appears.4Chapter 1 / Introduction to SAS Intelligent Decisioning

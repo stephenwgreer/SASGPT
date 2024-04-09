@@ -1,0 +1,27 @@
+nDecisions
+nMicro Analytic Score
+nReference Data
+nScore Execution
+nSubject Contact
+nTreatment Definitions
+For more information, see “Configuration Page” in SAS Environment Manager: User’s Guide  and 
+SAS Viya Platform: Configuration Properties .
+Business Rules Service Properties
+Verify the settings for the following configuration instances:
+n“jvm”
+n“sas.businessrules”
+n“sas.businessrules.checkout”
+n“sas.businessrules.publish”
+jvm
+Click New Configuration  to define this configuration instance.
+jvm.java_option_xmx
+Specifies the JVM heap size of the Business Rules service.TipYou might need to increase the heap size if you are importing very large lookup tables.
+sas.businessrules
+sas.businessrules.additionalDS2Options
+Enables you to specify additional DS2 options that are not specified by other configuration 
+options. Separate multiple options with a space. This option affects basic tests, scenario tests, 
+and publishing validation tests for rule sets.DefaultMISSING_NOTE. This setting writes a note to the SAS log when an invalid function 
+argument generates a missing value.See“DS2_OPTIONS Statement” in SAS DS2 Language Reference ExampleMISSING_NOTE DIVBYZERO=IGNORE MISSING TYPEWARN
+sas.businessrules.bootstrap.refreshPackages
+Specifies whether DS2 packages in the Micro Analytic Score service should be refreshed if they 
+already exist.DefaultOff 4

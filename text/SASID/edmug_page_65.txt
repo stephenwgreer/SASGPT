@@ -1,0 +1,42 @@
+When you check out a version, SAS Intelligent Decisioning  writes a working copy of 
+the version into your My Folder
+ folder and opens the working copy. SAS Intelligent 
+Decisioning  adds “(Checked Out)
+” to the name that is displayed at the top of the 
+window.
+While you have a version checked out, the Rule Sets  category view shows two rule 
+sets with the same name, but the folders listed in the Location  column differ for 
+each rule set. The original version is in the location specified by the 
+sas.businessrules.checkout.checkoutEnabledFolderPaths configuration option, and 
+the checked-out copy is in your My Folder
+ folder.
+TIP If an object that you have checked out does not appear in the category 
+view, click  to refresh the category view.
+A Commit  button appears at the top of the Versions  tab for the checked-out 
+version. When you are finished editing the checked-out version, you must commit 
+your changes in order for other users to be able to see them. When you commit 
+your changes, SAS Intelligent Decisioning  creates a new version with your changes.
+If the parent object is deleted before you commit your changes, you will not be able 
+to commit your changes.
+You cannot publish the checked-out version that is in My Folder
+. To publish a 
+version with your changes, you must commit your changes, and publish the 
+committed version.
+Checking Out a Rule Set from within a Decision
+See “Checking Out and Committing Objects from within A Decision” on page 274 for 
+information.
+Checking Out and Committing a Common Rule Set 
+from within an Assignment Rule Set
+You can check out a common rule set from within an assignment rule set if the 
+following conditions are true:
+nThe assignment rule set is checked out.
+nThe common rule set is stored in a folder for which the check-out feature is 
+enabled.
+nThe assignment rule set uses the latest version of the common rule set. ( See 
+Add a Common Rule Set Reference to an Assignment Rule Set on page 27.)
+When you check out the common rule set, the assignment rule set is modified to 
+use the checked-out copy of the common rule set. If you make changes to the 
+common rule set and save it, you can click  in the assignment rule set to display 
+the changes in the rule set editor for the assignment rule set. When you commit the 
+assignment rule set, all checked-out common rule sets that are used in the 
+assignment rule set are also committed. The newly committed version of the 54Chapter 2 / Working with Rule Sets

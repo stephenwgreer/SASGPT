@@ -1,0 +1,34 @@
+Edit the Properties of a Common Rule Set 
+Reference
+1Open the assignment rule set, click  for the reference that you want to edit, 
+and select Edit reference . The Edit Common Rule Set Reference  window 
+appears.
+2(Optional) On the Common rule set  tab, select a different common rule set or 
+change the version of the common rule set.
+3(Optional) On the Map Inputs  tab, change the variable mappings for the input 
+variables in the common rule set. For more information, see Step 7  of “Add a 
+Common Rule Set Reference to an Assignment Rule Set” .
+4(Optional) On the Map Outputs  tab, change the variable mappings for the output 
+variables in the common rule set. For more information, see Step 9  of “Add a 
+Common Rule Set Reference to an Assignment Rule Set” .
+5Click OK to close the Edit Common Rule Set References  window and return to 
+the assignment rule set.
+6Click  to save your changes to the assignment rule set.
+Add a New Rule in a Filtering Rule Set
+Note: When SAS Intelligent Decisioning  generates code for a filtering rule set, it 
+joins the rules together with the OR operand.
+1Create or open the filtering rule set. If no variables are defined in the rule set, 
+SAS Intelligent Decisioning  displays the Variables  tab. Otherwise, it displays the 
+Rule Set  tab.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Import or create any variables that are required for the new rule that have not 
+already been added to the rule set. You can add or create the variables on the 
+Variables  tab, or you can define variables dynamically as you author the rule. 
+See “Managing the Variables in a Rule Set” on page 16 for more information.
+3Click the Rule Set  tab.
+4Click Add Rule  if the rule set is empty or, if the rule set contains at least one 
+statement, select Add ð Add rule  or Add Rule . SAS Intelligent Decisioning 
+adds a new IF rule to the end of the rule set. Defining New Rules in a Rule Set 29

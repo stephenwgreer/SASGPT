@@ -1,0 +1,23 @@
+[50,,150][,,Australia,New Zealand]
+DATAGRID_CONFORM Function
+Adds the columns that are exclusive to dataGrid1  to dataGrid2 , and adds the columns that are exclusive to 
+dataGrid2  to dataGrid1 .
+Category: Create, Update, or Delete
+Returned data 
+type:INTEGER
+Note: This function always returns a zero.
+Syntax
+DATAGRID_CONFORM  (dataGrid1 , dataGrid2 )
+Required Argument
+dataGrid1
+dataGrid2
+specifies the names of the two data grids that you want to contain the same 
+columns.
+DATAGRID_COPY Function
+Copies the source data grid into the target data grid.
+Category: Create, Update, or Delete
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows in the target data grid.
+Syntax
+DATAGRID_COPY  (source_dataGrid , target_dataGrid )46Chapter 3 / Data Grid Functions

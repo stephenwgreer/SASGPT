@@ -1,0 +1,13 @@
+TIP This path-tracking analysis uses the data that is in the pathID column in 
+the test results output table. To analyze path-tracking data that is in the 
+subject contact history, use the %DCM_DECISION_PATH_FREQUENCY, 
+%DCM_DECISION_PATH_NODES, and 
+%DCM_DECISION_NODES_COUNTS macros. For more information, see 
+SAS Intelligent Decisioning: Macro Guide .
+1In the test results window, click Decision Path Tracking  in the navigation panel.
+2Click Run Path Tracking  to run a decision path analysis.
+3Click Analysis and Plot  to display a Sankey diagram that shows the flow of the 
+input records through the nodes in the decision. The numbers in the diagram are 
+the number of rows in the input table that followed each path.
+Note: Nodes that are not executed are shown to the right of the Sankey 
+diagram.302 Chapter 8 / Working with Decisions

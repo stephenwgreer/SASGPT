@@ -1,0 +1,32 @@
+Check Out and Commit a Treatment or Treatment 
+Group Version
+TIP If a checked-out treatment group includes treatments that are also 
+checked out, committing the treatment group also commits the treatments.
+1On the Versions  tab, click Check Out . 
+SAS Intelligent Decisioning  updates the Properties  tab to indicate that the 
+version is checked out.
+2Modify the checked-out version as needed, and save it.
+TIP To discard the changes and delete the checked-out version from My Folder
+, you can commit the object without saving it first. However, 
+committing the object without saving creates a new version of the object 
+whose contents match the contents of the previous version. For 
+information on undoing a check out, see “Undoing a Check Out” on page 
+111.
+3On the Versions  tab, click Commit . The Commit Treatment Version  or Commit 
+Treatment Group Version  window appears.
+4Select the version type: Minor  or Major . Version numbers follow the format 
+major .minor . If you select Major , the number to the left of the period is 
+incremented, and the minor number is reset to zero. If you select Minor , the 
+number to the right of the period is incremented.
+5(Optional) In the Version tags  field, enter any version tags that you want to 
+associate with the new version. Press Enter after each tag. Tags are limited to 
+100 characters each and cannot contain the following characters: $ ' " # & ? ( ) \ /
+6(Optional) Enter information about the new version in the Notes  field.
+7Click Commit . SAS Intelligent Decisioning  creates a new version with your 
+changes, and deletes the working copy from your My Folder
+ folder. 
+Determine Who Has a Version Checked Out
+If the current version of an object is checked out, the IDs of the users that checked it 
+out and the timestamps when each user checked it out appear in the Checked out 
+by field on the Properties  tab for the original object. You can also display this 
+information by clicking  beside the version number on the Versions  tab.110 Chapter 3 / Working with Treatments and Treatment Groups

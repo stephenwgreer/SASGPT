@@ -1,0 +1,33 @@
+Enterprise Decision Management 
+Systems
+Enterprise decision management systems can transform how businesses make 
+decisions. They enable businesses to use the information they already have to 
+make better decisions—decisions that are based on predictive analytics rather than 
+on past history. Decision management systems automate the process of making 
+decisions, particularly day-to-day operational decisions. They improve the speed, 
+efficiency, and accuracy of routine business processes, in part by reducing the need 
+for human intervention. Automating decisions with SAS Intelligent Decisioning 
+provides a streamlined mechanism for controlling and monitoring the rules and 
+processes used by your organization. By automating decisions, organizations in 
+every industry can improve interactions with customers, partners, suppliers, and 
+employees. In addition, organizations that are highly regulated, such as financial 
+services, health care, and insurance, can more easily achieve compliance as a 
+result of repeatable, traceable decisions. Explicitly defining a decision makes your 
+organization’s decision-making process transparent, and enables you to monitor the 
+process for accuracy.
+SAS Intelligent Decisioning  helps organizations leverage data, author and manage 
+business rules, and integrate analytical models with other business logic. It enables 
+them to create and optimize efficient business decisions within a single interface 
+that gives users a consistent experience.
+About Business Rules
+Business rules capture the logic of business decisions and are a core component of 
+decision management systems. Business rules enable you to codify the decision-
+making process used by your organization. Business rules make the decision-
+making process transparent and adaptable, enabling organizations to respond 
+quickly to new information about customers and markets. They enable organizations 
+to identify and deal with fraud, avoid unnecessary risk, and find opportunities hidden 
+in customer data.
+SAS Intelligent Decisioning  Features
+You can use SAS Intelligent Decisioning  to create a database of business rules, 
+combine those rules together into decisions, and publish the decisions for use by 
+other applications. SAS Intelligent Decisioning  provides the following capabilities:2Chapter 1 / Introduction to SAS Intelligent Decisioning

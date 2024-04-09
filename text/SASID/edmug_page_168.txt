@@ -1,0 +1,35 @@
+double "loan"IN_OUT varchar "reason"
+IMPORTANT Before you validate a DS2 code file or custom context file 
+that uses a data grid package, verify that the declaration statements for 
+the package specify datagrid
+ instead of dcm_datagrid
+. For example:in_out package datagrid variable;dcl package datagrid variable;
+Note: Packages are input-output data types.
+nYour package must define an EXECUTE method. 
+nThe variables that you use as parameters for the EXECUTE method in your 
+code must be mapped to input variables in your decision.
+nDo not enter comments within the signature of the method parameters in your 
+code file. The comment characters cause the signature to be parsed incorrectly.
+nTo query a database, use a custom data query file instead of using a DS2 
+SQLSTMT package in a DS2 code file. For information, see “Data Query Files” 
+on page 159.
+nCustom DS2 code files are executed by using the runDS2 CAS action. This 
+action supports varying-length binary variables, but it does not support binary 
+variables.
+For information about developing DS2 packages, processing data grids, and the 
+SAS APIs, see the following:
+nSAS DS2 Programmer’s Guide
+nSAS DS2 Language Reference
+nSAS Intelligent Decisioning: Using Data Grids
+n“Reserved Words in the DS2 Language” in SAS DS2 Programmer’s Guide
+nhttp://developer.sas.com
+n“DS2 Programming for SAS Micro Analytic Service” in SAS Micro Analytic 
+Service: Programming and Administration Guide
+n“Best Practices for DS2 Programming in SAS Intelligent Decisioning” in SAS 
+Micro Analytic Service: Programming and Administration Guide
+Example: Custom DS2 Code File
+The following DS2 package sends a request to the external API http://
+helloacm.com/api/fortune . This API returns a character string that contains escaped 
+characters. The GETFORTUNE method uses the DS2 function TRANSTRN to 
+modify these characters.package "${PACKAGE_NAME}" /inline;   dcl package http fortune_pkg();  
+154 Chapter 6 / Using Custom Code Files

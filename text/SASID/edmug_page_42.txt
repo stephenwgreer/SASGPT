@@ -1,0 +1,22 @@
+Note: If the copied rule contains functions or complex expressions, the variables 
+might not be added to the rule set. Add any variables used in the expression to 
+the rule set, and validate the rule set. 
+Controlling Which Conditions Are Evaluated
+By default, rules are assigned the IF rule operator, which means that the rule’s 
+conditions are evaluated regardless of the results of previous rules. In assignment 
+rule sets, you can control whether condition expressions are evaluated by using the 
+RETURN action, the ELSE operator, or the OR operator.
+The RETURN action stops the execution of any remaining rules in a rule set. If you 
+are executing a single rule set, execution ends. If you are executing a decision, 
+control moves to the next object in the decision. For example, the rule in the 
+following figure stops the execution of any remaining rules in the rule set if the value 
+of the Order_Quantity variable is missing.
+If you set a clause’s operator to ELSE, then the clause’s conditions are evaluated 
+only if the previous clause’s conditions evaluated to false. For example, given the 
+rule set shown in the following figure, if Order_Quanitity is 9, the condition for the IF 
+clause evaluates to false, and the condition for the first ELSE clause evaluates to 
+true. Therefore, the action for first ELSE clause is executed, and the condition for 
+the last ELSE clause is not evaluated. The value of Offer_Percent is set to 5.
+Use the OR operator to execute the same action expression for each of the several 
+conditions. If you assign the OR operator to a rule, then you cannot enter an action 
+expression for the rule. If any of the OR conditions evaluate to true, SAS Intelligent Defining New Rules in a Rule Set 31

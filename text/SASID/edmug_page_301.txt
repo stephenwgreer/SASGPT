@@ -1,0 +1,34 @@
+for that decision in that destination. For more information, see “Validate a 
+Published Decision” on page 303.
+Test a Decision
+Create and Run a New Test
+Testing a decision is optional, but doing so is a best practice. Testing enables you to 
+discover any problems before the decision is published and incorporated into a 
+production system.
+IMPORTANT If you are testing a decision that uses functions that are 
+defined in a custom context file, verify that the context file is specified in the 
+Custom context  field on the Properties  before running the test.
+If you are testing a decision that uses treatment groups and both the decision 
+and the treatment group are checked out, the test uses the checked-out 
+version of the treatment group. If the treatment group is not checked out, the 
+test uses the activated version of the treatment group.
+If the decision uses a rule set that uses a lookup table and all three objects 
+(the decision, the treatment group, and the lookup table) are checked out, the 
+test uses the checked-out versions of both the rule set and the lookup table. 
+If the rule set or lookup table are not checked out, the test uses the activated 
+version of the lookup table.
+1On the Scoring  tab, click the Tests  tab. 
+2Click New Test . The New Test  window appears.
+3Enter a name for the test if you do not want to use the default name. The name 
+cannot contain forward slashes (/) or curly braces ({}).
+4(Optional) Enter a description for the test. Descriptions are limited to 1000 
+characters.
+5(Optional) Click  for the Location  field, and select the folder where you want to 
+save the test definition and results.
+TIP Selecting a location is optional, but it is highly recommended. 
+Storing test definitions and test results in a folder simplifies the tasks of 
+setting permissions and transferring the test files.
+6Click  for the Input table  field, select the input table for the test, and click OK. 
+7Verify or change the variable mappings. To run a full test, map all of the input 
+variables to columns in the input table that you selected for the test. To run a 
+partial test, you can map only the input variables that are needed for the test.Testing Decisions 285

@@ -1,0 +1,37 @@
+Options for the import9x Command
+TIP For information about using the at sign (@) to specify filenames, see 
+“Details” in SAS Viya: Content Migration from SAS Viya 4 .
+--content @ filename
+specifies the file that contains the objects that you want to import.Defaultcontent.json
+--force <true | false>
+specifies whether you want existing objects to be replaced if they already exist in 
+the target SAS Viya environment. If you specify true
+, then existing objects with 
+the same name are deleted and re-created from the imported content. If you 
+specify false
+, error messages are generated for the duplicate objects.
+The CLI searches the SAS Viya environment for existing objects before it 
+imports new objects. The search criteria that the CLI uses to determine whether 
+an object already exists depends on the information in the mapping file. If the 
+target information for an object is available, the CLI uses it as the search criteria. 
+If the target information is not available, the CLI uses the source information. For 
+example, if you are importing a rule set, the CLI uses the target.id
+ and target.revisionId
+ as the search criteria. If that information is not available, it 
+uses the source.name
+ and source.folderpath
+.
+Specifying --force
+ without specify true
+ or false
+ is equivalent to specifying --force true
+.Alias-fDefaultfalseSee“Modifying the Mapping File” on page 12
+--mappings @ filename
+specifies the name of the mapping file.Defaultmappings.jsonSee“Modifying the Mapping File” on page 12
+--report @ filename
+specifies the file to which you want the CLI to write messages that are generated 
+while the content is imported.Defaultimport_report.json
+--target-folder-path / pathname
+Specifies the folder in the SAS Viya environment that you want to import the 
+decisions into.Default/PublicRestrictionThis option is valid only when the object type in the import9x 
+subcommand is decisions .dcmtransfer Plug-In 9

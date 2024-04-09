@@ -1,0 +1,31 @@
+dClick Add. SAS Intelligent Decisioning  adds the new variable to the table of 
+variables at the bottom of the window. By default, variables are added to the 
+table as both input and output variables.
+eVerify that the Input  and Output  check boxes are selected correctly for each 
+variable.
+nClear the Input  check box for any variable that you do not want to be 
+mapped to a column in an input table or for which you do not want to 
+specify a value.
+nClear the Output  check box for any variable that you want to exclude 
+from the output data. 
+nClear both the Input  and Output  check boxes to create a temporary 
+variable.
+4(Optional) Modify the variable properties in the table of variables.
+5Click OK to add the variables and close the Add Variables  window.
+Duplicate a Variable
+1On the Variables  tab, click the Decision Variables  subtab.
+2Select the variable that you want to duplicate, click , and select Duplicate . The 
+Duplicate Variable  window appears.
+3Enter a new name for the duplicate variable.
+4(Optional) Enter a description for the variable.
+5Click Duplicate .
+Importing and Exporting Variables
+Import Variables
+You can import variables from either comma-delimited (CSV) files or from 
+JavaScript Object Notation (JSON) files. These files must conform to formats 
+described in Appendix 2, “Import File Formats,” on page 325. These formats are the 
+same formats that are created when you export variables.
+1Open the decision into which you want to import variables.
+2On the Variables  tab, click Import , and select either Comma-delimited (*.csv) 
+or JSON (*.json) . The Import File  window appears.
+3Click Browse  and select the file from which you want to import variables. Managing the Variables in a Decision 227

@@ -1,0 +1,38 @@
+DefinitionPropertyValid ValuesDescriptionusernameSpecifies the user ID that will 
+be used to log in to the 
+database.passwordSpecifies the password for the 
+user ID specified by the 
+username property.urljdbc:postgresql:// host:port/
+database
+jdbc:oracle: driver :@server
+:portOracle-service-nameSpecifies the JDBC URI to the 
+database. For example:
+jdbc:postgresql://
+mydbhost.com:5432/
+SharedServices?
+ApplicationName=subjectCont
+acts&currentSchema=subjectc
+ontacts
+jdbc:postgresql://
+mydbhost.com:5432/
+SharedServices?
+ApplicationName=treatmentDe
+finitions&currentSchema=treat
+mentdefinitions
+jdbc:oracle:oci:@edmt2.myco
+mp.com:1521/EDMT2
+Properties for Multi-tenancy Environments
+After you onboard a tenant, you can set tenant-specific values for the following configuration options 
+for the Decisions service:
+nsas.decisions.checkout
+nsas.decisions.codefiles
+nsas.decisions.masnode
+nsas.decisions.nodetraces
+nsas.decisions.workflow
+nsas.subjectcontacts.datagrid
+To set these options, sign in to the tenant SAS Environment Manager as an administrator for the 
+tenant environment, and follow the instructions in “View or Set Configuration Properties for SAS 
+Intelligent Decisioning Services” on page 3.
+Note: For the provider tenant, these configuration options are populated in the configuration menu. 
+For all other tenants, these options must be added as a new configuration. For more information 
+about multi-tenancy in SAS Viya, see “Multi-tenancy: Overview” in SAS Viya: Multi-tenancy .23

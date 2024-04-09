@@ -1,0 +1,26 @@
+Beginning with SAS Intelligent Decisioning 5.5, the schema for the subject contacts database is 
+converted to a schema that enables you to partition the database when SAS Intelligent Decisioning is 
+installed. The new schema adds a creation_dttm column to the following tables:
+ndcm_consideration_treatment
+ndcm_custom_treatment
+ndcm_object_values
+ndcm_object_variables
+ndcm_subject_context
+When you restart the subject contacts service during deployment, a placeholder value is assigned to 
+the creation_dttm cell in all of the existing rows in these tables. After the service has restarted, you 
+must set the values in these cells to match the values in the creation_dttm column in either the 
+dcm_contact_communication table or the dcm_consideration_treatment table.
+IMPORTANT Set the creation_dttm values in the database tables only after you migrate data 
+from SAS Intelligent Decisioning 5.4 and earlier to the latest release of SAS Intelligent 
+Decisioning. You do not need to repeat this task each time the subject contacts service is 
+restarted.
+As a Kubernetes cluster administrator, complete the following steps:
+1On the primary node of the Kubernetes cluster, export the KUBECONFIG environment variable, 
+and set the value of the Kubernetes namespace (such as d9997
+):export KUBECONFIG=/etc/kubernetes/admin.confnamespace=k8s_namespace_value
+2Obtain the password to the PostgresSQL instance that was installed with SAS Viya:kubectl -n $namespace exec -it $(kubectl get pods -n $namespace |     grep sas-consul-server | cut -f 1 -d ' ') -c sas-consul-server      -- /opt/sas/viya/home/bin/sas-bootstrap-config kv read --recurse config  |     grep '^config/application/sas-crunchy-data-postgres/password'  | cut -f 2 -d '='
+3Export the PostgreSQL password to the PGPASSWORD environment variable. Specify the 
+password that you obtained in Step 2  in the following command: export PGPASSWORD='password'
+4Use psql to connect to the database:kubectl -n $namespace exec -it $(kubectl get pods -n $namespace |     grep sas-crunchy-data-postgres |grep Running|grep -v operator | grep -v stanza |     grep -v backrest | head  -1| cut -d " " -f 1) -c database     -- psql -U dbmsowner SharedServices
+5Execute the following SQL statements:update subjectcontacts.dcm_consideration_treatment set creation_dttm = contact.creation_dttm from subjectcontacts.dcm_contact_communication contact where dcm_consideration_treatment.contact_id=contact.contact_id;update subjectcontacts.dcm_custom_treatment set creation_dttm = consider.creation_dttm from subjectcontacts.dcm_consideration_treatment consider where dcm_custom_treatment.consider_id=consider.consider_id;
+27

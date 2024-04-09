@@ -1,0 +1,6 @@
+Restore or Permanently Delete Hidden 
+Functions or Hidden Categories
+1In the Custom functions  category view, click , and select Manage hidden 
+functions . The Manage Hidden Functions  window appears.
+2Select the function or category that you want to restore or delete.
+3Click  to permanently delete the selected item, or click  to unhide (restore) it.Restore or Permanently Delete Hidden Functions or Hidden Categories 211

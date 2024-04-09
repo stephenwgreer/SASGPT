@@ -1,0 +1,27 @@
+bEnter a name for the group.
+cEnter the group ID as it appears in Table 7 on page 58.
+d(Optional) Enter a description for the group.
+eClick Save .
+fAdd the appropriate users to the new group. For instructions, see “Add or Remove Custom 
+Group Members” in SAS Environment Manager: User’s Guide .Table 7 SAS Intelligent Decisioning Asset Approval Workflow Groups Group IDPermissionsSIDWFAuthor
+Change status values:
+nfrom Developing to Review-ready
+nfrom Review-ready to DevelopingSIDWFReviewer
+Change status values:
+nfrom Review-ready to Approved
+nfrom Review-ready to DevelopingSIDWFDeployer
+Change status values:
+nfrom Approved to Deployment-ready
+nfrom Deployment-ready to Deployed
+nfrom Deployment-ready to Approved
+nfrom Deployment-ready to Developing
+nfrom Approved to DevelopingSIDWFAdmin
+Make all status changes
+TIP Members of the groups listed in “Granting Access to the History of 
+Workflow Status Changes” on page 58 also have permission to make all 
+status changes and to view workflow status change histories.
+Granting Access to the History of Workflow Status 
+Changes
+Groups That Can Access Workflow Status Changes
+To display the history of workflow status changes for decisions, users must be a member of one of the 
+following groups:58

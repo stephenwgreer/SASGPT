@@ -1,0 +1,15 @@
+and VALUE. The %DCM_DATAGRID_JSON_TO_TABLE macro creates a table 
+from the serialized data grid string.cas mycas;caslib _all_ assign;filename DG_JSON temp;data null;    file DG_JSON;    put '[{"metadata":[{"ASSETTYPE":"string"},          {"ASSETVALUE":"double"}]},          {"data":[["CASH",10815],["Investment Account",2162740],          ["Bank Account",16550],["Real Estate",745504]]}]';run;%DCM_DATAGRID_JSON_TO_TABLE(   JSONFILE=DG_JSON,   OUTPUTTABLE=PUBLIC.datagrid_out,   PROMOTE=NO);
+The DATAGRID_OUT table appears in SAS Studio as shown in the following figure:
+%DCM_JSON_TO_DATAGRID Macro
+Converts a standard JSON string to a data grid JSON string, or vice versa.
+Restriction: The maximum length of a data grid JSON string that can be processed by using this 
+macro is 1,048,576 characters.
+Syntax
+%DCM_JSON_TO_DATAGRID (
+JSONFILE= standard-JSON-file-name ,
+GRIDFILE= data-grid-file-name ,
+CONVERTTYYPE= JSONTOGRID  | GRIDTOJSON
+<RETRIEVE_NEST= YES | NO , >
+<GRIDTABLE= table-name ,>
+<PROMOTE= YES | NO >18Chapter 2 / Data Grid Macros

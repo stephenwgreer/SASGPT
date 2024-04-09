@@ -1,0 +1,30 @@
+7(Optional) Clear the Record rule-fired data  check box if you do not want to 
+record the rule-fired information for all rules in the decision up to the point at 
+which the record contacts node is included.
+Note: This rule-fired data is recorded in the subject contact history. The rule-
+fired data that is recorded when you select Record rule-fired data  when you 
+publish a rule set or decision is recorded in the ruleFiredFlags column in the 
+output table.
+8(Optional) Clear the Record path tracking  check box if you do not want to 
+record the path-tracking information for all nodes in the decision up to the point 
+at which the record contacts node is included.
+Note: This path-tracking data is recorded in the subject contact history. The 
+path-tracking data that is recorded when you select Record path tracking  when 
+you publish a decision is recorded in the pathID column in the output table.
+9(Optional) Clear the Include in contact policy  check box if you do not want this 
+contact record included in aggregate reports for the channel.
+10Click OK to save your changes. 
+Adding Branches to a Decision
+Overview of Branches
+Branches enable you to add conditional logic to a decision. Depending on the 
+branch type, a branch can have multiple outgoing paths. You can add four types of 
+branches to a decision:
+n“About Yes/No Branches” on page 236
+n“About Equals Branches” on page 238
+n“About Range Branches” on page 239
+n“About Like Branches” on page 240
+The conditions for the branch paths are evaluated in the order in which you specify 
+them. The first path whose condition evaluates to True is taken by the executing 
+decision. The conditions for the remaining branches are not evaluated.
+You can change the labels used for branch paths in Equals, Range, and Like 
+branches. For more information, see “Customize Branch Path Labels” on page 243.Adding Objects to a Decision 235

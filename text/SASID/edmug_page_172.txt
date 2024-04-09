@@ -1,0 +1,40 @@
+nYou must specify the data types for the input and output variables for the 
+EXECUTE function in your Python code on the Variables  tab of the decision. 
+The DS2 package code uses this information to resolve the data types for the 
+variables. These variables are specified in the signature of the DS2 EXECUTE 
+method. If you add a Python code file to a decision and you have not specified 
+the variables on the Variables  tab, SAS Intelligent Decisioning  might display the 
+following message: Some objects in the decision define variables for which no corresponding decision variables have been created.
+ For 
+more information, see “About Decision Variables and Mapping” on page 247.
+nThe Python EXECUTE function must return standard Python data types. For 
+more information, see “Return Values ” in SAS Micro Analytic Service: 
+Programming and Administration Guide .
+nYou can import modules and define other functions and classes that are used by 
+the Python EXECUTE function.
+nTest your Python code by using a Python interpreter that is outside of SAS 
+Intelligent Decisioning  before you incorporate your code into a decision. 
+IMPORTANT After you test your code outside of SAS Intelligent 
+Decisioning , incorporate it into a decision and test the decision. In order to 
+run a test for a decision that contains a Python code file, you or an 
+administrator must configure support for Python. See “Configuring Support 
+for Python Code Files” in SAS Intelligent Decisioning: Administrator’s Guide 
+for more information.
+For more information about using Python with DS2, see the following:
+n“Python Support in SAS Micro Analytic Service” in SAS Micro Analytic Service: 
+Programming and Administration Guide
+n“Executing Python Modules in DS2 Modules” in SAS Micro Analytic Service: 
+Programming and Administration Guide
+TIP If you encounter errors that are unrelated to syntax or logic, check with 
+your administrator to verify that Python is configured correctly. For additional 
+information, see “Configuring Support for Python Code Files” in SAS 
+Intelligent Decisioning: Administrator’s Guide .
+Required Dependencies For Python Files in SAS 
+Container Runtime Destinations
+If you plan to publish a decision that includes a Python code file to a SAS Container 
+Runtime destination, and if your Python file uses packages that are not built-in 
+packages, list these packages in the DependentPackages:
+ docstring. List all of the 
+package names on a single line. Use the official package names. Separate the 
+package names with commas. For example:'''DependentPackages: sklearn, requests, dateutil'''
+158 Chapter 6 / Using Custom Code Files

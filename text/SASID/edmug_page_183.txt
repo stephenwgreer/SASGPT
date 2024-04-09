@@ -1,0 +1,49 @@
+PropertyDescriptionVariable names can be up to 32 characters long. They must be unique 
+within a code file.
+Note: SAS Intelligent Decisioning  does not support double-byte 
+character set (DBCS) characters in variable names.
+Note: Do not use any of these operators or keywords as variable 
+names: AND, OR, IN, NOT, LIKE, TRUE, or FALSE. Do not use _N_ 
+or any DS2 reserved word as a variable name. See “Reserved Words 
+in the DS2 Language” in SAS DS2 Programmer’s Guide  for 
+information about reserved words in the DS2 language.Data typeCode files in SAS Intelligent Decisioning  support the following data 
+types: Boolean, character, data grid, date, datetime, decimal, and 
+integer.
+For Boolean variables, you can select True
+ or False
+ for the initial 
+value. However, SAS Intelligent Decisioning  represents Boolean 
+values by using the numbers 1 and 0 in the code that it generates. 
+When SAS Intelligent Decisioning  is evaluating Boolean expressions, 
+any non-zero number is considered True. When you are entering 
+expressions, specify 1
+ for True and 0
+ for False.
+Note: For content that will be published to a SAS Micro Analytic 
+Service destination, the values of date and datetime input variables 
+must be numeric. They cannot be formatted values such as 18jul2019
+. Also, integer variables are converted to decimal variables 
+when the content is published.Input  and 
+OutputA variable in a DS2 code file can be an input variable, an output 
+variable, or both. A variable in a Python code file can be an input 
+variable or an output variable, but not both. See “Input Variables and 
+Output Variables” on page 170 for more information.LengthThe length for Boolean and numeric variable types is set 
+automatically.
+For output-only data grid variables, the length is set to the value that 
+you specify.
+For output-only character variables in decisions that are published to 
+container destinations or to SAS Micro Analytic Service  destinations, 
+the length that you specify is ignored unless the 
+sas.decisions.variable.length.honorOutputLengthInMAS configuration 
+option is turned on. For more information,see 
+“sas.decisions.variable.length” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+For character variables and data grid variables that are input-only or 
+input-output variables, the variableLengthOverridden configuration 
+property determines how the length is set. By default, this property is 
+set to Off, and the length is set to the length in the input data. When 
+the variableLengthOverridden property is set to On, the length of 
+input-only and input-output character variables and data grid variables 
+is set to the value that you specify. For more information, see 
+“sas.decisions.variableLengthOverridden” in SAS Intelligent 
+Decisioning: Administrator’s Guide .Managing the Variables in a DS2 or Python Code File 169

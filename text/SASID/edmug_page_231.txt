@@ -1,0 +1,29 @@
+Where Can I Publish Decisions?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 279
+Publishing Decisions That Include Analytic Store Models  . . . . . . . . . . . . . . . . . . . . . . 281
+Publish Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 281
+Testing Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 284
+Ways to Test a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 284
+Test a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 285
+Test a Scenario  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 289
+Run a Rule-Fired Analysis  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 298
+Run a Path Tracking Analysis  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 301
+Content That Is Used by Tests and Scenarios for Decisions  . . . . . . . . . . . . . . . . . . . . 303
+Validate a Published Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 303
+Working with Test and Validation Test Output Data  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 305
+Status Icons for Tests  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 306
+Manage Comments for Decision Nodes and Tests  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 306
+Executing Published Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 307
+Executing Content Published to SAS Micro Analytic Service Destinations  . . . . . . . 307
+Executing Content That Has Been Published to SAS Cloud 
+Analytic Services Destinations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 308
+Content Executed by Published Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 309
+View All Published Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 310
+About Decisions
+A decision enables you to combine rule sets, analytical models, treatment groups, 
+code files, record contacts nodes, and conditional logic into a single process. You 
+can also add a decision to another decision.
+TIP Your site might have additional custom node types that you can add to 
+a decision. You can create custom node types by using the Decision 
+Management REST API. For more information, see https://
+developer.sas.com/apis/rest/DecisionManagement/#decisions-
+decisionnodetypes .About Decisions 215

@@ -1,0 +1,31 @@
+9Click  to save the decision.
+10(Optional) If the SID Asset Approval workflow is enabled at your site, click Move 
+to status , and change the decision’s status. For more information, see “Using 
+SAS Workflow with SAS Intelligent Decisioning” on page 216 and “Change the 
+Workflow Status of a Decision” on page 254.
+TIP If the workflow is not enabled at your site, Move to status  does not 
+appear in the SAS Intelligent Decisioning  interface.
+Views for Editing a Decision
+The Decision Flow Tab versus the Decision Tab
+There are two tabs on which you can view and edit decisions.
+nOn the Decision Flow  tab, you can edit a decision by using a graphical editor. 
+To add objects to a decision, right-click on a node to display a menu or click  or 
+. To choose objects that have already been defined by navigating to their 
+location, click . To add branches, record contacts nodes, or create new objects 
+by selecting the object type, click .
+nOn the Decision  tab, you can edit the decision by using a tabular view similar to 
+the rule set editor. 
+To add objects to a decision, click Add if nothing is selected, or select Edit ð 
+Add if a decision node is already selected. You can add an existing object or 
+click the New button in the file selection window for custom code file types to 
+create new objects.
+Save your work before you switch tabs. Click  to refresh the view in a tab.
+Controlling the Tab Display
+On the Decision Flow  tab:
+nClick  to open the properties panel for the selected object. Click  to hide the 
+properties panel.
+nClick  to open the diagram overview. The diagram overview is a scaled-down 
+version of the entire diagram. You can pan across the diagram and position the 
+view over different sections of the diagram. The section that is currently visible 
+on the screen is outlined. The overview is useful when a decision diagram is too 
+large to display all of the nodes on one screen.Views for Editing a Decision 221

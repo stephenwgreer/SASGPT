@@ -1,0 +1,32 @@
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+variableOrValue
+specifies the value to compare to the value of column . You can specify a 
+number, a character string enclosed in single quotation marks, or the name of a 
+variable or of an expression. The value that you specify must be or must 
+evaluate to the same data type as column .
+DATAGRID_GETLASTMISSINGINDEX Function
+Returns the index of the last row that contains a missing value in the specified column.
+Category: Information
+Returned data 
+type:INTEGER
+Note: This function returns a zero if the specified column does not contain any missing values.
+Syntax
+DATAGRID_GETLASTMISSINGINDEX  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_GETLONG Function
+Returns the value of the cell in the specified row and column as a long integer.
+Category: Retrieve Values
+Returned data 
+type:LONG62Chapter 3 / Data Grid Functions

@@ -1,0 +1,20 @@
+Examples
+The following examples use the default profile. For information about defining and 
+specifying a profile, see “Creating and Using Profiles” on page 2.
+Example 1
+The following command displays detailed information about the unused resources:sas-viya --output fulljson scoreexecution list-hanging-resources
+Example 2
+The following command displays information about unused resources in a table 
+format:sas-viya --output text scoreexecution list-hanging-resources
+Example 3
+The following command writes the URIs for unused resources to a file named 
+uris.txt:sas-viya scoreexecution list-hanging-resources --file uris.txt
+Example 4
+The following command deletes the unused resources that are listed in the file 
+uris.txt:sas-viya scoreexecution remove-hanging-resources --file uris.txt
+sid-functions Plug-In
+Creates and manages custom functions and function categories in SAS Intelligent Decisioning.
+Requirement: You must create a profile and sign in before you use the CLI. See “Creating and Using 
+Profiles” on page 2 for more information.
+See: “Global Options” on page 4
+“Global Commands” on page 3sid-functions Plug-In 23

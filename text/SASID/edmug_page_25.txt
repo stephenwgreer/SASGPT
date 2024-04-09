@@ -1,0 +1,24 @@
+common rule sets
+enable you to share the same rules among different assignment rule sets without 
+redefining the rules in each assignment rule set. Common rule sets can contain 
+assignment statements, IF-THEN statements, and IF-THEN-ELSE statements 
+just like an assignment rule set can. You add common rule sets to assignment 
+rule sets. When the assignment rule set executes, the rules in the common rule 
+set execute as if they were defined directly in the assignment rule set. Any 
+change to a common rule set affects all assignment rule sets that include the 
+common rule set.
+About Condition and Action Expressions
+An assignment rule corresponds to this form:IF condition_expressions THEN action_expressions
+For example, suppose you have the following rule:IF customer_debt > customer_assets THEN approval_status = 'Decline'
+In this case, customer_debt > customer_assets
+ is a condition expression, and approval_status = "Decline"
+ is an action expression.
+For example, the following figure shows the rule above as it appears in the rule set 
+editor:
+Note: Filtering rules do not contain action expressions. 
+A single assignment rule can contain multiple condition expressions and action 
+expressions. Multiple condition expressions within the same rule are joined together 
+with the AND operand. For example, suppose you define the following rule in SAS 
+Intelligent Decisioning :
+SAS Intelligent Decisioning  generates the following rule:IF ((customer_debts > customer_assets) AND (credit_score < 750) AND (isHomeowner = false)) THEN approval_status = 'Decline'
+14Chapter 2 / Working with Rule Sets

@@ -1,0 +1,38 @@
+3On the Choose Strategy: Step 1  page of the wizard, enter up to two tags that 
+are associated with object versions that you want to use to create the new 
+decision version. Press Enter after each tag. 
+4(Optional) If you want to select specific versions of each object to use in the new 
+decision version, select Let me choose the version of each object . 
+5(Optional) If you do not want to automatically map the object’s variable to the 
+decision’s variables, deselect Automatically map the object’s variable to the 
+decision’s variables .
+If you select this option, new object variables are mapped to decision variables 
+only if decision variables of the same name and type already exist. If a decision 
+variable does not already exist, you must manually map the object variable to a 
+decision variable. For additional information, see “Mapping Variables within a 
+Decision” on page 247.
+6Click Next .
+The node objects that have versions that are tagged with a tag that you specified 
+are listed on the Review and Confirm: Step 2  page of the wizard.
+Note: Common rule sets are not listed in the wizard. To create a new version of 
+a common rule set, open the rule set and select New Version  on the Versions 
+tab.
+7(Optional) Select any node that you want to remove from the update process. 
+Click , and then confirm the deletion. For any node that you remove from the 
+update process, the existing node is used in the new decision version.
+TIP You can filter the list of nodes by using the Search  field or by 
+clicking  to filter by more specific criteria in the Filter Nodes  window.
+8(Optional) If you selected Let me choose the version of each object  in Step 4 
+and any node object has multiple versions that are tagged with the same tag, 
+select the version of those objects that you want to use in the new decision 
+version. To use the latest version of all of the objects, click Use latest version .
+9Click Next .
+10On the Create Version: Step 3  page of the wizard, do the following: 
+aSelect the version type: Minor  or Major . Version numbers follow the format 
+major .minor . If you select Major , the number to the left of the period 
+increments. If you select Minor , the number to the right of the period 
+increments.
+b(Optional) Enter any version tags and notes for the new version of the 
+decision.
+11Click Create .
+The new version of the decision is listed on the Versions  tab for the decision.Managing Versions of Decisions 265

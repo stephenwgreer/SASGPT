@@ -1,0 +1,46 @@
+While you have a version checked out, the Decisions  category view shows two 
+decisions with the same name, but the folders listed in the Location  column differ 
+for each decision. The original version is in the location specified by the 
+sas.decisions.checkout.checkoutEnabledFolderPaths configuration option, and the 
+checked-out copy is in your My Folder
+ folder.
+TIP If an object that you have checked out does not appear in the category 
+view, click  to refresh the category view.
+Note: When a decision that uses a treatment group is deployed to a production 
+environment, the decision always uses the active version of a treatment group. 
+When you edit a decision that uses a treatment group that you have checked out, 
+the properties panel for the treatment group shows the location of the treatment 
+group in the original folder. The panel does not list the location of the treatment 
+group that is checked out because that copy is not the active version.
+A Commit  button appears at the top of the Versions  tab for the checked-out 
+version. When you are finished editing the checked-out version, you must commit 
+your changes in order for other users to be able to see them. When you commit 
+your changes, SAS Intelligent Decisioning  creates a new version with your changes. 
+If you check out objects that are used in the decision and modify the checked-out 
+decision to use the checked-out objects, SAS Intelligent Decisioning  also commits 
+the checked-out objects when you commit the decision. If the decision uses a 
+treatment group that is checked out, and if the treatments are also checked out, 
+then the treatment group and the treatments are all committed when you commit the 
+decision.
+If the parent object is deleted before you commit your changes, you will not be able 
+to commit your changes.
+You cannot publish the checked-out version that is in My Folder
+. To publish a 
+version with your changes, you must commit your changes, and publish the 
+committed version.
+Checking Out and Committing Included Objects 
+Together with A Decision
+When you check out a decision version, SAS Intelligent Decisioning  displays the list 
+of object versions that are used in the decision in the Choose Objects to Check Out 
+window. You can select any object that you want to check out at the same time. For 
+any object that you choose to check out, SAS Intelligent Decisioning  writes a 
+working copy of the version into your My Folder
+ folder, and updates the checked-
+out decision so that it uses the checked-out versions of each object that you select. 
+When you commit the decision, SAS Intelligent Decisioning  also commits the 
+objects. If the decision includes a treatment group that is checked out, and if the 
+treatment group includes treatments that are checked out, then both the treatment 
+group and its checked-out treatments are committed when you commit the decision. 
+However, SAS Intelligent Decisioning  does not automatically activate the newly 
+committed version of the treatment group. See “Activate a Treatment Group” on 
+page 94 for instructions for activating a treatment group.Checking Out and Committing Decision Versions 273

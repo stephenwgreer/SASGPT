@@ -1,0 +1,34 @@
+Managing the Variables in a Custom 
+Function File
+The Properties of a VariablePropertyDescriptionNameVariable names must start with a letter or an underscore (_), and they 
+can contain only alphanumeric characters and the underscore. 
+Variable names can be up to 32 characters long. They must be unique 
+within a custom function.
+Note: SAS Intelligent Decisioning  does not support double-byte 
+character set (DBCS) characters in variable names.
+Note: Do not use any of these operators or keywords as variable 
+names: AND, OR, IN, NOT, LIKE, TRUE, or FALSE. Do not use _N_ 
+or any DS2 reserved word as a variable name. See “Reserved Words 
+in the DS2 Language” in SAS DS2 Programmer’s Guide  for 
+information about reserved words in the DS2 language.Data typeCustom functions support data grid packages and the DS2 data types 
+that are listed in “Data Types for SAS Data Sets” in SAS DS2 
+Language Reference .
+For Boolean variables, you can select True
+ or False
+ for the initial 
+value. However, SAS Intelligent Decisioning  represents Boolean 
+values by using the numbers 1 and 0 in the code that it generates. 
+When SAS Intelligent Decisioning  is evaluating Boolean expressions, 
+any non-zero number is considered True. When you are entering 
+expressions, specify 1
+ for True and 0
+ for False.
+Note: For content that will be published to a SAS Micro Analytic 
+Service destination, the values of date and datetime input variables 
+must be numeric. They cannot be formatted values such as 18jul2019
+. Also, integer variables are converted to decimal variables 
+when the content is published.Input  and 
+OutputA variable in a custom function signature can be an input variable, an 
+output variable, or both.LengthThe maximum length for character variables (outside of a data grid) 
+and data grid variables is 10485760 characters. The maximum length 
+for character variables within a data grid is 32767 characters.202 Chapter 7 / Using Custom Functions

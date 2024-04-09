@@ -1,0 +1,38 @@
+3Enter a name for the test if you do not want to use the default name. The name 
+cannot contain forward slashes (/) or curly braces ({}).
+4(Optional) Click  for the Test definition location  field, and select the folder 
+where you want to save the test definition.
+TIP Selecting a test definition location is optional, but it is highly 
+recommended. Storing test definitions in a folder simplifies the tasks of 
+setting permissions and transferring the test files.
+5Click  for the Output table location  field, and select the folder where you want 
+to save the test results.
+6(Optional) Select the version of the code file that you want to test.
+7(Optional) Enter a description for the test. Descriptions are limited to 1000 
+characters.
+8Enter the values that you want to use for each input variable. You do not have to 
+enter values for every input variable. At run time, SAS Intelligent Decisioning 
+uses missing values to input variables for which you do not specify a value. 
+Note: Values longer than 32767 characters for character variables that are 
+either input-only or input-output will be truncated. You cannot enter input values 
+for variables of type binary or of type varying-length binary.
+To enter values for the columns in a data grid variable:
+aClick in the Value  field, and then click . The Edit Data Grid  window 
+appears.
+bClick  to add the row, and then enter the values for each column.
+Repeat this step for each row of values that you want to add to the data grid.
+TIP By default, data grid column names appear across the top of the 
+data grid view, and row numbers appear down the left side. You can 
+click  to change the view of the data grid so that row numbers 
+appear across the top and data grid column names appear down the 
+left side.
+cClick OK to save the data grid values and close the Edit Data Grid  window.
+9(Optional) For each output variable, select the Include  check box and enter the 
+expected output value. The Include  check box controls whether a variable’s 
+expected value is used to determine the status of a scenario test. If you select 
+Include  for a variable and the test does not return the expected value, the test 
+status is set to Completed with warnings ( ). If you do not select the check box, 
+the application ignores the expected value of that variable when it determines 
+the status of the test.
+To enter expected values for the columns in a data grid variable, click in the 
+Expected Output  field, and follow the instructions in Step 8 .Testing Code Files 191

@@ -1,0 +1,47 @@
+responseType
+a summary value, category name, or other description for the response that 
+is specified in the value of the responseValue property. For example, you 
+could assign the category of Positive
+, Negative
+, or Neutral
+ to the subject’s 
+response. This value can be used as a target value in modeling.
+respondedTimeStamp
+a timestamp that indicates when the subject responded to the treatment. 
+Enter the timestamp in the following format:yyyy-mm-ddThh:mm:ss.sssZ
+Include the Coordinated Universal Time designator Z
+ (for example, 2019-11-14T18:47:40.719Z
+).
+For more information about timestamps, see Date and Time Formats .
+5Use the tracking code to define the URL for retrieving the subject contact record, 
+and define the accept type for the request.
+6Get the subject contact record by submitting a GET request 
+to /subjectContacts/contacts?filter=eq(responseTrackingCode,'trackingCode')
+.
+7Convert the response body to a JSON object, and extract the object ID of the 
+subject contact record.
+8Use the object ID to define the URL for retrieving the subject contact record, and 
+define the accept type for the request.
+9Get the subject contact record by submitting a GET request 
+to /subjectContacts/contacts/object-ID
+. 
+10Retrieve the ETag value from the response header. For information about ETag 
+values, see “Updating Objects with the put() Function” on page 5.
+11Convert the response body to a JSON object, and use the respBodyObjJSON 
+object’s update method to add the record-level updates.
+12Create an updated treatment list. For each treatment listed in the subject contact 
+record that was returned in Step 9 , complete these steps:
+aTest whether the treatment ID matches the ID of the treatment to update, and 
+if so, append the treatment-level updates to the treatment.
+bAppend the treatment to the updated treatment list.
+13Create a new Python dictionary with the key treatmentsForConsideration
+ and 
+the value of the updated treatments list.
+14Use the respBodyObjJSON object’s update method to replace the treatmentsForConsideration
+ property in the subject contact record with the 
+updated treatments list. The respBodyObjJSON object now contains a complete, 
+updated subject contact history record.
+15Convert the respBodyObjJSON object to a string so that you can specify it as the 
+request body for the PUT request in Step 17 .
+16Define the content type for submitting PUT requests to update subject contact 
+records.How To 45

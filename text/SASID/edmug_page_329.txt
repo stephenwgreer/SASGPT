@@ -1,0 +1,28 @@
+Appendix 1
+Querying the Subject Contact 
+Database
+About the Subject Contact Database  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 313
+How to Query the Subject Contacts Database  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
+Using Views Defined by SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . . . . . . . . . 315
+Columns in the dcm_trt_fixed_attr_vw and dcm_trt_dynamic_attr_vw Views  . . 316
+Columns in the dcm_treatments_contacts_vw View  . . . . . . . . . . . . . . . . . . . . . . . . . . . 318
+Examples:  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 321
+Determine Whether Any Treatments Were Sent to a Subject  . . . . . . . . . . . . . . . . . . . 321
+Determine Whether a Treatment was Sent to a Subject within a 
+Specific Time Frame  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 322
+Determine Whether a Treatment with a Specific Attribute Value 
+Was Sent to a Subject  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 322
+Determine Whether a Treatment Was Presented to a Subject 
+within a Specified Time Frame  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 322
+Determine Whether a Subject Responded to a Treatment within a 
+Specified Time Frame  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 323
+Determine Whether a Subject Responded to a Treatment with a 
+Specific Attribute Value within a Specified Time Frame  . . . . . . . . . . . . . . . . . . . . . . . 323
+Determine Whether a Subject Responded to Any Treatment within 
+a Specified Time Frame  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 324
+About the Subject Contact Database
+The subject contact database contains the records written by record contacts nodes 
+that are in decisions. In real-time destinations (SAS Micro Analytic Service 
+destinations), each record contacts node writes a record to the subject contact 
+database. In all other destinations (SAS Cloud Analytic Services [CAS], Teradata, 
+and Apache Hadoop), these nodes create output variables that contain the contact 313

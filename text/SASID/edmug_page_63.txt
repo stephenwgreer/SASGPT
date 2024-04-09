@@ -1,0 +1,30 @@
+Upgrade Decisions to Use a New Version of a Rule 
+Set
+If you create a new version of a rule set that is already used in other decisions, you 
+can upgrade the decisions to use the new version.
+1On the Versions  tab for the rule set, click , and select Upgrade decisions . 
+The Upgrade Decisions  window appears. This window lists all of the decisions 
+that include the rule set.
+2In the Version to upgrade to  field, select the version of the rule set to which you 
+want to upgrade the decisions.
+3Select Automatically map variables  if you want SAS Intelligent Decisioning  to 
+automatically map new rule set variables in the decisions where the rule set is 
+used.
+For information about how SAS Intelligent Decisioning  maps variables, see 
+“About Decision Variables and Mapping” on page 247.
+4Select the check boxes for the decisions that you want to upgrade, and click 
+Upgrade Decisions .
+TIP To update all of the objects that are used in a decision, see “Update 
+Decisions to Use New Object Versions” on page 253.
+Determine Which Objects Use a Rule Set
+To list the objects that use a specific assignment or filtering rule set:
+1On the Rule sets  category page, select the check box for the rule set, click , 
+and select View used by report . The All Objects that Use the Selected Item 
+window appears. This window lists all objects that use any version of the 
+selected rule set.
+Note: Common rule sets are not listed in the Used By report.
+2(Optional) Select a specific version of the rule set. SAS Intelligent Decisioning 
+narrows the list to include only the objects that use the selected version of the 
+rule set.
+Note: The View used by report  option is also available from within an open rule 
+set.52Chapter 2 / Working with Rule Sets

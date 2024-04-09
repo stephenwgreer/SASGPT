@@ -1,0 +1,37 @@
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+filterColumn
+specifies the name of the column whose value is to be compared to 
+variableOrValue . You can specify a column name in single quotation marks or a 
+variable that evaluates to a column name.
+operator
+specifies one of the following operators shown in “Comparing Values in Data 
+Grids” on page 30. You can specify the name of a character variable that 
+evaluates to one of these operators, or you can specify the operator enclosed in 
+single quotation marks.
+variableOrValue
+specifies the value to compare to the value of filterColumn . You can specify a 
+number, a character string enclosed in single quotation marks, or the name of a 
+variable or of an expression. Trailing blanks are included in the comparison. The 
+value that you specify must be or must evaluate to the same data type as 
+filterColumn .
+Details
+The DATAGRID_FILTEREDGETINDEX function compares the value in filterColumn 
+to the specified variableOrValue  by using the comparison operator. The comparison 
+is as follows:filterColumn  operator  variableOrValue
+This function returns the row number of the first row for which the comparison 
+evaluates to true.
+Example
+The following example searches for the first row in the DebtEval data grid where the 
+value of the riskGroup column is equal to Low
+. It returns the row number of the row, 
+or if it does not find the value Low
+, it returns -1.DATAGRID_FILTEREDGET(DebtEval,'riskGroup','EQ','Low')
+DATAGRID_FILTEREDSET Function
+Sets the value in the specified row and column to the specified value if the specified comparison evaluates 
+to true.
+Category: Set Values
+Returned data 
+type:INTEGER54Chapter 3 / Data Grid Functions

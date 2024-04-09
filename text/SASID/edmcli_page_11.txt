@@ -1,0 +1,38 @@
+NoteDo not specify localhost
+. You must provide a fully qualified 
+host name.Examplehttp://mySAS94server:7980
+--user user-id
+specifies your user ID.TipIf you do not specify any options, the login subcommand prompts you 
+for the SAS 9.4 service endpoint, user ID, and password.
+logout
+logs you out of the SAS 9.4 environment.Aliasauth9x
+export9x object-type  <export-options >
+exports the specified object types from SAS 9.4. For the object type, specify one 
+of the following: decisions
+, lookups
+, ruleflows
+, or rulesets
+. If you do not 
+specify any options, the CLI prompts you for the required information.
+Note: Beginning with SAS Intelligent Decisioning 5.1, SAS Intelligent 
+Decisioning does not support rule flows. You cannot export complex rule flows. 
+However, you can export simple rule flows from previous releases of SAS 
+Intelligent Decisioning and import them as decisions into the current release. If 
+you specify ruleflows
+, the rule flows are exported as decisions. If you specify decisions
+, information about the rule flows that are referenced in the decision is 
+added to the mapping file for the decision.See“Options for the export9x Command” on page 7 “Transfer Content from a SAS 9.4 Environment to a SAS Viya 
+Environment” on page 10
+import9x object-type  <import-options >
+imports SAS Intelligent Decisioning objects into SAS Viya. For the object type, 
+specify one of the following: decisions
+, lookups
+, ruleflows
+, or rulesets
+.See“Options for the import9x Command” on page 9 “Transfer Content from a SAS 9.4 Environment to a SAS Viya 
+Environment” on page 10
+Options for the export9x Command
+TIP For information about using the at sign (@) to specify filenames, see 
+“Details” in SAS Viya: Content Migration from SAS Viya 4 .
+--content @ filename
+specifies the name of the file to which you want to write the exported content.Defaultcontent.json dcmtransfer Plug-In 7

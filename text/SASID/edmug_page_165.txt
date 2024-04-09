@@ -1,0 +1,31 @@
+Edit Variable Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175
+Edit Metadata for Data Grid Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175
+Validate SQL, DS2, or Context Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175
+Copy a Code File URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+Compare Generated Code for Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+Managing Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+Duplicate Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+Delete Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Rename a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Move Code Files to a Different Folder  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Managing Versions of Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Set the Displayed Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Create a New Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 179
+Copy the Content of a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+Delete a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 180
+Upgrade Decisions to Use a New Version of a Code File  . . . . . . . . . . . . . . . . . . . . . . . 181
+Determine Which Objects Use a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 181
+Checking Out and Committing Code File Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+About Checking Out and Committing Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+Checking Out a Code File from within a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 183
+Concurrently Checking Out and Committing Code File Versions  . . . . . . . . . . . . . . . . 184
+Check Out and Commit a Custom Code File Version  . . . . . . . . . . . . . . . . . . . . . . . . . . 184
+Determine Who Has a Version Checked Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+Opening the Original Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+Undoing a Check Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 185
+Managing Version Tags for Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+Add a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+Remove a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+Modify a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+Testing Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+Ways to Test a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187

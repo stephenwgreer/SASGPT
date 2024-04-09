@@ -1,0 +1,38 @@
+Duplicate Decisions
+Note: You cannot duplicate a decision if it is open. 
+To duplicate a single decision:
+1In the Decisions  category view, select the decision that you want to duplicate.
+2Click  and select Duplicate . The Duplicate Decision  window appears.
+3(Optional) Enter a new name for the duplicate decision. If you do not specify a 
+new name or specify a suffix in Step 7b  SAS Intelligent Decisioning  appends _Copy
+ to the name of the duplicate object. 
+4(Optional) Enter a description for the decision.
+5Select the version of the decision that you want to duplicate.
+6Click  and select the location where you want to save the duplicate decision. If 
+you select Duplicate included objects  in the next step, the duplicated objects 
+are also saved to the location that you choose.
+7(Optional) Click the Duplicate included objects  toggle if you want to duplicate 
+the objects that are included in the decision. Selecting this option enables the 
+View included objects  link and the Name suffix  field.
+a(Optional) Click the View included objects  link to open the Included 
+Objects  window. This window lists the objects that will be duplicated together 
+with the decision. You can use the Search  field to search for specific objects 
+by name in order to verify which objects will be duplicated. Objects that will 
+not be duplicated are identified with the  warning icon. See “Duplicating 
+Included Objects” on page 260 for more information.
+Click Cancel  to close the window.
+bIn the Name suffix  field, enter a custom string that you want SAS Intelligent 
+Decisioning  to append to the names of all of the duplicated objects.
+8Click Duplicate .
+To duplicate multiple decisions:
+1In the Decisions  view, select the decisions that you want to duplicate.
+2Click  and select Duplicate . SAS Intelligent Decisioning  duplicates the latest 
+version of the decisions and appends _Copy
+ to the names of the duplicate 
+copies. If needed, a number is also appended to the names of the duplicate 
+copies.
+Note: When you duplicate a decision, SAS Intelligent Decisioning  creates a 
+relationship between the original decision and the duplicate decision. If either object 
+is changed, and you later copy the contents of one object into the other, SAS 
+Intelligent Decisioning  displays a warning message. Verify that you want to replace 
+the current contents of the decision before you paste the new content.Managing Decisions 261

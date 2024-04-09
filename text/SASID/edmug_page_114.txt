@@ -1,0 +1,31 @@
+TIP If this option is disabled, there might be unsaved changes. Click .
+3(Optional) Enter a name for the document if you do not want to use the default 
+name.
+4Click Create . SAS Intelligent Decisioning  creates the PDF. The result depends 
+on which browser you are using and the browser’s default download actions. 
+The browser might automatically download the file and display a notification in 
+the bar at the bottom of the browser window. Alternatively, the browser might 
+prompt you to save the file or open it with a specific application.
+Managing Treatments and Treatment 
+Groups
+Duplicate Treatments or Treatment Groups
+Note: You cannot duplicate a treatment or treatment group if it is open. 
+To duplicate a single treatment or treatment group:
+1In the Treatments or Treatment Groups category view, select the treatment or 
+treatment group that you want to duplicate.
+2Click  and select Duplicate . The Duplicate Treatments  or Duplicate Treatment 
+Groups  window appears.
+3Enter a new name for the duplicate treatment or treatment group.
+4(Optional) Enter a description for the treatment or treatment group.
+5Select the version of the treatment or treatment group that you want to duplicate.
+6Click  and select the location where you want to save the duplicate treatment 
+or treatment group.
+7Click Duplicate .
+To duplicate multiple treatments or treatment groups:
+1In the Treatments or Treatment Groups category view, select the treatments or 
+treatment groups that you want to duplicate.
+2Click  and select Duplicate . SAS Intelligent Decisioning  duplicates the latest 
+version of the treatments or treatment groups and appends _Copy
+ to the names 
+of the duplicate copies. If needed, a number is also appended to the names of 
+the duplicate copies.102 Chapter 3 / Working with Treatments and Treatment Groups

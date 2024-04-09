@@ -1,0 +1,12 @@
+6Click Rule-Fired Analysis  in the navigation panel to display the URIs and other 
+information for the rule-fired test.
+7Click Close  to close the rule set.
+Validate a Published Rule Set
+You can test the published rule set in the target publishing destination. When you 
+publish the rule set to any destination type except Git, a validation test is 
+automatically defined for that rule set in that destination. To run the publishing 
+validation test:
+1On the Scoring  tab, click the Publishing Validation  tab. The  icon in the 
+Status  column indicates that the test is not ready to run. The  icon indicates 
+that the test is ready to run.
+2Click on the test name. The Edit Publishing Validation Test  window appears.Testing Rule Sets 73

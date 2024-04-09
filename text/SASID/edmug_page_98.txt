@@ -1,0 +1,17 @@
+Figure 3.1 Example Decision That Uses Treatments
+This decision flow has the following elements:
+1The data query node named Get_customer_Info queries the company database 
+and retrieves additional information about the subject based on the subject ID. 
+For example, if the treatment is an offer to upgrade the subject’s cell phone, the 
+SQL query could retrieve the model number for the subject’s current phone, if 
+that information is available. For more information, see “Data Query Files” on 
+page 159.
+Nodes that retrieve additional information about the subject are typical but not 
+required.
+2The treatment group name Combined_Treatments_Final defines a set of 
+treatments (offers) and includes rules that define who is eligible to receive the 
+treatments. The decision uses the information about the subject and the eligibility 
+rules to determine the treatments for which the subject qualifies.
+When you add a treatment group to a decision, SAS Intelligent Decisioning 
+defines an output variable of type data grid. After the decision executes, this 
+data grid contains a row for each treatment for which the subject qualifies.86Chapter 3 / Working with Treatments and Treatment Groups

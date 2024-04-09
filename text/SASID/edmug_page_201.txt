@@ -1,0 +1,28 @@
+3Click OK to close the window. The tag remains in the list of previously entered 
+tags that is displayed when you add a tag, but the tag is no longer associated 
+with version.
+Modify a Version Tag
+You cannot modify a version tag that already exists. To change the content of an 
+existing tag, delete the tag as described in “Remove a Version Tag” on page 186, 
+and then add the tag again as described in “Add a Version Tag” on page 186.
+Testing Code Files
+Ways to Test a Code File
+There are two types of tests for code files:
+Basic test
+executes the code file in the SAS Cloud Analytic Services (CAS) destination 
+using the input table that you specify. You can also specify a debugging variable. 
+For more information, see “Create and Run a New Test” on page 188.
+Scenario test
+enables you to enter specific input values and the output values that you expect 
+the test to generate. A scenario test identifies differences between the output 
+that you expect to see and the actual output that is generated when the test is 
+run. You can also compare the test definitions and test results of different 
+scenarios. Scenario tests are also run in CAS. For more information, see “Test a 
+Scenario” on page 289.
+Note: You can create and run basic tests and scenario tests for DS2, SQL, and 
+Python custom code files, but you cannot run these tests directly on custom context 
+files. You can test the functions that are defined in a custom context file by testing 
+the rule set or DS2 file that uses the context functions. Validating a custom context 
+file determines whether the file is syntactically correct and whether it includes 
+declaration statements for the packages that are used in the file. For more 
+information, see “Validate SQL, DS2, or Context Files” on page 175.Testing Code Files 187

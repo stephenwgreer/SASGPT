@@ -1,0 +1,23 @@
+n“Add an Existing Object” on page 230
+n“Create and Add a New Object” on page 232
+n“Adding Record Contacts Nodes” on page 233
+Customize Branch Path Labels
+You can change the labels that are used for branch paths in Equals, Range, and 
+Like branches.
+1In the Properties  panel for the branch, click More . The More Branching 
+Properties  window appears.
+2Edit the labels in the Alternate Label  field for each branch path that you want to 
+change, and click Close  to close the More Branching Properties  window.
+TIP You can also change the branch variable and search branch path 
+values in the More Branching Properties  window.
+Rename Branches
+The default name for a branch is the branch type, such as "Equals" or "Yes/No". 
+Multiple branches in the same decision can have the same name.
+To rename any branch type:
+1Select the branch.
+2In the Name field  on the Properties  panel for the branch, click 
+3Enter the new name, and click Rename .
+Alternatively, to rename an Equals, Range, or Like branch:
+1Right-click on the branch node, and select Rename . The Rename  window 
+appears.
+2Enter the new name, and click Rename . The maximum length is 100 characters. Adding Objects to a Decision 243

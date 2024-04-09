@@ -1,0 +1,26 @@
+Installing SAS Intelligent Decisioning  as a 
+Progressive Web App
+SAS Intelligent Decisioning  must be deployed with TLS and HTTPS enabled.
+To install SAS Intelligent Decisioning  as a PWA:
+1Open a Chromium-based web browser and sign in to SAS Intelligent 
+Decisioning .
+2Open the web browser’s menu and select Install SAS .
+Note: The Install SAS  option might be located under another menu option. For 
+example, in Microsoft Edge it is located under Apps .
+SAS Intelligent Decisioning  is now installed as a desktop program named SAS. 
+After one web application has been installed as a PWA, all other SAS applications 
+are accessible in the PWA.
+To uninstall the PWA for SAS Intelligent Decisioning :
+1Open the PWA for SAS Intelligent Decisioning .
+2In the PWA menu, select Uninstall SAS .
+Sorting, Searching, and Filtering in 
+Category Views
+You can search, filter, and sort the list of objects in any category view.
+Sort Object Lists
+To sort the object list based on the values of a column, right-click the column 
+heading, and select Sort ð Sort (ascending)  or Sort (descending) . If the column 
+is sorted in ascending order,  appears beside the column heading. When the 
+column is sorted in descending order,  appears. To add another column to the 
+sort, right-click the column heading, and select Add to sort  ð Sort (ascending)  or 
+Sort (descending) . To clear a column filter, right-click the column heading and 
+select Sort ð Remove sort .6Chapter 1 / Introduction to SAS Intelligent Decisioning

@@ -1,0 +1,13 @@
+The following figure shows the properties panel for this branch:
+For more information, see “Add Equals, Range, or Like Branches” on page 241.
+About Like Branches
+A Like branch compares the value of the branch expression against one or more 
+strings by using the LIKE operator. In LIKE expressions, you can use the 
+underscore (_) and percent (%) characters as wildcards. For more information, see 
+“Using the LIKE Operator” on page 38.
+By default, this branch has one outgoing path for each comparison string, plus a 
+branch labeled Other  for any values that are not included in the branches that you 
+create. You can combine paths by selecting the OR check box.
+For example, the following branch compares the last four characters of the variable 
+EXPIRATIONDATE to determine whether it ends with the characters “2021” or 
+“2022”.240 Chapter 8 / Working with Decisions

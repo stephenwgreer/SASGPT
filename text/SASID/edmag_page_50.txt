@@ -1,0 +1,43 @@
+Default Permissions
+Rule sets, decisions, treatments, treatment groups, lookup tables, and custom code files are stored in 
+folders. When these objects are created through the user interface, the default permissions are 
+determined by the folder in which the object is stored.
+In SAS Environment Manager, each folder is assigned permissions that apply to the folder itself and 
+permissions that apply to the objects within the folder. The permissions that apply to the objects within 
+the folder are said to be conveyed to those objects within the folder.
+Global variables and custom functions are not stored in folders. The default permissions for these 
+objects are controlled by authorization rules.
+By default, each member of the Authenticated Users group has permission to do the following:
+ncreate rule sets, lookup tables, treatments, treatment groups, code files, global variables, custom 
+functions, and decisions in their own My Folder
+ folder
+nin the Decision Repository
+ folder, check out and commit objects that they created
+ncreate subfolders within the Decision Repository
+ folder
+nupdate and delete any rule set, lookup table, treatment, treatment group, code file, global variable, 
+custom function, or decision that was created in a folder to which the user has conveyed Update 
+and Delete access
+ndelete a specific version of a rule set, lookup table, treatment, treatment group, global variable, or 
+decision if they have Delete permission for the object
+nactivate any lookup table, global variable, or treatment group that was created in a folder to which 
+the user has conveyed Update access
+npublish any rule set, decision, or model to which the user has Read access
+nrun a publishing validation test for any rule set, decision, or model that they published
+ncreate a test definition, including scenario test definitions, for any rule set or decision to which the 
+user has Read access
+nupdate or delete the test definition that they created
+nrun the test and view the test results for any test definition that they created
+nrun a rule-fired analysis or decision-path tracking analysis and view the results for any test that 
+they created and executed
+Default folders such as a user’s My Folder
+ folder or the Decision Repository
+ folder are assigned 
+permissions so that any subfolders that are created within these folders inherit the permissions of the 
+parent folder (unless the parent folder’s permission have been customized). For folder’s that are 
+created directly under SAS Content
+, you must set permissions in SAS Environment Manager in order 
+to enable users to access these folders. See “Folder-Based Permissions” on page 51 for more 
+information.
+Modifying Permissions
+You can modify the default permissions in the following ways:49

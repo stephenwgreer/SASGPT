@@ -1,0 +1,34 @@
+Syntax
+DATAGRID_SET  (dataGrid , column , rowNumber , variableOrValue )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column whose value is to be set. You can specify a 
+column name in single quotation marks or a variable that evaluates to a column 
+name.
+rowNumber
+specifies the number of the row to be set. You can specify a number or a 
+variable that evaluates to a number.
+variableOrValue
+specifies the value to be assigned to column . You can specify a number, a 
+character value enclosed in single quotation marks, the name of a variable, or an 
+expression. The value that you specify must be or must evaluate to the same 
+data type as column .
+DATAGRID_SETALL Function
+Assigns the specified value to all rows in the specified column.
+Category: Set Values
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_SETALL  (dataGrid , column , variableOrValue )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column whose values are to be set.
+variableOrValue
+specifies the value to be assigned to column . You can specify a number, a 
+character value enclosed in single quotation marks, the name of a variable, or an 78Chapter 3 / Data Grid Functions

@@ -1,0 +1,33 @@
+PropertyDescriptionInitial valueYou can specify an initial value for all data types except data grids. 
+Initial values are not used when you run a custom function. For 
+custom functions, initial values are only for documentation purposes.
+Note: For content that will be published to a SAS Micro Analytic 
+Service destination, the values of date and datetime input variables 
+must be numeric. They cannot be formatted values such as 18jul2019
+. Also, integer variables are converted to decimal variables 
+when the content is published.DescriptionDescriptions are limited to 256 characters.
+Syncing Variables and Code
+To propagate changes that you enter on the Variables  tab to the code that is shown 
+on the Code  tab, click Sync to Code  on the Variables  tab. Changes to variables 
+are propagated only to the signature of the custom function. The rest of the custom 
+function code is unchanged. Both output-only and input-and-output variables are 
+added with the in_out
+ keyword.
+To propagate changes that you enter in the method signature on the Code  tab to 
+the Variables  tab, click  and select Sync Variables  on the Code  tab. Variables 
+that you add to the signature with the in_out
+ keyword are added to the Variables 
+tab as both input and output variables. Variables that are not specified with the in_out
+ keyword are added to the Variables  tab as input-only variables. You can 
+specify that any variable is both an input and output variable by selecting both the 
+Input  and Output  check box on the Variables  tab.
+If you make conflicting changes to both the Code  tab and the Variables  tab and 
+then save the file, SAS Intelligent Decisioning  prompts you to select which tab 
+contains the changes that you want to retain. If you make conflicting changes on the 
+two tabs and then click a sync button, only the changes on the tab on which you 
+click the sync button are retained. Those changes are then propagated to the other 
+tab.
+Note: You cannot manage local variables on the Variables  tab. Local variables are 
+variables for which neither the Input  nor the Output  checkboxes are selected on the 
+Variables  tab. If local variables are listed on the Variables  tab, these variables are 
+removed from the tab when you save the code file or click a sync button.Managing the Variables in a Custom Function File 203

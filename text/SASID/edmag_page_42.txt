@@ -1,0 +1,32 @@
+Enable the Asset Approval Workflow
+SAS Intelligent Decisioning provides a predefined approval workflow for decisions. This workflow is 
+named SID Asset Approval. When the workflow is enabled, a new instance of the workflow is started 
+each time a new decision or a new version of an existing decision is created in SAS Intelligent 
+Decisioning. The Move to status  button appears in the interface when a user opens a decision that is 
+in a workflow. As the users that are responsible for developing, testing, reviewing, approving, 
+deploying the decision version each finish their tasks, they set the status of the workflow to the 
+appropriate value, such as Developing, Approved, or Deployment-ready. For more information about 
+the workflow, see “Using SAS Workflow with SAS Intelligent Decisioning” in SAS Intelligent 
+Decisioning: User’s Guide .
+To enable this workflow for decisions in SAS Intelligent Decisioning:
+1Turn on the sas.decisions.workflow.enabled  configuration property.
+2(Optional) Turn on the sas.decisions.workflow.authorMayApprove  configuration property.  This 
+property specifies whether a user who authors a decision can also approve the decision.
+3(Recommended) Turn on the sas.businessrules.publish.hideRuleSetPublish  configuration 
+property.  This property specifies whether the Publish  button is hidden for rule sets. It is 
+recommended that you turn on this property so that all published content is developed in the 
+workflow.
+4Define the custom user groups for the workflow, and assign the appropriate users to each group. 
+For more information, see “Define Asset Approval Workflow User Groups” on page 57.
+5Grant the appropriate users access to the workflow history. For more information, see “Granting 
+Access to the History of Workflow Status Changes” on page 58.
+6(Optional) Configure the length of time that workflow history items are retained. For more 
+information, see “Configure History Event Properties” in SAS Workflow Manager: Administrator’s 
+Guide .
+Migrating Content
+About Migration
+You can move from previous releases or versions of SAS to the latest version. You can move from 
+SAS 9.4 to SAS Viya, from SAS Viya 3.5 to SAS Viya 4, or from SAS Viya 4 to a different SAS Viya 4 
+deployment. You can migrate content, or you can migrate a full system. For information about the 
+SAS Viya migration processes, see System Migration and Content Migration .
+For information about migrating SAS Intelligent Decisioning content, see the following topics:41

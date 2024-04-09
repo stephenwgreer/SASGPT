@@ -1,0 +1,33 @@
+nModify permissions for a specific folder and the objects that are stored in that folder by using the 
+Edit Authorization  window for the folder. For more information, see the following topics:
+o“About Permission Types” on page 50
+o“Best Practices for Setting Permissions” on page 51
+oSAS Viya: General Authorization Window
+o“Folder-Based Permissions” on page 51
+nModify the existing rules or create new rules. For more information, see the following topics:
+o“About Permission Types” on page 50
+o“Best Practices for Setting Permissions” on page 51
+oSAS Viya Platform: General Authorization
+o“Rules Page” in SAS Environment Manager: User’s Guide
+oSAS Viya: General Authorization Window
+o“Tasks Enabled by Default Rules for Object URIs” on page 54
+o“Rules-Based Permissions” on page 53
+nModify the existing user groups or create new ones. For more information, see the following 
+topics:
+o“Custom Groups” in SAS Viya: Identity Management
+o“Manage Custom Groups” in SAS Environment Manager: User’s Guide
+o“Granting Access to Test Results” on page 56
+o“Define Asset Approval Workflow User Groups” on page 57
+About Permission Types
+There are two types of permissions that you might need to set for users to work in SAS Intelligent 
+Decisioning : folder-based permissions and rules-based permissions.Table 3 Permissions Types for SAS Intelligent Decisioning Permissions TypeWhen to UseFolder-based permissionsFor objects that are stored in folders, it is recommended that you use 
+folder-based permissions to control what tasks users can perform for 
+those objects. The objects that are stored in folders are rule sets, 
+decisions, treatments, treatment groups, lookup tables, and custom 
+code files.
+Storing test definitions and test results in a folder is optional, but it is 
+highly recommended. Storing test definitions and test results in a folder 
+simplifies the tasks of setting permissions and transferring the files.
+For more information, see “Folder-Based Permissions” on page 51.Rules-based permissionsFor tasks associated with publishing and for objects that are not stored 
+in folders, you must use rules-based permissions. The objects that are 
+not stored in folders are custom functions and global variables.50

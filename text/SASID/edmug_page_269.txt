@@ -1,0 +1,27 @@
+Remove an Object from a Decision
+On the Decision Flow  tab, click  on the object that you want to remove, and 
+select Remove . To delete a cross-branch link that is displayed as a dashed line, 
+right-click on the dashed line and select Remove .
+On the Decision  tab, click  on the object that you want to remove.
+If you delete the target of a cross-branch link, the link adopts the next node between 
+itself and the End node. If the next node is the End node, the link is deleted.
+Replace an Object
+To replace an existing object with a different object of the same type, click  on the 
+Decision  tab. In the window that appears, select the new object, and click OK.
+To change the target node of a cross-branch link, open the Properties  panel for the 
+link, click , and select a new target node.
+Update Decisions to Use New Object 
+Versions
+You can update the versions of any of the objects that are used in a decision.
+1Open the decision, click , and select Update object versions . For each object 
+that is included in the decision, SAS Intelligent Decisioning  determines whether 
+newer versions of the objects are available, and it displays the results in the 
+Update Versions  window.
+2(Optional) In the Update Versions  window, select the objects that you want to 
+update, or select Select all  to update all of the objects.
+3Click Update  to update the object versions that are used in the decision.
+TIP To upgrade multiple decisions that use the same object, see
+n“Upgrade Decisions to Use a New Version of a Rule Set” on page 52
+n“Upgrade Decisions to Use a New Version of a Code File” on page 181
+n“Upgrade Decisions to Use a New Version of a Nested Decision” on page 
+270Update Decisions to Use New Object Versions 253

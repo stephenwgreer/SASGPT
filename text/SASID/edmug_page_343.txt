@@ -1,0 +1,25 @@
+Note: Set the encoding value of the spreadsheet to the same value as the CSV file.
+JSON Format of the Variable Import File
+The JSON file contains a set of name-value pairs for each variable. The following 
+table lists the fields that can be included for each variable.Table A3.2 Fields in the JSON Variable Input File FieldDescriptionnameThe name of a rule set variable or a decision variable.dataTypeThe data type of the variable. You can specify decimal
+, integer
+, date
+, datetime
+, or datagrid
+. For Boolean variables, specify integer
+. For 
+character variables, specify string
+.directionWhether the rule set or decision variable is an input-only variable 
+(input
+), an output-only variable (output
+), both (inOut
+). Do not specify 
+a direction for data grid columns. If you do not specify a direction for a 
+rule set or decision variable, the direction is imported as inOut
+. To 
+designate a variable as a temporary variable, edit the variable 
+properties on the Variables  tab.descriptionA description of the variable. Descriptions are limited to 256 characters.lengthThe length of the variable. Specify lengths for character variables only 
+(strings or data grids).dataGridExt
+ensionThe columns in the data grid, if the variable specified in the name field 
+is a data grid. Specify the name and data type for each column in the 
+data grid. If the column is a character column, also specify the length.defaultValueAn initial (default) value for the variable. JSON Format of the Variable Import File 327

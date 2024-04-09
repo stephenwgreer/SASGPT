@@ -1,0 +1,18 @@
+dcl varchar(1048576) character set utf8 http_response;   dcl int rc;   dcl int getMethodDefined;   method execute(in_out varchar "fortune");          if missing(getMethodDefined) then do; /* establish GET method */         fortune_pkg.createGetMethod('http://helloacm.com/api/fortune');         "getMethodDefined" = 1;      end;      "fortune" = 'Gloom and Doom';  /* default fortune */      fortune_pkg.executeMethod();      fortune_pkg.getResponseBodyAsString(http_response, rc);      if (rc = 0) then do; /* clean up escaped characters in the response */         "fortune" = transtrn(http_response,'\n',' ');         "fortune" = transtrn("fortune",'\t',' ');         "fortune" = transtrn("fortune",'\"','"');      end;   end;endpackage;
+Testing DS2 Code Files in SAS Studio
+Note: If your custom code uses data grid variables, see “Working with Data Grids in 
+SAS Studio” in SAS Intelligent Decisioning: Using Data Grids .
+If your DS2 custom code file uses functions that are defined in a custom context file, 
+insert the packages that are defined in the custom context file before the DS2 code 
+file package.
+Replace the placeholder name ${PACKAGE_NAME}
+ with a valid DS2 package name.
+To test your package in a separate DS2 invocation from where the calling program 
+is running, replace the inline
+ modifier with overwrite=yes
+.proc ds2;   package "testCustomCode" /overwrite=yes;      method execute(double l, double w, double h, double d,                     in_out double vol, in_out double wgt);         vol = l * w * h;         wgt = vol * d;      end;   endpackage;run; quit;
+In the following example, the package is compiled in the same PROC DS2 
+invocation as the DS2 data program that instantiates the package, so the code 
+specifies the /inline
+ package modifier./* Create test data. */data work.testdata;   length material $13;
+DS2 Code Files 155

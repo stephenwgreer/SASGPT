@@ -1,0 +1,15 @@
+end;end;
+See “Using Custom Code Files” in SAS Intelligent Decisioning: User’s Guide  for 
+information about code files.
+Working with Data Grids in SAS Studio
+When you are using data grids in a DS2 custom code file in SAS Intelligent 
+Decisioning , the data grid package and the data grid functions are predefined. 
+However, these packages and functions are not automatically available when you 
+are using SAS Studio to develop and test code. You can use the 
+%DCM_DATAGRID_INTERFACE macro to make data grid functionality available in 
+SAS Studio. For more information, see “%DCM_DATAGRID_INTERFACE Macro” 
+on page 16.
+In addition, if your test thread or data program uses any data grid functions, then 
+you need to invoke %DCM_DATAGRID_INTERFACE within the thread or data 
+block, after any global declaration statements. For example:data work.cars;    set sashelp.cars; run;%dcm_serializegrid(gridSourceTable=work.cars,                   classVars=make,                   outputTable=work.carsByMakeGrid,                   gridColName=carsGrid)proc ds2;   /* define data grid DS2 packages */      package "testCustomCode" /inline;      /* define data grid interface methods */      %dcm_datagrid_interface()      method execute(varchar(32) whichColumn,         in_out double meanValue,         in_out package datagrid thisGrid);         meanValue = DataGrid_Mean(thisGrid,whichColumn);      end;   endpackage;   data work.profileByMake(keep=(rowCount make meanMSRP meanWeight carsGrid))                            / overwrite=yes;      dcl package testCustomCode myCustomCode();      dcl double meanMSRP;      dcl double meanWeight;      dcl varchar(32767) carsGrid;  /* serialize in and out */      dcl package datagrid _carsGrid ();      dcl integer rowCount;      /* define data grid interface methods */      %dcm_datagrid_interface()      method run();         set work.carsByMakeGrid;         meanMSRP = .;           meanWeight = .;         rowCount = DataGrid_Create(_carsGrid,carsGrid);
+10 Chapter 1 / Using Data Grids in SAS Intelligent Decisioning

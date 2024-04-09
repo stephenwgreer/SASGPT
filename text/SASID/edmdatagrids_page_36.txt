@@ -1,0 +1,15 @@
+DATAGRID_SETDOUBLE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+DATAGRID_SETINT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+DATAGRID_SETLONG Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+DATAGRID_SETSTRING Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+DATAGRID_SORT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 82
+DATAGRID_STDDEV Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+DATAGRID_SUBSETBYVALUE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84
+DATAGRID_SUM Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+DATAGRID_SUMLONG Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 86
+DATAGRID_TOPN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+DATAGRID_TOSTRING Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 87
+Comparing Values in Data Grids
+You can use any of the following operators with functions that compare values such 
+as the DATAGRID_FILTEREDGET, DATAGRID_FILTEREDGETINDEX, and 
+DATAGRID_MATCHCOUNT functions.30Chapter 3 / Data Grid Functions

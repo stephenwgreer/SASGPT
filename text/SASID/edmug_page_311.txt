@@ -1,0 +1,28 @@
+...<<decision variable values>>...OUT: decision - credit_card_offers
+Between the IN and OUT lines for each node, the report records the initial value, 
+final value, and mapping for each of the node’s variables. For example, if a node 
+has an input-only variable named RATE, an output-only variable named 
+NUM_OFFERS, and an input-output variable named ACCTSCORE, the report might 
+contain the following lines:*Setting inOut Variable - ACCTSCORE ( mapped to ACCTSCORE )    *ValueReceived: 0.698    *ValueReturned: 0.796*Setting input Variable - RATE ( mapped to RETURN )      *ValueReceived: 15.4*Setting output Variable - num_offers ( mapped to num_offers )    *ValueReceived: .    *ValueReturned: 2
+Note: A period (.) indicates a missing value. Boolean values are recorded as 0 
+(false) and 1 (true).
+Between the last node of the decision and the END node, the report contains the 
+same information for each decision variable. These lines include the name of the 
+decision. For example: *Setting credit_card_offers output Variable - zero_offers ( mapped to zero_offers )    *ValueReceived: .    *ValueReturned: 0
+For branches, the report records the branch condition and the path that the test 
+takes out of the branch. For example, suppose the decision has a range branch that 
+has different paths for the CLAGE variable. If the test follows the path for the range 
+of values 101–300, the trace file contains the following line:IN: branch - Range(CLAGE) 101 - 300==>GEN==>
+In this case, the branch label is the default value 101 - 300
+. If you customize the 
+branch label, then 101 - 300==>GEN==>
+ is replaced with the custom label.
+If the decision has a Yes/No branch with the condition zero_offers=True
+, and the 
+test follows the No path, the trace file contains the following line:IN: branch - zero_offers=True onFalse
+If the Score rows in this data grid  option is selected in the Input Variables property 
+panel for a node, the IN line for that node lists the data grid that is being scored. For 
+example, if the credit_card_offers decision contains a model named credit_limit and 
+that model scores the data grid named card_offers_out, the trace file contains the 
+following line:IN: model - credit_limit scoring datagrid card_offers_out of credit_card_offers row 1
+Testing Decisions 295

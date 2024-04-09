@@ -1,0 +1,44 @@
+output variable. The decision writes the name and value of this variable to the log for 
+each input record that is processed. It writes the value just before the logic of the 
+decision is executed for the input record. For more information, see Step 12  of 
+“Create and Run a New Test” on page 285.
+When you specify an input debug variable, you can use the 
+sas.decisions.messageOrder configuration option to control whether the log 
+messages are written as they are produced or after the decision executes. For more 
+information, see “sas.decisions.messageOrder” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+When you specify an input debug variable, SAS Intelligent Decisioning  automatically 
+sets the maximum number of threads that can be allocated for the test to 1. Setting 
+the thread count to 1 ensures that the variable's values are written to the log in the 
+correct order and are not affected by different threads completing at different times.
+To capture variable values for input-only or temporary variables after the decision 
+logic has executed for a specific record, you can specify that the variable is an 
+output variable, and then re-run the test. Before publishing the decision to a 
+production environment, return the input and output settings for the variable to their 
+previous settings. For more information, see “Input Variables, Output Variables, and 
+Temporary Variables” on page 224 and “Edit Variable Properties” on page 229.
+TIP To capture intermediate variable values that occur during the execution 
+of the decision, you can use DS2 code files that include PUT statements for 
+the variable. For more information, see Chapter 6, “Using Custom Code 
+Files,” on page 151.
+Enabling Value Tracing
+When you test a decision, you can select the Record variable values by node 
+check box to trace how variable values change for each node in the decision flow. 
+When you select this option, SAS Intelligent Decisioning  creates an output data grid 
+variable named nodeTraceDataGrid. This data grid contains a row for each rule set, 
+model, nested decision, and code file node in the decision. It contains one column 
+for every variable in the decision. Condition nodes, branch nodes, and record 
+contact nodes are not included.
+The first column in nodeTraceDataGrid contains the node name, and the remaining 
+columns contain the values of the input and output variables, including temporary 
+variables.
+Within the nodeTraceDataGrid variable, data grids are written as string variables, 
+and their length is limited to 32767 characters.
+When a node sets a variable’s value, that value appears unchanged in all 
+subsequent rows until another node changes the variable to a different value. In the 
+following example, the Code_1 node sets score variable to a value of 1. The 
+Code_2 and Code_3 nodes do not change that value. The Rule_set_1 node 
+changes the value to 1.25. The Code_1 node sets the value of the 
+scoreProbDataGrid variable to null. The Code_3 node sets the value of 
+scoreProbDataGrid to a data grid with two columns: score and probability.{   "Data Grid": [{
+288 Chapter 8 / Working with Decisions

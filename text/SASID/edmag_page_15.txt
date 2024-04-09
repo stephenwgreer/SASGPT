@@ -1,0 +1,28 @@
+“Using Variable Assignment Logging” in SAS Intelligent Decisioning: User’s Guide
+sas.decisions.variable.length
+Click New Configuration  to define this configuration instance.
+honorOutputLengthInMAS
+Specifies whether output-only decision variables of type Character honor the length that is 
+specified in the user interface. This option affects only the code that is generated for container 
+destinations and for SAS Micro Analytic Service  destinations.
+IMPORTANT When this option is turned on and the value of an output variable is longer 
+than the length specified by this option, the output value is truncated. When this option is 
+turned off or is not defined, the length specified in the user interface is ignored in container 
+destinations and in SAS Micro Analytic Service  destinations.
+sas.decisions.workflow
+sas.decisions.workflow.authorMayApprove
+Specifies that a user who is a member of both the SIDWFAuthor and the SIDWFReviewer custom 
+user groups can approve work that they authored. If a user is not a member of the 
+SIDWFReviewer group, then that user cannot approve decisions. This property is ignored if the
+sas.decisions.workflow.enabled  property is turned off.DefaultOffSee“Define Asset Approval Workflow User Groups” on page 57
+sas.decisions.workflow.enabled
+Specifies whether decisions are developed in the SAS Intelligent Decisioning approval workflow. 
+When this property is turned on, a new instance of the workflow is started when a new decision or 
+a new version of an existing decision is created. Decision versions that existed before the 
+workflow was enabled are not automatically put into the workflow.DefaultOffSee“Enable the Asset Approval Workflow” on page 41 “Using SAS Workflow with SAS Intelligent Decisioning” in SAS Intelligent Decisioning: 
+User’s Guide
+sas.subjectcontacts.datagrid
+sas.subjectcontacts.datagrid.length
+Specifies the default length of the serialized data grid, including the JSON syntax, that is 
+generated for subject contacts. Specifying a shorter length can reduce memory usage and might 
+improve performance.Default10,485,760 14

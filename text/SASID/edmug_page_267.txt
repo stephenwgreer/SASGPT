@@ -1,0 +1,26 @@
+Searching for Objects in a Decision 
+Diagram
+Use the Search field and the object type drop-down list on the Decision Flow  tab to 
+search for specific objects or object types in decision diagrams. To search for a 
+specific object, enter the object name in the Search field. To search for object types, 
+select the object type from the drop-down list. Use both fields to narrow the search. 
+For example, to search for all objects with the name “MSRP > price”, enter the 
+following criteria:
+For any object that matches the search criteria, SAS Intelligent Decisioning 
+highlights the object node with a thicker, darker outline.
+Editing the Objects in a Decision
+Open an Object from within a Decision
+On a node in the Decision Flow  diagram, double-click on the object name, or click 
+ for the object that you want to open, and select Open .
+On the Decision  tab, select the object that you want to open, click Edit, and select 
+Open .
+The object opens in the appropriate editor. Models open in SAS Model Manager if 
+you have access to that application.
+When you object an object on the Decision Flow  tab, the decision name at the top 
+of the window is replaced with a breadcrumb. When you close an object, SAS 
+Intelligent Decisioning  returns to the previous object in the breadcrumb. You can 
+click on any object in the breadcrumb to switch to that object. Any object that 
+appears later in the breadcrumb is automatically closed. For example, if you open 
+version one of the card_approval decision, the calc_interest_rate nested decision, 
+and the get_credit_data rule set, the breadcrumb appears as follows:
+Editing the Objects in a Decision 251

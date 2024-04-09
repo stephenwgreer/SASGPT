@@ -1,0 +1,23 @@
+Rules-Based Permissions
+Setting Rules-Based Permissions
+1Click , and select Manage Environment  to switch to SAS Environment Manager.
+2Click  to navigate to the Rules  page.
+3Click  to create a new rule, or select a rule, and click  to modify an existing rule.
+4Edit the rule’s settings and click Save . 
+You can click  in the window for information about specific fields. For the object URIs for SAS 
+Intelligent Decisioning  , see “Tasks Enabled by Default Rules for Object URIs” on page 54. For 
+additional information about rule settings, see SAS Viya Platform: General Authorization .
+Rules-Based Permission Settings for Publishing Tasks
+The following table lists the permissions that are required to customize the ability to publish objects to 
+specific destinations.Table 5 Rules-Based Permission Settings for Publishing Tasks TaskURIRule TypePermissionsView available 
+publishing destinations/modelPublish/destinations/**GrantReadPublish objects to any 
+destination/modelPublish/destinations/**GrantRead/modelPublish/models/**GrantCreatePublish objects to only 
+one specific 
+destination/modelPublish/destinations /
+destination-nameGrantRead/modelPublish/models/**GrantCreateProhibit users from 
+viewing a specific 
+destination/modelPublish/destinations /
+destination-nameProhibitRead
+TIP Rules for which the setting is Prohibit  take precedence of all other rules for that URI. 
+When you enter a rule that specifies Prohibit , make the URI for that rule as specific as 
+possible.53

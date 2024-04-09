@@ -1,0 +1,7 @@
+and response_dttm is not null;
+Example 7: Determine Whether a Subject 
+Responded to Any Treatment within a Specified 
+Time Frame
+The following query determines whether subject 98 responded to any treatment in 
+the first six months of 2022.select count(distinct contact_id)from subjectcontacts.dcm_treatment_contacts_vwwhere creation_dttm >='2022-01-01 00:00:00.000' and creation_dttm <= '2022-06-30 23:59:59.999'and subject_id='98' and response_dttm is not null;
+324 Appendix 1 / Querying the Subject Contact Database

@@ -1,0 +1,27 @@
+SAS® Intelligent Decisioning: 
+Administrator’s Guide
+2023.04
+This document might apply to additional versions of the software. Open this document in SAS Help 
+Center  and click on the version in the banner to see all available versions.
+Performing Post-installation Tasks  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Verify Configuration Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+View or Set Configuration Properties for SAS Intelligent Decisioning Services  . . . . . . . . . 3
+Business Rules Service Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+Decisions Service Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Micro Analytic Score Service Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Reference Data Service Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Score Execution Service Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Subject Contact Service Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Treatment Definition Service Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Properties for Third-Party Subject Contacts and Treatment Definition Databases  . . . . . 21
+Properties for Multi-tenancy Environments  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Content Security Policy Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Configuring Publishing Destinations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+About Configuring Publishing Destinations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Configuring Git Publishing Destinations by Using the REST API  . . . . . . . . . . . . . . . . . . . . . 25
+Verifying Publishing Destinations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Configuring Support for Querying Databases  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Configuring Support for Python Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Set creation_dttm Values  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+Managing Third-Party Database Configurations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+About the Subject Contacts and Treatment Definition Databases  . . . . . . . . . . . . . . . . . . . . 28

@@ -1,0 +1,42 @@
+Using Views Defined by SAS Intelligent 
+Decisioning
+SAS Intelligent Decisioning  defines views that you can use to query the subject 
+contacts records and treatment definitions. These views are created automatically 
+when the subject contacts service and the decision-treatment service are started.
+SAS Intelligent Decisioning  defines the following three views:
+dcm_trt_fixed_attr_vw
+contains fixed treatment attributes for treatments that are members of a 
+treatment definition group. This view enables you to retrieve the list of fixed 
+attributes for a specific version of a treatment group. Treatments can be used in 
+multiple treatment groups, so the table might contain multiple records for the 
+same attribute. This view includes the values that were assigned to the 
+attributes. The attribute values for the same treatment version are the same, but 
+the attribute values might differ between treatment versions.
+dcm_trt_dynamic_attr_vw
+contains dynamic treatment attributes for treatments that are members of a 
+treatment definition group. This view enables you to retrieve the list of dynamic 
+attributes for a specific version of a treatment group. Treatments can be used in 
+multiple treatment groups, so the table might contain multiple records for the 
+same attribute.
+These attributes can be assigned either a static value in the treatment group, or 
+they can be mapped to a decision variable and receive their value from the 
+variable when the decision executes.
+For attributes that are assigned a static value in a group, this view includes the 
+values that were assigned to them. The values of these attributes might be 
+different for each treatment group in which the treatment that defines the 
+attribute appears.
+For dynamic attributes that are mapped to a decision variable, the attribute 
+values are not present in this view. To trace the values of these attributes, the 
+decision variables must be tracked by the record contacts node. For more 
+information, see “Adding Record Contacts Nodes” on page 233.
+dcm_treatment_contacts_vw
+contains detailed contact information for each treatment that was sent to a 
+subject. This table enables you to determine which treatments were offered to a 
+subject either for a specific response (identified by the response tracking code) 
+or for the entire set of history records that are retained in the database. The 
+number of treatments associated with a specific response tracking code or 
+subject ID depends on how many treatments were returned by the decisions that 
+created the contact records.
+Note: To query both treatment definitions and subject contact records, you must 
+join an attribute view with a treatment view. To join the views, both the subject 
+contacts records and the treatment definitions must reside in the same database.Using Views Defined by SAS Intelligent Decisioning 315

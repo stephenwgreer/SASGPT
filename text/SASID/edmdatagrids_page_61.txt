@@ -1,0 +1,38 @@
+Syntax
+DATAGRID_FILTEREDSET  (dataGrid , columnToAssign , rowNumber ,
+filterColumn , operator , variableOrValue , valueToAssign )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+columnToAssign
+specifies the name of the column to be assigned the specified value. You can 
+specify a column name in single quotation marks or a variable that evaluates to a 
+column name.
+rowNumber
+specifies the row number that contains the cell to be assigned the specified 
+value. You can specify a number or a variable that evaluates to a number.
+filterColumn
+specifies the name of the column whose value is to be compared to 
+variableOrValue . You can specify a column name in single quotation marks or a 
+variable that evaluates to a column name.
+operator
+specifies one of the following operators shown in “Comparing Values in Data 
+Grids” on page 30. You can specify the name of a character variable that 
+evaluates to one of these operators, or you can specify the operator enclosed in 
+single quotation marks.
+variableOrValue
+specifies the value to compare to the value of filterColumn . You can specify a 
+number, a character string enclosed in single quotation marks, or the name of a 
+variable or of an expression. The value that you specify must be or must 
+evaluate to the same data type as filterColumn .
+valueToAssign
+specifies the value to assign to the cell at rowNumber ,columnToAssign . You can 
+specify a number, a character value enclosed in single quotation marks, or the 
+name of a variable.
+Details
+The DATAGRID_FILTEREDSET function compares the value of filterColumn  to the 
+value of variableOrValue  using the comparison operator. The comparison is as 
+follows:filterColumn  operator  variableOrValue
+If the comparison evaluates to true, this function sets the value of 
+rowNumber ,columnToAssign  to the value specified by valueToAssign .DATAGRID_FILTEREDSET Function 55

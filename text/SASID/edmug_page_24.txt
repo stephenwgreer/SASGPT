@@ -1,0 +1,37 @@
+Status Icons for Tests  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+Manage Comments for a Rule Set Test  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+Executing Published Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Executing Content Published to SAS Micro Analytic Service Destinations  . . . . . . . . 77
+Executing Content That Has Been Published to SAS Cloud 
+Analytic Services Destinations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Content Executed by Published Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+Importing and Exporting Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+Import a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+Export a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 81
+About Rules and Rule Set Types
+A rule specifies conditions to be evaluated, and it can also specify actions to be 
+taken if those conditions are satisfied. Rules are grouped together into rule sets. 
+Rule sets are logical collections of rules that are grouped together because of 
+interactions or dependencies between the rules or because they are processed 
+together after they are published.
+A rule set can be one of following types:
+filtering rule sets
+contain rules that correspond to the form:IF condition_expressions
+These rules contain only IF statements. They have conditional expressions but 
+do not have action expressions. Filtering rule sets enable you to select only 
+certain records for processing. Only the records for which the conditions 
+evaluate to True are processed by the remaining objects in the decision.
+Filtering rule sets are also used as the eligibility rule set in treatments. In a 
+treatment, the eligibility rule set defines who is eligible to receive the offer that is 
+defined in the treatment.
+assignment rule sets
+contain rules that correspond to one of the following forms:ASSIGN variable variable_or_valueIF condition_expressions THEN action_expressions
+These rules are either assignment statements, IF-THEN statements, or IF-
+THEN-ELSE statements. IF-THEN and IF-THEN-ELSE statements have both 
+conditional expressions and action expressions.
+Assignment statements contain only an action expression. Assignment 
+statements always execute unless a RETURN action stops the execution of the 
+rule set before execution reaches the assignment statement. See Step 8  of “Add 
+an IF-THEN or IF-THEN-ELSE Rule to an Assignment or Common Rule Set” on 
+page 25 for information about the RETURN action.
+Assignment rule sets can also include common rule sets.About Rules and Rule Set Types 13

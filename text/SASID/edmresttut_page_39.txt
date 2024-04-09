@@ -1,0 +1,48 @@
+2Specify the object ID of the decision that you want to publish. You can retrieve 
+decision information by submitting GET requests to the /flows
+ resource. You 
+can use query parameters to narrow the results that are returned by the request. 
+For more information, see Get a list of all decisions .
+This ID is also shown on the Properties  tab when you open the decision in SAS 
+Intelligent Decisioning.
+3Specify a name for the publishing request. This name is a descriptive name that 
+is displayed when you view the log of API calls on your network.
+4Specify the name of the decision that you want to publish.
+5Get the contents of the decision by submitting a GET request to the /decisions/flows/object-ID
+ resource.
+6Lock the current version of the decision (which becomes the new numbered 
+version), and create a new, unlocked current version by submitting a POST 
+request to the /decisions/flows/decision-ID/revisions
+ resource. You can 
+specify the versionType
+ parameter to control whether a major version or a 
+minor version is created.
+After this request executes, the object ID now points to the locked and numbered 
+version of the decision.
+7Get the generated DS2 code for the locked version of the decision by submitting 
+a GET request to the /decisions/flows/decision-ID/code
+ resource. Because 
+SAS Micro Analytic Service destinations do not generated rule-fired information 
+or path-tracking information, include the following query parameters:?lookupMode=inline&traversedPathFlag=false\&isGeneratingRuleFiredColumn=false&codeTarget=microAnalyticService
+The generated code is returned as a byte object.
+8Convert the byte object to a string, and escape newline characters and double 
+quotation marks. Specify the resulting character string as the code property for 
+the model in the publish request in Step 10 .
+9Define the URL to the source code of the locked version of the decision.
+10Define the request body for the publish request. Specify the following 
+parameters:
+type
+specifies the destination type. For SAS Micro Analytic Service destinations, 
+this value is microAnalyticService
+.
+destinationName
+specifies the name of the destination. The name of the default SAS Micro 
+Analytic Service destination is maslocal
+.
+name
+specifies a name for the publishing request. This name is displayed when you 
+view the log of API calls on your network.
+modelContents
+provides information about the decisions that you are publishing.
+code
+specifies the generated code for the decision.34Chapter 6 / Publish a Decision to the maslocal Destination

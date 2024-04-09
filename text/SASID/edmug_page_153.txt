@@ -1,0 +1,28 @@
+5
+Managing Global Variables
+Using Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+Create a New Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+Managing Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+Duplicate a Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+Remove a Global Variable from the List  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+Edit a Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Managing Versions of Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Set the Displayed Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Create a New Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Delete a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145
+Determine Which Objects Use a Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+Managing Version Tags for Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+Add a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+Remove a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+Modify a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+Manage the Global Variable Recycle Bin  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+Activating a Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 148
+What Does Activating a Global Variable Do?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 148
+Controlling Where Global Variables Are Activated and How They Are Used  . . . . . 149
+Activate a Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 149
+Using Global Variables
+You can use global variables to define common variables for use in multiple rule 
+sets and decisions. For example, you might want to define global variables for 
+benchmark interest rates, current exchange rates, or inventory levels for specific 
+products. By using global variables, you can set these values in one place and refer 
+to the variables in multiple objects.141

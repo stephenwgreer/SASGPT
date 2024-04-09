@@ -1,0 +1,27 @@
+Serialize and Import Data Grids Into a 
+Table Column
+Note: Data grids that are used in decisions that are deployed to SAS Micro Analytic 
+Service are automatically serialized when a request that uses the data grids is sent 
+to the service. If your job is deployed only to SAS Micro Analytic Service, you do not 
+need to use the %DCM_SERIALIZEGRID macro to serialize the data grids.
+Data grids that are used only as temporary variables do not need to be serialized.
+1Use the %DCM_SERIALIZEGRID macro to serialize your data grid into a 
+JavaScript Object Notation (JSON) string . The data grid must be serialized if it is 
+used as an input or output variable in a rule set or in a decision that meets either 
+of the following criteria:
+nThe rule set or decision is used in a test or in a publishing validation test.
+nThe rule set will be deployed to Hadoop, Teradata, or SAS Cloud Analytic 
+Services (CAS).
+Note: If you write a serialized data grid variable to a table column, the maximum 
+size of the JSON string is based on the engine that writes the table. For the Base 
+SAS engine, the limit is 32,767 bytes. If you write the serialized data grid variable 
+to a SAS Cloud Analytic Services (CAS) table, the maximum size of the JSON 
+string is 10,485,760 bytes.
+Note: The names of data grid columns are limited to 32 characters. 
+2To combine data from multiple tables into one table, use the 
+%DCM_MERGESERIALIZEDGRIDS macro . This macro merges multiple data 
+grids and scalar data into one table based on the values of key columns in each 
+data grid and in the scalar data table.
+3Import the table that contains the serialized data grids as a data table into SAS 
+Intelligent Decisioning . See “Importing Local Files” in SAS Data Explorer: User’s 
+Guide  for more information.4Chapter 1 / Using Data Grids in SAS Intelligent Decisioning

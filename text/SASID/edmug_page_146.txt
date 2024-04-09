@@ -1,0 +1,36 @@
+3Click OK to close the window. The tag remains in the list of previously entered 
+tags that is displayed when you add a tag, but the tag is no longer associated 
+with version.
+Modify a Version Tag
+You cannot modify a version tag that already exists. To change the content of an 
+existing tag, delete the tag as described in “Remove a Version Tag” on page 133, 
+and then add the tag again as described in “Add a Version Tag” on page 133.
+Activating a Lookup Table
+What Does Activating a Lookup Table Do?
+Activating a lookup table makes the table available for use by published objects. By 
+default, when you activate a lookup table, the lookup table is converted into 
+executable code in the form of a SAS Cloud Analytic Services (CAS) format. If your 
+site has a SAS Micro Analytic Service publishing destination, then a SAS Micro 
+Analytic Service module is also created for the table. The CAS format is used when 
+you create and run tests and scenario tests (pre-publishing tests) for the rule sets 
+and decisions that use the lookup tables. The CAS format and SAS Micro Analytic 
+Service module also enable objects that are published to those destination types to 
+use the most recently activated version of a lookup table instead of a static copy.
+However, your administrator can set configuration options to specify that SAS 
+Intelligent Decisioning  includes lookup tables inline in generated code instead of 
+using formats and modules for CAS and SAS Micro Analytic Service destinations. 
+For more information, see “Controlling Where Lookup Tables Are Activated And 
+How They Are Used” on page 135.
+Teradata, Hadoop, and container destinations do not support the format or module 
+that is created when you activate a lookup table. Objects that are published to these 
+destinations must include a static version of each lookup table.
+You must activate a version of any lookup table that is used in a rule set or decision. 
+When you activate a version of a lookup table, that version is locked and cannot be 
+edited. Each lookup table can have only one active version.
+The active version of a lookup table is used in the following ways:
+nwhen you run a test or scenario test prior to publishing an object.
+nto generate a static copy of the table when you publish an object if a static copy 
+is needed, such as when you publish the object to Teradata, Hadoop, or 
+container destinations. In order to generate the static copy for Teradata or 
+Hadoop destinations, the lookupStaticBinding configuration property must be set 
+to On. Static copies are automatically generated for container destinations.134 Chapter 4 / Working with Lookup Tables and Functions

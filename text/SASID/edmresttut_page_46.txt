@@ -1,0 +1,7 @@
+'''# Define the content and accept types for the request header.contentType = "application/json"acceptType = "application/json"# Specify the module ID of the published decision, for example,# "evaluate_loans24_0".moduleID = "module-ID"# Define the request URL.masModuleUrl = "/microanalyticScore/modules/" + moduleIDrequestUrl = baseUrl1 + masModuleUrl + "/steps/execute"# Execute the decision.masExecutionResponse = post(requestUrl, contentType,                        acceptType, accessToken1, requestBody) # Display the response.print ("response=", masExecutionResponse, end='\n\n')print ("response content=", "\n",        json.dumps(json.loads(masExecutionResponse.content),        indent=4), end='\n\n')  
+Responses
+The response content includes the output values from the decision. In this example, 
+all of the variables in the decision are both input and output variables except for the review
+ variable. The review
+ variable is an output-only variable.response = <Response [201]>response content=  {    "links": [],    "version": 2,    "moduleId": "evaluate_loans24_0",    "stepId": "execute",    "executionState": "completed",    "outputs": [        {            "name": "debtinc",            "value": 37.1136        },        {            "name": "delinq",            "value": 0.0        },        {            "name": "derog",            "value": 4.0        },
+Responses 41

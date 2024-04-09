@@ -1,0 +1,36 @@
+1Click Add variable  and select Custom variable . The Add Variables  window 
+appears.
+2Complete these steps for each variable that you want to add:
+aEnter the name of the new variable, and select the data type of the variable. 
+See “The Properties of a Variable” on page 202 for additional information.
+TIP To re-add a variable that was used in a locked version, you must 
+specify the same data type that was used in the previous version.
+b(Optional) Click Optional  to display the Description , Initial value , and 
+Length  fields.
+c(Optional) Enter a length, initial value, and description for the new variable. 
+Whether you can specify an intial value or length for the variable depends on 
+the variable's data type. See “The Properties of a Variable” on page 202 for 
+additional information.
+dClick Add. SAS Intelligent Decisioning  adds the new variable to the table of 
+variables at the bottom of the window. By default, variables are added to the 
+table as both input and output variables.
+eVerify that the Input  and Output  check boxes are selected correctly for each 
+variable.
+nClear the Input  check box for any variable that you do not want to be 
+mapped to a column in an input table or for which you do not want to 
+specify a value.
+nClear the Output  check box for any variable that you want to exclude 
+from the output data. 
+nClear both the Input  and Output  check boxes to create a temporary 
+variable.
+3(Optional) Modify the variable properties in the table of variables.
+4Click OK to add the variables and close the Add Variables  window.
+5Click Sync to Code  to add the variables to the code that is on the Code  tab, and 
+then save the file. For more information, see “Syncing Variables and Code” on 
+page 203.
+Duplicate a Variable
+1On the Variables  tab, select the variable that you want to duplicate, click , and 
+select Duplicate . The Duplicate Variable  window appears.
+2Enter a new name for the duplicate variable.
+3(Optional) Enter a description for the variable.
+4Click Duplicate .Managing the Variables in a Custom Function File 205

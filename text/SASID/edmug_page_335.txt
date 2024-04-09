@@ -1,0 +1,46 @@
+ColumnDescriptionSchema Propertymodified_by_nmThe ID of the user who last modified the contact 
+record. For example, subject contact records can 
+be modified to include a recording of the 
+treatment presentation or to include information 
+about the subject’s response to the treatment.modifiedBy in the contact 
+recordcreation_dttmA timestamp that indicates when the contact 
+record was created.creationTimeStamp in the 
+contact recordmodified_dttmA timestamp that indicates when the contact 
+record was last modified.modifiedTimeStamp in the 
+contact recordcontact_channel_txtThe channel through which the contact occurred. 
+For more information, see “About Channels” on 
+page 90.channel in the contact 
+recordresponse_tracking_cdThe response tracking code that was generated 
+by the record contacts node.responseTrackingCode in 
+the contact recordconclusion_response_
+txtThe subject’s response to the results of the 
+decision. When the decision includes treatments, 
+this value might represent an overall response to 
+all of the treatments in the subject contact record.conclusionResponseValue 
+in the contact recordconclusion_response_
+type_txtA summary value, category name, or other 
+description for the response that is specified in 
+the conclusion_response_txt column. For 
+example, this value might be Evaluating
+, No response
+, or Closed-Lost
+.conclusionResponseType 
+in the contact recordobject_type_cdA string that identifies the type of resource that 
+created the contact record. Currently, the only 
+value in this column is decision
+.objectType in the contact 
+recordobject_revision_idThe ID for the version of the object that created 
+the contact record.objectRevisionId in the 
+contact recordobject_url_txtThe URI for the decision that created the contact 
+record (for example, /decisions/flows/545783f1-4fb3-45aa-be7d-d9e5a13ed943
+).objectUri in the contact 
+recordexclude_from_contact
+_rule_txtSpecifies whether the contact record is included 
+in aggregate reports for the channel. Column 
+values are true
+ or false
+.excludeFromContactRule 
+in the contact recordrule_fired_txtRule-fired information for the decision if that 
+information was recorded by the record contacts 
+node.ruleFired in the contact 
+recordColumns in the dcm_treatments_contacts_vw View 319

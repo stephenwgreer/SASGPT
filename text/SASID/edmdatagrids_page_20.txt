@@ -1,0 +1,12 @@
+%DCM_DATAGRID_INTERFACE Macro
+Makes the data grid functions available in SAS Studio.
+Syntax
+%DCM_DATAGRID_INTERFACE()
+Details
+Use the %DCM_DATAGRID_INTERFACE macro to make data grid functions 
+available in SAS Studio. You must invoke this macro before any methods that use 
+data grid functions. In addition, if your test thread or data program uses any data 
+grid functions, then you must invoke the %DCM_DATAGRID_INTERFACE macro 
+within the thread or data block, after any global declaration statements. For more 
+information, see “Working with Data Grids in SAS Studio” on page 10.proc ds2;   data _null_;      dcl package datagrid myPackage();      %dcm_datagrid_interface();      /* your DS2 code */   enddata;run;quit;
+16Chapter 2 / Data Grid Macros

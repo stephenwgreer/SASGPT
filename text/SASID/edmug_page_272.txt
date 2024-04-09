@@ -1,0 +1,21 @@
+By default, the Decision Flow  tab displays all of the nodes in each object and 
+highlights the differences. Click Show Differences  to limit the display to only the 
+nodes that are different in each object. Click Show All  to return to the default 
+view.
+For example, in the following figure, both version 1.0 and version 2.0 of the 
+Evaluate_Loans decision contain the same rule sets, but the branches are 
+different. Version 1.0 uses a Yes/No branch that is based on the value of the 
+DEBTINC variable, and Version 2.0 uses an Equals branch that is based on the 
+value of the BAD variable. In Version 1.0, the Low_Ratio rule set is in the Yes 
+branch path, and in Version 2.0, the Low_Ratio rule set in the BAD=0 path.
+TIP Click  beside a decision name to display its location.
+3(Optional) Click the Decision  tab to display the contents of each object. In this 
+view, the information icon 
+  on Record contacts nodes displays which variables 
+and treatments are being tracked, whether rule-fired data or path-tracking are 
+turned on, and whether the contact record is included in aggregate reports. For 
+other node types, this icon displays information about whether a node was 
+added, deleted, moved to another position in the decision, or changed to use a 
+different version of the node object. However, if the decision is large or complex 
+and a node was moved a significant distance, SAS Intelligent Decisioning  might 
+not be able to determine if the node was moved or deleted.256 Chapter 8 / Working with Decisions

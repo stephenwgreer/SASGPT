@@ -1,0 +1,34 @@
+TIP You cannot use global variables in models in SAS Model Manager. You 
+can pass the value of a global variable into a model by mapping a model 
+input parameter to a global variable. For more information, see “Mapping 
+Variables within a Decision” on page 247.
+After you create and activate a global variable, you can add it to the Global 
+Variables  tab of a rule set or a decision. You can use global variables in conditional 
+expressions, but you cannot modify the value of a global variable in a rule set or in a 
+decision.
+When you add a rule set that uses a global variable to a decision, SAS Intelligent 
+Decisioning  creates a decision variable with the same name as the global variable. 
+When you test the decision, SAS Intelligent Decisioning  assigns the current value of 
+the global variable to the decision variable. When you run a published decision, the 
+value that is assigned to the decision variable depends on the destination type. For 
+information, see “Content Executed by Published Decisions” on page 309.
+When you add a common rule set to an assignment rule set and the common rule 
+set uses global variables, you must manually add the global variables to the 
+assignment rule set.
+Note: The decision variable is not a global variable, but it has the same name and 
+value as the global variable. For more information about decision variables, see 
+“About Decision Variables and Mapping” on page 247.
+For more information, see “Add Global Variables to a Rule Set” on page 19 and 
+“Add Global Variables to a Decision” on page 225.
+Create a New Global Variable
+1Click  to navigate to the Global Variables  category view.
+2Click New Global Variable . SAS Intelligent Decisioning  displays the New Global 
+Variable  window.
+3Enter a name for the variable.
+4(Optional) Enter a description for the new global variable. Descriptions are 
+limited to 1000 characters.
+TIP You can edit the description later on the Properties  tab.
+5Select the variable’s data type.
+6Enter a value for the variable. To enter a value for a date or datetime variable, 
+click  or , and select the value in the date or datetime picker.
+7Click Save  to create the variable.142 Chapter 5 / Managing Global Variables

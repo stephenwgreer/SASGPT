@@ -1,0 +1,36 @@
+Executing Published Content
+How you execute published content depends on the destination to which the content 
+is published.
+Executing Content Published to SAS Micro Analytic 
+Service Destinations
+The user who is executing the published content must be authenticated. In SAS 
+Viya, authentication options vary, based on which interface and operating system 
+are used in your environment. External mechanisms include direct LDAP 
+authentication, host authentication, Kerberos, Security Assertion Markup Language 
+(SAML), and OAuth 2.0 with OpenID Connect. For additional information, see SAS 
+Viya Platform: Authentication
+When a decision is published from SAS Intelligent Decisioning  to a SAS Micro 
+Analytic Service destination, an EXECUTE step is created in the published module. 
+For information about the request and response data formats used in this step, see 
+Execute a step  in the REST API documentation for the Micro Analytic Score API. 
+For an example that uses Python to execute a published decision in the maslocal 
+destination, see “Execute a Published Decision” in SAS Intelligent Decisioning: 
+Decision Management REST API Examples .
+IMPORTANT If the SAS Micro Analytic Service configuration property service.removetrailingunderscoresfrominputs
+ and the SAS Intelligent 
+Decisioning  property sas.decisions.masnode.removeTrailingUnderscoresFromInput
+ are not 
+defined or are set to False
+, add an underscore to the name of each input 
+variable. If these options are set to True
+, do not add underscores. Your 
+administrator can add the SAS Micro Analytic Service property to the supplementalProperties
+ section in the sas.microanalyticservice.system
+ configuration definition in SAS 
+Environment Manager. The default value for these options is False
+.For 
+additional information, see “sas.microanalyticservice.system: 
+supplementalProperties” in SAS Micro Analytic Service: Programming and 
+Administration Guide  and 
+“sas.decisions.masnode.removeTrailingUnderscoresFromInput” in SAS 
+Intelligent Decisioning: Administrator’s Guide .Executing Published Content 307

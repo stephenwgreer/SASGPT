@@ -1,0 +1,17 @@
+1Click , and select Manage Environment .
+2Click , navigate to the folder, and copy the URI of the folder into your paste buffer. You paste 
+this URI into the Object URI  or Container URI  fields in the New Rule  window in subsequent 
+steps.
+3Click  to display the Rules  page.
+4Click , and enter the values shown in the following table in the New Rule  window.Table 8 Permissions for Managing Folder Subdirectories FieldValueObject URIEnter the URI of the check-out folder: /folders/folders/guid
+Principal 
+typeAuthenticated UsersRule typeGrantPermission
+sRead , Add DescriptionEnable authenticated users to read and add subdirectories in the check-out folder.
+5Click Save .
+6Click , and enter the values shown in the following table in the New Rule  window.Table 9 Permissions for Managing Folder Contents FieldValueContainer 
+URIEnter the URI of the check-out folder: /folders/folders/guid
+Principal 
+typeAuthenticated UsersRule typeGrantPermission
+sRead , Add DescriptionEnable authenticated users to add items to and read objects from the check-out folder.
+7Click Save .
+8Click , and enter the values shown in the following table in the New Rule  window.60

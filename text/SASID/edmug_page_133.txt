@@ -1,0 +1,21 @@
+Delete Lookup Table Entries
+Open the lookup table, select the entries that you want to delete, and click .
+Edit Lookup Key or Value Labels
+1In the Lookups  category view, open the lookup table.
+2Click  beside the Key or Value  column heading in the lookup table. The 
+Rename  window appears.
+3Enter the label that you want to use for the key or value, and click OK.
+Copy a Lookup Table URL
+To create a link for external documentation that automatically opens a lookup table 
+in SAS Intelligent Decisioning :
+1Open the lookup table.
+2Click , and select Copy lookup table URL . The Copy URL  window appears, 
+and the URL is automatically selected.
+3Click Copy , and then click Close .
+Paste the link into your documentation.
+Compare Lookup Table Content
+You can compare the contents of two different lookup tables, or you can compare 
+the contents of two different versions of the same lookup table.
+1Select the objects that you want to compare.
+nTo compare the contents of two different lookup tables, select the lookup 
+tables in the category view, click , and select Compare object contents .Compare Lookup Table Content 121

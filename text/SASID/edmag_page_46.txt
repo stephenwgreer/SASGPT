@@ -1,0 +1,41 @@
+Transfer Content between SAS Viya 4 
+Environments
+To transfer SAS Intelligent Decisioning  content between Viya 4 environments, use SAS Environment 
+Manager or the transfer plug-in to the sas-viya CLI. When you export an object in SAS Environment 
+Manager, you can select the Include dependencies  check box to include dependent objects in the 
+transfer package that SAS Environment Manager creates. When you use the sas-viya CLI to export 
+an object, you can specify the --include-dependencies
+ option to include dependent objects in the 
+transfer package.
+The transfer service inspects the object that you are transferring and adds any additional objects that 
+it finds to the package. For example, if you select the check box or specify the option when you export 
+a treatment, the transfer package includes the eligibility rule set for the treatment and any version 
+notes that are associated with different versions of the treatment. If you export a decision, the transfer 
+package includes all of the information for any rule sets, treatment groups, lookup tables, 
+subdecisions, and other objects (except models) that are used in the decision. It also includes objects 
+that are used in subdecisions.
+Some object types are handled differently:
+nGlobal variables are automatically transferred when you transfer a rule set or a decision 
+regardless of whether you select the option for including dependencies. However, if a global 
+variable already exists in the target environment where you import the content, SAS Intelligent 
+Decisioning  does not overwrite the existing global variable with the imported version.
+nVersion notes are included in the transfer package, so you do not need to transfer the notes 
+separately. Version notes in the transfer package are displayed as unnamed
+ resources when you 
+view the contents of the package in SAS Environment Manager.
+nModels are not included in the transfer package for a decision. For information about transferring 
+models, see “Migrating Content between SAS Viya Environments” in SAS Model Manager: 
+Administrator’s Guide .
+nCustom functions are not included directly in a decision, so they are not considered dependent 
+objects and are not included in the transfer package.
+nVersion tags are not included in the transfer package for any objects. It is recommended that you 
+assign new tags in the target environment.
+For more information about promotion process for Viya 4, see SAS Viya Platform: Content Migration 
+from SAS Viya 4 .
+IMPORTANT After a treatment group is transferred to a new environment, you must activate 
+the group in the new environment in order to use the group in a decision. For more information, 
+see “Activate a Treatment Group” in SAS Intelligent Decisioning: User’s Guide  or “Activate 
+Treatment Groups” in SAS Intelligent Decisioning: Decision Management REST API 
+Examples .
+IMPORTANT In order to use a lookup table that has been transferred to a new environment, 
+you must do one of the following:45

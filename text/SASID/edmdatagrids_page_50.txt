@@ -1,0 +1,31 @@
+Syntax
+DATAGRID_COLUMNISNUMERIC  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_COLUMNNAME Function
+Returns the name of the column that is in the specified ordinal position in the specified data grid.
+Category: Information
+Returned data 
+type:CHARACTER
+Syntax
+DATAGRID_COLUMNNAME  (dataGrid , column_number )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column_number
+specifies the column number in the data grid. The columns in a data grid are 
+numbered beginning with 1.
+DATAGRID_COLUMNTYPE Function
+Returns the data type of the specified column in the specified data grid.
+Category: Information
+Returned data 
+type:CHARACTER
+Note: This function returns either string
+ or decimal
+, depending on the column data type.44Chapter 3 / Data Grid Functions

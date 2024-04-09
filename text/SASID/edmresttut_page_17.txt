@@ -1,0 +1,54 @@
+name
+specifies a name for the test.
+objectDescriptor
+specifies the name, object type, and URI for the decision that you are testing.
+inputData
+specifies the input data for the test. You can specify an existing input table or 
+define the input data set in the request body. To specify an existing input 
+table, specify the input type CASTable
+, specify the name of the table, and the 
+library and server where the table resides.
+To define an input data set in the request body, specify Inline
+ as the input 
+type, and enter the DATA step code to create the input data in the code 
+property. For an example of using inline data, see Example 2: Specifying the 
+type of inputData as Inline  in the Score Definitions API examples on GitHub.
+mappings
+maps each of the decision’s input-only and input-output variables to a column 
+in the input table or to a static value.
+variableName
+specifies the name of a decision variable.
+mappingType
+specifies where the decision variable’s value comes from. For variables 
+whose value comes from the input table, specify datasource
+. For 
+variables to which you want to assign a fixed value, specify static
+.
+mappingValue
+specifies the input table column or the static value to map to the decision 
+variable that is specified by the variableName
+ property. For variables 
+whose mapping type is datasource
+, specify the column in the input table 
+from which the decision variable gets its value.
+properties
+specifies the server and library where you want the test to write the output 
+tables. You can specify a base name for the output tables with the tableBaseName
+ property. If you do not specify a base name, the API uses test-name_decision-name
+ for the base name.
+Note: These parameters are described in the schema for the Score Definitions 
+API at https://developer.sas.com/apis/rest/DecisionManagement/#schemas-7 .
+5Create the score definition by submitting a POST request 
+to /scoreDefinitions/definitions
+.
+6Use the json()
+ method to convert the response to a JSON object, and retrieve 
+the ID of the score definition.
+7Create the request body for the score execution. Specify the following 
+parameters:
+name
+specifies a name for the score execution request. This name is displayed 
+when you view the log of API calls on your network.
+scoreDefinitionId
+specifies the score definition ID that was returned by the score definition 
+request.12Chapter 3 / Define and Execute a Decision Test

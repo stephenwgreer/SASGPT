@@ -1,0 +1,20 @@
+update subjectcontacts.dcm_object_variables set creation_dttm = contact.creation_dttm from subjectcontacts.dcm_contact_communication contact where dcm_object_variables.contact_id=contact.contact_id;update subjectcontacts.dcm_object_values set creation_dttm = contact.creation_dttm from subjectcontacts.dcm_contact_communication contact where dcm_object_values.contact_id=contact.contact_id;update subjectcontacts.dcm_subject_context set creation_dttm = contact.creation_dttm from subjectcontacts.dcm_contact_communication contact where dcm_subject_context.contact_id=contact.contact_id;
+Managing Third-Party Database 
+Configurations
+About the Subject Contacts and Treatment 
+Definition Databases
+By default, the subject contacts and treatment definitions are stored in the PostgreSQL instance that 
+was installed with SAS Viya. You can use Oracle or a different instance of PostgreSQL for these 
+databases. For more information, see “Configure Third-Party Databases” on page 28.
+IMPORTANT SAS Intelligent Decisioning  does not support third-party configurations in 
+environments that are configured for multi-tenancy.
+Configure Third-Party Databases
+By default, the subject contacts database and the treatment definitions database are stored in the 
+PostgresSQL instance that was installed with SAS Viya. If you want to use that instance of 
+PostgreSQL for your subject contacts and treatment definitions databases, no additional configuration 
+is required.
+Alternatively, you can use Oracle or a different instance of PostgresSQL for either or both of these 
+databases. Complete these steps to configure a third-party database:
+1(Optional) To preserve treatment groups that are stored in the PostgresSQL instance that was 
+installed with SAS Viya, use SAS Environment Manager or the transfer plug-in to the sas-viya CLI 
+to export the treatment groups. Select the Include dependencies  check box in SAS Environment 28

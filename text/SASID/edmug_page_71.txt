@@ -1,0 +1,38 @@
+Destination TypeWhat SAS Intelligent Decisioning  Does GitCreates a directory in the remote Git repository with the 
+same name as the published object and writes the 
+generated code to a file named scoreResource.txt
+.Container destinationsCreates a SAS Container Runtime  container and writes it to 
+the destination.
+Note: The container destination types to which you can 
+publish content from SAS Intelligent Decisioning  are 
+Amazon Web Services (AWS), Microsoft Azure, Google 
+Cloud Platform (GCP), and private Docker repositories.
+The rows in the model tables, the Micro Analytic Service modules, and the SAS 
+Container Runtime containers all become callable REST API endpoints, 
+independent of SAS Intelligent Decisioning . For content that is published to Git 
+destinations, you can use the SAS Intelligent Decisioning  Git Deployment CLI to 
+deploy content from the remote repository either to a CAS destination or to a SAS 
+Micro Analytic Service destination.  The deployed content then becomes a callable 
+REST API endpoint.
+Publish Rule Sets
+1Open the rule set, and click the Versions  tab.
+By default, the version that is published when you click Publish  is the displayed 
+version.
+2(Optional) Click the version number  to change the displayed version to the 
+version that you want to publish.
+3(Optional) Enter any tags that you want to associate with the published object. 
+Press Enter after each tag.
+4Either click Publish  or select Publish and Lock . 
+nTo publish the selected version without also creating a new minor version, 
+click Publish . 
+nTo lock and publish the selected version and create a new minor version at 
+the same time, click , and select Publish and Lock . 
+The Publish Rule Sets  window appears.
+5Select the destination to which you want to publish. The publishing destinations 
+that are available to you depend on what is configured at your site. See SAS 
+Viya Platform: Publishing Destinations  for more information.
+Note: You cannot publish filtering rule sets to SAS Micro Analytic Service 
+destinations, to Git destinations, or to container destinations. Also, you cannot 
+publish rule sets that use SAS Data Quality functions to SAS Micro Analytic 
+Service destinations, and rule sets that use these functions will fail if they are run 
+inside the database.60Chapter 2 / Working with Rule Sets

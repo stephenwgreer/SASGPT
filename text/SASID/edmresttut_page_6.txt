@@ -1,0 +1,20 @@
+1
+About the Examples
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Client ID  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Authorization  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Code Files for These Examples  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Additional Documentation and Examples  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Introduction
+SAS Viya REST APIs are based on resource-oriented URLs, use HTTP 
+authentication and HTTP verbs, and return HTTP response codes. With SAS Viya 
+REST APIs, you can create and access SAS resources by using any client 
+technology. These APIs make it easy to integrate the capabilities of SAS Viya into 
+your business processes or to extend and customize SAS Viya to meet specific 
+requirements.
+The Decision Management REST APIs provide access to machine scoring, 
+business rules, models, decisions, treatments, and more. The examples in this 
+document show how to use these APIs to perform some of the more common 
+decision management tasks that you might want to do through the APIs.
+Note: The examples in this document were written in Python 3.7 and run in Jupyter 
+Notebook, which was launched from Anaconda Navigator.1

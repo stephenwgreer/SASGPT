@@ -1,0 +1,37 @@
+TIP You can click on the values of character variables to display the 
+entire value in a separate window. For data grid variables, you can 
+choose to view the variable value in three different formats:
+nClick the Data Grid  tab to view the data grid value as a table.
+nClick the Formatted  tab to view the data grid as a formatted JSON 
+character string.
+nClick the Plain  tab to view the data grid as an unformatted character 
+string.
+TIP On the Output  page, click Export  to export the output table as a 
+comma-separated values (CSV) file. On the Log page, click  to 
+download the log file.
+Import Scenario Test Definitions
+You can import scenario test values from a comma-delimited (CSV) file. Each line in 
+the CSV file is imported as one scenario test. In the CSV file, add a column of 
+values for each variable. In the header row, enter the names of the input variables 
+and of the output variables with _expected
+ appended to the name.
+For example, suppose your scenario test has the input variables policyholder
+, cscore
+, and claims
+, and it has the output variables eligible
+ and policies
+. An 
+import file for this test might appear in a spreadsheet application as shown in the 
+following figure.
+The policies output variable in this example is a data grid variable. To enter values 
+for data grid variables, use the JSON string format described in “Introduction to Data 
+Grids” in SAS Intelligent Decisioning: Using Data Grids .
+The format for date and datetime variables depends on your locale. Use the same 
+format that is created by the date and datetime pickers when you click  or  to 
+enter initial values for custom variables on the Variables  tab.
+To import scenario test definitions:
+1On the Scoring  tab, click the Scenarios  subtab, and then click Import 
+Scenarios . The Import Scenarios  window appears.
+2In the Import from  field, click  and select the CSV file that contains the 
+scenario test values.
+Note: The import file is limited to 10 MB.Testing Rule Sets 69

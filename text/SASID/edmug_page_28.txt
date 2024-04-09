@@ -1,0 +1,38 @@
+PropertyDescriptionInput  and 
+OutputA variable can be an input variable, an output variable, both, or neither 
+(a temporary variable). See “Input Variables, Output Variables, and 
+Temporary Variables” on page 17 for more information.LengthThe length for Boolean and numeric variable types is set 
+automatically.
+For output-only data grid variables, the length is set to the value that 
+you specify.
+For character variables and data grid variables that are input-only or 
+input-output variables, the variableLengthOverridden configuration 
+property determines how the length is set. By default, this property is 
+set to Off, and the length is set to the length in the input data. When 
+the variableLengthOverridden property is set to On, the length of 
+input-only and input-output character variables and data grid variables 
+is set to the value that you specify. For more information, see 
+“sas.businessrules.variableLengthOverridden” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+The maximum length for character variables (outside of a data grid) 
+and data grid variables is 10485760 characters. The maximum length 
+for character variables within a data grid is 32767 characters.Initial valueYou can specify an initial value for all data types except data grids. 
+Initial values are used only at run time and only for output-only 
+variables.
+Note: For content that will be published to a SAS Micro Analytic 
+Service destination, the values of date and datetime input variables 
+must be numeric. They cannot be formatted values such as 18jul2019
+. Also, integer variables are converted to decimal variables 
+when the content is published.DescriptionDescriptions are limited to 256 characters.
+Input Variables, Output Variables, and 
+Temporary Variables
+For each variable, you must specify whether the variable is an input variable, an 
+output variable, both an input variable and an output variable, or a temporary 
+variable.
+nInput variables are variables that are present in the input table for a rule set. 
+When a rule set is deployed in a production system, all input variables must be 
+mapped to table columns in input data. When you test a rule set in SAS 
+Intelligent Decisioning , for each input variable, you can either map it to a table 
+column or specify a constant as its input value. If you choose not to map a 
+variable to either a table column or a static value, SAS Intelligent Decisioning 
+displays a warning message. When you create or edit a variable, clear the Input Managing the Variables in a Rule Set 17

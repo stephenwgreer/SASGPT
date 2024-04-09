@@ -1,0 +1,33 @@
+Partition the Subject Contacts Database
+IMPORTANT Partitioning the subject contacts database requires that PostgreSQL databases 
+are based on PostgreSQL 12. Oracle databases must be based on Oracle 12c Release 2 or 
+higher. 
+Partitioning and Trimming the Database
+The number of records stored in the subject contacts database can grow at a fast pace. However, as 
+time passes, older records typically become less relevant. In order to avoid storing large amounts of 
+stale data, consider periodically trimming the database. How often you trim your database depends 
+on how fast the database grows and how quickly the data becomes stale.
+It is easier to remove older, less relevant data if the database is partitioned. With a partitioned 
+database, you can drop the partitions that contain the older data instead of searching for and deleting 
+older records.
+IMPORTANT If you are using PostgreSQL and you partition the subject contacts database, 
+you must specify the jvm.java_option_hibernate_extra_table property for the Subject Contact 
+service. For more information, see “Subject Contact Service Properties” on page 18.
+The amount of disk space used by the subject contacts database can grow rapidly. Closely 
+monitor the disk space that is used by the database. It is recommended that you partition the 
+subject contacts database and periodically drop older partitions. If the number of partitions is 
+very high, you might experience degraded performance, and calls to the subject contacts 
+database might time out.
+SAS provides scripts that generate SQL statements that partition the subject contacts database. 
+There is one script for PostgreSQL databases and one script for Oracle databases. You can use the 
+scripts to generate the SQL statements, and then use a database client application to execute the 
+generated SQL. For more information, see “About the Partitioning Scripts” on page 30.
+Note: You must be familiar with how partitioning works for your database. Refer to the documentation 
+for your version of PostgreSQL at https://www.postgresql.org/docs/current/ddl-partitioning.html  or for 
+your version of Oracle at https://www.oracle.com/database/technologies/partitioning.html .
+About the Partitioning Scripts
+The partitionScripts ZIP file contains two scripts: generatePostgreSQLPartitions.sh and 
+generateOracleSQLPartitions.sh. This ZIP file is available at https://support.sas.com/downloads/
+browse.htm?fil=&cat=612 . You can download the ZIP file and extract the contents to your local 
+machine. These scripts generate sample SQL statements to partition your subject contacts database 
+based on datetime ranges.30

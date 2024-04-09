@@ -1,0 +1,31 @@
+Determine Which Objects Use a Global 
+Variable
+On the Global variables  category page, select the check box for the global 
+variable, click , and select View used by report . The All Objects that Use the 
+Selected Item  window appears. This window lists all objects that use any version of 
+the selected global variable.
+In the report, you can use the Filter  field to filter the list of objects based on the 
+object names. Click on an object name to open the object. Click  next to an object 
+name to display the date on which the object was last modified and the ID of the 
+user who modified the object. For decisions and code files that have been checked 
+out, SAS Intelligent Decisioning  also displays the IDs of the users that have checked 
+out the objects. For decisions, SAS Intelligent Decisioning  includes the decision’s 
+workflow status.
+Click Export  to export the Used By report to a PDF file. In the PDF file, you can 
+click on an object name to open the object in a new browser tab.
+Managing Version Tags for Global 
+Variables
+Add a Version Tag
+Version tags enable you to better organize and group your content. Version tags are 
+associated with specific versions of an object and not with the entire object. You can 
+add the same tag to any version of any object. To add a tag to a global variable 
+version:
+1On the Versions  tab, position your cursor in the Version Tags  column for the 
+version that you want to tag. If the version is not tagged,  appears. If the 
+version has at least one tag,  appears.
+2Click  to open the New Version Tags  window, or click  to open the Edit 
+Version Tags  window.
+3For each tag that you want to add, either enter a custom tag or begin typing and 
+select a tag from the list of previously entered tags. Press Enter after each tag. 
+Tags are limited to 100 characters each and cannot contain the following 
+characters: $ ' " # & ? ( ) \ /146 Chapter 5 / Managing Global Variables

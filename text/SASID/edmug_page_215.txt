@@ -1,0 +1,30 @@
+TIP  By default, the autocomplete feature is turned on for SAS functions 
+and custom functions. You can turn off this feature or change what is 
+displayed in the autocomplete list by using the SAS Intelligent Decisioning 
+settings. You can specify that SAS Intelligent Decisioning also displays 
+variable names. For information, see “SAS Intelligent Decisioning Settings” 
+on page 8.
+In the autocmplete list, SAS Intelligent Decisioning displays all function 
+names and variable names that match the text that you enter. Double-click an 
+item to add it to the code field. Single-click an item to display information 
+about the item, such as whether it is a function or a variable. For functions, 
+the information includes the returned data type and category. For variables, 
+the information includes the data type and direction (input, output, or both).
+The autocomplete list does not include functions that are defined in a custom 
+context file.
+Rules for Writing Custom Function Files
+When you are developing your DS2 custom function, follow these rules:
+nDo not change the name of the method. The method name must match the 
+function name.
+nThe method signature can include variables that are both input and output 
+variables. Specify these variables with the in_out
+ keyword. Custom functions 
+support data grid packages and the DS2 data types that are listed in “Data Types 
+for SAS Data Sets” in SAS DS2 Language Reference .
+In the method signature, list input-only parameters first. List input-output and 
+output-only parameters next, using the in_out modifier. Do not specify a length 
+for input-output and output-only parameters. The length for these parameters is 
+derived from the variables that are passed into the method.
+Note: Packages are input-output data types.
+nThe variables that you use as function parameters must be mapped to input 
+variables in your decision.Rules for Writing Custom Function Files 201

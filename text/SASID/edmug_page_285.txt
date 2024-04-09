@@ -1,0 +1,26 @@
+Create a New Version Automatically When You 
+Publish a Decision
+You can automatically create a new version of a decision when you publish the 
+current version by selecting Publish and Lock .For information, see “Publish 
+Decisions” on page 281.
+Copy the Content of a Version
+You can copy the content of an object’s version in the category view or on the 
+Version  tab for the object.
+1In the category view, complete these steps:
+aSelect the decision whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+cSelect the version whose contents you want to copy.
+Alternatively, on the Versions  tab of the decision whose contents you want to 
+copy:
+aSelect the version whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+2Click , and select the decision into which you want to paste the contents of the 
+version.
+When you paste the contents, SAS Intelligent Decisioning  creates a new version 
+of the target decision. The target object contains only the pasted content.
+3Select whether you want to create a new major or minor version.
+4(Optional) Modify the notes that will be associated with new version. 
+5(Optional) Add tags that will be associated with the new version. Tags that are 
+associated with a source object version are not automatically added to the new 
+version. See “Add a Version Tag” on page 277
+6Click Paste Version , and then click Yes.Managing Versions of Decisions 269

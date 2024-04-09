@@ -1,0 +1,30 @@
+TIP Except for query files that you edit in SAS Studio, you must check 
+out objects that are saved in a folder for which the check-out and commit 
+feature is enabled before you can edit them. The check-out and commit 
+feature is always enabled for the Decision Repository
+ folder. See 
+“Checking Out and Committing Decision Versions” on page 272 for more 
+information.
+9(Optional) If the code file is in a folder for which the check-out and commit 
+feature is enabled, click the Versions  tab and check out the latest version of the 
+code file. For more information, see “Check Out and Commit a Custom Code 
+File Version” on page 184.
+TIP  By default, the autocomplete feature is turned on for SAS functions 
+and custom functions. You can turn off this feature or change what is 
+displayed in the autocomplete list by using the SAS Intelligent Decisioning 
+settings. You can specify that SAS Intelligent Decisioning also displays 
+variable names. For information, see “SAS Intelligent Decisioning Settings” 
+on page 8.
+In the autocmplete list, SAS Intelligent Decisioning displays all function 
+names and variable names that match the text that you enter. Double-click an 
+item to add it to the code field. Single-click an item to display information 
+about the item, such as whether it is a function or a variable. For functions, 
+the information includes the returned data type and category. For variables, 
+the information includes the data type and direction (input, output, or both).
+The autocomplete list does not include functions that are defined in a custom 
+context file.
+Managing the Variables in a DS2 or 
+Python Code File
+About Variables
+The Properties of a VariablePropertyDescriptionNameVariable names must start with a letter or an underscore (_), and they 
+can contain only alphanumeric characters and the underscore. 168 Chapter 6 / Using Custom Code Files

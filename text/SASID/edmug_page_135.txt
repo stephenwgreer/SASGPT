@@ -1,0 +1,24 @@
+Generate PDF Documentation for a 
+Lookup Table
+You can generate detailed documentation for a lookup table as a PDF document. 
+The PDF includes the lookup table properties and a table of the current key-value 
+pairs that are contained in the lookup table.
+1Open the lookup table.
+2Click , and select Create document . The Create Document  window appears.
+TIP If this option is disabled, there might be unsaved changes. Click .
+3(Optional) Enter a name for the document if you do not want to use the default 
+name.
+4Click Create . SAS Intelligent Decisioning  creates the PDF. The result depends 
+on which browser you are using and the browser’s default download actions. 
+The browser might automatically download the file and display a notification in 
+the bar at the bottom of the browser window. Alternatively, the browser might 
+prompt you to save the file or open it with a specific application.
+Managing Lookup Tables
+Duplicating Lookup Tables
+About Duplicating Lookup Tables in 
+Folders for Which the Check-Out and 
+Commit Feature Is Enabled
+When you duplicate a lookup table, SAS Intelligent Decisioning  first creates an 
+empty lookup table, and then updates the lookup table to add the individual lookup 
+entries. The default permissions for the Decision Repository enable users to create 
+new objects, but the permissions do not include the ability to update the objects. In Managing Lookup Tables 123

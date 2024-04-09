@@ -1,0 +1,32 @@
+sas.decisions.clearOutputOnlyDataGridSubDecision
+Specifies whether existing data is cleared in output-only data grids that are used in subdecisions 
+before the subdecision executes. When this property is set to On, the data in the data grids is 
+cleared. When this property is set to Off, data from previous runs is not cleared in the data grids.DefaultOff
+sas.decisions.dataGridMetadataGenerating
+Specifies whether DS2 packages that are published to SAS Micro Analytic Service destinations 
+have two methods (step IDs), datagrid_metadata
+ and datagrid_metadata_skel
+, that you can 
+use to determine the data grid metadata that is applicable to the decision flow. When this property 
+is set to On, you can post a request to these steps to get data grid metadata. See Execute a step 
+in the SAS Viya REST API documentation.
+Note: If you enable this property, SAS Intelligent Decisioning generates more code for published 
+objects and might increase the time required to publish an object to SAS Micro Analytic Service 
+destinations. Enabling this option does not significantly affect the time required to execute 
+published objects.DefaultOff
+sas.decisions.deleteVersions
+Enables users who have permission to delete decisions to delete specific versions of decisions.DefaultOn
+sas.decisions.disableLineReporting
+Specifies whether line numbers are included in DS2 error messages. When this option is turned 
+off, lines numbers are included in error messages. When this option is turned on, lines numbers 
+are not included in error messages.DefaultOff
+sas.decisions.execution.threadCount
+Specifies the maximum number of threads that can be allocated for executing DS2 code 
+packages.
+TIP When the Enable variable assignment logging  option is selected for a scenario 
+test, this configuration option is ignored. The default thread count for the test is set to 1 in 
+order to avoid duplicate and interleaved log entries. For more information, see “Enable 
+Variable Assignment Logging” on page 39.Default4
+sas.decisions.includeLoggingInGeneratedCode
+Enables all logging, including performance logging, for decisions that are running in the Micro 
+Analytic Score service.DefaultOnSee“Enabling Performance Logging” on page 36 9

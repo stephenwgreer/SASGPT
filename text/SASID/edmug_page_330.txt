@@ -1,0 +1,35 @@
+information in JSON syntax. You can use these variables and the SAS Decision 
+Management REST API to update the subject contact database. For example, your 
+enterprise might have a batch job that runs at specific times and updates the subject 
+contact database.
+When you add a record contacts node to a decision, you specify the data grid 
+variable and the decision variables that you want to track in the subject contacts 
+record. When the decision contains a treatment, you usually specify the output data 
+grid that is produced by the treatment as the data grid to track. This data grid 
+contains information about the treatments for which the subject qualifies. You 
+usually also track the decision variables that are mapped to dynamic attributes. The 
+record contacts node also generates a response tracking code that you can use in a 
+REST API request to update the subject contact database with information about 
+the subject’s response to the treatments.
+For more information about treatments, attributes, and record contacts nodes, see 
+Chapter 3, “Working with Treatments and Treatment Groups,” on page 83 and 
+“Adding Record Contacts Nodes” on page 233. Information about the Subject 
+Contacts REST API is available at https://developer.sas.com .
+You can query the subject contact records and treatment definitions to determine 
+which treatments a subject qualifies for, whether a treatment has been presented to 
+a subject, which treatments a subject has responded to, and so on. SAS Intelligent 
+Decisioning  provides database views that you can use to query the database.
+How to Query the Subject Contacts 
+Database
+If you are using the PostgreSQL instance that was installed with SAS Viya for your 
+database, the recommended way to query the database is to use the SAS Decision 
+Management REST API. Complete reference information for the Decision 
+Management API is available at http://developer.sas.com . For examples of using the 
+Subject Contacts API, see the examples on GitHub . For additional information and 
+examples, see SAS Intelligent Decisioning: Decision Management REST API 
+Examples .
+If you are using a third-party database, you can use the database views that are 
+provided by SAS Intelligent Decisioning . You can create a data query file in the SQL 
+editor that uses these views and include the data query file in a decision. For more 
+information, see “Using Views Defined by SAS Intelligent Decisioning” on page 315
+and “Data Query Files” on page 159.314 Appendix 1 / Querying the Subject Contact Database

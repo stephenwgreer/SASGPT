@@ -1,0 +1,31 @@
+sas.decisions.validation.validationCoreThreadPoolSize
+Specifies the maximum number of threads that SAS Intelligent Decisioning  can use to validate 
+decisions. If you routinely validate very large decisions, increasing the number of threads available 
+to the validation process can improve performance.Default8
+sas.decisions.variableLengthOverridden
+Specifies whether you can override the default length for input-only and input-output character 
+variables in decisions and code files. When this property is set to Off, the lengths for these 
+variables are based on the length of the input columns to which the variables are mapped. When 
+this property is set to On, SAS Intelligent Decisioning uses the lengths that you specify when you 
+create the variables.DefaultOffSee“Managing the Variables in a Decision” in SAS Intelligent Decisioning: User’s Guide
+sas.decisions.checkout
+sas.decisions.checkout.allowConcurrentCheckout
+Controls whether the same decision or code file can be checked-out by multiple users at the same 
+time.DefaultONSee“Concurrently Checking Out and Committing Code File Versions” in SAS Intelligent 
+Decisioning: User’s Guide“Concurrently Checking Out and Committing Decision Versions” in SAS Intelligent 
+Decisioning: User’s Guide
+sas.decisions.checkout.checkoutEnabledFolderPaths
+Specifies the list of folder paths whose decisions and code files can be or must be checked out 
+before they can be edited. Separate path names with commas.Default/Decision Repository
+TipPermissions are set on the default folder, /Decision Repository
+, so that users are 
+required to check out the objects in this folder before they can be edited. Similar 
+permissions are not automatically set on any additional folders that you specify with this 
+configuration option. You must explicitly set the permissions in order to require that the 
+objects in the additional folders are checked out before they are modified. See “Set 
+Permissions for Check-Out Folders” on page 59 for more information.Example/Public/checkout
+sas.decisions.codefiles
+Click New Configuration  to define this configuration instance.
+sas.decisions.codefiles.deleteVersions
+Enables users who have permission to delete custom code files to delete specific versions of 
+custom code files.12

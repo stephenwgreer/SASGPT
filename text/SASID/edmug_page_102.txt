@@ -1,0 +1,30 @@
+nuse DS2 code files to create custom code for arbitrating the treatments. Chapter 
+6, “Using Custom Code Files,” on page 151.
+About Channels
+Channels are routes by which your company and a subject are in contact. Typical 
+channels are email, phone call, and website. A default set of channels is defined in 
+the Treatment Channels lookup table. Your administrator can customize this lookup 
+table for your enterprise. You can use this lookup table in rules to narrow the list of 
+offers to ones that are appropriate for the channel. See “Predefined Lookup Tables” 
+on page 116 for more information.
+You can create assignment rules to determine the channel through which your 
+company and a subject are in contact if the channel was not specified in the original 
+request.
+Define a Treatment
+Create a New Treatment and Define Attributes
+1Click , and then click New Treatment . The New Treatment  window appears.
+2Enter a name for the treatment.
+3(Optional) Enter a description for the treatment. Descriptions are limited to 1000 
+characters.
+TIP You can edit the description later on the Properties  tab.
+4Click , and select the folder where you want to save the treatment.
+5Click Save  to save the treatment. SAS Intelligent Decisioning  opens the new 
+treatment and displays the Attributes  tab.
+TIP Objects that are saved in a folder for which the check-out and 
+commit feature is enabled, such as the Decision Repository
+ folder, 
+must be checked out before they can be edited. 
+6(Optional) If the treatment is in a folder for which the check-out and commit 
+feature is enabled, click the Versions  tab and check out the latest version of the 
+treatment. For more information, see “Check Out and Commit a Treatment or 
+Treatment Group Version” on page 110.90Chapter 3 / Working with Treatments and Treatment Groups

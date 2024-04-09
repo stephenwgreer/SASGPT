@@ -1,0 +1,13 @@
+TIP To delete only the ELSE or OR clause, click  for that clause.
+Rename a Rule
+To rename the IF clause of a rule, select the existing rule name, and enter a new 
+name.
+To rename the ELSE or OR clause of a rule:
+1Right-click on the ELSE  or OR operator and select Rename rule .
+2Enter the new name and click Rename .
+TIP Rule names for ELSE and OR clauses do not appear in the rule set 
+editor.
+Edit a Rule Description
+1Click  for an IF rule, or right-click an ELSE or OR rule to display the menu.
+2Select Edit description  from the menu. The Edit Description  window appears.
+3Enter the new description, and click Edit.42Chapter 2 / Working with Rule Sets

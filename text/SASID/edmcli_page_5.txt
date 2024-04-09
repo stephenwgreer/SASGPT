@@ -1,0 +1,27 @@
+1
+Using SAS Intelligent Decisioning 
+Command-Line Interfaces
+About the SAS Intelligent Decisioning CLIs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Downloading and Installing the CLIs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Creating and Using Profiles  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+About the SAS Intelligent Decisioning 
+CLIs
+In SAS Viya, a command-line interface (CLI) is a user interface to the SAS Viya 
+REST services. In this interface, you enter commands on a command line and 
+receive a response back from the system. You can use a CLI to interact directly with 
+SAS Viya programmatically without a GUI. For information about all of the CLIs that 
+are provided with SAS Viya, see “Command-Line Interface: Overview” in SAS Viya: 
+Using the Command-Line Interface .
+The following SAS Intelligent Decisioning CLIs are available:
+dcmtransfer
+enables you to transfer rule sets, rule flows, lookup tables, and decisions from a 
+SAS 9.4 environment to a SAS Viya environment.
+decisiongitdeploy
+enables you to deploy decisions and rule sets from a local Git repository to a 
+SAS Micro Analytic Service environment or to a SAS Cloud Analytic Services 
+(CAS) environment. You must publish the decisions and rule sets to a Git 
+publishing destination and copy them into your local Git repository before you 
+use the CLI.
+rtdmobjectmigration
+imports objects that were exported from SAS Real-Time Decision Manager on 
+SAS 9.4. Currently, the only supported object type is treatments.1

@@ -1,0 +1,27 @@
+8
+Update Subject Contact History
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+How To  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+Example Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Responses  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+See Also  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Introduction
+When you use a decision to determine the treatments for which a subject is eligible, 
+the decision returns the list of treatments in the treatmentsForConsideration 
+property. If the decision includes a record contacts node, this node creates a subject 
+contact history record that includes a response tracking code. The subject contact 
+history record contains the information that you want to track, which typically 
+includes the treatments for which the subject is eligible. You can use the tracking 
+code to update the subject contact history record with information about the 
+subject’s response to the treatments.
+For more information about treatments and record contacts nodes, see the following 
+topics:
+n“About Treatments and Decisions” in SAS Intelligent Decisioning: User’s Guide
+n“Example: A Decision That Includes a Treatment Group” in SAS Intelligent 
+Decisioning: User’s Guide
+n“Add a Record Contacts Node” in SAS Intelligent Decisioning: User’s Guide
+This example updates a subject contact history record. It updates both record-level 
+and treatment-level properties. This example assumes that a customer service 
+representative or a calling application provides the tracking code of the subject 
+contact record, the treatment ID of the treatment that needs to be updated, and the 
+list of updates to make to the treatment.43

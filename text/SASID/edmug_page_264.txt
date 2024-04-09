@@ -1,0 +1,23 @@
+decision variable, and you must map the probability  input variable of the rule to the 
+em_prob  decision variable.Loan Default
+ModelCredit Approval
+Decision VariablesCredit Approval
+Decision• approval
+• em_prob
+• income
+• probability
+• stateEvaluate Credit
+Rule SetstateincomeprobabilityprobabilityVariableInput Variablesem_probincomeincomeMaps Toem_probVariableOuput Variablesem_probMaps Toincomeem_probapproval
+IMPORTANT When the decision is published and run in a production 
+environment, the decision expects the input data to contain variables that 
+have the same name and data type as the decision’s input variables.
+Add Missing Variables
+If the Create variables automatically in decisions  setting is turned off, SAS 
+Intelligent Decisioning  does not automatically add decision variables when you add 
+an object to the decision. In these cases, you can use the Add missing variables 
+option to define decision variables with the same name and data type as the object’s 
+variables and add them to the decision.
+1Click  and select Add missing variables . 
+2In the Add Missing Variables  window, select the variables that you want to add to 
+the decision, and click Add. SAS Intelligent Decisioning  adds the decision 
+variables and maps the object’s variables to the decision variables.248 Chapter 8 / Working with Decisions

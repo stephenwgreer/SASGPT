@@ -1,0 +1,31 @@
+Managing Decisions
+Duplicating Decisions
+About Duplicating Decisions in Folders for 
+Which the Check-Out and Commit Feature 
+Is Enabled
+When you duplicate a decision, SAS Intelligent Decisioning  first creates an empty 
+decision, and then updates the decision to add references to the included objects. 
+The default permissions for the Decision Repository enable users to create new 
+objects, but the permissions do not include the ability to update the objects. In order 
+to duplicate an object that is in the Decision Repository, you must check out the 
+object.
+If your site has created additional folders for which the check-out and commit 
+feature is enabled, and if those folders have been assigned the same permissions 
+as those assigned to the Decision Repository, you must also check out objects in 
+those folders before you can duplicate them.
+Duplicating Included Objects
+When you duplicate a decision, you can choose whether to also duplicate the 
+objects that are in the decision. If you choose not to duplicate the included objects, 
+the duplicate decision uses the existing objects. If you choose to duplicate the 
+included objects, the new copy of the decision uses the new copies of the included 
+objects. If the decision includes a nested decision (subdecision), SAS Intelligent 
+Decisioning  duplicates the objects that are in the nested decision.
+Note: Any models, lookup tables, custom context files, or Micro Analytic modules 
+that are used in the decision are not duplicated. The duplicated decision uses the 
+original objects. If the decision includes treatment groups, the treatment groups are 
+duplicated, but the individual treatments within the treatment groups are not 
+duplicated. The duplicated treatment group uses the original treatments.
+When you duplicate a decision and its included objects, you must enter a custom 
+suffix that SAS Intelligent Decisioning  appends to the names of the duplicated 
+objects. See “Duplicate Decisions” on page 261. All of the duplicated objects are 
+placed in the same folder260 Chapter 8 / Working with Decisions

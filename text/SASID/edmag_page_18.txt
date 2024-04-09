@@ -1,0 +1,27 @@
+sas.referencedata.checkout
+sas.referencedata.checkout.allowConcurrentCheckout
+Controls whether the same lookup table can be checked-out by multiple users at the same time.DefaultONSee“Concurrently Checking Out and Committing Lookup Table Versions” in SAS Intelligent 
+Decisioning: User’s Guide
+sas.referencedata.checkout.checkoutEnabledFolderPaths
+Specifies the list of folder paths whose lookup tables can be or must be checked out before they 
+can be edited. Separate path names with commas. This option is available starting with 2021.1.6.Default/Decision Repository
+TipPermissions are set on the default folder, /Decision Repository
+, so that users are 
+required to check out the objects in this folder before they can be edited. Similar 
+permissions are not automatically set on any additional folders that you specify with this 
+configuration option. You must explicitly set the permissions in order to require that the 
+objects in the additional folders are checked out before they are modified. See “Set 
+Permissions for Check-Out Folders” on page 59 for more information.Example/Public/checkout
+sas.referencedata.publish
+sas.referencedata.publish.lookupDisableMasPublish
+Controls whether lookup tables are activated in SAS Micro Analytic Service destinations. When 
+this option is set to Off and you activate a lookup table, it is activated in all of the SAS Micro 
+Analytic Service destinations that are defined at your site. If this option is set to On, then lookup 
+tables are not activated in these destinations, and your administrator must set the 
+sas.businessrules.lookupStaticBinding  option to On in order to include static copies of lookup 
+tables in generated code and to ensure that published content executes correctly.DefaultOffSee“Controlling Where Lookup Tables Are Activated And How They Are Used” in SAS 
+Intelligent Decisioning: User’s Guide
+Score Execution Service Properties
+sas.scoreexecution.deleteExecutions
+Specifies whether existing test results for a rule set, model, or decision test are deleted before the 
+test is re-run. By default, existing results are not deleted when a test is re-run.DefaultOffSee“Managing Test Data” on page 64 17

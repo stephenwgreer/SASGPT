@@ -1,0 +1,31 @@
+OperatorDefinitionExample**Raises the first operand to 
+the power of the second 
+operandnum1**num2
+=Equal totries = maxTriesAllowed
+||Concatenates the first string 
+and the second stringstring1 || string2
+!=Not equal toinsufficientFunds != 1
+^=
+≠ (Expression Editor 
+interface)Not equal tobalance ^= 'low'
+>Greater thandaysLate > 5
+>=Greater than or equal tobalance >= 1000
+<=Less than or equal tobalance <= 250
+<>The maximum of the left and 
+right operandsnum1 <> num2
+IN (value-list ) Equal to an item in value-listrisk in ('high','medium','low')
+NOT IN ( value-list ) Not equal to an item in value-
+listofferPercent not in (10,20,30)
+LIKE ' pattern ' If the variable’s value 
+matches the expression 
+pattern in pattern , the result is 
+true.like 'HS%PP'
+expression  AND 
+expressionIf both expressions are true, 
+the result is true.dateExpired >= '01AUG2015'd AND dateExpired <= '31AUG2015'd
+expression  OR expression If either expression is true, 
+the result is true.dateEnrolled >= '01JAN2015' OR member = 1
+Using the LIKE Operator
+The LIKE operator determines whether the value of a variable matches a pattern-
+matching expression. An expression that uses the LIKE operator has the following 
+syntax:38Chapter 2 / Working with Rule Sets

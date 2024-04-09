@@ -1,0 +1,40 @@
+DestinationMaximu
+m 
+LengthRequirements And Restrictionscharacters, or special characters other than the 
+underscore.Apache 
+Hadoop128The published name cannot contain colons (:) or 
+double quotation marks.
+bIf you have previously published the decision, turn on the Replace item with 
+the same name  option in order to replace the previously published decision 
+of the same name in the same destination.
+cSelect the Path tracking  check box if you want the published decision to 
+generate path tracking data.
+TIP This path-tracking data is recorded in the pathID column in the 
+output table. The path-tracking data that is recorded when you select 
+Record path tracking  for a record contacts node is recorded in the 
+subject contact history.
+This option is disabled if you are publishing content to a SAS Micro 
+Analytic Service destination, a Git destination, or a container 
+destination.
+dSelect the Rule-fired tracking  check box if you want the published decision 
+to generate rule-fired data.
+TIP This rule-fired data is recorded in the ruleFiredFlags column in 
+the output table. The rule-fired data that is recorded when you select 
+Record rule-fired data  for a record contacts node is recorded in the 
+subject contact history.
+This option is disabled if you are publishing content to a SAS Micro 
+Analytic Service destination, a Git destination, or a container 
+destination.
+7Publish the decisions. 
+To publish content to a SAS Cloud Analytic Services (CAS) destination, you must 
+reload the CAS destination table in order to make the newly published items 
+available to other applications. You do not need to reload the destination table 
+when you publish content to other destination types.
+Select one of the following options:
+Publish
+publishes the decisions and, if you are publishing content to a CAS 
+destination, automatically reloads the CAS destination table. If another user 
+is executing the code for an item that was previously published to CAS while 
+the destination table is being reloaded, reloading the table might cause 
+temporary problems with accessing the table content. After the table is 
+reloaded, all authorized users can access all items in the table.Publishing a Decision 283

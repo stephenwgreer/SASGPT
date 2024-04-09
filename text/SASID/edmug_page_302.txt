@@ -1,0 +1,41 @@
+SAS Intelligent Decisioning  automatically maps the input variables in the 
+decision to columns in the input table when the names and data types of the 
+variables match those of the table columns.
+If any input variables are not mapped to input columns or to static values, the 
+application displays a warning message. At run time, SAS Intelligent Decisioning 
+assigns missing values to input variables that are not mapped.
+You can change the automatic variable mappings in the Variable Mappings 
+window.
+To change variable mappings:
+aClick Variables . The Variable Mappings  window appears.
+bFor each input variable, select the table column to which the variable should 
+be mapped. If the input table contains more than 25 columns, click More 
+columns  to display additional column names. Alternatively, for Decimal, 
+Integer, and Character variables, you can select Use value  for the table 
+column, and specify a literal value in the Value  column. When you are 
+entering literal values, remember these rules:
+nDo not enclose character strings in quotation marks.
+nTo specify a missing value for character variables, select Use value  and 
+leave the Value  column empty. When SAS Intelligent Decisioning 
+generates code, it generates an empty string (''
+). For numeric values, 
+enter a period (.).
+Note: For content that will be published to a SAS Micro Analytic Service 
+destination, the values of date and datetime input variables must be numeric. 
+They cannot be formatted values such as 18jul2019
+. Also, integer variables 
+are converted to decimal variables when the content is published.
+cClick OK to close the Variable Mappings  window.
+8(Optional) Click Advanced  to display the advanced options.
+9(Optional) Click  and select the library where you want to write the output of 
+the test.
+10(Optional) Enter a name for the test results output table if you do not want to use 
+the default name. The default name is test-name_object-name_timestamp_output
+.
+11(Optional) Select the version of the decision that you want to test.
+12(Optional) Select the variable that you want to serve as an input debug variable. 
+You can specify an input-only variable or an input-output variable. The decision 
+writes the name and value of this variable to the log for each input record that is 
+processed. It writes the value just before the logic of the decision is executed for 
+the input record. 
+For more information, see “Debugging Decision Tests” on page 287.286 Chapter 8 / Working with Decisions

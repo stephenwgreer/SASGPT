@@ -1,0 +1,40 @@
+nby published objects in CAS and SAS Micro Analytic Service destinations if the 
+lookupStaticBinding configuration property  is set to Off.
+Controlling Where Lookup Tables Are Activated And 
+How They Are Used
+Your administrator can use the following configuration options to control where 
+lookup tables are activated and how they are used:
+sas.referencedata.activation.destinations = destinations
+specifies the SAS Micro Analytic Service publishing destinations in which lookup 
+tables are activated. Only one SAS Micro Analytic Service destination is 
+supported on localhost
+. By default, that destination is named maslocal. For 
+more information, see “sas.referencedata.activation.destinations” in SAS 
+Intelligent Decisioning: Administrator’s Guide .
+sas.referencedata.publish.lookupDisableMasPublish = On | Off
+controls whether lookup tables are activated in your SAS Micro Analytic Service 
+publishing destination. When this option is set to Off and you activate a lookup 
+table, it is activated in this destination. If this option is set to On, then lookup 
+tables are not activated in this destination, and your administrator must set the 
+sas.businessrules.lookupStaticBinding  option to On in order to embed static 
+copies of lookup tables in generated code and ensure that published content 
+executes correctly. For more information, see 
+“sas.referencedata.publish.lookupDisableMasPublish” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+sas.businessrules.lookupStaticBinding = On | Off
+controls whether a static copy of the active version of a lookup table is 
+embedded in the generated code for an object when that object is published. 
+When this option is set to On, a static copy of the active version of any lookup 
+table that is used in an object is embedded in the generated code when those 
+objects are published. When this option is set to Off, a published object’s use of 
+lookup tables depends on the destination to which they were published.
+nObjects that are published to SAS Cloud Analytic Services (CAS) and SAS 
+Micro Analytic Service destinations use the most recently activated version of 
+lookup tables.
+nObjects that are published to Teradata and Hadoop destinations cannot use 
+lookup tables.
+Note: Static versions of lookup tables are automatically embedded in content 
+published to container destinations. This option is ignored for container 
+destinations.
+For more information, see “sas.businessrules.lookupStaticBinding” in SAS 
+Intelligent Decisioning: Administrator’s Guide .Activating a Lookup Table 135

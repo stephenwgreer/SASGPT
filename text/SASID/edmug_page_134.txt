@@ -1,0 +1,22 @@
+nTo compare the contents of two versions of the same lookup table, open the 
+lookup table, click  on the Versions  tab, and select Compare object 
+contents .
+The Select Versions  window appears.
+2Select the versions that you want to compare, and click Compare . SAS 
+Intelligent Decisioning  opens the two objects side-by-side in the Compare Object 
+Contents  window. 
+By default, the Compare Object Contents  window displays the names and values 
+in each entry in both objects and highlights the differences. To display all of the 
+entries in each object, click Show All . For example, in the following figure, only 
+version 2.0 of the Country_Codes lookup table contains entries for Algeria, and 
+Antigua and Barbuda.
+TIP Click  beside a table name to display its location.
+3(Optional) Click Export  to export the results of the comparison to a PDF file. The 
+Export Comparison Results  window appears.
+4(Optional) Select the information that you want to export, and click Export . If you 
+want the PDF file to display only the differences between the two objects, select 
+Show differences . To display all of the objects’ information, select Show all .
+The result depends on which browser you are using and the browser’s default 
+download actions. The browser might automatically download the file and display 
+a notification in the bar at the bottom of the browser window. Alternatively, the 
+browser might prompt you to save the file or open it with a specific application.122 Chapter 4 / Working with Lookup Tables and Functions

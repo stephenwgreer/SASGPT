@@ -1,0 +1,51 @@
+business rule authoring
+A business rule specifies conditions to be evaluated and action to be taken if 
+those conditions are satisfied. For example, you can create a rule that 
+determines whether a particular customer has a mortgage. That same rule can 
+then add the outstanding balance of the mortgage to a running total of the 
+customer’s debt. With SAS Intelligent Decisioning , you define the conditions and 
+actions for each rule.
+rule set management and publishing
+A rule set is a logical collection of rules. A single rule set can have many rules, 
+but it generally corresponds to a single step in a decision. For example, you can 
+have a rule set that determines a customer’s asset balance and another rule set 
+that determines a customer’s debt level. You can use SAS Intelligent Decisioning 
+to easily create new rule sets, reorder the rules in a rule set, add new rules to 
+existing rule sets, and so on. When a rule set is published, the versioning 
+features of SAS Intelligent Decisioning  create a static version of the rule set. This 
+static version helps you enforce integrity and governance over the rules that are 
+put into production.
+treatment authoring and management
+A treatment is an offer that can be sent to a customer as part of an inbound 
+marketing campaign. For example, when a customer visits your company’s 
+website, a customer service application can capture information about the 
+customer. The application can invoke a decision that includes a set of treatments 
+and pass the customer’s information to the decision. The decision determines 
+which of the treatments (offers) are suitable to present to that customer at that 
+time. With SAS Intelligent Decisioning , you can author treatments, combine them 
+into treatment groups, and add the groups to decisions.
+lookup table authoring and management
+Lookup tables are tables of key-value pairs. You can use lookup tables for tasks 
+such as retrieving a part name based on a part number or retrieving a location 
+name based on a ZIP code. SAS Intelligent Decisioning  provides two predefined 
+lookup tables for use with treatments: one for treatment channels and one for 
+subject levels.
+code file authoring and management
+You can define custom code files to do things that are not possible in rules, 
+models, or treatments. For example, you can define a code file that makes HTTP 
+calls to REST APIs, interacts with a database, manipulates files in the file 
+system, or performs custom data transformations. In SAS Intelligent Decisioning , 
+you can easily create, edit, and manage custom data query files, DS2 files, and 
+Python files. You can create and edit data query files by using the SQL editor or 
+by launching SAS Studio.
+global variable authoring and management
+You can use global variables to define common variables for use in multiple rule 
+sets, models, and decisions. For example, you might want to define global 
+variables for benchmark interest rates, current exchange rates, or inventory 
+levels for specific products. By using global variables, you can set these values 
+in one place and refer to the variables in multiple objects.
+custom function authoring and management
+You can use custom functions to perform actions that are not available with the 
+standard functions that SAS provides. Custom functions also enable you to 
+encapsulate and reuse business logic. You can use custom function in rule sets 
+and in DS2 code files.SAS Intelligent Decisioning Features 3

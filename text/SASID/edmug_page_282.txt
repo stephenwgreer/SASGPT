@@ -1,0 +1,18 @@
+Example
+Suppose you have the decision flow Update_credit_history. Version 2 of this 
+decision contains the following objects:
+nVersion 2 of the rule set Select_accounts, which is not tagged. Version 1 of this 
+rule set is tagged with APR_rules_chg, but this tag was added to the wrong 
+version of this rule set. The tag should have been added to version 2 of the rule 
+set.
+nVersion 3 of the decision Calc_credit_chgs. Both version 3 and version 4 of this 
+decision are tagged with APR_rules_chg.
+nVersion 1 of the code file Update_history. This version is the only version of this 
+code file and it is not tagged.
+You need to create a new version of Update_credit_history that includes version 4 of 
+the decision Calc_credit_chgs (the tagged version) and version 2 of the rule set 
+Select_accounts (which is not tagged).
+1On page 1 of the Create New Version wizard, specify the tag APR_rules_change 
+and select the option Let me choose the version of each object .
+Page 2 of the wizard contains a list of the objects that are tagged with 
+APR_rules_chg.266 Chapter 8 / Working with Decisions

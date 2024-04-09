@@ -1,0 +1,38 @@
+6(Optional) In the ITEMS TO PUBLISH  section, complete the following steps for 
+each item that you are publishing:
+aEdit the Published name  if you do not want to use the default name for the 
+published module. The maximum length and character restrictions differ 
+depending on your destination. See Table 2.5 .Table 2.5 Requirements and Restrictions for Published Names
+DestinationMaximu
+m 
+LengthRequirements And RestrictionsContainer 
+destinations127The published name must start with a letter or an 
+underscore. It cannot contain spaces, multi-byte 
+characters, or special characters other than the 
+underscore.
+The name that you enter is assigned to the 
+SAS_SCR_APP_PATH environment variable. 
+The value of this variable determines the module 
+name. For more information, see “Changing the 
+Endpoint Name for a Container” in SAS 
+Container Runtime: Programming and 
+Administration Guide .Git128The published name cannot contain forward 
+slashes (/), single quotation marks ('), or double 
+quotation marks (").SAS Micro 
+Analytic 
+Service100The published name cannot contain the following 
+characters: ! @ # $ % ^ & * ( ) | = ~` \ / . { } " ' ;SAS Cloud 
+Analytic 
+Services 
+(CAS)128The published name cannot contain single or 
+double quotation marks.Teradata128The published name must start with a letter or an 
+underscore. It cannot contain spaces, multi-byte 
+characters, or special characters other than the 
+underscore.Apache 
+Hadoop128The published name cannot contain colons (:) or 
+double quotation marks.
+bIf you have previously published the rule set, turn on the Replace item with 
+the same name  option in order to replace the previously published rule set of 
+the same name in the same destination.
+cSelect the Rule-fired tracking  check box if you want the published rule set to 
+generate rule-fired data.Publishing a Rule Set 61

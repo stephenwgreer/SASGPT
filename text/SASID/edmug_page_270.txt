@@ -1,0 +1,32 @@
+Validate a Decision in the Decision Editor
+To validate a decision in the decision editor, open the decision. Then, on the 
+Decision Flow  or Decision  tab, click Validate . SAS Intelligent Decisioning 
+validates everything that can be determined without executing the decision. The 
+following list describes some of the validations that SAS Intelligent Decisioning 
+performs:
+nThe rule sets that are used in the decision contain no errors, such as missing 
+required values or branch values that overlap.
+nThe model type of each model that is used in the decision is a supported type , 
+and DS2 code can be generated for the model.
+nTreatment groups , lookup tables , and global variables  that are used in the 
+decision have been activated.
+nThe objects that are specified in each of the decision nodes exist, and the 
+current user has permission to access the objects.
+nObject variables are mapped to decision variables on page 247.
+Error messages are shown in the Errors  panel and are categorized by error type. 
+For many error types, this panel is updated as you fix the errors. For some errors, 
+such as errors in nested decisions or activation errors, you must click Validate  again 
+to clear the error message.
+TIP If you routinely validate very large decisions, increasing the number of 
+threads available to the validation process can improve performance. For 
+more information, see the 
+sas.decisions.validation.validationCoreThreadPoolSize  configuration option.
+If the validation finds errors, you can click Export  in the Errors  panel to export the 
+list of errors to a PDF file.
+Change the Workflow Status of a 
+Decision
+1(Optional) To change the status of a version other than the latest version, click 
+the Versions  tab, and then click the version number  for the version that you 
+want to change.
+2Click Move to status , and select the new status value. The Move to  status 
+window appears.254 Chapter 8 / Working with Decisions

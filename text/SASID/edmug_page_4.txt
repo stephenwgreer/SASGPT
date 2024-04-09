@@ -1,0 +1,14 @@
+Manage Comments for a Rule Set Test  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+Executing Published Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+Importing and Exporting Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 80
+Chapter 3 /Working with Treatments and Treatment Groups . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 83
+About Treatments and Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84
+Example: A Decision That Includes a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . 85
+About Attributes, Eligibility Rules, and Effective Dates  . . . . . . . . . . . . . . . . . . . . . . . . 88
+Arbitrating Treatments  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+About Channels  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+Define a Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+Define a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+Activating a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+Managing Attributes and Aliases  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95
+Delete Treatments from a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97

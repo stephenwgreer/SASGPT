@@ -1,0 +1,17 @@
+Example 2: Determine Whether a Treatment was 
+Sent to a Subject within a Specific Time Frame
+The following query determines whether the specified treatment (the treatment with 
+the ID fcdfabaf-9932-430e-8cf3-149b212881d7) was sent to the subject with the ID 
+98 between March 1, 2022 and March 31, 2022.select count(distinct contact_id)from subjectcontacts.dcm_treatment_contacts_vwwhere creation_dttm >='2022-03-01 00:00:00.000' and creation_dttm <= '2022-03-31 23:59:59.999'and subject_id='98' and treatment_ID = 'fcdfabaf-9932-430e-8cf3-149b212881d7';
+Example 3: Determine Whether a Treatment with a 
+Specific Attribute Value Was Sent to a Subject
+The following query determines whether the specified treatment was sent to subject 
+98 at a price of 50.00 euros between January 1, 2022 and March 31, 2022. The 
+price is a dynamic attribute that has been assigned a static value in the treatment 
+group, so the query joins the dcm_treatment_contacts_vs view and the 
+dcm_trt_dynamic_attr_vw view.select count(distinct contact_id)from subjectcontacts.dcm_treatment_contacts_vw as sub,treatmentdefinitions.dcm_trt_dynamic_attr_vw as treatwhere sub.treatment_id = treat.treatment_idand sub.subject_id='98' and sub.creation_dttm >='2022-01-01 00:00:00.000'and sub.creation_dttm <= '2022-03-31 23:59:59.999'and treat.treatment_ID = 'fcdfabaf-9932-430e-8cf3-149b212881d7'and treat.attribute_nm='price' and treat.attribute_val='50.00';
+Example 4: Determine Whether a Treatment Was 
+Presented to a Subject within a Specified Time 
+Frame
+The presence of a timestamp in the presentation_dttm column indicates that the 
+treatment was presented to the subject. The following query determines whether the 322 Appendix 1 / Querying the Subject Contact Database

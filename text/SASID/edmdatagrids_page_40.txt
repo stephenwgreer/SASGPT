@@ -1,0 +1,34 @@
+CategoryLanguage ElementsDescriptionJoin or AppendDATAGRID_ADDROW 
+Function (p. 39)Appends new rows to the specified data grid.DATAGRID_APPEND 
+Function (p. 39)Appends dataGrid2 to dataGrid1.DATAGRID_INNERJOIN 
+Function (p. 65)Performs an inner join of two data grids and populates the 
+target data grid with the results of the join.DATAGRID_LEFTJOIN 
+Function (p. 66)Performs a left join of two data grids, returns the resulting 
+data grid, and populates the target data grid with the results 
+of the join.DATAGRID_RIGHTJOIN 
+Function (p. 76)Performs a right join of two data grids, returns the resulting 
+data grid, and populates the target data grid with the results 
+of the join.RenameDATAGRID_RENAMECOLU
+MN Function (p. 76)Renames the specified column in the specified data grid.Retrieve ValuesDATAGRID_COLUMNVALU
+ESTOLIST Function (p. 45)Creates a comma-separated list of the values in the 
+specified data grid column.DATAGRID_FILTEREDGET 
+Function (p. 52)Returns the value in the first row in the specified column for 
+which the specified comparison evaluates to true.DATAGRID_GET Function 
+(p. 58)Returns the value of the cell in the specified row and 
+column.DATAGRID_GETBOOL 
+Function (p. 58)Returns the value of the cell in the specified row and column 
+as an integer.DATAGRID_GETDOUBLE 
+Function (p. 59)Returns the value of the cell in the specified row and column 
+as a decimal value.DATAGRID_GETINT 
+Function (p. 61)Returns the value of the cell in the specified row and column 
+as an integer.DATAGRID_GETLONG 
+Function (p. 62)Returns the value of the cell in the specified row and column 
+as a long integer.DATAGRID_GETSTRING 
+Function (p. 63)Returns the value of the cell in the specified row and column 
+as a character string.SerializeDATAGRID_TOSTRING 
+Function (p. 87)Returns the JSON string for the specified data grid.Set ValuesDATAGRID_FILTEREDSET 
+Function (p. 54)Sets the value in the specified row and column to the 
+specified value if the specified comparison evaluates to true.DATAGRID_FILTEREDSETA
+LL Function (p. 56)Sets the cell in the specified column to the specified value 
+for each row for which the specified comparison evaluates 
+to true.34Chapter 3 / Data Grid Functions

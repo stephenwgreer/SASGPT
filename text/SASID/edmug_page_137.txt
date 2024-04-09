@@ -1,0 +1,21 @@
+Delete Lookup Tables
+Select the tables that you want to delete, click , and select Delete . SAS Intelligent 
+Decisioning  moves the lookup table to the recycle bin. For more information, see 
+“Manage Folders and Folder Content” on page 9.
+Rename a Lookup Table
+1Select the table that you want to rename, click , and select Rename . The 
+Rename  window appears.
+2Enter a new name for the table, and click Rename .
+Move Lookup Tables
+Note: You cannot move the predefined Treatment Channels or Subject Level 
+lookup tables.
+1Select the tables that you want to move, click , and select Move . The Choose 
+a Location  window appears.
+2Select the folder where you want to move the tables, and click OK.
+Managing Versions of Lookup Tables
+Set the Displayed Version
+The displayed version is the version whose information is displayed on the 
+Properties  and Lookup Table  tabs. On the Versions  tab, a  in the Displayed 
+Version  column indicates the displayed version. To change the displayed version, 
+click the version number for the version that you want to view. The displayed version 
+is shown in the title bar.Managing Versions of Lookup Tables 125

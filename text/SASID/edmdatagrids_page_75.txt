@@ -1,0 +1,24 @@
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MAXINT Function
+Returns the maximum value for the specified column.
+Category: Statistical
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_MAXINT  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MAXLONG Function
+Returns the maximum value for the specified column.
+Category: Statistical
+Returned data 
+type:LONG
+Syntax
+DATAGRID_MAXLONG  (dataGrid , column )DATAGRID_MAXLONG Function 69

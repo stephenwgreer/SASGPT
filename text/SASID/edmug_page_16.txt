@@ -1,0 +1,27 @@
+Search Object Lists
+To search the Name  column, enter the string for which you want to search in the 
+search field above the object list, and click . The search is case insensitive. To 
+clear the search text, click .
+TIP See also “Searching for Objects in a Decision Diagram” on page 251.
+Filter Object Lists
+To filter the view, click Filter , enter or select the filter criteria in the Filter  window, 
+then click Filter . SAS Intelligent Decisioning  filters the object list and displays a 
+token for each filter criteria. For example:
+TIP If you specify a folder location as part of the filter criteria, the filter 
+searches the selected folder and recursively searches all of its subfolders.
+The node count for a decision does not include any nodes that are in nested 
+decisions.
+Filters remain in effect until you remove them. To remove a specific filter, click  for 
+that filter. To remove all filters, click  at the right of all of the filter tokens.
+Manage Saved Filters
+You can save a filter, and then reapply that filter to a category view later without 
+having to redefine the filter criteria. You can save up to 10 filters.
+To save a filter:
+1Do one of the following:
+nFilter the object list as described in “Filter Object Lists” , click  beside the 
+Filter  button, and then click Save filter .
+nClick Filter , enter or select the filter criteria in the Filter  window, and then 
+click Save filter .
+The Save Filter  window appears.
+2Enter a name for the filter. Filter names are limited to 100 characters and can 
+contain only alphanumeric characters and underscores (_).Sorting, Searching, and Filtering in Category Views 7

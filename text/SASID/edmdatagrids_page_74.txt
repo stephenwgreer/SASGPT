@@ -1,0 +1,27 @@
+DATAGRID_MAX Function
+Returns the maximum value for the specified column.
+Category: Statistical
+Returned data 
+type:DOUBLE
+Syntax
+DATAGRID_MAX  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MAXBOOL Function
+Returns the maximum value for the specified column.
+Category: Statistical
+Returned data 
+type:INTEGER
+Note: If any row in the specified column contains a 1, this function returns 1. If all rows in the 
+specified column contain zeros, this function returns 0.
+Syntax
+DATAGRID_MAXBOOL  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.68Chapter 3 / Data Grid Functions

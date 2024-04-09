@@ -1,0 +1,39 @@
+nby published decisions in SAS Micro Analytic Service destinations if the 
+configuration sas.decisions.masInlineTreatmentGroup property is set to Off. See 
+“Controlling Where Global Variables Are Activated and How They Are Used” on 
+page 149 for more information.
+Controlling Where Treatment Groups Are Activated 
+and How They Are Used
+Static versions of treatment groups are automatically embedded in content that is 
+published to CAS, Teradata, Hadoop, and container destinations. Your administrator 
+can use the following configuration options to control how treatment groups are 
+used in SAS Micro Analytic Service destinations:
+sas.treatmentdefinitions.activation.destinations = destinations
+specifies the SAS Micro Analytic Service destinations in which treatment groups 
+are activated. Only one SAS Micro Analytic Service destination is supported. By 
+default, that destination is named maslocal
+.
+sas.decisions.masInlineTreatmentGroup = On | Off
+specifies whether the code for treatment groups is included inline in generated 
+code when you publish a decision to SAS Micro Analytic Service destinations.
+When this property is set to On, a static copy of each treatment group is included 
+in the code that is generated for SAS Micro Analytic Service destinations. 
+Changes to the treatment groups do not affect published objects. When this 
+property is set to Off, the generated code uses a SAS Micro Analytic Service 
+module to retrieve the active version of the treatment group when the decision is 
+run.
+Activate a Treatment Group
+Activating a version of a treatment group version locks that version. Locked groups 
+cannot be unlocked.
+You must activate a treatment group version before you can publish an object that 
+uses that version. By default, when you activate a treatment group, it is activated in 
+all of the publishing destinations that are configured at your site. However, you 
+adminstrator might specify that groups are activated only in specific SAS Micro 
+Analytic Service destinations. For more information, see “Controlling Where 
+Treatment Groups Are Activated and How They Are Used” on page 94.
+To activate a treatment group:
+1Open the treatment group that you want to activate.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.94Chapter 3 / Working with Treatments and Treatment Groups

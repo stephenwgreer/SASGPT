@@ -1,0 +1,30 @@
+package name
+the name of the generated DS2 package.
+node name
+the name of node that is displayed in the SAS Intelligent Decisioning user interface.
+The log entry for the entire decision does not include the node name.
+node ID
+a unique ID for each node. When multiple decisions are running simultaneously, the logging for 
+both decisions might be interleaved in the SAS Micro Analytic Service log file. If those decisions 
+both contain a node with the same name, you can use the node ID to identify the node.
+The log entry for the entire decision does not include the node name.
+total duration
+the elapsed time, in seconds, that it took the node or package to execute. If the number is very 
+small, it is displayed in scientific notation such as 1.9073486328125E-6.
+For example, the following log entry shows the execution time for the node named cellPhone_demo 
+in the package cellPhone_demo_0:2019-07-03T15:46:56,659 [00000008] DEBUG App.tk.SID.Perf - Package Name: cellPhone_demo_0, Node Name: cellPhone_demo, Node ID: cbe4d5ea-05fe-442a-a2d2-26d5d2d754ea, TOTAL DURATION:0.04584789276123
+The following log entry shows the execution time for the node named AggregatePromoPredicator in a 
+subdecision, for which the time is very small:2019-07-03T15:46:56,615 [00000008] DEBUG App.tk.SID.Perf - Package Name: c_VY76XRZ7GFEP3DRTS3BVA6SPLM, Node Name: AggregatePromoPredicator, Node ID: 04200f5f-2903-44aa-90a2-156890a7fc18, TOTAL DURATION:1.9073486328125E-6
+The following entry shows the total execution time for the cellPhone_demo_0 package:2019-07-03T15:47:01,264 [00000008] DEBUG App.tk.SID.Perf - Package Name: cellPhone_demo_0, TOTAL DURATION:1.5830275082711
+Enable Performance Logging
+1Create the App.tk.SID.Perf logger. This logger captures the execution times for the decision 
+nodes. For instructions, see “Create the App.tk.SID.Perf Logger”  below. For more information 
+about logging, see “SAS Micro Analytic Service Logging” in SAS Micro Analytic Service: 
+Programming and Administration Guide .
+2Verify that the includeLoggingInGeneratedCode configuration property is turned on. When this 
+property is on, additional LOG statements are added to the generated DS2 code. These 
+statements write performance information to the SAS Micro Analytic Service log. For more 
+information, see “Decisions Service Properties” on page 8.
+Create the App.tk.SID.Perf Logger
+1Click  and select Manage Environment  to switch to SAS Environment Manager. 
+2Click .37

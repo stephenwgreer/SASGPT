@@ -1,0 +1,23 @@
+The STDTOGRID output table appears in SAS Studio  as shown in the following 
+figure:
+The first column in the output table is named ROOT. Subsequent column names 
+indicate the names of the JSON data structure and the nesting level. In this 
+example, the ROOT column contains the data grid JSON for the name-value pairs 
+at the first-level that do not contain any nested name-value pairs: ASSETTYPE and 
+ASSETVALUE.[{"metadata":[{"ASSETTYPE":"string"},{"ASSETVALUE":"decimal"}]},{"data":[["Bank Account",47465],["Retirement Fund",3298750],["CASH",163],["Investment Account",2290510]]}]
+The DEBTS column contains the JSON for the DEBTS data structure, which 
+appears at the same level as ASSETTYPE and ASSETVALUE but contains four 
+nested elements. The parent of the DEBTS structure is ROOT.[{"metadata":[{"ORDINAL_ROOT":"decimal"},{"ORDINAL_DEBTS":"decimal"},{"REMAININGDEBT":"decimal"},{"REMAININGPAYMENTS":"decimal"},{"DEBTTYPE":"string"}]},{"data":[[1,1,22144,24,"Boat Loan"],[2,2,715551,84,"Mortgage"],[3,3,15577,67,"Car Loan"],[4,4,230544,45,"Student Loan"]]}]
+The DEBTS_BANKERS column contains the data grid JSON for the BANKERS 
+data that is nested within the DEBTS data structure.[{"metadata":[{"ORDINAL_DEBTS":"decimal"},{"ORDINAL_BANKERS":"decimal"},{"BANKOFFICER":"string"}]},{"data":[[1,1,"Matt"],[2,2,"Carl"],[3,3,"Ernest"],[4,4,"Randy"]]}]
+%DCM_MERGESERIALIZEDGRIDS Macro
+Merges tables that contain data grids that have been serialized with the %DCM_SERIALIZEGRIDS macro 
+with a table that contains scalar data.
+Requirement: If you are working with SAS Cloud Analytic Services (CAS) tables, all of the tables must 
+be accessed in the same CAS session.
+Note: This macro performs an inner join. If any key column value does not appear in one of the 
+data grid tables specified by the GRIDTABLES= option or in the scalar table specified by 
+the MERGETABLE= option, then the table rows for that value of the key column are not 
+included in the output results table.
+Syntax
+%DCM_MERGESERIALIZEDGRIDS  (22Chapter 2 / Data Grid Macros

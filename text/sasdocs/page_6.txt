@@ -1,0 +1,34 @@
+Benefits of SAS® Viya® Model Execution Solution  
+Model Execution Proposal Page 3 Benefits of SAS ® Viya ® Model Execution  Solution  
+SAS will deliver a solution to meet the CCAR and CECL compliance standards using best -of-breed 
+technology and business knowledge to ensure that all appropriate treatments are implemented 
+in a timely fashion and backed by the right level of expertise from a risk, finance, accounting, and 
+technology point of view.  
+ 
+The SAS Viya  Model Execution Solution  builds on SAS’ proven partnership with its customers. 
+Currently, it is the only available model execution solution ready to provide an integrated view of 
+the risk and finance platform that can expand in tandem with organizational needs  – a single 
+platform with a full -service, enterprise- class solution and expansion capabilities to support 
+multiple lines of business as well as incorporate new products and new r egulatory reporting with 
+minimal manual or technical effort. Its rapid execution capabilities with high -performance 
+analytics are unparalleled.  
+ 
+Adopting the SAS Solution will help FCB realiz e several  business and technology benefits : 
+♦ Improved Business Outcomes  
+– Enable quick and  efficient business review  of model results, business expectations , and 
+economic impact through integrated reporting , modeling,  and analytical capabilities  
+– Drive critical business outcomes  and make relevant Capita l, Balance Sheet, Risk  and/or 
+Income Statement  decisions  with the use of model -based analytics ( what-Ifs and 
+overlays , sensitivity,  and attribution analysis ) 
+♦ Reduced Time to Market  
+– Support simple and efficient  model onboarding , including transparent model lifecycle 
+ma nagement  
+– Reduce  time  to market required to define and build t echnology capabilities required to 
+ma nage  the process  (governance, control, overlays, consolidation,  and elimination, etc.)  
+♦ Regulatory Compliance, Data Governance , Auditability , and Transparency  
+– Achieve Regulatory and Internal Audit compliance  through the use of s tandardiz ed model 
+definitions and model variables (including transformations) defined within the Model 
+Library . 
+– Process consistent, reliable,  and repeatable results  articulated via model and data 
+lineage , model outputs , and reconciliation  capabilities  
+– Configure and ma nage dependencies across model s and sub -models

@@ -1,0 +1,34 @@
+Map Object Variables to Decision Variables
+On the Decision Flow  tab, complete these steps:
+1Select the object whose variables you want to map.
+2(Optional) Click  to open the Input Variables  property panel.
+3(Optional) Select Score rows in this data grid , and select the name of the data 
+grid.
+Note: This option appears only for objects that process data grid variables. For 
+more information, see “Scoring Rows in a Data Grid” on page 249.
+4(Optional) For each object variable in the Input Variable  column, select the 
+decision variable that you want to map it to in the Maps To  column.
+5(Optional) Click .
+6If the object that you selected is a treatment group, select the data grid that 
+contains the outcome of the treatment group.
+7For each object variable in the Output Variable  column, select the decision 
+variable that you want to map it to in the Maps To  column. For information about 
+mapping variables for data query files, see “Decision Variables for Data Query 
+Files” on page 161.
+On the Decision  tab, complete these steps:
+1Select the object for which you want to map variables.
+2Click  to open the Properties  window.
+3(Optional) Select Score rows in this data grid , and select the name of the data 
+grid.
+Note: This option appears only for rule sets, models, and decisions that process 
+data grid variables. For more information, see “Scoring Rows in a Data Grid” on 
+page 249.
+4For each object variable in the Input Variable  column, select the decision 
+variable that you want to map it to in the Maps To  column.
+5If the selected node is a treatment group, select the data grid that contains the 
+outcome of the treatment group.
+6For each object variable in the Output Variable  column, select the decision 
+variable that you want to map it to in the Maps To  column. For information about 
+mapping variables for data query files, see “Decision Variables for Data Query 
+Files” on page 161.
+7Click OK to close the Properties  window.250 Chapter 8 / Working with Decisions

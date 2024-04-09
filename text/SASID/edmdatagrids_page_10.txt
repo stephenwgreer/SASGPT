@@ -1,0 +1,33 @@
+Defining Data Grid Variables
+Data grid variables can be imported, exported, created, edited, and added to rule 
+sets in the same way as other variables. When you are creating or importing data 
+grid variables, the following guidelines apply:
+nThe columns within a data grid can contain only character or numeric data.
+nIn the SAS Intelligent Decisioning  interface, which input data grid variables you 
+define depend on how you are working with the data grid.
+oIf you are using data grid functions, define input variables for only the table 
+columns that contain the data grids. When you use a data grid function, the 
+function parameter that specifies the name of the data grid column must be 
+either a literal value or a variable that evaluates to the data grid column 
+name.
+oIf you are executing a rule set or subdecision against each row in the data 
+grid, define variables for the each column within the data grid.
+Scoring Rows in a Data Grid
+Data grid variables are processed like any other character variable unless you do 
+one of the following:
+nuse data grid functions to process the individual data values within the data grid. 
+For more information, see “Using Data Grid Functions” on page 9.
+nuse the Score rows in this data grid  option to process each row in the data 
+grid.
+To process the rows within a data grid, select the Score rows in this data grid 
+option on the Input Variables  property panel when you are mapping decision 
+variables for the node. If you select this option, you can map the node’s input 
+variables to columns in the data grid instead of to columns in the input table. SAS 
+Intelligent Decisioning  changes the default variable mappings to columns in the data 
+grid if columns exist that have the same names as the node's input variables. You 
+can customize the variable mappings as needed. When you select this option, the 
+decision node processes all of the rows in the data grid before execution moves to 
+the next node in the decision.
+IMPORTANT When the node object is a filtering rule set, and you select 
+Score rows in this data grid , rows that do not meet the criteria defined by 
+the rules are removed from the data grid.6Chapter 1 / Using Data Grids in SAS Intelligent Decisioning

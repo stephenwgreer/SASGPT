@@ -1,0 +1,37 @@
+Example
+For the data grid row specified by the value of the customer
+ variable, the 
+DATAGRID_FILTEREDSET function sets the column riskGroup to High
+ if the value 
+of the Debts column is greater than the value of assets
+ variable:DATAGRID_FILTEREDSET(DebtEval,'riskGroup',customer,'debts','GT',assets,'High')
+DATAGRID_FILTEREDSETALL Function
+Sets the cell in the specified column to the specified value for each row for which the specified comparison 
+evaluates to true.
+Category: Set Values
+Returned data 
+type:INTEGER
+Note: This function returns the number of cells that were set to the specified value.
+Syntax
+DATAGRID_FILTEREDSETALL  (dataGrid , columnToAssign , filterColumn , operator , 
+variableOrValue , valueToAssign )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+columnToAssign
+specifies the name of the column to be assigned the specified value. You can 
+specify a column name in single quotation marks or a variable that evaluates to a 
+column name.
+filterColumn
+specifies the name of the column whose value is to be compared to 
+variableOrValue . You can specify a column name in single quotation marks or a 
+variable that evaluates to a column name.
+operator
+specifies one of the following operators shown in “Comparing Values in Data 
+Grids” on page 30. You can specify the name of a character variable that 
+evaluates to one of these operators, or you can specify the operator enclosed in 
+single quotation marks.
+variableOrValue
+specifies the value to compare to the value of filterColumn . You can specify a 
+number, a character string enclosed in single quotation marks, or the name of a 56Chapter 3 / Data Grid Functions

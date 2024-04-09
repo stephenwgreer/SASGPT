@@ -1,0 +1,31 @@
+Create a New Code File
+1Click  to navigate to the Code Files  category view.
+2Click New Code File . The New Code File  window appears.
+3Enter a name for the new code file. 
+Note: When a data query file generates output, the file name can be up to 28 
+characters long. When the data query file is added to a decision, SAS Intelligent 
+Decisioning  creates an output-only decision variable. The name of the decision 
+variable is the data query file name plus _out
+.
+4Select the code file type.
+5(Optional) For data query file types, select the editor with which you want to edit 
+the file.
+TIP For data query files that you choose to edit in SAS Studio, SAS 
+Intelligent Decisioning  adds .cqy.df
+ to the file name, and the file type is 
+displayed as Data Query . 
+For data query files that you choose to edit in the SQL editor, the file type 
+is displayed as SQL. These files can return either a data grid or a single 
+row of scalar variables. You can select the output type on the Properties 
+tab.
+For more information, see “Query Output Types and Editors” on page 160.
+6(Optional) Enter a description for the file. Descriptions are limited to 1000 
+characters.
+TIP You can edit the description later on the Properties  tab.
+7Click , and select the folder where you want to save the file.
+8Click Save . SAS Intelligent Decisioning  opens the new code file. 
+For data query files that you choose to edit with SAS Studio, SAS Intelligent 
+Decisioning  displays the Properties  tab, and you can click Open Data Query  to 
+open the file in SAS Studio.
+For all other file types, SAS Intelligent Decisioning  uses the appropriate code 
+editor to open the file on the Code  tab.Create a New Code File 167

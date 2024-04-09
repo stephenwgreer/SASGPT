@@ -1,0 +1,33 @@
+Details
+The DATAGRID_LEFTJOIN function performs a left join of two data grids for which 
+dataGrid1 .keyColumn1  equals dataGrid2 .keyColumn2  and populates the target data 
+grid with the results of the join. The target data grid contains all rows from dataGrid1 
+plus the matching rows from dataGrid2 .
+When the column names in the two data grids are identical, the columns from the 
+left side of the join are added to the resulting data grid.
+DATAGRID_MATCHCOUNT Function
+Returns the number of rows in the specified column for which the specified comparison evaluates to true.
+Category: Information
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_MATCHCOUNT  (dataGrid , filterColumn , operator , variableOrValue )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+filterColumn
+specifies the name of the column whose value is to be compared to 
+variableOrValue . You can specify a column name in single quotation marks or a 
+variable that evaluates to a column name.
+operator
+specifies one of the following operators shown in “Comparing Values in Data 
+Grids” on page 30. You can specify the name of a character variable that 
+evaluates to one of these operators, or you can specify the operator enclosed in 
+single quotation marks.
+variableOrValue
+specifies the value to compare to the value of filterColumn . You can specify a 
+number, a character string enclosed in single quotation marks, or the name of a 
+variable or of an expression. Trailing blanks are included in the comparison. The 
+value that you specify must be or must evaluate to the same data type as 
+filterColumn .DATAGRID_MATCHCOUNT Function 67

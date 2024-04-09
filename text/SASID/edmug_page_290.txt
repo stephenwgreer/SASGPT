@@ -1,0 +1,42 @@
+If you select an object that is used only in a nested decision, ensure that you also 
+select the nested decision. If you did not check out the nested decision, the object 
+that is used in the nested decision is not committed when you commit your work.
+Your decision might use an older version of an object, or it might use different 
+versions of the same object. The list of included objects has an entry for each object 
+version that is used in the decision. If you select two versions of the same object, 
+SAS Intelligent Decisioning  checks out the oldest version. SAS Intelligent 
+Decisioning  checks out only one version of each selected object. If a selected object 
+is an older version of the object, you must select the Update the decision to use 
+the latest version of the selected objects  check box in the Choose Objects to 
+Check Out  window in order to successfully check out the selected objects. When 
+you select this option, SAS Intelligent Decisioning  asks you to confirm that you want 
+to replace references to the selected versions of the objects with references to the 
+latest version. References to any version of any objects that you do not select in the 
+Choose Objects to Check Out  window remain unchanged when you commit the 
+decision.
+Checking Out and Committing Objects from within A 
+Decision
+If a decision is checked out, and if an object that is included in the decision is stored 
+in a folder for which the check-out feature is enabled, then you can check out the 
+object from within the decision. When you check out an included object, the decision 
+is modified to use the checked-out copy of the object and is saved. When you 
+commit the decision, all checked-out objects that are used in the decision are also 
+committed.
+If the object is a nested decision, SAS Intelligent Decisioning  does not display the 
+list of objects that are included in the nested decision. You cannot check out a 
+nested decision’s objects from within a decision. After you check out the nested 
+decision, you can open the nested decision and check out its included objects from 
+within the nested decision itself.
+To check out an object from within a checked-out decision, right-click on the node 
+for the object that you want to check out, and select Check out .
+To commit a single object from within a checked-out decision, right-click on the node 
+for the object, and select Commit . SAS Intelligent Decisioning  displays the Commit 
+dialog for the object. For more information, see the topics about checking out and 
+committing a version of a specific object type.
+Concurrently Checking Out and Committing 
+Decision Versions
+The ability for multiple users to check out the same decision at the same time is 
+controlled by the sas.decisions.checkout.allowConcurrentCheckout  configuration 
+option.  This option is turned on by default.
+When this option is turned on, different users can check out the same version of the 
+same object at the same time. Because the objects that are checked out are saved 274 Chapter 8 / Working with Decisions

@@ -1,0 +1,30 @@
+Importing and Exporting Rule Sets
+You can import rule sets from and export rule sets to comma-delimited (CSV) files. 
+The format of the CSV file is the same format that is used by the 
+%DCM_IMPORT_RULESET macro. For more information, see “Format of Rule Set 
+CSV Input File” in SAS Intelligent Decisioning: Macro Guide .
+IMPORTANT The import and export features in SAS Intelligent Decisioning 
+are for modifying an existing rule set. If you do not need to edit content as a 
+CSV file, use either the SAS Viya Command-Line (sas-viya) or SAS 
+Environment Manager to import and export content. The SAS Viya CLI and 
+SAS Environment Manager enable you to import new objects. For information 
+about the CLI, see SAS Viya Platform: Content Migration from SAS Viya 4 . 
+For information about using SAS Environment Manager, see “Content Page” 
+in SAS Environment Manager: User’s Guide  and “Import Page” in SAS 
+Environment Manager: User’s Guide .
+Import a Rule Set
+IMPORTANT If you import rules from a CSV file into a rule set that already 
+contains rules, the existing rules are replaced with the rules that are defined 
+in the CSV file. To avoid replacing existing rules, create a new empty rule set, 
+and then import the contents of the CSV file into the empty rule set. To 
+append rules to a rule set, you can export the rule set, add content to the 
+CSV file, and then re-import the CSV file.
+1Open the rule set into which you want to import new rules.
+2Click Import . If the rule set already contains rules, asks you if you want to 
+replace the existing rules. 
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+3Click , and select the CSV file that you want to import.
+4Select the encoding of the CSV file, and click Import .80Chapter 2 / Working with Rule Sets

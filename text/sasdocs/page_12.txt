@@ -1,0 +1,40 @@
+Milestones  
+Model Execution Proposal Page 9 Milestones  
+The execution plan for  FCB is divided in to four milestones. The details are provided here under.  
+ 
+Milestone 1: P hase 0  – Initial Model Imple mentation  
+and Execution  
+FCB needs a governed and automated model execution platform to run credit loss models for 
+CCAR and allowance, one that will satisfy regulatory scrutiny.  Further , FCB wants to scale this 
+model execution platform for integrated balanc e sheet management. The strategic elements for 
+FCB’s future model execution platform are:  
+Strategic Element  B enefit  
+Int egrated Model Execution Platform  Move past disparate applications while leveraging 
+common data and models in a standard platform.  
+Run Models Under Various Scenarios  Enable business users can r un models and interact with 
+results at one place without having the manual hand -
+offs. 
+Efficient Execution of Models  Enhance processing performance of jobs and models to 
+produce timely analytics.  
+Regulatory Examination  Provide automation, governance, and controls to 
+comply with regulatory scrutiny without having 
+excessing cost on the controls.  
+ The current state of infrastructure is not capable of handling the operational performance 
+require d to meet the executive management expectations. The hand -offs will require excessive 
+controls and may lead to costly regulatory recommendations or MRAs.   
+♦ The current model execution platform built in -house can’t deliver the operational 
+performance.  
+♦ Various options are discussed. Recoding and implementation of the models on the third-
+party solution will place limitations on the modeling methodologies and type of analysis FCB 
+can produce.  
+♦ Running sensitivity means , running models outside, g enerating all PD , LGD vectors and 
+feed ing them for calculating Credit Loss in Moody’s impairment studio.  
+♦ New Credit Loss models are under development. Similar methodology/models with minor 
+tweaks will be used for CECL.  
+♦ FCB is engaged for model development and material risk i dentification across the 
+workstreams of Scenario Design, ALM, etc.  
+♦ FCB has around 15 Credit Loss models. The current process for model execution has 
+challenges around hand -offs, controls, governance, and repeatability.  
+♦ No decision has been made on which mo dels will be consumed –  current in production 
+models vs models under development. A  decision is yet to be made on the controlled and 
+governed model execution for CCAR, adjustment process, and controls.

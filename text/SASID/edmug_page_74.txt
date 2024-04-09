@@ -1,0 +1,31 @@
+Testing Rule Sets
+Ways to Test a Rule Set
+There are three types of tests:
+Basic test
+executes the rule set in the SAS Cloud Analytic Services (CAS) destination using 
+the input table that you specify. You can also specify a debugging variable. For 
+more information, see “Create and Run a New Test” on page 63.
+Scenario test
+enables you to enter specific input values and the output values that you expect 
+the test to generate. A scenario test identifies differences between the output 
+that you expect to see and the actual output that is generated when the test is 
+run. You can also compare the test definitions and test results of different 
+scenarios. Scenario tests are also run in CAS. For more information, see “Test a 
+Scenario” on page 289.
+Publishing validation test
+executes the rule set in a publishing destination using the input table that you 
+specify. When you publish the rule set, a validation test is automatically defined 
+for that rule set in that destination. For more information, see “Validate a 
+Published Rule Set” on page 73.
+Test a Rule Set
+Create and Run a New Test
+Testing a rule set is optional, but doing so is a best practice. Testing enables you to 
+discover any problems before the rule set is published and incorporated into a 
+production system.
+IMPORTANT If you are a testing rule set that uses functions that are 
+defined in a custom context file, verify that the context file is specified in the 
+Test custom context  field on the Properties  tab before running the test.
+If you are testing a rule set that uses a lookup table and both the rule set and 
+the lookup table are checked out, the rule set test uses the checked-out 
+version of the lookup table. If the lookup table is not checked out, the test 
+uses the activated version of the lookup table.Testing Rule Sets 63

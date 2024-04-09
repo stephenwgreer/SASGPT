@@ -1,0 +1,23 @@
+2Click  and select Duplicate . SAS Intelligent Decisioning  duplicates the rule 
+sets and appends _Copy
+ to the names of the duplicate copies. If needed, a 
+number is also appended to the names of the duplicate copies.
+Note: When you duplicate a rule set, SAS Intelligent Decisioning  creates a 
+relationship between the original rule set and the duplicate rule set. If either object is 
+changed, and you later copy the contents of one object into the other, SAS 
+Intelligent Decisioning  displays a warning message. Verify that you want to replace 
+the current contents of the rule set before you paste the new content.
+Delete Rule Sets
+Note: You cannot delete a rule set if it is open. 
+In the Rule Sets  view, select the rule sets that you want to delete, click , and 
+select Delete . SAS Intelligent Decisioning  moves the rule sets to the recycle bin. For 
+more information, see “Manage Folders and Folder Content” on page 9.
+Rename Rule Sets
+Note: You cannot rename a rule set if it is open. 
+1In the Rule Sets  view, select the rule set that you want to rename.
+2Click  and select Rename . The Rename  window appears.
+3Enter a new name for the rule set, and click Rename .
+Move Rule Sets to a Different Folder
+1In the Rule Sets  view, select the rule sets that you want to move.
+2Click  and select Move . The Choose a Location  window appears.
+3Select the location to which you want to move the rule sets, and click OK.48Chapter 2 / Working with Rule Sets

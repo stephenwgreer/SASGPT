@@ -1,0 +1,34 @@
+6(Optional) Enter a description for the new lookup table. Descriptions are limited 
+to 1000 characters. 
+TIP You can edit the description later on the Properties  tab.
+7Click , and select the folder where you want to create the new lookup table.
+8Click Save . The application opens the new lookup table and displays the 
+Lookup Table  tab.
+TIP Objects that are saved in a folder for which the check-out and 
+commit feature is enabled, such as the Decision Repository
+ folder, 
+must be checked out before they can be edited. 
+9(Optional) If the lookup table is in a folder for which the check-out and commit 
+feature is enabled, click the Versions  tab and check out the latest version of the 
+lookup table. For more information, see “Check Out and Commit a Lookup Table 
+Version” on page 131.
+10Add entries to the new table either by importing a CSV file or by adding entries 
+manually. See “Import Entries or Refresh Lookup Tables from CSV Files” on 
+page 118 and “Add Lookup Table Entries” on page 119 for more information.
+Importing and Exporting Lookup Tables
+About Importing, Exporting, and Activating Lookup 
+Tables
+You can import lookup tables from and export lookup tables to comma-delimited 
+(CSV) files. You can export an existing lookup table, edit the CSV file, and import 
+the updated CSV file. You can export a lookup table from one environment and 
+import it into another environment, or you can import and export lookup tables within 
+the same environment.
+IMPORTANT The import and export features in SAS Intelligent Decisioning 
+are for modifying an existing lookup table. If you do not need to edit the CSV 
+file, use either the SAS Viya Command-Line (sas-viya)SAS administrative 
+CLI (sas-admin) or SAS Environment Manager to transfer lookup tables 
+between SAS Viya environments. The recommended approach is to use the 
+transfer plug-in to the sas-viyasas-admin CLI. The CLI preserves the ID and 
+version history of the objects being transferred. For lookup tables, the CLI 
+also preserves information about which rule sets use the lookup table. For 
+information about the CLI, see SAS Viya Platform: Content Migration from Importing and Exporting Lookup Tables 117

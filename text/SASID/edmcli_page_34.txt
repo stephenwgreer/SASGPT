@@ -1,0 +1,4 @@
+4Import the version comments into the target environment:sas-viya transfer import --id upload-package-ID
+For more information, see “Transfer Content between SAS Viya 4 Environments” in 
+SAS Intelligent Decisioning: Administrator’s Guide  and “How To (CLI)” in SAS Viya: 
+Content Migration from SAS Viya 4 .30Chapter 3 / Transferring Version Comments

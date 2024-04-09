@@ -1,0 +1,36 @@
+RestrictionYou can specify either the criteria_dataGrid  argument or the 
+filterColumn , operator , and varOrValue  arguments. For more 
+information, see, “Details” on page 85.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.
+Details
+The DATAGRID_SUBSETBYVALUE function uses the comparison criteria that you 
+specify to subset the data in the source data grid. You can specify the comparison 
+criteria in one of two ways:
+nUse the filterColumn , operator , and variableOrValue  arguments to filter the 
+source data grid based on the values in a single column. For an example, see 
+“Example 1: Subset Based on a Single Column” on page 85.
+nUse the criteria_dataGrid  argument to filter the source data grid based on the 
+values of more than one column. The criteria data grid must contain only the 
+three columns that specify the filter criteria. The content of these columns is the 
+same content that you would specify for the filterColumn , operator , and 
+variableOrValue  columns. See the description of these arguments in “Required 
+Arguments” . 
+The metadata for this data grid could be defined as follows:[{"metadata":[{"filterCol":"string"},{"op":"string"},{"value":"string"}]
+For an example, see “Example 2: Subset Based on Multiple Columns” on page 
+85.
+This function populates the target data grid with all of the rows for which the 
+comparison evaluates to true.
+Examples
+Example 1: Subset Based on a Single Column
+The following example populates the CUST5 data grid variable with the subset of 
+records from the CUSTOMERS data grid for which the income > 50000
+ comparison 
+is true:DATAGRID_SUBSETBYVALUE(customers,income,'gt','50000',cust5)
+Example 2: Subset Based on Multiple Columns
+The following example populates the CUST5 data grid variable with the subset of 
+records from the CUSTOMERS data grid for which both of the comparisons income > 50000
+ and loanAmt < equity
+ evaluate to true:DATAGRID_SUBSETBYVALUE(customers, subCriteria, cust5)
+DATAGRID_SUBSETBYVALUE Function 85

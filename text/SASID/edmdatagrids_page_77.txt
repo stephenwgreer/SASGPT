@@ -1,0 +1,28 @@
+Syntax
+DATAGRID_MEAN  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MEDIAN Function
+Returns the median value for the specified column.
+Category: Statistical
+Returned data 
+type:DOUBLE
+Syntax
+DATAGRID_MEDIAN  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MIN Function
+Returns the minimum value that appears in the specified column.
+Category: Statistical
+Returned data 
+type:DOUBLEDATAGRID_MIN Function 71

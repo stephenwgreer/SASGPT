@@ -1,0 +1,12 @@
+TIP Click  beside a treatment name or treatment group name to 
+display its location.
+For treatments, the Attributes  tab displays the attribute names and values that 
+are different between the two objects. For example, in the following figure, the 
+two treatments contain the same attributes, but the values of all of the attributes 
+are different except for the annual_fee attribute.
+3(Optional) Click the Eligibility Rule Set  tab to display the differences in the 
+eligibility rule sets. For example, in the following figure, the two version of the 
+check_score treatment use different versions of the same eligibility rule set. 
+Version 2.0 of the rule set contains an additional rule.
+4(Optional) Click Export  to export the results of the comparison to a PDF file. The 
+Export Comparison Results  window appears.100 Chapter 3 / Working with Treatments and Treatment Groups

@@ -1,0 +1,36 @@
+Add Attribute Aliases
+For information about aliases, see “Attributes and Attribute Aliases” on page 88.
+12Click the Attributes  tab.
+13Click  for the attribute to which you want to assign an alias. The Choose an 
+Alias  window appears and displays the list of existing attribute names that you 
+can associate with the selected attribute.
+nTo assign an existing attribute name as an alias, select the attribute name in 
+the list and click OK.
+nTo enter a new alias, click New Alias , enter the new alias name, and click 
+Save . When you create a new alias, SAS Intelligent Decisioning  creates a 
+new output variable for the treatment group.
+TIP In the Set Attributes  window, you can view the alias that is assigned to 
+an attribute by clicking .
+Activating a Treatment Group
+What Does Activating a Treatment Group Do?
+Activating a version of a treatment group makes that version available for use by 
+published decisions. Published decisions can use only activated versions.
+In SAS Micro Analytic Service destinations, the 
+sas.decisions.masInlineTreatmentGroup configuration option on page 94 controls 
+what happens when you activate a treatment group.  If this configuration option is set 
+to On, the treatment group is converted into executable code in the form of a SAS 
+Micro Analytic Service module. This module enables decisions that are published to 
+SAS Micro Analytic Service destinations to use the most recently activated version 
+of a treatment group. If this option is set to Off, a static version of the treatment 
+group is included inline in the generated code for decisions.
+CAS, Teradata, Hadoop, and container destinations do not support SAS Micro 
+Analytic Service modules. Decisions that are published to these destinations always 
+include a static version of each treatment group.
+You must activate a version of any treatment group that is used in a decision. When 
+you activate a version of a treatment group, that version is locked and cannot be 
+edited. Each treatment group can have only one active version.
+The active version of a treatment group is used in the following ways:
+nwhen you run a test or scenario test prior to publishing an object.
+nto generate a static copy of the treatment group when you publish a decision if 
+you publish the decision to CAS, Teradata, Hadoop, or container destinations. 
+Static copies are always generated for these destinations.Activating a Treatment Group 93

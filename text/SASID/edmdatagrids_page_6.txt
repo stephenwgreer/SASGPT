@@ -1,0 +1,11 @@
+Table 1.1 Insurance Policy Table PolicyHolderPolicyNumberYearlyPremiumSmyth, Joe453975R398439.50Smyth, Joe987348P210132.90Dupree, Marcel983092B228334.00Dupree, Marcel274933P412219.25
+You can use a data grid to store the policy information as represented in Figure 1.1 .
+Figure 1.1 Insurance Policy Table Using Data Grids
+How Are Data Grids Stored?
+The data grid in the Policies column is stored as a JavaScript Object Notation 
+(JSON) string. A data grid JSON string has the following basic format:[{"metadata":[column-definitions]},{"data":[column-data]}]
+The column definitions are name-value pairs separated by commas:{"column1-name":"data-type"},{"column2-name":"data-type"},...
+The data for each row of the data grid is specified in square brackets with commas 
+between each value:[column1-data,column2-data...]
+For example, if the data grids shown in Figure 1.1  are serialized, the insurance 
+policy table appears as shown in Table 1.2 .2Chapter 1 / Using Data Grids in SAS Intelligent Decisioning

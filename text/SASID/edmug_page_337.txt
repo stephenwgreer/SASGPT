@@ -1,0 +1,31 @@
+ColumnDescriptionSchema Propertyresponse_channel_txtThe channel through which the user responded to 
+the treatment. The response channel might be 
+different from the contact channel. For more 
+information, see “About Channels” on page 90.responseChannel in the 
+treatmentForConsideration 
+tabletreatment_group_idThe ID of the treatment group that contains the 
+treatment.treatmentGroupId in the 
+treatmentForConsideration 
+tableconsider_idThe primary key of the 
+dcm_treatment_consideration table.An internal ID for each 
+treatment that was sent to 
+a subject. This ID is 
+unique within the view. 
+This column is in not in the 
+schema.treatment_group_revis
+ion_idThe ID of the treatment definition group version.treatmentGroupRevisionId 
+in the 
+treatmentForConsideration 
+tableobject_node_idThe ID of the node in the decision whose URL is 
+specified in the object_url_txt column. For 
+example, if the same treatment group is included 
+in a decision multiple times, this ID enables you to 
+determine which node generated an offer.objectNodeId in the 
+treatmentForConsideration 
+table
+Examples
+Example 1: Determine Whether Any Treatments 
+Were Sent to a Subject
+The following query determines whether any treatments were sent to the subject 
+with the ID 98.select count(distinct contact_id)from subjectcontacts.dcm_treatment_contacts_vwwhere subject_id='98';
+Example 1: Determine Whether Any Treatments Were Sent to a Subject 321

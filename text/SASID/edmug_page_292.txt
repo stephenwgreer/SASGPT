@@ -1,0 +1,35 @@
+TIP To discard the changes and delete the checked-out version from My Folder
+, you can commit the object without saving it first. However, 
+committing the object without saving creates a new version of the object 
+whose contents match the contents of the previous version. For 
+information on undoing a check out, see “Undoing a Check Out” on page 
+277.
+6On the Versions  tab, click Commit . The Commit Decision Version  window 
+appears.
+7Select the version type: Minor  or Major . Version numbers follow the format 
+major .minor . If you select Major , the number to the left of the period is 
+incremented, and the minor number is reset to zero. If you select Minor , the 
+number to the right of the period is incremented.
+8(Optional) In the Version tags  field, enter any version tags that you want to 
+associate with the new version. Press Enter after each tag. Tags are limited to 
+100 characters each and cannot contain the following characters: $ ' " # & ? ( ) \ /
+9(Optional) To add the tags in the Version tags  field to all of the objects that you 
+are committing, select the Apply tags to all committed components  check 
+box.
+10(Optional) Enter information about the new version in the Notes  field.
+11Click Commit . SAS Intelligent Decisioning  creates a new version with your 
+changes, and deletes the working copy from your My Folder
+ folder. If you have 
+checked out any objects that are used in the decision, and if the decision is 
+updated to use the checked-out objects, SAS Intelligent Decisioning  also 
+commits the additional objects.
+Determine Whether a Version Is Checked Out
+If an object in a decision is checked out, an asterisk appears before the object name 
+in the diagram on the Decision Flow  tab.
+Also, the Properties  panel for each object in the decision specifies whether the 
+object is checked out.
+Determine Who Has a Version Checked Out
+If the current version of an object is checked out, the IDs of the users that checked it 
+out and the timestamps when each user checked it out appear in the Checked out 
+by field on the Properties  tab for the original object. You can also display this 
+information by clicking  beside the version number on the Versions  tab.276 Chapter 8 / Working with Decisions

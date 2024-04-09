@@ -1,0 +1,31 @@
+Required Arguments
+source_dataGrid
+specifies the name of the source data grid. This argument must be a variable of 
+type DATAGRID.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.
+DATAGRID_COPYCOLUMN Function
+Copies the specified column in the source data grid into the target data grid.
+Category: Create, Update, or Delete
+Returned data 
+type:INTEGER
+Note: This function returns 1 if the operation is successful and 0 if it is not successful..
+Syntax
+DATAGRID_COPYCOLUMN  (source_dataGrid , target_dataGrid , source-column , 
+target-column )
+Required Arguments
+source_dataGrid
+specifies the name of the source data grid. This argument must be a variable of 
+type DATAGRID.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID.
+source-column
+specifies the name of the column in the source data grid that you want to copy.
+target-column
+specifies a name for the new column in the target data grid.
+DATAGRID_CORR Function
+Returns the Pearson product-moment correlation coefficient for the specified columns in the specified data 
+grid.
+Category: StatisticalDATAGRID_CORR Function 47

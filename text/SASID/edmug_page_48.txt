@@ -1,0 +1,32 @@
+Data TypeHow To Enter ValuesExampleDatetimeIn the rule set editor, enter Datetime 
+values by using the format 
+DDMMMYYYY:HH:MM:SS. Use 24-hour 
+clock notation. Enclose each value in 
+single quotation marks followed by dt
+.'31AUG2017:15:00:00'dt
+In the Expression Editor, use the DS2 
+function TO_DOUBLE and specify the 
+TIMESTAMP data type in order to cast 
+the Datetime value so that it can be 
+compared correctly to other variables. 
+See SAS DS2 Programmer’s Guide  for 
+information about date, time, and 
+timestamp values, and see SAS DS2 
+Language Reference  for information 
+about the TO_DOUBLE function.to_double(timestamp '2017-11-04 10:54:34.012')
+BooleanIn the rule set editor, Boolean values are 
+not enclosed in quotation marks. Enter 
+only the values.TrueFalse
+In the Expression Editor, use numeric 
+values to indicate True or False. Specify 
+1 for True and 0 for False.10
+Operators for Use in Expressions
+The following table lists the operators that you can use in an expression. Do not 
+enter a space between the elements of the operators <=, >=, or ^=. Some 
+mnemonic equivalents for these operators cannot be used in SAS Intelligent 
+Decisioning  expressions. See SAS DS2 Programmer’s Guide  for more information 
+about specifying operators in expressions.Table 2.1 Operators for Use in Expressions OperatorDefinitionExample*Multiply0.085 * sales
+/Divideamount / 5
++Addnum + 3
+–Subtractsale - discount
+Defining Expressions in Rules and Assignment Statements 37

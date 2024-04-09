@@ -1,0 +1,29 @@
+Subject Contact Service Properties
+Verify the settings for the following configuration instances:
+n“jvm”
+n“sas.subjectcontacts”
+jvm
+Click New Configuration  to define this configuration instance.
+jvm.java_option_hibernate_extra_table
+Specifies the table type for partitioned PostgreSQL tables. 
+Specify-Dhibernate.hbm2dll.extra_physical_table_types=PARTITIONED TABLE
+. If you 
+partition the subject contacts table, you must specify this option in order for the SubjectContacts 
+service to restart correctly.
+Note: This option has no effect if your database is not partitioned or if you are using Oracle for 
+your database.
+jvm.java_option_xmx
+Specifies the JVM heap size of the Subject Contact service.
+sas.subjectcontacts
+Click New Configuration  to define this configuration instance.
+sas.subjectcontacts.nodetraces.maxLifeTime
+Specifies whether to automatically delete the node trace information in the subject contacts 
+database that is older than the maximum lifetime specified by the nodetraces.maxLifeTimeDays 
+setting.DefaultOff
+sas.subjectcontacts.nodetraces.maxLifeTimeDays
+Specifies the maximum number of days that you want to retain the node trace information in the 
+subject contacts database. If the nodetraces.maxLifeTime  configuration setting is set to On, then 
+node trace information that is older than this number of days is automatically deleted.Default7
+Treatment Definition Service Properties
+Verify the settings for the following configuration instances:
+n“sas.treatmentdefinitions”18

@@ -1,0 +1,31 @@
+When you paste the contents, SAS Intelligent Decisioning  creates a new version 
+of the target rule set. The target object contains only the pasted content.
+3Select whether you want to create a new major or minor version.
+4(Optional) Modify the notes that will be associated with new version. 
+5(Optional) Add tags that will be associated with the new version. Tags that are 
+associated with a source object version are not automatically added to the new 
+version. See “Add a Version Tag” on page 58
+6Click Paste Version , and then click Yes.
+TIP The input and output designations for a variable on the Variables  tab 
+for the new version are removed, and the variable is treated as a temporary 
+variable in the following situations:
+nThe new version of the target object does not use a variable that is used 
+in an earlier version.
+nThe source and target object originally had a variable of the same name, 
+and you deleted the variable from the source object before you copied it 
+into the target object.
+Note: When you copy the contents of a source object into a target object, SAS 
+Intelligent Decisioning  creates a relationship between the two objects. If the source 
+object is modified after you copy its contents, and you later copy the contents of the 
+target object back into the source object, SAS Intelligent Decisioning  displays a 
+warning message. Verify that you want to replace the current contents of the source 
+object before you paste the new content.
+Delete a Version
+IMPORTANT When you delete a specific version, that version is deleted 
+permanently. It is not moved into the recycle bin, and it cannot be restored.
+Note:  In order to be able to delete a specific version of an object, you must have 
+permission to delete the object itself. Also, the configuration option 
+sas.businessrules.deleteVersions must be turned on.
+On the Versions  tab, select the version that you want to delete, click , and select 
+Delete .
+You cannot delete the current version.Managing Versions of Rule Sets 51

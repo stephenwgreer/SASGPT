@@ -1,0 +1,29 @@
+Syntax
+DATAGRID_NVALID  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_RENAMECOLUMN Function
+Renames the specified column in the specified data grid.
+Category: Rename
+Returned data 
+type:INTEGER
+Note: This function returns a 1 if the column does not exist and a 0 if the column is renamed.
+Syntax
+DATAGRID_RENAMECOLUMN  (dataGrid , oldName , newName )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+oldName
+specifies the existing name of the column.
+newName
+specifies the new name of the column.
+DATAGRID_RIGHTJOIN Function
+Performs a right join of two data grids, returns the resulting data grid, and populates the target data grid 
+with the results of the join.
+Category: Join or Append76Chapter 3 / Data Grid Functions

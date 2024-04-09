@@ -1,0 +1,7 @@
+SAS® Viya® Model Execution Solution  
+Model Execution Proposal Page 8 In summary, the proposed SAS  Viya Model Execution  Solution is built on an integrated risk 
+management platform  for multiple use cases such as Stress Testing, Scenario Analysis, ECL 
+calculations , and Integrated Balance Sheet Management. As a centralized platform, the solution 
+offers the advantage of a consistent architecture for solving almost all risk and finance issues, 
+improving scalability, shortening deployment times, simpli fying configuration setup, introducing 
+operational efficiencies, and reducing total cost of ownership.

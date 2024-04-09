@@ -1,0 +1,55 @@
+ColumnDescriptionSchema Propertytraversed_rule_path_li
+st_txtPath-tracking information for the decision if that 
+information was recorded by the record contacts 
+node.pathTraversed in the 
+contact recordtreatment_receiver_idA string that identifies the entity that received the 
+treatment. If this entity is the subject, then the 
+treatment_receiver_id column contains the same 
+value as the subject_id column.
+Note: This column is present in the table, but it is 
+not currently used.receiverId in the contact 
+recordtreatment_receiver_rol
+e_txtA string that identifies the role of the entity that 
+received the treatment. For example, the receiver 
+might be the subject or an agent.
+Note: This column is present in the table, but it is 
+not currently used.receiverRole in the contact 
+recordtreatment_revision_idThe ID of the treatment definition version.treatmentRevisionId in the 
+treatmentForConsideration 
+tabletreatment_idThe ID of the treatment definition.treatmentId in 
+thetreatmentForConsidera
+tion tablepresented_txtSpecifies whether the treatment was presented to 
+the subject. The values in this column are a 
+character string representation of a Boolean 
+value: true
+ or false
+.presented in the 
+treatmentForConsideration 
+tablepresentation_dttmA timestamp that indicates when the treatment 
+was presented to the subject. The timestamp 
+format is Coordinated Universal Time (UTC):yyyy-mm-ddThh:mm:ss.sssZ 
+presentedTimeStamp in 
+the 
+treatmentForConsideration 
+tableresponse_dttmA UTC timestamp that indicates when the subject 
+responded to the treatment.respondedTimeStamp in 
+the 
+treatmentForConsideration 
+tableresponse_txtThe subject’s response to the treatment. For 
+example, this value might be a value or code such 
+as Purchased
+, Rejected
+, Requested quote
+, Email opened
+, or rt1
+.responseValue in the 
+treatmentForConsideration 
+tableresponse_type_txtA summary value, category name, or other 
+description for the response that is specified by 
+the value of the response_txt column. For 
+example, this value might be Positive
+, Negative
+, or Neutral
+.responseType in the 
+treatmentForConsideration 
+table320 Appendix 1 / Querying the Subject Contact Database

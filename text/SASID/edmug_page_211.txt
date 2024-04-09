@@ -1,0 +1,30 @@
+7
+Using Custom Functions
+About Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 198
+Using Custom Functions in a Rule Set or Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . 198
+Create a Custom Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199
+Using the Custom Function Editor  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+Rules for Writing Custom Function Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+Managing the Variables in a Custom Function File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 202
+The Properties of a Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 202
+Syncing Variables and Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 203
+Add Variables from a Data Table or from a SAS Intelligent Decisioning Object  . . . 204
+Create Custom VariablesCreate Custom Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 204
+Duplicate a Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 205
+Importing and Exporting Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 206
+Delete Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Edit Variable Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Edit Metadata for Data Grid Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Validate a Custom Function File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Testing a Custom Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Compare Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+Managing Custom Function Categories  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+Create a Custom Function Category  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+Edit a Custom Function Category  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+Hide A Custom Function Category  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+Managing Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+Duplicate Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+Hide Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+Rename a Custom Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+Change a Function’s Category  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 210
+Restore or Permanently Delete Hidden Functions or Hidden Categories  . . . . . . . 211197

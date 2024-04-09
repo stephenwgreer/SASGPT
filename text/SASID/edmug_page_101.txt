@@ -1,0 +1,33 @@
+named DISC. Assuming that these two attributes represent the same value, you can 
+assign an alias to one or both of the attributes. An attribute can have only one alias.
+Eligibility Rules
+Eligibility rules define who is eligible to receive the offer defined by the treatment. 
+For example, your campaign can target people who already have a specific credit 
+card and who are at least 30 years old, or people who own a home but who do not 
+have a home equity line of credit. You define eligibility rules in the eligibility rule set. 
+An eligibility rule set is a filtering rule set. For more information, see “About Rules 
+and Rule Set Types” on page 13.
+Effective Dates
+The effective dates for a treatment are the start and end dates when the treatment is 
+active, that is, when it can be returned to a subject. Responses that are defined by a 
+treatment are not returned to subjects outside of the effective dates. Effective dates 
+are not required. A treatment that does not have effective dates is considered to 
+always be active.
+Note: The effective dates are always based on the time zone of the server where 
+the decision is executed. The time zone for SAS Viya 4 servers is set to 
+Coordinated Universal Time (UTC).
+Arbitrating Treatments
+You can determine which treatments a subject is most likely to respond to by using 
+one or more of the following methods:
+nuse filtering rule sets to select only certain records for processing. Only the 
+records whose conditions evaluate to true are processed by the remaining 
+objects in the decision. For more information, see “About Rules and Rule Set 
+Types” on page 13.
+Note: Filtering rule sets can be included directly in a decision, but they are also 
+used as the eligibility rule set in treatments.
+nuse models to score treatments. For example, you might have a model that 
+calculates propensity scores for individual treatments.
+nuse data grid functions to sort or subset the treatments according to the values 
+of their attributes. For example, you could have attributes for value, profitability, 
+or risk. For more information, see “Data Grid Functions” in SAS Intelligent 
+Decisioning: Using Data Grids .Arbitrating Treatments 89

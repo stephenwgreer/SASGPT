@@ -1,0 +1,25 @@
+The correct bibliographic citation for this manual is as follows: SAS Institute Inc. 2020. SAS® Intelligent Decisioning: Decision Management 
+REST API Examples . Cary, NC: SAS Institute Inc.
+SAS® Intelligent Decisioning: Decision Management REST API Examples
+Copyright © 2020, SAS Institute Inc., Cary, NC, USA
+All Rights Reserved. Produced in the United States of America.
+For a hard copy book:  No part of this publication may be reproduced, stored in a retrieval system, or transmitted, in any form or by any 
+means, electronic, mechanical, photocopying, or otherwise, without the prior written permission of the publisher, SAS Institute Inc.
+For a web download or e-book:  Your use of this publication shall be governed by the terms established by the vendor at the time you 
+acquire this publication.
+The scanning, uploading, and distribution of this book via the Internet or any other means without the permission of the publisher is illegal and 
+punishable by law. Please purchase only authorized electronic editions and do not participate in or encourage electronic piracy of copyrighted 
+materials. Your support of others' rights is appreciated.
+U.S. Government License Rights; Restricted Rights:  The Software and its documentation is commercial computer software developed at 
+private expense and is provided with RESTRICTED RIGHTS to the United States Government. Use, duplication, or disclosure of the Software 
+by the United States Government is subject to the license terms of this Agreement pursuant to, as applicable, FAR 12.212, DFAR 
+227.7202-1(a), DFAR 227.7202-3(a), and DFAR 227.7202-4, and, to the extent required under U.S. federal law, the minimum restricted rights 
+as set out in FAR 52.227-19 (DEC 2007). If FAR 52.227-19 is applicable, this provision serves as notice under clause (c) thereof and no other 
+notice is required to be affixed to the Software or documentation. The Government’s rights in Software and documentation shall be only those 
+set forth in this Agreement.
+SAS Institute Inc., SAS Campus Drive, Cary, NC 27513-2414
+May 2023
+SAS® and all other SAS Institute Inc. product or service names are registered trademarks or trademarks of SAS Institute Inc. in the USA and 
+other countries. ® indicates USA registration.
+Other brand and product names are trademarks of their respective companies.
+v_001-P1:edmresttut

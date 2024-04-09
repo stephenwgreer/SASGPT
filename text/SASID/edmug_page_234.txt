@@ -1,0 +1,30 @@
+Decision Status Values in the Workflow
+The basic movement of a decision version through the workflow status values is 
+shown in the following figure.
+Until the version’s status is set to Deployed, the version can be moved back to a 
+previous status value. The following figure shows all of the possible transitions 
+between status values.
+Note: These diagrams do not show the actual workflow. They show only the 
+possible changes in a version’s status value as it moves through the workflow.
+When the SID Asset Approval workflow is enabled, the Status  column in the 
+Decisions  category view shows the current status of the latest version of each 
+decision that was created when the workflow was enabled. The same status value is 
+displayed on the Properties  tab and in the Properties  panel in the Decisions 
+category view. The Status  column is blank for decisions that were created when the 
+workflow was not enabled.
+The Status  column on the Versions  tab displays the status value for each version 
+of a decision. On the Versions  tab, you can click  to view or change the version’s 
+status and to edit the comments that are associated with the version’s status. For 
+more information, see “Change the Workflow Status of a Decision” on page 254.
+If a version's status is not set to Developing,  appears beside the version number 
+in the Version column. You can edit or delete a decision version only if its status is 
+set to Developing. You can delete a version only if its status is blank, or if its status 
+is set to Developing and the version’s status has never been set to Deployed. After 
+a version’s status has been set to Deployed, the version cannot be deleted, and its 
+status cannot be changed. To make additional changes to the decision, you must 
+create a new version.
+The  icon also appears next to the version number for any version that is not the 
+latest version. You can edit the content of only the latest version of a decision, and 
+you can edit its content only if its status is Developing. You can change the workflow 
+status of any version if you have the appropriate permissions and the decision’s 
+status has never been set to Deployed.218 Chapter 8 / Working with Decisions

@@ -1,0 +1,38 @@
+Solution Investment  
+Model Execution Proposal Page 13 HMS Environment  
+♦ SAS Viya software will be hosted in a dedicated SAS Cloud tenant as follows:  
+– Datacenter:  Azure US -East  
+– Two (2) environments:  PROD, NON -PROD  
+– SAS users:  up to 10 named/concurrent  
+– Persistent SSD storage:  up to 8TB for all environments  
+– System -level backup retention:  2 months  
+– Illustrative PROD environment provisioned as follows:  
+vCPUs  176 
+Memory  1344 GB  
+Visual Machine Learning – Medium  
+ 
+HMS  Standard Services  
+“Standard” HMS  services include:  
+♦ 24x7x365 global support model 
+♦ SAS Platform Administration  
+♦ SLA Management – 99.0% system uptime  
+♦ Architecture Management  
+♦ Event Management  
+♦ Service Management  
+♦ Incident Management  
+♦ Problem Management  
+♦ Change Ma nagement  
+♦ Performance / Capacity Management  
+♦ Project Management  
+♦ Dedicated Technical Account  / Cloud Services Management  
+♦ Security Management  
+♦ Enablement Services  
+ 
+More service details are found in the HMS RACI [ www.sas.com/raci ]. 
+ 
+Optional HMS Services  
+Additional/optional HMS services include:  
+♦ Single Sign On configuration: yes –  via SCIM  
+♦ VPN connectivity: yes – one (1) connection  
+♦ Database connectivity: yes –  one (1) on -prem d atabase –> Netezza  
+♦ ETL operations: yes – standard ETL services

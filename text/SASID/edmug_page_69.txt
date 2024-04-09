@@ -1,0 +1,36 @@
+If both an object and a decision that uses the object are checked out at the same 
+time, or if you checked out the object from within the decision , click  on the 
+object's node in the decision diagram, and select Cancel checkout .
+If you check out a common rule set from within an assignment rule set , click  in 
+the assignment rule set editor to open the context menu for the common rule set, 
+and select Cancel check-out .
+You can discard a checked-out version and any changes that you made by deleting 
+the working copy of the version from your My Folder
+ folder if the following 
+conditions are true:
+nYou have not checked out a decision that uses the object.
+nThe object was not checked out at the same time as a decision  that uses the 
+object,  or the object was not checked out from within the decision  after the 
+decision was checked out.
+The deleted version is moved to the recycle bin. See “Delete Rule Sets” on page 48.
+Managing Version Tags for Rule Sets
+Add a Version Tag
+Version tags enable you to better organize and group your content. Version tags are 
+associated with specific versions of an object and not with the entire object. You can 
+add the same tag to any version of any object. To add a tag to a rule set version:
+1On the Versions  tab, position your cursor in the Version Tags  column for the 
+version that you want to tag. If the version is not tagged,  appears. If the 
+version has at least one tag,  appears.
+2Click  to open the New Version Tags  window, or click  to open the Edit 
+Version Tags  window.
+3For each tag that you want to add, either enter a custom tag or begin typing and 
+select a tag from the list of previously entered tags. Press Enter after each tag. 
+Tags are limited to 100 characters each and cannot contain the following 
+characters: $ ' " # & ? ( ) \ /
+TIP All tags that have been previously entered for any object are saved 
+in the list that is displayed when you start typing. You cannot delete tags 
+from this list.
+TIP To filter the version list based on a tag, right-click on the Version 
+Tags  column heading, enter a filter string in the Filter  box, and press 
+Enter. To clear the filter, delete the string from the Filter  box, and press 
+Enter.58Chapter 2 / Working with Rule Sets

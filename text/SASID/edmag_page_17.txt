@@ -1,0 +1,26 @@
+sas.referencedata.activation.activateLookupOnImport
+Specifies whether a lookup table that was active in the source environment is automatically 
+activated in the target environment when it is imported by using the SAS Viya Command-Line 
+(sas-viya)SAS administrative CLI (sas-admin).DefaultOffNoteTurning this option on might increase the time required to import content.
+sas.referencedata.activation.destinations
+Specifies the SAS Micro Analytic Service publishing destinations in which lookup tables are 
+activated. Only one SAS Micro Analytic Service destination is supported on localhost
+. By default, 
+that destination is named maslocal.
+This property is ignored if no SAS Micro Analytic Service publishing destinations exist.DefaultmaslocalSee“Activating a Lookup Table” in SAS Intelligent Decisioning: User’s Guide “Controlling Where Lookup Tables Are Activated And How They Are Used” in SAS 
+Intelligent Decisioning: User’s Guide
+sas.referencedata.activation.timeout
+Specifies the time limit in seconds after which an attempt to activate a lookup table or a global 
+variable is considered to have failed.Default3600
+sas.referencedata.deleteVersions
+Enables users who have permission to delete lookup tables to delete specific versions of lookup 
+tables.DefaultOn
+sas.referencedata.casformats
+sas.referencedata.casformats.backupLibrary
+Specifies the CAS library in which to store a backup of the formats library that is identified in the 
+formatsLibrary property.DefaultFormats
+sas.referencedata.casformats.formatsLibrary
+Specifies the name of the formats library that contains the CAS formats that are associated with 
+production lookup tables. If you change this property, and you have previously modified the cas-
+shared-default: startup  configuration instance to reload lookup tables, you must update the 
+configuration instance to match this property.Defaultuserformats3See“Reloading Lookup Tables When CAS Is Restarted” on page 63 16

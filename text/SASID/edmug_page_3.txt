@@ -1,0 +1,34 @@
+Contents
+Chapter 1 /Introduction to SAS Intelligent Decisioning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Enterprise Decision Management Systems  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+About Business Rules  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+SAS Intelligent Decisioning Features  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Support for Models in Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+Sign in to SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+SAS Intelligent Decisioning Home Page  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Using SAS Intelligent Decisioning as a Progressive Web App  . . . . . . . . . . . . . . . . . . . 5
+Sorting, Searching, and Filtering in Category Views  . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+SAS Intelligent Decisioning Settings  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Manage Folders and Folder Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+View the Properties of Any Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Manage Comments for Any Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Chapter 2 /Working with Rule Sets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+About Rules and Rule Set Types  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+About Condition and Action Expressions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Create a New Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Managing the Variables in a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Defining New Rules in a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Defining Expressions in Rules and Assignment Statements  . . . . . . . . . . . . . . . . . . . 33
+Managing Rules  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+Copy a Rule Set URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Compare Rule Set Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Compare Rule Set Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+Generate PDF Documentation for a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Managing Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+Managing Versions of Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Determine Which Objects Use a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Checking Out and Committing Rule Set Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Managing Version Tags for Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 58
+Publishing a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+Testing Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+Manage Comments for a Rule Set Test  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76

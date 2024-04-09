@@ -1,0 +1,31 @@
+Syntax
+DATAGRID_COUNT  (dataGrid )
+Required Argument
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+DATAGRID_CREATE Function
+Creates the data grid columns that are defined in the specified JSON string, and assigns to those columns 
+any values that are specified in the JSON string.
+Category: Create, Update, or Delete
+Requirement: The data grid variable must already be defined as a variable of type DATAGRID.
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows that are in the data grid.
+Syntax
+DATAGRID_CREATE  (dataGrid , JSON_string )
+Required Arguments
+dataGrid
+specifies the name of a variable of type DATAGRID.ImportantThis variable must already be defined as a variable of type 
+DATAGRID. If the variable is not defined as a DATAGRID variable, 
+this function creates a variable of type CHARACTER that contains 
+the JSON string. If the variable is defined as a DATAGRID variable, 
+this function creates the columns in the data grid and assigns to 
+those columns any values that are specified in the JSON string.
+JSON_string
+specifies a JSON character string that contains the data for the data grid. You 
+can specify a literal value in single quotation marks, or you can specify a variable 
+that evaluates to a JSON character string. The JSON string must have the same 
+format as the string that is produced by the %DCM_SERIALIZEDGRID  macro:
+[{"metadata":[{" column1 ":"data_type "}< ,{"column2" :"data_type "}...]},  >
+{"data":[[ row1_data ]< ,[row2_data ]... >]}]DATAGRID_CREATE Function 49

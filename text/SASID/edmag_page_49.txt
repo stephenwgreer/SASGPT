@@ -1,0 +1,25 @@
+sas-viya --profile target-profile transfer import --id "ef4204f7-8a79-49ae-8d45-a7877f5e1e86"
+6Verify that the import process completed successfully. Use the show
+ command to display the 
+export and import history for the package. 
+To display the export history:sas-admin --profile source-profile transfer show     --id "8f32140f-34e1-42dd-8d85-f8129ff5dabb" --historysas-viya --profile source-profile transfer show     --id "8f32140f-34e1-42dd-8d85-f8129ff5dabb" --history
+To display the import history:sas-admin --profile target-profile transfer show     --id "ef4204f7-8a79-49ae-8d45-a7877f5e1e86" --historysas-viya --profile target-profile transfer show     --id "ef4204f7-8a79-49ae-8d45-a7877f5e1e86" --history
+For more information about using the transfer plug-in, see “How To (CLI)” in SAS Viya Platform: 
+Content Migration from SAS Viya 4 .
+You can execute published modules by using the CAS Model Publishing and Scoring action set. For 
+more information, see “Executing Content That Has Been Published to SAS Cloud Analytic Services 
+Destinations” in SAS Intelligent Decisioning: User’s Guide .
+Managing Permissions
+About Permissions
+You use SAS Environment Manager to manage identities and authorization for SAS Viya. Information 
+is available in the SAS Viya administration documentation:
+n“Authorization in SAS Viya” in SAS Viya Platform: Orientation to Authorization
+n“Identity Management: Overview” in SAS Viya: Identity Management
+nSAS Viya Platform: External Credentials
+You can configure user access based on folders, object types, or specific objects. You can control 
+which categories appear in the user interface by controlling access to root endpoints. To grant full 
+access to an object, a user must have access to all of the service endpoints (object URIs) that are 
+associated with the object. For more information, see “Full Access and Service Endpoints” on page 
+54.
+The default permissions for SAS Intelligent Decisioning are described in “Default Permissions” on 
+page 49.48

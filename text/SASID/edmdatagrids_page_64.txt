@@ -1,0 +1,28 @@
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_GET Function
+Returns the value of the cell in the specified row and column.
+Category: Retrieve Values
+Returned data 
+type:STRING
+Syntax
+DATAGRID_GET  (dataGrid , column , rowNumber )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+rowNumber
+specifies the row number in the data grid. You can specify a number or a 
+variable that evaluates to a number.
+DATAGRID_GETBOOL Function
+Returns the value of the cell in the specified row and column as an integer.
+Category: Retrieve Values
+Returned data 
+type:INTEGER
+Note: The value True is returned as the integer 1, and False is returned as the integer 0.
+Syntax
+DATAGRID_GETBOOL  (dataGrid , column , rowNumber )58Chapter 3 / Data Grid Functions

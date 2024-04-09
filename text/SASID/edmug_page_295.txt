@@ -1,0 +1,32 @@
+writes it to the destination. The following table describes what form the generated 
+code takes for each destination type.Table 8.1 What SAS Intelligent Decisioning  Publishes to Each Destination Type Destination TypeWhat SAS Intelligent Decisioning  Does SAS Cloud Analytic 
+Services (CAS), 
+Teradata, or Apache 
+HadoopAdds a row to the model table for the destinationSAS Micro Analytic 
+ServiceWrites a Micro Analytic Service module in the serviceGitCreates a directory in the remote Git repository with the 
+same name as the published object and writes the 
+generated code to a file named scoreResource.txt
+. If the 
+decision includes analytic store models, the model files are 
+written as either .sasast
+ files or .astore
+ files, depending 
+on how the model was built.Container destinationsCreates a SAS Container Runtime  container and writes it to 
+the destination.
+Note: The container destination types to which you can 
+publish content from SAS Intelligent Decisioning  are 
+Amazon Web Services (AWS), Microsoft Azure, Google 
+Cloud Platform (GCP), and private Docker repositories.
+The rows in the model tables, the Micro Analytic Service modules, and the SAS 
+Container Runtime containers all become callable REST API endpoints, 
+independent of SAS Intelligent Decisioning . For content that is published to Git 
+destinations, you can use the SAS Intelligent Decisioning  Git Deployment CLI to 
+deploy content from the remote repository either to a CAS destination or to a SAS 
+Micro Analytic Service destination.  The deployed content then becomes a callable 
+REST API endpoint.
+Where Can I Publish Decisions?
+The destinations to which you can publish a decision depend on the destinations 
+that are available and on the objects that are used in the decision. Your system 
+administrator determines which publishing destinations are available. The following 
+table shows the destination types to which you can publish a decision that contains 
+various object types.Publishing a Decision 279

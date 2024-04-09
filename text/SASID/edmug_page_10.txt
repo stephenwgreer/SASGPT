@@ -1,0 +1,21 @@
+1
+Introduction to SAS Intelligent 
+Decisioning
+Enterprise Decision Management Systems  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+About Business Rules  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+SAS Intelligent Decisioning Features  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Support for Models in Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+Sign in to SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+SAS Intelligent Decisioning Home Page  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Using SAS Intelligent Decisioning as a Progressive Web App  . . . . . . . . . . . . . . . . . . . . 5
+Benefits of Using a Progressive Web App  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Installing SAS Intelligent Decisioning as a Progressive Web App  . . . . . . . . . . . . . . . . . . 6
+Sorting, Searching, and Filtering in Category Views  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Sort Object Lists  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Search Object Lists  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Filter Object Lists  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+Manage Saved Filters  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+SAS Intelligent Decisioning Settings  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Manage Folders and Folder Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+View the Properties of Any Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Manage Comments for Any Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101

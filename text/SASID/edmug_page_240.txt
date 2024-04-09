@@ -1,0 +1,37 @@
+Input Variables, Output Variables, and 
+Temporary Variables
+For each variable, you must specify whether the variable is an input variable, an 
+output variable, both an input variable and an output variable, or a temporary 
+variable.
+nInput variables are variables that are present in the input table for a decision. 
+When a decision is deployed in a production system, all input variables must be 
+mapped to table columns in input data. When you test a decision in SAS 
+Intelligent Decisioning , for each input variable, you can either map it to a table 
+column or specify a constant as its input value. If you choose not to map a 
+variable to either a table column or a static value, SAS Intelligent Decisioning 
+displays a warning message. When you create or edit a variable, clear the Input 
+check box for any variable that you do not want to be mapped to a column in an 
+input table or for which you do not want to specify a value.
+nOutput variables are variables that are written to the output table that is created 
+when a decision is run. When you create or edit a variable, clear the Output 
+check box for any variable that you want to exclude from the output data. 
+nTemporary variables are variables that are not present in the input data, and they 
+are not written to the output table. To create a temporary variable for use only 
+while a decision is executing, clear both the Input  and Output  check boxes.
+When you create a new variable, it is created as an input-output variable by default.
+Note: Binary variables are supported in decisions only as input variables or 
+temporary variables in order to support models that require binary data.
+Add Variables from a Data Table
+1On the Variables  tab, click the Decision Variables  subtab.
+2Click Add variable  and select Data table . The Choose Data  window appears, 
+and the list of SAS Cloud Analytic Services (CAS) tables that are loaded into 
+memory is displayed on the Available  tab. 
+If the table that you need does not appear in the list of available tables, try the 
+following solutions:
+nIf the table appears on the Data Sources  tab, right-click on the table, and 
+select Load  to load the table into memory. If the table does not appear on the 
+Available  tab, click .
+nIf the table does not appear on the Data Sources  tab, import the data. The 
+process of importing the data loads it into memory. For information about 
+importing data from different sources, see “Making Data Available to CAS” in 
+SAS Data Explorer: User’s Guide .224 Chapter 8 / Working with Decisions

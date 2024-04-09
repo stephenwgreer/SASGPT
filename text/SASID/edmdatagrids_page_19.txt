@@ -1,0 +1,20 @@
+table, the macro appends a number to the table name. For example, if you 
+specify Offers, the output tables are named Offers1, Offers2, Offers3, and so on.
+GRIDTABLE= input-table-base-name
+specifies the name of the table that contains the data grid column.
+Optional Arguments
+MERGE= YES | NO
+specifies whether the tables for each row in the data grid are merged into a 
+single output table.DefaultNO
+OUTLIB= libref
+specifies the library to which you want to write the output tables.DefaultWORK
+PROMOTE= YES | NO
+promotes the merged data grid table from session scope to global scope.DefaultYESRestrictionThis option is valid only if the output table is written to a CAS library.
+Example
+The following code defines a data set, WORK.INPUT, which contains a data grid 
+column named ASSET. The data set contains two records, and each record 
+contains a serialized data grid. The %DCM_CONVERT_DATAGRID_TO_TABLE 
+macro creates a table from each serialized data grid. The macro merges the two 
+data grid tables into one table named ASSET, which contains the columns 
+ASSETTYPE and VALUE.data work.input;    length asset $32000.;    asset = '[{"metadata":[{"ASSETTYPE":"string"},             {"VALUE":"decimal"}]},             {"data":[["Property, Primary",212000],             ["Property, Investment",125000]]}]';    output;    asset = '[{"metadata":[{"ASSETTYPE":"string"},             {"VALUE":"decimal"}]},              {"data":[["Property, Primary",234500]]}]';    output;run;%DCM_CONVERT_DATAGRID_TO_TABLE(   GRIDCOL=asset,   GRIDTABLE=work.input,   MERGE=YES);
+The ASSET table appears in SAS Studio as shown in the following figure:%DCM_CONVERT_DATAGRID_TO_TABLE Macro 15

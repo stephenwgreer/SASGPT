@@ -1,0 +1,43 @@
+method. Both output-only and input-and-output variables are added with the in_out 
+keyword.
+To propagate changes that you enter on the Code  tab to the Variables  tab, save the 
+code file or click Sync Variables  on the Code  tab. For Python code files, changes 
+to the signature of the EXECUTE function are propagated to the Variables  tab as 
+changes to input variables. Changes to the docString and to the RETURN statement 
+are propagated as changes to output variables. New variables are added as 
+character variables, but you change the data type on the Variables  tab. For DS2 
+files, variables that you add to the signature of the EXECUTE method with the in_out
+ keyword are added to the Variables  tab as output-only variables. Variables 
+that are not specified with the in_out
+ keyword are added to the Variables  tab as 
+input-only variables. You can specify that any variable is both an input and output 
+variable by selecting both the Input  and Output  check box on the Variables  tab.
+If you make conflicting changes to both the Code  tab and the Variables  tab and 
+then save the file, SAS Intelligent Decisioning  prompts you to select which tab 
+contains the changes that you want to retain. If you make conflicting changes on the 
+two tabs and then click a sync button, only the changes on the tab on which you 
+click the sync button are retained. Those changes are then propagated to the other 
+tab.
+Note: You cannot manage local variables on the Variables  tab. Local variables are 
+variables for which neither the Input  nor the Output  checkboxes are selected on the 
+Variables  tab. If local variables are listed on the Variables  tab, these variables are 
+removed from the tab when you save the code file or click a sync button.
+Add Variables from a Data Table
+1On the Variables  tab, click Add variable  and select Data table . The Choose 
+Data  window appears, and the list of SAS Cloud Analytic Services (CAS) tables 
+that are loaded into memory is displayed on the Available  tab. 
+If the table that you need does not appear in the list of available tables, try the 
+following solutions:
+nIf the table appears on the Data Sources  tab, right-click on the table, and 
+select Load  to load the table into memory. If the table does not appear on the 
+Available  tab, click .
+nIf the table does not appear on the Data Sources  tab, import the data. The 
+process of importing the data loads it into memory. For information about 
+importing data from different sources, see “Making Data Available to CAS” in 
+SAS Data Explorer: User’s Guide .
+2Select the table from which you want to import variables, and click OK. The Add 
+Variables  window appears.
+3Select the variables that you want to import and click . To import all of the 
+variables in the table, click .
+4Click Add to add the select variables, or click Add and replace  to replace 
+existing variables that have the same name.Managing the Variables in a DS2 or Python Code File 171

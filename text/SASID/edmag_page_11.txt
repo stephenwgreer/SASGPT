@@ -1,0 +1,28 @@
+sas.decisions.includeRuleFiredInformationForSubdecisions
+specifies whether rule-fired information is recorded for subdecisions when a decision is tested. 
+This option must be turned on in order to specify the INCLUDESUBDECISIONRULEFIRE=YES 
+option on the %DCM_RULEFIRE_DETAIL macro.DefaultOffTipIf you turn on this option, it is recommended that you re-run any existing tests or scenario 
+tests for decisions that contain subdecisions.See“%DCM_RULEFIRE_DETAIL Macro” in SAS Intelligent Decisioning: Macro Guide
+sas.decisions.inlineGlobalVariableValues
+specifies whether the current values of global variables are included inline in generated code 
+when you publish a decision to CAS or to SAS Micro Analytic Service destinations. When this 
+property is set to On, the current value of each global variable is included in the code that is 
+generated for these destinations. Changes to the values of the variables do not affect published 
+decisions. When this property is set to Off, the generated code uses a SAS format or SAS Micro 
+Analytic Service module to retrieve the current value of the global variable when the decision is 
+run.DefaultOnSee“Activating a Global Variable” in SAS Intelligent Decisioning: User’s Guide
+sas.decisions.logicalExpression
+Specifies whether SAS Intelligent Decisioning adds the DS2 option LOGICALEXPR= to the code 
+that it generates for decisions. The LOGICALEXPR= option specifies how logical AND and OR 
+expressions are evaluated. Valid option values are STANDARD and OPTIMIZED.STANDARDspecifies that DS2 can evaluate both operands of a logical AND or OR 
+expression before returning a result.OPTIMIZEDspecifies that DS2 optimizes the evaluation of the operands of logical AND and 
+OR expressions by returning a result that is based on the first operand when 
+possible. Specifying OPTIMIZED can enable the code to run faster and can 
+simplify the processing of complex rule conditions.DefaultSTANDARDNoteThis option applies to both published code and test code.See“LOGICALEXPR=STANDARD | OPTIMIZED” in SAS DS2 Language Reference
+sas.decisions.masInlineTreatmentGroup
+Determines whether the packages for treatment groups that are published to SAS Micro Analytic 
+Service destinations are included inline in the published content.DefaultOffSee“Content Executed by Published Decisions” in SAS Intelligent Decisioning: User’s Guide
+sas.decisions.messageLimit
+Specifies whether SAS Intelligent Decisioning adds the DS2 option MSGLIMIT= to the code that it 
+generates for decisions. The MSGLIMIT= option specifies the maximum number of error, warning, 
+and note messages that can be written to the SAS log while the code executes.Default1024 10

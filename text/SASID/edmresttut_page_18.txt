@@ -1,0 +1,8 @@
+hints
+specifies the library and table name for the input table, and specifies the URI 
+to the decision object.
+8Execute the score code by submitting a POST request 
+to /scoreExecution/executions
+.
+Example Code<< Include the code in "Define Basic Methods and Get an Access Token". >><< That code is required to successfully execute this example.         >># Specify the ID of the decision that you want to test, for example,# "e289b21b-4be1-4739-9313-639b9629cb42".decision_ID = "decision-ID"# Define the URI to the decision object.objectUri = "/decisions/flows/" + decision_ID# Define the request body for the score definition.# Modify these values to match the data for your test.scoreDefinitionBody = '''   {      "name": "test_name",      "objectDescriptor":          {         "name":"decision_name",         "type": "decision",         "uri": "%s"         },      "inputData":          {            "type": "CASTable",            "tableName": "HMEQ_TRAIN",            "libraryName": "Public",            "serverName": "cas-shared-default"          },      "mappings": [         {            "variableName": "value",            "mappingType": "datasource",            "mappingValue": "value"         },         {            "variableName": "debtinc",            "mappingType": "datasource",            "mappingValue": "debtinc"         },
+Example Code 13

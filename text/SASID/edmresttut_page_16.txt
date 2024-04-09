@@ -1,0 +1,19 @@
+3
+Define and Execute a Decision 
+Test
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+How To  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Example Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Responses  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+See Also  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Introduction
+This example defines and executes a decision test. To test a decision by using the 
+API, you create a score definition and a score execution.
+How To
+1Get an access token by submitting a GET request to the /SASLogon/oauth/token
+ resource. The example described in Chapter 2, “Define Basic Methods 
+and Get an Access Token”  includes the code required to get an access token. 
+Prepend that code to the code for this example.
+2Specify the ID of the decision that you want to test.
+3Define the URL to the decision object.
+4Define the request body for the score definition. Define the following parameters:11

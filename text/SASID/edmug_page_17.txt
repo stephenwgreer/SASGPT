@@ -1,0 +1,34 @@
+3(Optional) Enter a description of the filter.
+4Click Save and filter  to save the filter and apply the filter to the object list.
+To apply a saved filter to a category’s object list, click  beside the Filter  button, 
+and select the filter that you want to use. If the filter specifies criteria that do not 
+apply to the current object list, those criteria are ignored. For example, if you apply a 
+filter that specifies a criterion for location to the Global Variables category view, that 
+criterion is ignored.
+To edit a saved filter:
+1Apply the saved filter, and click Filter  to open the Filter  window.
+2Edit the filter criteria, and click Save filter .
+To delete a saved filter, click  beside the Filter  button, and click  for the filter 
+that you want to delete.
+SAS Intelligent Decisioning  Settings
+In addition to the global settings  that are available with SAS Viya applications, SAS 
+Intelligent Decisioning  provides two additional settings. To access these settings, 
+click the user icon in the top right corner of the application window, select Settings 
+to open the Settings  window, and click SAS Intelligent Decisioning .
+nBy default, if you add an object to a decision and that decision does not already 
+have a variable of the same name and data type as that object’s variable, then 
+SAS Intelligent Decisioning  displays the following message: Some objects in the decision define variables for which no corresponding decision variables have been created.
+ You can turn on the Create variables 
+automatically in decisions  setting if you want SAS Intelligent Decisioning  to 
+automatically create decision variables. For more information, see “Mapping 
+Variables within a Decision” on page 247.
+nWhen you edit custom functions, custom code files, and rule expressions, the 
+editor can display a list of SAS functions, custom functions, and variables whose 
+names match the letters that you type (an autocomplete list is displayed). By 
+default, the editor displays SAS function names and custom function names in 
+the autocomplete list. You can control what is displayed in this list by selecting or 
+clearing the check boxes for SAS functions , Custom functions , and Variables . 
+If you clear all three check boxes, SAS Intelligent Decisioning  does not display 
+the autocomplete list. 
+Note: In order for changes to settings to take effect, you must sign out and sign 
+back in to SAS Intelligent Decisioning .8Chapter 1 / Introduction to SAS Intelligent Decisioning

@@ -1,0 +1,23 @@
+4Click Close  to close the window.
+Remove a Version Tag
+1On the Versions  tab, position your cursor in the Version Tags  column for the 
+version whose tag you want to remove, and click .
+2Click  beside the tag that you want to remove.
+3Click OK to close the window. The tag remains in the list of previously entered 
+tags that is displayed when you add a tag, but the tag is no longer associated 
+with version.
+Modify a Version Tag
+You cannot modify a version tag that already exists. To change the content of an 
+existing tag, delete the tag as described in “Remove a Version Tag” on page 59, and 
+then add the tag again as described in “Add a Version Tag” on page 58.
+Publishing a Rule Set
+Introduction to Publishing
+Publishing content makes it available to other applications. Publishing a rule set 
+creates an entity that can be managed and run in another environment. When you 
+publish content, SAS Intelligent Decisioning  generates code for that content and 
+writes it to the destination. The following table describes what form the generated 
+code takes for each destination type.Table 2.4 What SAS Intelligent Decisioning  Publishes to Each Destination Type Destination TypeWhat SAS Intelligent Decisioning  Does SAS Cloud Analytic 
+Services (CAS), 
+Teradata, or Apache 
+HadoopAdds a row to the model table for the destinationSAS Micro Analytic 
+ServiceWrites a Micro Analytic Service module in the service Publishing a Rule Set 59

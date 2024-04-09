@@ -1,0 +1,15 @@
+6Click Rule-Fired Analysis  in the navigation panel to display the URIs and other 
+information for the rule-fired test.
+7Click Close  to close the decision.
+Run a Path Tracking Analysis
+Decision path tracking shows you the route that input records take through the 
+nodes in your decision.
+Note: The path-tracking results do not include data for input records that are filtered 
+out with a filtering rule set.
+Path-tracking analyses include information for nested decisions only if the 
+sas.decisions.includeRuleFiredInformationForSubdecisions  configuration option is 
+turned on.
+If the 
+sas.decisions.nodetraces.includeRuleFiredPathTrackInfoInVariableAssignmentLogging
+configuration option is turned off, you cannot run path-tracking analyses for scenario 
+tests.Testing Decisions 301

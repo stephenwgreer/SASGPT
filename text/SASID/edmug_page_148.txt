@@ -1,0 +1,90 @@
+TIP To publish very large lookup tables to CAS destinations, set both of the 
+following options to On:
+nsas.referencedata.publish.lookupDisableMasPublish
+nsas.businessrules.lookupStaticBindingTable 4.1 Interaction of Lookup Table Configuration Settings sas.referen
+cedata.pub
+lish. 
+lookupDisa
+bleMasPub
+lishsas.busi
+nessrule
+s. 
+lookupS
+taticBin
+dingSAS Micro 
+Analytic 
+ServiceCASTeradata and 
+HadoopContainer 
+DestinationsOffOffPublished 
+objects use the 
+most recently 
+activated 
+versions of 
+lookup tables.Published 
+objects use the 
+most recently 
+activated 
+versions of 
+lookup tables.Published 
+objects cannot 
+use lookup 
+tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.OffOnPublished 
+objects use the 
+embedded 
+versions of 
+lookup tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.OnOffDo not use 
+lookup tables. 
+These option 
+settings might 
+produce 
+incorrect results 
+if a lookup table 
+was previously 
+activated in a 
+SAS Micro 
+Analytic Service 
+destination.Published 
+objects use the 
+most recently 
+activated 
+versions of 
+lookup tables.Published 
+objects cannot 
+use lookup 
+tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.OnOnPublished 
+objects use the 
+embedded 
+versions of 
+lookup tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.Published 
+objects use the 
+embedded 
+versions of 
+lookup tables.136 Chapter 4 / Working with Lookup Tables and Functions

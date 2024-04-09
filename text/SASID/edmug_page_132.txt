@@ -1,0 +1,26 @@
+1Open the lookup table to which you want to add entries.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Click New Entries  if the lookup table is empty, or click  if the lookup table 
+already contains entries. The Add Table Entries  window appears.
+3Enter the lookup key name and value for the new entry. Key names and lookup 
+values are each limited to 100 characters. Key names must be unique within the 
+same lookup table.
+Note: Lookup key names and values that contain two hash signs (##) are not 
+supported.
+To add additional entries, click Add an entry , and enter the new key name and 
+value.
+4Click Save  to save the new entries and close the Add Table Entries  window.
+Edit Lookup Table Entries
+TIP You cannot edit entries in a lookup table version that has been 
+activated. In order to edit the table, you must create a new version.
+1Open the lookup table.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Select the entries that you want to edit, and click . The Edit Table Entries 
+window appears.
+3Edit the exiting entries, and click Save .120 Chapter 4 / Working with Lookup Tables and Functions

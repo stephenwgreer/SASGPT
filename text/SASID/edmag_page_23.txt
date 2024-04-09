@@ -1,0 +1,45 @@
+c(Optional) Click  and remove a service from the list of services to which this new 
+configuration applies.
+dFor the remaining properties, enter the appropriate values from Table 1 on page 22.
+eClick Save  to save the definition. SAS Environment Manager displays the ID of the 
+configuration instance.
+fRecord the ID of the configuration instance. If the third-party configuration is not specified 
+correctly, the service will not start. In this case, you might need to remove the third-party 
+configuration instances and re-configure the database. For more information, see “Delete 
+Third-Party Database Configurations” on page 33.Table 1 Third-Party Database Properties DefinitionPropertyValid ValuesDescriptionapplicationschemaFor PostgreSQL, specify subjectcontacts
+ or treatmentdefinitions
+.
+For Oracle, specify the 
+user ID that will be used to 
+log in to the database.Specifies the database 
+schema.
+Note: For PostgreSQL, you 
+cannot use a custom schema.sas.datasource.
+initializerenabledtrue
+falseSpecifies whether to initialize 
+the third-party database that is 
+specified by the 
+spring.datasource definition. 
+The default setting for the 
+internal PostgreSQL database 
+is True. For Oracle and third-
+party PostgreSQL databases, 
+specify False.sas.verify .resource databasetrue
+falseEnables the third-party 
+database that is specified by 
+spring.datasource to be 
+verified. When this resource is 
+set to True, a test connection 
+pool is created. The default 
+setting for the internal 
+PostgreSQL database is True. 
+This pool is created 
+automatically for the default 
+PostgreSQL database. For 
+Oracle and third-party 
+PostgreSQL databases, 
+specify False.spring.datasourceplatformpostgresql
+oracleSpecifies the database type.driver-class-
+nameorg.postgresql.Driver
+oracle.jdbc.OracleDriverSpecifies the data source 
+JDBC driver for the database.22

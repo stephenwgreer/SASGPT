@@ -1,0 +1,18 @@
+TIP If your subject contacts and treatment definition databases were configured 
+together, then these four configuration instances apply to both databases. If your 
+databases were configured separately, then you will find four configuration instances for 
+each database.
+eFor each configuration instance, record the instance ID. In the following example, the ID for the 
+sas.datasource.initializer configuration instance is 0b16f426-aaa2-42a8-a0bc-047c69f93cab.configurationservice/configurations/0b16f426-aaa2-42a8-a0bc-047c69f93cab={  "version" : 1,  "id" : "0b16f426-aaa2-42a8-a0bc-047c69f93cab",  "metadata" : {    "isDefault" : false,    "services" : [ "subjectContacts" ],    "mediaType" : "application/vnd.sas.configuration.config.sas.datasource.initializer+json;                  version=1",    "createdBy" : "edmdev",    "modifiedBy" : "edmdev",    "creationTimeStamp" : 1605463464064,    "modifiedTimeStamp" : 1605463464064  },  "enabled" : false}
+IMPORTANT Verify that the configuration instance is for the correct media type before 
+you proceed.
+2Use REST API calls to delete the configuration instances associated with each ID. For example, 
+you can use the following CURL command to delete a configuration instance. Substitute the 
+appropriate values for your site for the token, host, port, and ID.curl  -header "Authorization: bearer token"  -X DELETE http://host:port/configuration/configurations/ID
+3(Optional) Repeat Step 1b  and Step 1d  to verify that the configuration instances have been 
+deleted.
+4Restart the services (sas-subject-contacts, sas-decisions-definitions, or both) for which you 
+deleted the database configuration instances. For more information, see “Managing a Specific 
+Server or Service” in SAS Viya Platform: General Management of Servers and Services .
+5Delete the temporary file that was created in Step 1b . This file contains sensitive information.rm /tmp/consul.txt
+35

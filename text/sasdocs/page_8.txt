@@ -1,0 +1,26 @@
+SAS® Viya® Model Execution Solution  
+Model Execution Proposal Page 5 SAS® Viya ® Model Execution  Solution  
+The SAS Viya Model Execution Solution  provides an end -to-end, fully integrated model execution 
+environment to accelerate the analysis and processes across risk, treasury, and finance 
+departments. The solution utilizes the high -performance capabilities of the SAS Viya platform to 
+provide the risk specific functionality needed to support multi -functional, process -intensive, and 
+detail -oriented activi ties required to support CCAR, CECL , and Integrated Balance Sheet 
+Management processes.  
+ 
+ 
+The main components involved in the end -to-end process are:  
+♦ Data Management, Data Quality a nd Overrides  
+♦ Assumptions and Scenario Design  
+♦ Execution Engine and Simulation Environment  
+♦ Orchestration and Risk Consolidation  
+♦ Dynamic Reporting  
+♦ Technology  
+ 
+Data Management, Data Quality and Overrides  
+The solution  leverages the powerful data management capabilities of SAS Viya interacting with all 
+relevant sources (both internal and external).  The solution provides the data lineage to track how 
+data moves through the process and undergoes different transformations.  The solution creates 
+snapshots of the data inputs and results from model execution to support auditability of data.   
+ The solution automates and deploys business rules created and managed by business users. 
+Furthermore, users can add advanced data managem ent capabilities if required for data profiling, 
+data quality, data cleansing, etc. to manage noisy, inconsistent, and incomplete data.

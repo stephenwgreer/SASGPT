@@ -1,0 +1,41 @@
+Checking Out and Committing Decision 
+Versions
+About Checking Out and Committing Versions
+Your administrator can enable the check-out and commit feature for decisions that 
+are in any folder by specifying the folder in the 
+sas.decisions.checkout.checkoutEnabledFolderPaths configuration option. Enabling 
+this feature for a folder does not automatically modify the permissions for the folder 
+or for the objects in it. You can still modify a decision in the folder without checking it 
+out, but you are expected to check out the latest version before you edit it. However, 
+your administrator might also set permissions that require you to check out 
+decisions in these folders before you can edit them. For more information, see 
+“sas.decisions.checkout” in SAS Intelligent Decisioning: Administrator’s Guide  and 
+“Set Permissions for Check-Out Folders” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+By default, SAS Intelligent Decisioning  defines a folder where you can store 
+decisions that must be checked out before they can be edited by users without 
+administrator privileges. This folder is the Decision Repository
+ folder, and it is the 
+default value for the sas.decisions.checkout.checkoutEnabledFolderPaths 
+configuration option. The default permissions for this folder require that non-
+administrative users check out a version and commit their changes to the checked-
+out version. Users who do not have administrative permissions cannot edit the 
+decisions in Decision Repository
+ without first checking them out.
+Note: The sas.decisions.checkoutEnabledFolderPaths option controls the check-
+out and commit feature for both decisions and code files. The check out and commit 
+feature for lookup tables, treatments and treatment groups, and rule sets are 
+controlled by configuration options that are specific to those object types.
+If a version can be or must be checked out before it is modified, the Check Out 
+button appears at the top of the Versions  tab for that object. You can check out any 
+version of an object. You can check out only one copy of a version at a time.
+TIP If the sas.decisions.checkout.allowConcurrentCheckout option is turned 
+off, and a user has checked out a decision version, the Check Out  button for 
+that decision is disabled for all other users. For more information, see 
+“Concurrently Checking Out and Committing Decision Versions” on page 274.
+When you check out a version, SAS Intelligent Decisioning  writes a working copy of 
+the version into your My Folder
+ folder and opens the working copy. SAS Intelligent 
+Decisioning  adds “(Checked Out)
+” to the name that is displayed at the top of the 
+window.272 Chapter 8 / Working with Decisions

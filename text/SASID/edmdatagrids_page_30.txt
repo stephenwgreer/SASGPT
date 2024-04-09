@@ -1,0 +1,28 @@
+Optional Arguments
+CLASSVARS= class_variable1 < class_variable2 ...>
+specifies the class variables that control how the data is grouped into data grids. 
+If you specify one class variable, the results table contains one data grid for each 
+value of the class variable. If you specify more than one class variable, a 
+separate data grid is created for each combination of values for the class 
+variables. The class variables are written to the output results table.
+GRIDCOLS= column1 < column2 ...>
+specifies the names of the columns that are to be serialized into the data grid. If 
+you do not specify this option, all of the columns in the table are serialized 
+except for the columns specified by the CLASSVARS= option.
+GRIDCOLLEN= length
+specifies the length for the column specified by the GRIDCOLUMN= option. If 
+the results table is a Base SAS table, the length must be less than or equal to 
+32,767. If the results table is a SAS Cloud Analytic Services (CAS) table, the 
+length must be less than or equal to 10,485,760.Default32,767
+PROMOTE= YES | NO
+promotes the merged data grid table from session scope to global scope.DefaultYESRestrictionThis option is valid only if the output table is written to a CAS library.
+Example: Serializing the Assets Table
+The following example serializes (creates JSON strings) the assets data for each 
+customer in the mylib.assets table. The output table is named assetsGrid, and the 
+data grid column in the output table is named Assets. The data in the mylib.assets 
+table is grouped by the class variable custName, so the output table contains one 
+row for each value of custName.%dcm_serializeGrid(      gridSourceTable=mylib.assets,      gridColName=Assets,       outputTable=assetsGrid,      classvars=custName);
+Table 2.5 mylib.assets Source Table CustNameAssetTypeValueMacKelly, 
+SaraProperty, Primary212000MacKelly, 
+SaraProperty, 
+Investment125000Smyth, JoeProperty, Primary234500 26Chapter 2 / Data Grid Macros

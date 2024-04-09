@@ -1,0 +1,33 @@
+Solution Investment  
+Model Execution Proposal Page 12 Solution Investment  
+Phase 0 Pricing  
+Solution Componen t Year 1 Fees  Year 2 Fees  Year 3 Fees  
+Phase 0  – Initial Model Implementation  and Execution  $100,000    
+ 
+Pricing for Additional Phases  
+Solution Component  Year 1 Fees  Year 2 Fees  Year 3 Fees  
+Software License Fees (Hosting Included) * $830,000   $785,870  $832,901  
+Discount (FCB)  ($100,000 )   
+Serv ices: Establish an end -to-end Process for One 
+Portfolio (Milestone 3) ** $240,000   
+Services : Expansion of Portfolio Coverage 
+(Milestone 4) * TBD    
+Total*** $970,000  $785,870  $832,901  
+ 
+* This is illustrative/example pricing based on a medium  sizing . A formal sizing assessment is 
+required to produce a formal Hosted Managed Service (HMS ) proposal and pricing.  Software 
+pricing is based on processed assets up to $70 Billion.  
+ 
+** These services estimates are based upon our understanding of the solution for FCB to date. 
+Services are estimated on a Time -and-Materials basis. E stimates will be revisited as part of the 
+requirements process.  
+ 
+*** Total does not represent the services to bring the additional portfolios d ue to lack of details 
+for the estimation.  
+ 
+SAS® HMS  – Notes  and Assumptions  
+Installation and Initial Configuration  
+♦ Installation and initial configuration of the following SAS ® Viya ® software:  
+– SAS®  Risk Engine (includes SAS ® Visual Analytics)  
+– SAS®  Risk Cirrus  
+– Other SAS software as needed

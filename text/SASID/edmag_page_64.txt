@@ -1,0 +1,24 @@
+FieldValuePrincipal 
+typeGroupPrincipalEnter the name of the group that you created in Step 2 . Rule typeGrantPermission
+sReadDescriptionEnable users in the group group-name to create new versions of decisions that are in a check-out folder by using tags.
+5Click Save .
+Reloading Lookup Tables When CAS Is 
+Restarted
+IMPORTANT All the CAS configuration instances are disabled by default, which means that 
+processing is not enabled for any modifications to the configuration instances in SAS 
+Environment Manager. In order to modify the cas-shared-default configuration instances, a 
+Kubernetes administrator must set SAS_ALLOW_ADMIN_SCRIPTS to True in sas-shared-config configMap
+. For instructions, see the file $deploy/sas-bases/overlays/sas-programming-environment/README.md
+. For more information, see “Edit Server Configuration 
+Instances” in SAS Environment Manager: User’s Guide .
+Also, you must restart the CAS server after you make changes to the cas-shared-default 
+configuration settings.
+Whenever SAS Cloud Analytic Services (CAS) is restarted, you must either manually reactivate 
+lookup tables, or you must enable them to be reloaded automatically. To enable the lookup tables to 
+be reloaded automatically, add the formats library to the formats search path. The name of the 
+formats library is specified by the sas.referencedata.casformats.formatsLibrary  configuration property. 
+The default formats library is USERFORMATS3. To add the default formats library to the formats 
+search path:
+1Sign in to SAS Environment Manager as an administrator.
+Note: If you are already logged in to SAS Intelligent Decisioning as an administrator, access SAS 
+Environment Manager by clicking  and selecting Manage Environment .63

@@ -1,0 +1,32 @@
+Checking Out and Committing Lookup Table Versions  . . . . . . . . . . . . . . . . . . . . . . . . 128
+About Checking Out and Committing Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Checking Out and Committing a Lookup Table from within a Rule Set  . . . . . . . . . . . 128
+Committing a Lookup Table Together with a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Concurrently Checking Out and Committing Lookup Table Versions  . . . . . . . . . . . . 128
+Check Out and Commit a Lookup Table Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Determine Who Has a Version Checked Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Opening the Original Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Undoing a Check Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Managing Version Tags for Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Add a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Remove a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Modify a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Activating a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+What Does Activating a Lookup Table Do?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+Controlling Where Lookup Tables Are Activated And How They Are Used  . . . . . . . 134
+Activate a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+LOOKUP Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+LOOKUPVALUE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 138
+About Lookup Tables and Functions
+SAS Intelligent Decisioning  provides the ability to import lookup tables and 
+reference them from rules. Lookup tables are tables of key-value pairs. For 
+example, you can use a lookup table to retrieve a part name based on the code 
+number of the part or to retrieve the full name for a country based on its 
+abbreviation.
+You can import lookup data from comma-separated-values (CSV) files, such as 
+those created by spreadsheet applications, into lookup tables in SAS Intelligent 
+Decisioning . You can re-import updated CSV files as needed to refresh the lookup 
+tables.
+Note: SAS Intelligent Decisioning  does not support CSV files that contain signature 
+lines.114 Chapter 4 / Working with Lookup Tables and Functions

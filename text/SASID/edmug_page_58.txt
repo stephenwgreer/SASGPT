@@ -1,0 +1,26 @@
+Managing Rule Sets
+Duplicating Rule Sets
+About Duplicating Rule Sets in Folders for 
+Which the Check-Out and Commit Feature 
+Is Enabled
+When you duplicate a rule set, SAS Intelligent Decisioning  first creates an empty 
+rule set, and then updates the rule set to add the individual rules. The default 
+permissions for the Decision Repository enable users to create new objects, but the 
+permissions do not include the ability to update the objects. In order to duplicate an 
+object that is in the Decision Repository, you must check out the object.
+If your site has created additional folders for which the check-out and commit 
+feature is enabled, and if those folders have been assigned the same permissions 
+as those assigned to the Decision Repository, you must also check out objects in 
+those folders before you can duplicate them.
+Duplicate Rule Sets
+Note: You cannot duplicate a rule set if it is open. 
+To duplicate a single rule set:
+1In the Rule Sets  view, select the rule set that you want to duplicate.
+2Click  and select Duplicate . The Duplicate Rule Set  window appears.
+3Enter a new name for the duplicate rule set.
+4(Optional) Enter a description for the rule set.
+5Select the version of the rule set that you want to duplicate.
+6Click  and select the location where you want to save the duplicate rule set.
+7Click Duplicate .
+To duplicate multiple rule sets:
+1In the Rule Sets  view, select the rule sets that you want to duplicate.Managing Rule Sets 47

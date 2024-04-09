@@ -1,0 +1,34 @@
+IMPORTANT You are responsible for ensuring that only users who are 
+authorized to do so can install Python libraries, develop, and test code nodes 
+that use SQL or Python, and execute decisions that use custom code nodes.
+IMPORTANT All changes that you make to a code file affect all unpublished 
+decisions that use that file. For more information, see “Content That Is Used 
+by Tests and Scenarios for Decisions” on page 303 and “Content Executed 
+by Published Decisions” on page 309.
+Note: Not all of the code that you can write in a custom code file will work in all 
+publishing destinations or in decision tests.
+For information about adding a custom code file to a decision, see “Adding Objects 
+to a Decision” on page 230.
+DS2 Code Files
+Rules for Creating DS2 Code Files
+When you are developing your DS2 package, follow these rules:
+nDo not change the package name in the PACKAGE statement:package "${PACKAGE_NAME}" /inline;
+This line must appear exactly as shown and must begin in column one of the 
+code file. The token is replaced with a package name that SAS Intelligent 
+Decisioning  uses to maintain the relationship between the code file and the 
+decisions that use it.
+nIf your custom DS2 code file defines multiple packages, the packages that are 
+used by the ${PACKAGE_NAME}
+ package must be defined before the ${PACKAGE_NAME}
+ package.
+nDo not specify any DS2 options (DS2_OPTIONS statement) in your package 
+code.
+nCustom DS2 code files in SAS Intelligent Decisioning  support only three data 
+types: double, varchar, and package datagrid. These data type names are case 
+sensitive. List input-only parameters first. List input-output and output-only 
+parameters next, using the in_out modifier. Do not specify a length for input-
+output and output-only parameters. The length for these parameters is derived 
+from the variables that are passed into the method.
+For example, the following lines define the variables LOAN, REASON, and 
+ASSETS.package datagrid "assets"
+DS2 Code Files 153

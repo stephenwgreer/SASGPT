@@ -1,0 +1,20 @@
+2
+Data Grid Macros
+Using the Data Grid Macros  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Data Grid Macros Available with SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . 13
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+%DCM_CONVERT_DATAGRID_TO_TABLE Macro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+%DCM_DATAGRID_INTERFACE Macro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+%DCM_DATAGRID_JSON_TO_TABLE Macro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+%DCM_JSON_TO_DATAGRID Macro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+%DCM_MERGESERIALIZEDGRIDS Macro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+%DCM_SERIALIZEGRID Macro  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Using the Data Grid Macros
+The SAS Intelligent Decisioning  data grid macros enable you to prototype and test 
+custom code that uses data grids in SAS Studio before you add your code to a 
+decision.
+Note: The SAS Intelligent Decisioning  macros are for use in SAS Studio only.
+Data Grid Macros Available with SAS 
+Intelligent Decisioning
+%DCM_CONVERT_DATAGRID_TO_TABLE
+converts a data grid into a series of individual tables.13

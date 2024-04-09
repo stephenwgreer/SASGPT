@@ -1,0 +1,31 @@
+2On the Versions  tab, select the version that you want to activate, and click 
+Activate .
+Managing Attributes and Aliases
+About Attributes and Aliases
+For additional information about attributes and aliases, see the following topics:
+n“Attributes and Attribute Aliases” on page 88
+n“Add Attribute Aliases” on page 93
+n“Customize Dynamic Treatment Attributes” on page 92
+Define Custom Attributes
+1On the Attributes  tab of a treatment, click Add Attribute  and select Custom 
+attribute . The Add Attribute  window appears.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Complete these steps for each attribute:
+aEnter a name for the attribute.
+b(Optional) Enter a description for the attribute.
+cSelect the data type for the attribute.
+dSelect Fixed  or Dynamic , depending on how the attribute’s value will be set 
+when it is included in a treatment group.
+Dynamic
+The values of dynamic attributes can be set by the decision at run-time. 
+When you define a dynamic attribute, you can specify a default value or a 
+list of default values for the attribute. Within each treatment group in which 
+the attribute appears, you can specify that the attribute’s value is set by 
+the decision at run time, or you can set a static value that is used only 
+within that specific treatment group.
+Fixed
+You define the value or list of values for fixed attributes when you define 
+the attribute. The values cannot be customized in treatment groups.Managing Attributes and Aliases 95

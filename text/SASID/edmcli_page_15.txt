@@ -1,0 +1,47 @@
+Viya environment. For more information, see “Modifying the Mapping File” on 
+page 12.
+export_report.json
+This file contains any messages that were generated when the content was 
+exported.
+You can use the --content
+, --mappings
+, and --report
+ options to change these 
+filenames.
+7Import the content into the SAS Viya environment:sas-viya dcmtransfer import9x object-type <import-options>
+By default, the import9x
+ command looks for a file named contents.json that 
+contains the content that was exported from SAS 9.4, and a file named 
+mappings.json that describes the relationship between the exported content and 
+any associated objects. If you specified the --content
+ or --mappings
+ options on 
+the export9x
+ command in Step 6 on page 10, then specify the same options on 
+the import9x
+ command.
+Note: When you view imported content in SAS Intelligent Decisioning , any 
+errors in the content are marked with the error icon .
+8Log off from the SAS 9.4 environment:sas-viya dcmtransfer auth9x logout
+9Log off from the SAS Viya environment:sas-viya auth logout
+Query Parameters for the --uri Option
+The following table lists the query parameters that you can specify as part of the 
+URI when you are exporting SAS 9.4 content. The parameters that are available 
+depend on the object type that you are exporting.Object 
+TypeAvailable ParametersObjects ReturnedRule Setsname="
+rule-set-name"
+Rule sets that match the 
+specified name. This 
+parameter is case 
+sensitive.vocabularyName="
+vocabulary-name"
+Rule sets that use the 
+specified vocabularyRule flowsname="
+rule-flow-name"
+Rule flows that match the 
+specified name. This 
+parameter is case 
+sensitive.simpleOnly="true"
+Beginning with SAS 
+Intelligent Decisioning 
+5.1, SAS Intelligent dcmtransfer Plug-In 11

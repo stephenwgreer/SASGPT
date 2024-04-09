@@ -1,0 +1,27 @@
+Managing Version Tags for Lookup 
+Tables
+Add a Version Tag
+Version tags enable you to better organize and group your content. Version tags are 
+associated with specific versions of an object and not with the entire object. You can 
+add the same tag to any version of any object. To add a tag to a lookup version:
+1On the Versions  tab, position your cursor in the Version Tags  column for the 
+version that you want to tag. If the version is not tagged,  appears. If the 
+version has at least one tag,  appears.
+2Click  to open the New Version Tags  window, or click  to open the Edit 
+Version Tags  window.
+3For each tag that you want to add, either enter a custom tag or begin typing and 
+select a tag from the list of previously entered tags. Press Enter after each tag. 
+Tags are limited to 100 characters each and cannot contain the following 
+characters: $ ' " # & ? ( ) \ /
+TIP All tags that have been previously entered for any object are saved 
+in the list that is displayed when you start typing. You cannot delete tags 
+from this list.
+TIP To filter the version list based on a tag, right-click on the Version 
+Tags  column heading, enter a filter string in the Filter  box, and press 
+Enter. To clear the filter, delete the string from the Filter  box, and press 
+Enter.
+4Click Close  to close the window.
+Remove a Version Tag
+1On the Versions  tab, position your cursor in the Version Tags  column for the 
+version whose tag you want to remove, and click .
+2Click  beside the tag that you want to remove.Managing Version Tags for Lookup Tables 133

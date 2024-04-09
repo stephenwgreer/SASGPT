@@ -1,0 +1,40 @@
+the right panel. Click  or  to to display list the errors or warnings. In the 
+diagram, a red X identifies a decision node that produced an error and a yellow 
+triangle identifies a node that produced a warning. Click View log  next to an 
+error or warning in the list to jump to the line that generated that error on the Log 
+subtab.
+On the Output  page, click Show All  to display the expected and actual values of 
+all output variables. Click Show Differences  to display only the variables whose 
+expected values do not match the actual values that were returned by the test.
+TIP You can click on the values of character variables to display the 
+entire value in a separate window. For data grid variables, you can 
+choose to view the variable value in three different formats:
+nClick the Data Grid  tab to view the data grid value as a table.
+nClick the Formatted  tab to view the data grid as a formatted JSON 
+character string.
+nClick the Plain  tab to view the data grid as an unformatted character 
+string.
+TIP On the Output  page, click Export  to export the output table as a 
+comma-separated values (CSV) file. On the Log page, click  to 
+download the log file.
+15Click Close  to close test results and return to the Scoring tab.
+16(Optional) Generate a variable change path report. Select the scenario test, click 
+, and select Generate path report . SAS Intelligent Decisioning  generates the 
+report, adds it as a comment attachment to the scoring test, and opens the 
+Comments  property panel.
+Click on the report file name to open the report. The result depends on which 
+browser you are using and the browser’s default download actions. The browser 
+might automatically download the file and display a notification in the bar at the 
+bottom of the browser window. Alternatively, the browser might prompt you to 
+save the file or open it with a specific application.
+Note: If the decision is complicated or uses very large data grid variables, the 
+report file might be very large, and you might encounter memory issues.
+17(Optional) Generate a variable assignment report. Select the scenario test, click 
+, and select Generate assignment report . SAS Intelligent Decisioning 
+generates the report, adds it as a comment attachment to the scoring test, and 
+opens the Comments  property panel.
+Click on the report file name to open the report. The result depends on which 
+browser you are using and the browser’s default download actions. The browser 
+might automatically download the file and display a notification in the bar at the 
+bottom of the browser window. Alternatively, the browser might prompt you to 
+save the file or open it with a specific application.292 Chapter 8 / Working with Decisions

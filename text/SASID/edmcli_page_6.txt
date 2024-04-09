@@ -1,0 +1,28 @@
+scoreexecution
+lists or deletes resources such as log files, code files, jobs, and SAS Cloud 
+Analytic Services (CAS) tables that were not deleted when the associated rule 
+set, decision, or model test was deleted.
+sid-functions
+creates and manages custom functions and function categories.
+Downloading and Installing the CLIs
+The recommended approach for running the SAS Intelligent Decisioning CLIs is to 
+run them as plug-ins to the SAS Viya Command-Line (sas-viya CLI). The most 
+current plug-ins are included with the sas-viya CLI download file. You can download 
+the sas-viya CLI directly from the SAS Support website and install the plug-ins that 
+you need. The download file is available at 
+https://support.sas.com/downloads/browse.htm?fil=&cat=564 . For information about 
+downloading the CLI file and installing plug-ins, see “Get the CLI and Its Plug-Ins” in 
+SAS Viya: Using the Command-Line Interface .
+Creating and Using Profiles
+To use these CLIs, you must create at least one profile and sign in to SAS Viya. The 
+CLIs connect to the SAS Viya environment that is specified in your profile. If you do 
+not specify a profile in the CLI command, the CLI uses the default profile. To 
+connect to a different SAS Viya environment, use the --profile
+ global option in the 
+CLI command to specify a different profile. For more information, see the following 
+topics:
+n“Default Profile and Named Profiles” in SAS Viya: Using the Command-Line 
+Interface
+n“Create at Least One Profile” in SAS Viya: Using the Command-Line Interface
+n“Use Your Profile to Sign In ” in SAS Viya: Using the Command-Line Interface
+n“--profile profile_name ” on page 52Chapter 1 / Using SAS Intelligent Decisioning Command-Line Interfaces

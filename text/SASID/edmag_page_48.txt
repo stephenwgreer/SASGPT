@@ -1,0 +1,25 @@
+TIP You can export multiple items with one transfer request by specifying the items in a 
+JSON file and specifying the JSON file as input to the CLI command. The JSON file 
+contains two fields named name
+ and items
+. For example, to export the modules for three 
+different versions of the card_offers object, the JSON file might contain the following data:{    "name": "Published Models",    "items": [        "/modelPublish/destinations/CASPublic/models/card_offers1_0",        "/modelPublish/destinations/CASPublic/models/card_offers1_1",        "/modelPublish/destinations/CASPublic/models/card_offers1_2"    ]}
+Specify the JSON file name with the --request
+ option in the CLI command. If this JSON is 
+in a file named request.json
+, specify the following command to export all of the specified 
+modules:sas-admin --profile source-profile transfer export --request @request.jsonsas-viya --profile source-profile transfer export --request @request.json
+2Download the JSON package file. Specify the package ID and the JSON file name in the download
+ command:sas-admin --profile source-profile transfer download --id "8f32140f-34e1-42dd-8d85-f8129ff5dabb"     -f card_offers1_0.jsonsas-viya --profile source-profile transfer download --id "8f32140f-34e1-42dd-8d85-f8129ff5dabb"     -f card_offers1_0.json
+3Verify that the target server has a CAS publishing destination with the same name as the source 
+server. To import the package successfully, the target server must have a CAS publishing 
+destination with same name as the source server. For more information, see SAS Viya: Publishing 
+Destinations .
+4Use the upload
+ command to upload the JSON file to the destination server:sas-admin --profile target-profile transfer upload -f card_offers1_0.jsonsas-viya --profile target-profile transfer upload -f card_offers1_0.json
+If the upload
+ command is successful, the CLI prints a message that includes the ID of the transfer 
+package. For example:{    "description": "",    "id": "ef4204f7-8a79-49ae-8d45-a7877f5e1e86",    "links": [        ...    ],    "name": "Export",    "type": "TransferPackage",    "version": 2}
+5Import the contents of the transfer package. Specify the ID of the transfer package that was 
+returned in the previous step:sas-admin --profile target-profile transfer import --id "ef4204f7-8a79-49ae-8d45-a7877f5e1e86"
+47

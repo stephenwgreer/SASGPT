@@ -1,0 +1,32 @@
+4(Optional) For each version tag that you want to add, either enter a custom tag 
+or begin typing and select a tag from the list of previously entered tags. Press 
+Enter after each tag.
+Note: A tag is limited to 100 characters.
+TIP All tags that have been previously entered for any object are saved 
+in the list that is displayed when you start typing. You cannot delete tags 
+from this list.
+5(Optional) Enter information about the new version in the Notes  field.
+TIP You can edit these notes at any time on the Versions  tab.
+6Click Save .
+Copy the Content of a Version
+You can copy the content of an object’s version in the category view or on the 
+Version  tab for the object.
+1In the category view, complete these steps:
+aSelect the treatment or treatment group whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+cSelect the version whose contents you want to copy.
+Alternatively, on the Versions  tab of the treatment or treatment group whose 
+contents you want to copy:
+aSelect the version whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+2Click , and select the target treatment or treatment group into which you want 
+to paste the contents of the version. You can paste version contents only into an 
+object of the same type.
+When you paste the contents, SAS Intelligent Decisioning  creates a new version 
+of the target treatment or treatment group. The target object contains only the 
+pasted content.
+3Select whether you want to create a new major or minor version.
+4(Optional) Modify the notes that will be associated with new version. 
+5(Optional) Add tags that will be associated with the new version. Tags that are 
+associated with a source object version are not automatically added to the new 
+version. See “Add a Version Tag” on page 111Managing Versions of Treatments and Treatment Groups 105

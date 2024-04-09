@@ -1,0 +1,31 @@
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+Edit the Properties of a Decision Node
+On the Decision Flow  tab:
+1Select the decision node.
+2(Optional) Click  to display the Input Variables  panel, and modify the input 
+variable mappings for the node.
+3(Optional) Click  to display the Output Variables  panel, and modify the output 
+variable mappings for the node.
+4(Optional) Click  to display the Properties  panel.
+a(Optional) Select a different object or object version for the selected node.
+b(Optional) For code file nodes, modify the node description, or click Open  to 
+edit the code file in the appropriate editor.
+c(Optional) For cross-branch links, select a different target node.
+On the Decision  tab:
+1Click  for the node. The properties window for the node appears.
+2(Optional) On the Variables  tab, modify the variable mappings.
+3(Optional) On the Properties  tab, select a different object or object version. For 
+code files, modify the description, or click Open  to edit the file in the appropriate 
+editor.
+4Click Close  to save your changes and close the properties window.
+Reorder Objects
+On the Decision Flow  tab, you can drag rule sets, branches, models, treatment 
+groups, nested decisions, and code files from one position to another. You cannot 
+move the nodes for cross-branch links, but you can move the target node of a cross-
+branch link.
+On the Decision  tab, to move an object up or down, including into and out of 
+conditions, select the object and click  or . You can also move the selected 
+object by using Shift +  and Shift + .252 Chapter 8 / Working with Decisions

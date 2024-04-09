@@ -1,0 +1,10 @@
+3(Optional) Click the Variables  tab to display the properties of the variables in the 
+two objects. This tab displays the name, type, initial value (if a value is defined), 
+and length of each variable in both objects. The tab also indicates whether the 
+variable is an input variable or an output variable. If the variable list for both 
+objects is the same, this tab displays a message stating that the two objects are 
+identical.
+If either of the objects that you are comparing contain a data grid variable, you 
+can click 
+  beside the variable name to display the data type and length of each 
+data grid column.44Chapter 2 / Working with Rule Sets

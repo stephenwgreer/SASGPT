@@ -1,0 +1,7 @@
+SAS® Intelligent 
+Decisioning: Command-
+Line Interfaces
+2021.1.2 - 2021.1.5**This document might apply to additional versions of the software. Open this document in SAS Help Center  and click 
+on the version in the banner to see all available versions.
+SAS® Documentation
+October 11, 2022

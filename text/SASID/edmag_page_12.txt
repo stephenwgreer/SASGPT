@@ -1,0 +1,24 @@
+RestrictionThis configuration option is valid only when sas.decisions.messageOrder  is set to 
+TEMPORAL.See“MSGLIMIT=n | MIN | MAX” in SAS DS2 Language Reference
+sas.decisions.messageOrder
+Specifies whether SAS Intelligent Decisioning adds the DS2 option MSGORDER= to the code that 
+it generates for decisions. The MSGORDER= option specifies whether DS2 writes error, warning, 
+and note messages to the SAS log as they are produced or after the code executes. Valid option 
+values are STANDARD and TEMPORAL.STANDARDspecifies that DS2 writes the messages after the code executes. PUT 
+statement messages precede the diagnostic messages in the log.TEMPORALspecifies that DS2 writes the messages as they are produced. PUT statement 
+messages are interspersed with the diagnostic messages in the log.DefaultSTANDARDNoteThis option applies to both published code and test code.See“MSGORDER=STANDARD | TEMPORAL” in SAS DS2 Language Reference
+sas.decisions.scond
+Specifies whether SAS Intelligent Decisioning adds the DS2 option SCOND= to the code that it 
+generates for decisions. The SCOND= option specifies the level of the messages that are 
+displayed in the SAS log for the DS2 variable declaration strict mode. This mode requires that 
+every variable must be declared in the DS2 program. This option affects basic tests, scenario 
+tests, and publishing validation tests for decisions. You can specify the following values:WARNINGwrites warning messages to the SAS log.NONEno messages are written to the SAS log.NOTEwrites notes to the SAS log.ERRORwrites error messages to the SAS log.DefaultWARNINGNoteWhen the decision contains a model, SAS Intelligent Decisioning  sets SCOND=NONE 
+before the code for the model package is generated. After the model code is generated, 
+SAS Intelligent Decisioning  resets the SCOND= option to the value that is specified by 
+this option.See“SCOND” in SAS DS2 Language Reference
+sas.decisions.taskExecutor.maxThreadsPerRequest
+Specifies the maximum number of threads that can be used by SAS Intelligent Decisioning  to 
+generate the DS2 code for a decision.Default4
+sas.decisions.taskExecutor.minItemsPerThread
+Specifies the minimum number of items that can be processed inside the same thread when SAS 
+Intelligent Decisioning  is generating the DS2 code for a decision.Default5 11

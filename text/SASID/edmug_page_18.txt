@@ -1,0 +1,32 @@
+Manage Folders and Folder Content
+In the Manage Folders  window, with the appropriate permissions, you can create 
+new folders, delete, move, and rename existing folders or objects, and restore 
+objects from the recycle bin. Objects that you delete in SAS Intelligent Decisioning 
+are moved to the recycle bin. For information about permissions, see “Managing 
+Permissions” in SAS Intelligent Decisioning: Administrator’s Guide .
+Note: When you delete a specific version of an object, that version is permanently 
+deleted. It is not moved to the recycle bin, and it cannot be recovered. When you 
+delete an entire object, that object is moved to the recycle bin and can be restored.
+To open the Manage Folders  window, click , and select Manage folders  in any 
+category view except the Custom Functions  and Global Variables  category views.
+nTo create a new folder, click , type the folder name, and press Enter.
+nTo rename an item, right-click the item, select Rename , type the new name, and 
+press Enter.
+nTo move an item, right-click the item, select Move to folder , select the new 
+folder, and press Enter.
+nTo delete an item, right-click the item, and select Delete . The deleted item is 
+moved to the recycle bin.
+nTo restore an item from the recycle bin, right-click on the item in the recycle bin, 
+and select Restore .
+nTo permanently delete an item, right-click on the item in the recycle bin, and 
+select Delete . The item is deleted from the recycle bin and cannot be restored.
+nTo empty the recycle bin, right-click Recycle Bin  and select Empty recycle bin .
+For more information about folders, see SAS Viya Platform: Folders .
+For information about the global variables recycle bin, see “Manage the Global 
+Variable Recycle Bin” on page 147. For information about hiding custom function 
+categories, see “Hide A Custom Function Category” on page 209.
+View the Properties of Any Object
+In the category views, you can view the properties of any object. Select the check 
+box for the object, and click  in the property pane. Click 
+  to close the properties 
+pane.View the Properties of Any Object 9

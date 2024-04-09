@@ -1,0 +1,14 @@
+Adding Cross-Branch Links
+Overview of Cross-Branch Links
+Cross-branch links enable you to easily reuse components in a decision. You can 
+add a cross-branch link to a target node at a branch level that is the same as or 
+lower than the level of the source node. You can add cross-branch links that link to 
+the End node, but you cannot add a cross-branch link that ends at the Start node.
+For example, given the decision shown in the following figure, you can add cross-
+branch links between any of the rule sets.
+The Range branch has one path for each of three different ranges of loan values. 
+Suppose you want all three paths to include the Set_interest_rate rule set, and you 
+want both the mid-range and Other path to include the Verify_equity_amt rule set. 
+You can add a cross-branch link from the Review_collateral node to the 
+Verify_equity_amt node and a cross-branch link from the Verify_equity_amt node to 
+the Set_interest_rate node.244 Chapter 8 / Working with Decisions

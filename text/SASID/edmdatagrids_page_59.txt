@@ -1,0 +1,30 @@
+operator
+specifies one of the following operators shown in “Comparing Values in Data 
+Grids” on page 30. You can specify the name of a character variable that 
+evaluates to one of these operators, or you can specify the operator enclosed in 
+single quotation marks.
+variableOrValue
+specifies the value to compare to the value of filterColumn . You can specify a 
+number, a character string enclosed in single quotation marks, or the name of a 
+variable or of an expression. The value that you specify must be or must 
+evaluate to the same data type as filterColumn .
+Details
+The DATAGRID_FILTEREDGET function compares the value in filterColumn  to the 
+specified variableOrValue  by using the comparison operator. The comparison is as 
+follows:filterColumn  operator  variableOrValue
+For the first row for which the comparison evaluates to true, this function returns the 
+value of columnReturned .
+Example
+The following example determines whether the value of the riskGroup column is 
+equal to Low
+, and if so, returns the value of the approvalStatus column:DATAGRID_FILTEREDGET(DebtEval,'approvalStatus','riskGroup','EQ','Low')
+DATAGRID_FILTEREDGETINDEX Function
+Returns the index of the first row in the specified column for which the specified comparison evaluates to 
+true.
+Category: Information
+Returned data 
+type:STRING, DOUBLE
+Note: If no rows match the specified comparison, this function returns -1.
+Syntax
+DATAGRID_FILTEREDGETINDEX  (dataGrid , filterColumn , operator , 
+variableOrValue )DATAGRID_FILTEREDGETINDEX Function 53

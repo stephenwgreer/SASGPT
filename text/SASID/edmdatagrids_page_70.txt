@@ -1,0 +1,30 @@
+DATAGRID_GRIDMATCHCOUNT Function
+Returns the number of rows for which the value in the specified column in one data grid matches the value 
+in the specified column in another data grid.
+Category: Information
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_GRIDMATCHCOUNT  (dataGrid1 , dataGrid2 ,
+column1 , column2 )
+Required Arguments
+dataGrid1
+dataGrid2
+specifies the names of data grids. These arguments must be variables of type 
+DATAGRID.
+column1
+specifies the name of the column in dataGrid1  that you want to compare to a 
+column in dataGrid2 . You can specify a column name in single quotation marks 
+or a variable that evaluates to a column name.
+column2
+specifies the name of the column in dataGrid2 . You can specify a column name 
+in single quotation marks or a variable that evaluates to a column name.
+Details
+The DATAGRID_GRIDMATCHCOUNT function returns the number of rows in which 
+the value of dataGrid1 , column1  match the value of dataGrid2 , column2 .
+DATAGRID_INITIALIZE Function
+Replaces all of the values in the specified data grid with the specified default values.
+Categories: Create, Update, or Delete
+Set Values
+Returned data 
+type:INTEGER64Chapter 3 / Data Grid Functions

@@ -1,0 +1,31 @@
+You can also specify rules for other SAS Intelligent Decisioning  URIs. The SAS Intelligent Decisioning 
+URIs are listed in “Tasks Enabled by Default Rules for Object URIs” on page 54
+Full Access and Service Endpoints
+In order to have full access to an object, a user must have access to the folder that contains the 
+object, to the specific object, to any additional objects that are referenced by the object, and to the 
+service endpoints for all object types. For example, in order to have full access to a specific decision, 
+the user must have access to the following:
+nthe folder that contains the decision.
+nthe folder that contains the test definition and test results.
+nthe decision, plus any rule sets, lookup tables, models, treatment groups, code files, global 
+variables, custom functions, and nested decisions that are included in the decision. 
+nthe service endpoints for the object types for the folder, the decision, and all of the objects that are 
+included in the decision. If the decision contains a model, the endpoints for the model repository 
+and the model project (if the model is in a project) must be included. 
+nthe service endpoints for the object types that are needed to create and run a decision 
+test: /scoreDefinitions/definitions  and /scoreExecution/executions . Alternatively, if you are using 
+the SASScoreUsers group, the user can be a member of the SASScoreUsers group. See 
+“Granting Access to Test Results” on page 56 for more information.
+nthe service endpoints that are needed to publish the decision: /modelPublish/destination and /
+modelPublish/destination/{ destination }.
+Service endpoints for specific object types are represented by the object URIs. These object URIs are 
+shown in “Tasks Enabled by Default Rules for Object URIs” on page 54. You grant permissions for 
+object URIs by creating or modifying rules in SAS Environment Manager. For more information, see 
+“Setting Rules-Based Permissions” on page 53 and “Rules Page” in SAS Environment Manager: 
+User’s Guide .
+Note: If a user has access to a decision but does not have access to an object that is referenced in 
+the decision, SAS Intelligent Decisioning displays  next to the object name.
+Tasks Enabled by Default Rules for Object URIs
+Permission rules for object URIs are defined in SAS Environment Manager. By default, general rules 
+are defined for all object URIs in SAS Intelligent Decisioning. Table 6  describes the tasks that are 
+enabled by these default rules.Table 6 Tasks Enabled by Default Rules for Object URIs in SAS Intelligent Decisioning Object URITasks/businessRulesView the Business Rules category. 54

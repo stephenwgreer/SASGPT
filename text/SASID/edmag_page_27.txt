@@ -1,0 +1,33 @@
+Analytic Score service in SAS Environment Manager. For information, see “Database Access with 
+DS2” in SAS Micro Analytic Service: Programming and Administration Guide .
+In container destinations, only certain database types can be queried by using data query files, DS2 
+code files that contain SQL queries, or custom context files that contain SQL queries. If a decision 
+requires database access, SAS Container Runtime includes the required database-supported driver 
+when it creates the image. To identify the required database, specify the --databaseDriver property 
+when you create the publishing destination. If you do not specify the --databaseDriver property, the 
+driver for Oracle is included in the image. For information about creating a publishing destination and 
+specifying the --databaseDriver property, see “models Plug-In” in SAS Viya: Models Command-Line 
+Interface . For information about configuring database access, see “Configuring a Database 
+Connection” in SAS Container Runtime: Programming and Administration Guide .
+Configuring Support for Python Code 
+Files
+To support decisions that contain custom Python code files, you must enable PyMAS package 
+support. For more information, see “Configuring Python for SAS Micro Analytic Service” in SAS Micro 
+Analytic Service: Programming and Administration Guide .
+To use Python code files in SAS Intelligent Decisioning, user authentication must be enabled in one of 
+the following ways:
+nUsers who are working with Python code files must be added to the CASHostAccountRequired 
+custom group. For more information, see the following topics:
+o“The CASHostAccountRequired Custom Group” in SAS Viya: Identity Management
+o“Manage Custom Groups” in SAS Environment Manager: User’s Guide
+nThe CASALLHOSTACCOUNTS environment variable must be set. For information, see 
+“env.CASALLHOSTACCOUNTS” in SAS Viya: SAS Cloud Analytic Services .
+The MAS_M2PATH, MAS_PYPATH, and MAS_PYWAIT environment variables must be set. They are 
+usually set during the deployment process. See “Environment Variables” in SAS Micro Analytic 
+Service: Programming and Administration Guide  for more information.
+Additional information is available in the file $deploy/sas-bases/docs/configure_python_for_sas_viya.html
+.
+Set creation_dttm Values
+Note: You do not need to set the creation_dttm values for new installations of SAS Intelligent 
+Decisioning on SAS Viya. This task is required only for databases that were created with SAS 
+Intelligent Decisioning 5.4 and earlier on SAS Viya.26

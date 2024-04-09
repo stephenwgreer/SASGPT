@@ -1,0 +1,36 @@
+updating. This name-value pair prevents a request from updating a resource with 
+outdated content.
+For example, you can submit a GET request to retrieve the content of a decision, 
+modify it, and submit a PUT request to update the decision. The PUT request must 
+include the If-Match
+ header name and the value of the ETag header from the 
+response to the initial GET request. If someone else modifies the decision before 
+you submit your PUT request, then the ETag value is no longer valid and your 
+request fails.
+The header name that you need to specify in a PUT request is documented in the 
+REST API documentation  for the request that you are submitting. Depending on the 
+request, the header name is either If-Match
+ or If-Unmodified-Since
+. Specify the 
+header name and its value with the conditionalPutKey
+ and conditionalPutValue 
+parameters for the put() function.Table 2.1 Conditional PUT Keys and ValuesconditionalPutKeyconditionalPutValueIf-MatchETag
+ value from the response header for the last GET 
+request for the resource.
+The examples Chapter 5, “Activate Treatment Groups,” on 
+page 25 and Chapter 8, “Update Subject Contact History,” 
+on page 43 both submit PUT requests that include the If-Match
+ header.If-Unmodified-SinceLast-Modified
+ value from the response header for the last 
+GET request for the resource.
+The GET request returns this value in Coordinated Universal 
+Time (UTC) format. However, when you specify this value in 
+a PUT request, you must specify the value in the following 
+format:day-name, day month year hour:minutes:seconds GMT
+For example: Mon, 24 Aug 2020 20:58:15 GMT
+For more information, see Last-Modified  in the MDN (Mozilla 
+Developer Network) Web Docs.
+Example Code
+IMPORTANT Replace the client ID, client secret (if applicable), host URL, 
+user ID, and password with the appropriate values for your environment.import sys, jsonimport urllib.parse as u1import urllib.request as urllib2
+6Chapter 2 / Define Basic Methods and Get an Access Token

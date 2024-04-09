@@ -1,0 +1,29 @@
+reference the functions that are defined in a custom context file only from decisions. 
+Rule sets that are published independently (outside of a decision) cannot use 
+context functions.
+At run time, the custom context can hold information in internal variables about the 
+record that is being processed. This information can be shared with other nodes by 
+calling functions that are defined in the context file.
+Custom context files that are specified in nested decisions are ignored. You must 
+specify the custom context file in the parent decision. A nested decision cannot use 
+a custom context file that is different from the custom context file that is used by the 
+parent decision. The parent decision’s context file is used to resolve all references 
+to context functions.
+To create a custom context file, select Custom context  for the file type in Step 4 of 
+“Create a New Code File” on page 167.
+Note: In container destinations, Oracle is the only database that can be queried by 
+using custom context files that contain SQL queries.
+Adding an INIT Method to a Custom Context File
+You can add an INIT method to your custom context files. By adding an INIT 
+method, you can initialize variables before the first row of data is processed by the 
+decision. The INIT method is executed the first time the custom context file is 
+executed for the decision. The method is executed only once per thread. For 
+example, the following code creates a custom context file with an INIT method that 
+initializes a hash:package CustomContext;   dcl varchar(1024) ctxtKey;   dcl varchar(1024000) ctxtValue;   dcl package hash context;    method init();      context = _new_ hash([ctxtKey],[ctxtValue],0, '', '', '', '', 'MULTIDATA');   end;   ...endpackage;
+Associating a Custom Context File with a Decision
+You can specify a custom context file for decisions that are published to SAS Micro 
+Analytic Service destinations and specify a different context file for decisions that 
+are published to other destinations. You do not need to specify a file for both 
+destination types unless the content differs between the two files.
+1Open the decision, and click the Properties  tab.
+2Specify a custom context file in one or both of the following fields:164 Chapter 6 / Using Custom Code Files

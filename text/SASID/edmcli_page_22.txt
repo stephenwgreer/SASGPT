@@ -1,0 +1,34 @@
+--tablename table_name
+Specifies the name of the global CAS model table into which you want to 
+deploy the object.Alias-tDefaultSAS_MODEL_TABLERequirementThe specified table must exist. See “Specifying CAS 
+Destination Properties” on page 18.InteractionThis option is used only if you specify --destinationType=CAS
+.
+Details
+Deploying Published Objects
+You can use the decisiongitdeploy plug-in to the sas-viya CLI to deploy decisions 
+and rule sets from a local Git repository to a SAS Micro Analytic Service destination 
+or to a CAS destination.
+You can deploy published objects only to destinations with which they are 
+compatible. When you define a Git publishing destination, you can specify whether 
+the code that is generated for and published to the destination is compatible with 
+CAS destinations or with SAS Micro Analytic Service destinations. For more 
+information, see “Configuring Publishing Destinations” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+When you deploy an object to a CAS destination, the object is created as a row in 
+the model table for that destination. When you deploy an object to a SAS Micro 
+Analytic Service destination, the object is created as a module in the service.
+TIP You can define a Jenkins job that listens for objects to be published to a 
+Git repository. The job can use this CLI to automatically deploy the published 
+module to the target destinations.
+Specifying CAS Destination Properties
+For CAS destinations, the CLI does not create the library or table if the library or 
+table that you specify does not exist. The libraries and tables for CAS destinations 
+are created when the publishing destination is configured. You can use the cas plug-
+in to the sas-viya CLI to verify that the library and table exist. For more information, 
+see “CLI Examples: CAS Administration” in SAS Viya: Using the Command-Line 
+Interface  and SAS Viya: Publishing Destinations .
+You can view the properties of a publishing destination, including the library, server, 
+and table name in SAS Environment Manager. To view the CAS destination 
+properties:
+1Click  and select Manage Environment  to navigate to SAS Environment 
+Manager.18Chapter 2 / SAS Intelligent Decisioning CLIs

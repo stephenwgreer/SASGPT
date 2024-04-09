@@ -1,0 +1,46 @@
+ColumnDescriptionSchema Propertyattribute_valThe actual value or the variable mapping for 
+dynamic attributes.
+For dynamic attributes that get their value from 
+the decision flow, this column is set to the name 
+of the variable to which the attribute is mapped in 
+the decision flow. For dynamic attributes that are 
+assigned a static value in the treatment group, 
+this column is set to the static value.
+For fixed attributes, this column is set to the name 
+of the variable to which the attribute is mapped in 
+the decision flow.value in the Treatment 
+Definition Group Attribute 
+Value Mapping object in 
+the Treatment Definition 
+Collectiontreatment_nmName of the treatment definition that contains the 
+attribute.name in the Treatment 
+Definition object in the 
+Treatment Definition 
+Collectiontreatment_idID of the treatment definition.id in the Treatment 
+Definition object in the 
+Treatment Definition 
+Collectiontreatment_revision_idID of the treatment definition version.definitionRevisionId in the 
+Treatment Definition 
+Group Member object in 
+the Treatment Definition 
+Group Collectiontreatment_version_noVersion number of the treatment definition.definitionRevisionName in 
+the Treatment Definition 
+Group Member object in 
+the Treatment Definition 
+Group Collection . For 
+example, 
+treatment_version_no 
+could be 2.14
+, where 2 is 
+the treatment definition 
+major revision number and 
+14 is the treatment 
+defintion minor version 
+number.treatment_grp_nmName of the treatment definition group that 
+contains the treatment.name in the Treatment 
+Definition Group object in 
+the Treatment Definition 
+Group Collectiontreatment_grp_idID of the treatment definition group.id in the Treatment 
+Definition Group object in 
+the Treatment Definition 
+Group CollectionColumns in the dcm_trt_fixed_attr_vw and dcm_trt_dynamic_attr_vw Views 317

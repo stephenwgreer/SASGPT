@@ -1,0 +1,33 @@
+SAS Intelligent Decisioning  Home Page
+By default, the SAS Intelligent Decisioning  Home page appears when you sign in to 
+the application. To return to the home page at any time, click  in the left navigation 
+bar.
+The Home page displays up to 100 of the most recent objects that you have 
+opened, the date on which each object was last modified, and the user ID of the 
+user who modified it. You can click  and  to switch between the list view and tile 
+view of the recent objects. In the tile view, you can click  to display additional 
+information for a specific object. To open an object, either click on the object name, 
+or click  and select Open .
+You can toggle the display of category labels in the left navigation bar by clicking 
+and . To create a new object, click  and select the object type. You can sort the 
+list of recent objects by name or by date modified, and you can filter the list by 
+name.
+The Stay Connected panel on the right contains links to new topics in SAS Support 
+Communities pages. It also contains links to an overview video and to 
+documentation for SAS Intelligent Decisioning .
+Using SAS Intelligent Decisioning  as a 
+Progressive Web App
+Benefits of Using a Progressive Web App
+The benefits of using SAS Intelligent Decisioning  as a Progressive Web App (PWA) 
+include the following:
+nApplication persistence – By default, your session will never time out, so you can 
+restart your work more quickly. Your administrator can control the timing with a 
+configuration property in SAS Environment Manager.
+nPerformance – When installed as a PWA, SAS Intelligent Decisioning  typically 
+starts faster than when accessed in the browser. 
+nDesktop experience – Installing SAS Intelligent Decisioning  as a PWA confers all 
+the benefits of a traditional installation. You can launch SAS Intelligent 
+Decisioning  from the Start menu or Taskbar, and you do not need to sort through 
+countless tabs to find the correct instance of SAS Intelligent Decisioning .
+nRenaming – You can rename each PWA instance to quickly access different 
+environments, such as development, test, or production servers.Using SAS Intelligent Decisioning as a Progressive Web App 5

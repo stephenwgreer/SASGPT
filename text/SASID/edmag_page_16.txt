@@ -1,0 +1,26 @@
+See“Introduction to Data Grids” in SAS Intelligent Decisioning: Using Data Grids
+sas.treatmentdefinitions.datagrid
+sas.treatmentdefinitions.datagrid.length
+Specifies the default length of the serialized data grid, including the JSON syntax, that is 
+generated for treatment groups. Specifying a shorter length can reduce memory usage and might 
+improve performance.Default10,485,760See“Introduction to Data Grids” in SAS Intelligent Decisioning: Using Data Grids
+Micro Analytic Score Service Properties
+sas.microanalyticservice.system.asychronousexecution
+Controls asynchronous communication between the SAS Micro Analytic Service and the subject 
+contact service. For more information, see “sas.microanalyticservice.system: 
+asynchronousexecution ” in SAS Micro Analytic Service: Programming and Administration Guide .
+sas.microanalyticservice.system.historyscheduler
+Controls the extraction and publishing of subject contact history records. For information, see 
+“sas.microanalyticservice.system: historyscheduler” in SAS Micro Analytic Service: Programming 
+and Administration Guide .
+Reference Data Service Properties
+Verify the settings for the following configuration instances:
+n“sas.referencedata”
+n“sas.referencedata.casformats”
+n“sas.referencedata.checkout” on page 17
+n“sas.referencedata.publish”
+sas.referencedata
+sas.referencedata.activation.activateGlobalVariableOnImport
+Specifies whether a global variable that was active in the source environment is automatically 
+activated in the target environment when it is imported by using the SAS Viya CLI (sas-viya)SAS 
+administrative CLI (sas-admin).DefaultOffNoteTurning this option on might increase the time required to import content. 15

@@ -1,0 +1,37 @@
+Add a Cross-Branch Link
+1Right-click the source node (the node where you want the link to start), and 
+select Add ð Cross-branch link . The New Cross-branch Path  window appears. 
+This window displays the nodes that you can link to from the current source 
+node. When you select a target node in the New Cross-branch Path  window, that 
+node is highlighted in the decision diagram.
+2Select the node to which you want to link, and click OK.
+Add a Micro Analytic Module
+When you publish content to a SAS Micro Analytic Service destination, SAS 
+Intelligent Decisioning  generates code for the content and writes that code as a 
+module in SAS Micro Analytic Service. You can use a Micro Analytic Module node in 
+a decision to call a SAS Micro Analytic Service module. Micro Analytic Module 
+nodes use the MASCall package to call published modules. You can call the 
+modules only for published decisions.
+When you add a Micro Analytic Module node to a decision, the decision always 
+uses the most recently published version of the selected module. You do not need 
+to edit and republish the decision in order to pick up newly published versions of the 
+selected modules.
+Note: SAS Micro Analytic Service modules that are referenced in a Micro Analytic 
+Module node can use data grids as local variables, but the data grids cannot be 
+passed as input or output parameters to the module.
+To execute a decision that contains a Micro Analytic Module node, the setting of the 
+SAS Intelligent Decisioning 
+sas.decisions.masnode.removeTrailingUnderscoresFromInput  configuration option 
+must match the setting of the SAS Micro Analytic Service configuration option 
+service.removetrailingunderscoresfrominputs .
+IMPORTANT You can publish decisions that contain Micro Analytic Module 
+nodes only to SAS Micro Analytic Service destinations and Git destinations 
+that are compatible with SAS Micro Analytic Service.
+Using the %DCM_EXECUTE_DECISION macro to execute in batch a 
+decision that contains a Micro Analytic Module node is not supported. 
+Execution times and performance might be unacceptable.
+To add a Micro Analytic Module node to a decision:
+1On the Decision Flow  tab, click , and drag the Micro Analytic Module  object 
+onto the diagram where you want to add it. Alternatively, on the Decision  tab, 
+select Add ð Micro Analytic Module . If an object in the decision is selected, 
+select Edit ð Add below  ð Micro Analytic Module .246 Chapter 8 / Working with Decisions

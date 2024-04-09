@@ -1,0 +1,33 @@
+1On the Variables  tab, click the Global Variables  subtab.
+2Click Select Variables . The Select Variables  window appears.
+3Select the check boxes for the variables that you want to add to the decision, 
+and click OK.
+4(Optional) Select the Output  check box if you want the value of the variable to 
+be written to the output table that is generated when the decision is run.
+TIP In the Global Variables  category view, the Value  column displays the 
+value of the latest version of the variable. The Activated Value  column 
+displays the value of the currently active version. A check mark in the 
+Deleted  column indicates that the variable has been deleted from the list of 
+global variables.
+Create Custom Variables on the Variables Tab
+Note: For information about data grid variables, see “Defining Data Grid Variables” 
+in SAS Intelligent Decisioning: Using Data Grids .
+To create custom variables on the Variables  tab:
+1Click the Decision Variables  subtab.
+2Click Add variable  and select Custom variable . The Add Variables  window 
+appears.
+3Complete these steps for each variable that you want to add:
+aEnter the name of the new variable, and select the data type of the variable. 
+See “The Properties of a Variable” on page 222 for additional information.
+TIP To re-add a variable that was used in a locked version, you must 
+specify the same data type that was used in the previous version.
+b(Optional) Click Optional  to display the Description , Initial value , and 
+Length  fields.
+c(Optional) Enter a length, initial value, and description for the new variable. 
+Whether you can specify an intial value or length for the variable depends on 
+the variable's data type. See “The Properties of a Variable” on page 222 for 
+additional information.
+TIP You can specify an expression as the intial value only for 
+variables of type character, integer, decimal, or boolean. To enter an 
+expression, click  to open the expression editor. For more 
+information, see “Using the Expression Editor” on page 33.226 Chapter 8 / Working with Decisions

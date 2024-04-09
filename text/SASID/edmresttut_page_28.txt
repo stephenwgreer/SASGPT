@@ -1,0 +1,8 @@
+"status": "valid"}
+Locking and Creating Versions of Individual 
+Treatments
+The POST request that creates a new version of the individual treatments returns 
+response code 201 for each request that is successful.definition name =  hmeq_treatmentdefinition ID =  4dddd0c1-4ee9-48ef-983f-e61a837d6961revisionResponse =  <Response [201]>definition name =  hmeq_treatment_2definition ID =  ef5d6043-2212-4173-bb0f-949824386e12revisionResponse =  <Response [201]>definition name =  hmeq_treatment_3definition ID =  3827bdd0-5120-4087-83f2-d54b715d08e0revisionResponse =  <Response [201]>definition name =  hmeq_treatment_4definition ID =  7dc18c98-1959-4132-9a52-4a4d920660fcrevisionResponse =  <Response [201]>
+See Also
+nCreate a new revision of a treatment definition
+nLock the current revision and create a new revision of a Treatment DefinitionSee Also 23

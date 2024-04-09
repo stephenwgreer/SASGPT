@@ -1,0 +1,28 @@
+IMPORTANT A delay of up to one minute can occur between the time when 
+you define or modify (replace) a function and the time at which the function is 
+available to be executed.
+When SAS Intelligent Decisioning  generates code, it inserts the custom function 
+definition ahead of the code that it generates for the rule set logic or code file logic. 
+In the rule set or code file, you can reference custom functions in the same way that 
+you reference functions that are provided by SAS.
+Note: You can nest custom function calls. For example, if A and B are custom 
+functions and DIVIDE is the DS2 function provided by SAS, you can nest functions 
+as follows:method B() returns double;     return 5; end;method A() returns double;    return DIVIDE(10,B());end;
+Create a Custom Function
+1In the Custom Functions category view, click New Custom Function . The New 
+Custom Function  window appears.
+2Enter a name for the function if you do not want to use the default name. The 
+name cannot be the same as the name of an existing SAS function. Function 
+names must be unique within an environment and are limited to 250 characters. 
+Function names must be valid DS2 identifiers. For more information, see “DS2 
+Identifiers” in SAS DS2 Programmer’s Guide .
+3(Optional) Enter a description for the new function. Descriptions are limited to 
+1000 characters.
+TIP You can edit the description later on the Properties  tab.
+4Select the category to which the function belongs. 
+TIP Custom functions must be associated with a function category. A 
+category named Category 1  is defined by default. You can change this 
+category name, or create new a new category. For instructions about 
+creating new categories, see “Create a Custom Function Category” on 
+page 208. 
+5Click Save . SAS Intelligent Decisioning  opens the custom function editor.Create a Custom Function 199

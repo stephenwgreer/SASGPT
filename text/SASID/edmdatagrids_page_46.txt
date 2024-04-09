@@ -1,0 +1,28 @@
+Syntax
+DATAGRID_APPEND  (dataGrid1 , dataGrid2 )
+Required Argument
+dataGrid1
+dataGrid2
+specifies the names of the two data grids.
+DATAGRID_BOTTOMN Function
+Populates the target data grid with the rows from the source data grid that contain the lowest number 
+values in the specified column.
+Category: Subset and Sort
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows in the target data grid. The target data grid is 
+sorted in ascending order of the specified column.
+Syntax
+DATAGRID_BOTTOMN  (source_dataGrid , column , number , target_dataGrid )
+Required Arguments
+source_dataGrid
+specifies the name of the source data grid. This argument must be a variable of 
+type DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+number
+specifies the number of rows to return.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.40Chapter 3 / Data Grid Functions

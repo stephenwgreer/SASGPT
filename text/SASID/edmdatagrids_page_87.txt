@@ -1,0 +1,32 @@
+rowNumber
+specifies the number of the row to be set. You can specify a number or a 
+variable that evaluates to a number.
+variableOrValue
+specifies the value to be assigned to column . You can specify a numeric literal, 
+the name of a variable, or an expression. The value that you specify must be or 
+must evaluate to a numeric value.NoteIf you specify a decimal value, only the integer part (characteristic) is 
+assigned as the cell value. The fractional part (mantissa) is truncated.
+DATAGRID_SETLONG Function
+Assigns the specified long integer value to the specified row and column.
+Category: Set Values
+Returned data 
+type:INTEGER
+Note: A zero return value indicates success, and a non-zero return code indicates failure.
+Syntax
+DATAGRID_SETLONG  (dataGrid , column , rowNumber , variableOrValue )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column whose value is to be set. You can specify a 
+column name in single quotation marks or a variable that evaluates to a column 
+name. The column must be a numeric column.
+rowNumber
+specifies the number of the row to be set. You can specify a number or a 
+variable that evaluates to a number.
+variableOrValue
+specifies the value to be assigned to column . You can specify a numeric literal, 
+the name of a variable, or an expression. The value that you specify must be or 
+must evaluate to a numeric value.NoteIf you specify a decimal value, only the integer part (characteristic) is 
+assigned as the cell value. The fractional part (mantissa) is truncated.DATAGRID_SETLONG Function 81

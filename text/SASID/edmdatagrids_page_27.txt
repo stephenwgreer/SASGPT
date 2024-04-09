@@ -1,0 +1,40 @@
+MERGETABLE= table_name ,
+MERGEKEY= merged_table_key ,
+OUTPUTTABLE= results_table ,
+GRIDTABLES= data_grid1  < data_grid2 >...,
+GRIDMERGEKEYS= data_grid_key1  < data_grid_key2 >...,
+GRIDCOLUMNS= data_grid_column1  < data_grid_column2 >...,
+<PROMOTE= YES | NO >
+)
+Required Arguments
+MERGETABLE= table_name
+specifies the name of the table that contains the scalar data.
+MERGEKEY= merge_table_key
+specifies the name of the key column in the table specified by the 
+MERGETABLE= argument.
+Note: You can specify only one merge column key. The 
+%DCM_MERGESERIALIZEDGRIDS macro does not support merges based on 
+multiple key values.
+OUTPUTTABLE= <libref. >table
+specifies the name of the table that contains the results of the merge. The 
+default library is WORK.
+GRIDTABLES= data_grid1 < data_grid2 >...
+specifies the names of the tables that contain the data grid columns that are to 
+be merged into the results table. The data grid columns must contain a serialized 
+data grid produced by the %DCM_SERIALIZEGRID macro.InteractionFor each data grid that is to be merged into the results table, the 
+name of the data grid table, merge key, and data grid column must 
+be specified in the same order for each of the GRIDTABLES=, 
+GRIDMERGEKEYS=, and GRIDCOLUMNS= arguments.
+GRIDMERGEKEYS= data_grid_key1  <data_grid_key2 >...
+specifies the names of the key columns in the tables specified by the 
+GRIDTABLES= argument.InteractionThe first key specified must be the key for the first table specified in 
+the GRIDTABLES= argument, the second key must be the key for 
+the second table, and so on.
+GRIDCOLUMNS= data_grid_column1  <data_grid_column2 >...
+specifies the names of the data grid columns in the tables specified by the 
+GRIDTABLES= argument.InteractionThe first column specified must be the name of the data grid column 
+in the first table specified in the GRIDTABLES= argument, the 
+second key must be the name of the data grid column in the second 
+table, and so on.
+PROMOTE= YES | NO
+promotes the merged data grid table from session scope to global scope.%DCM_MERGESERIALIZEDGRIDS Macro 23

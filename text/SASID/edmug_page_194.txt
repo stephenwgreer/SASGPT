@@ -1,0 +1,30 @@
+Copy the Content of a Version
+You can copy the content of an object’s version in the category view or on the 
+Version  tab for the object.
+1In the category view, complete these steps:
+aSelect the code file whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+cSelect the version whose contents you want to copy.
+Alternatively, on the Versions  tab of the code file whose contents you want to 
+copy:
+aSelect the version whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+2Click , and select the target code file into which you want to paste the contents 
+of the version.
+When you paste the contents, SAS Intelligent Decisioning  creates a new version 
+of the target code file. The target object contains only the pasted content.
+3Select whether you want to create a new major or minor version.
+4(Optional) Modify the notes that will be associated with new version. 
+5(Optional) Add tags that will be associated with the new version. Tags that are 
+associated with a source object version are not automatically added to the new 
+version. See “Add a Version Tag” on page 186
+6Click Paste Version , and then click Yes.
+Note: When you copy the contents of a source object into a target object, SAS 
+Intelligent Decisioning  creates a relationship between the two objects. If the source 
+object is modified after you copy its contents, and you later copy the contents of the 
+target object back into the source object, SAS Intelligent Decisioning  displays a 
+warning message. Verify that you want to replace the current contents of the source 
+object before you paste the new content.
+Delete a Version
+IMPORTANT When you delete a specific version, that version is deleted 
+permanently. It is not moved into the recycle bin, and it cannot be restored.180 Chapter 6 / Using Custom Code Files

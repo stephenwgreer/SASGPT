@@ -1,0 +1,47 @@
+These views assume that the input and output values of the treatment groups are 
+not modified before they are recorded by a record contacts node.
+Columns in the dcm_trt_fixed_attr_vw 
+and dcm_trt_dynamic_attr_vw Views
+Both attribute tables contain the same columns. The dcm_trt_fixed_attr_vw view 
+contains information about fixed attributes, and the dcm_trt_dynamic_attr_vw view 
+contains information about dynamic attributes. For information about treatment 
+attributes, see “Attributes and Attribute Aliases” on page 88.
+The following table describes each column in these views and lists the associated 
+schema property in the Decision Management REST API.ColumnDescriptionSchema Propertyattribute_nmName of the attribute.name in the Treatment 
+Definition Attribute object 
+in the Treatment Definition 
+Collectionattribute_val_fixed_flgA flag that indicates whether the attribute is fixed 
+or dynamic.
+For dynamic attributes, this column is set to false
+.
+For fixed attributes, this column is set to true
+.readOnly in the Treatment 
+Definition Attribute object 
+in the Treatment Definition 
+Collectionmapping_type_cdA code that indicates whether dynamic attributes 
+get their value from the decision flow or are set to 
+a static value. For dynamic attributes, this column 
+is set to constant
+ if the attribute is assigned a 
+static value in the treatment group. This column is 
+set to variable
+ if the attribute gets its value from 
+the decision flow.
+For fixed attributes, this column is set to null
+.mappingType in the 
+Treatment Definition 
+Group Attribute Value 
+Mapping object in the 
+Treatment Definition 
+Collectionattribute_default_valThe default value that was set for the attribute 
+when the attribute was defined in the treatment. 
+For dynamic variables, this value might be 
+overridden if the attribute is assigned a static 
+value in the treatment group or if the attribute gets 
+its value from the decision flow. For fixed 
+attributes, this value is the value that is used in 
+the decision flow.defaultValue in the 
+Treatment Definition 
+Attribute object in the 
+Treatment Definition 
+Collection316 Appendix 1 / Querying the Subject Contact Database

@@ -1,0 +1,35 @@
+SAS® Viya® Model Execution Solution  
+Model Execution Proposal Page 6 Assumptions and Scenario Design  
+The solution provides  a centralized scenario repository manager that enables the custom er to 
+define scenarios, load external scenario data, change  or enrich risk factor scenario data, apply 
+scenarios to selected portfolios, and 
+explore results to understand the 
+potential impacts.  
+ The risk factors in the scenarios can be 
+shocked from user interface to perform 
+what-if/sensitivity analysis.  In addition to 
+the scenarios, the assumptions regarding the portfolio growth over the projected 
+quarters can be set up in the solution.  
+ 
+Execution Engine and Simulation Environment  
+An in -memory , fully flexibl e, and completely open SAS ® Risk Engine enables  faster 
+implementation and efficient model execution process es.  
+ The execution engine supports models with 
+differing complexities using the same 
+interface. The models – ranging from simple 
+loss rate curves to complex transition matrix 
+models – can be set up in the solution. The 
+generation of cash flows , calculation of 
+losses, and amortized cost, including 
+parameters as Pre -Payments and Interest 
+Rate curves , can also be set up in the 
+solution.  
+ The solution automatically handles parallelization of portfolio calculations resulting in high system 
+performance , reducing time needed for complex analysis. After the model implementation, the 
+model can be executed from the interactive user interface. The exploration of results can be 
+performed directly in the solution after successful execution of the models. Results can be 
+efficiently v isualized and drilled down in real time, enabling experts from credit, risk, and finance 
+to work together and ensure the  results are both business sensible and statistically valid . The user 
+interface allows for execution of what -if, simulation , and sensitiv ity analysis to investigate and 
+understand the impacts of input changes, methodology variations, investment decisions , and 
+different macro -economic scenarios.

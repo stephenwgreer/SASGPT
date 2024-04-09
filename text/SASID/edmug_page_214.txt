@@ -1,0 +1,25 @@
+6Enter the DS2 code for the function. For more information, see the following:
+n“Using the Custom Function Editor” on page 200
+n“Rules for Writing Custom Function Files” on page 201
+n“METHOD Statement” in SAS DS2 Language Reference
+nSAS DS2 Programmer’s Guide
+Using the Custom Function Editor
+Use the custom function editor to enter the code for custom functions.
+To open the custom function editor, select a function in the Custom Function 
+category view.
+You can enter code directly into the code field, or you can use the lists of operators 
+and functions to add them to the code for the custom function.
+nTo add an operator, click the operator in the rows above the code pane. Click 
+to select additional operators that are not visible in the rows above the code 
+pane.
+nTo add a function call, expand the appropriate function category on the 
+Functions  tab, and double-click the function name. The custom function editor 
+adds a basic syntax template for the function at the cursor's position in the code 
+field.
+The icon beside each function name indicates the return type of the function. 
+Functions that return character data are displayed with the  icon, and functions 
+that return numeric data are displayed with the  icon.
+You can click Validate  at any time to check the syntax of the function that you are 
+building. If the code does not compile correctly, SAS Intelligent Decisioning  displays 
+detailed information in the Validation Results  window.
+When you are finished editing the function, click Save .200 Chapter 7 / Using Custom Functions

@@ -1,0 +1,38 @@
+ColumnDescriptionSchema Propertytreatment_grp_revisio
+n_idVersion ID of the treatment definition group.definitionRevisionId in the 
+Treatment Definition 
+Group Member object in 
+the Treatment Definition 
+Group Collectiontreatment_grp_version
+_major_noMajor version number of the treatment definition 
+group. If the treatment definition group is 2.5, then 
+this column is set to 2
+.majorRevision in the 
+Treatment Definition 
+Group object in the 
+Treatment Definition 
+Group Collectiontreatment_grp_version
+_minor_noMinor version number of the treatment definition 
+group. If the treatment definition group is 2.5, then 
+this column is set to 5
+.minorRevision in the 
+Treatment Definition 
+Group object in the 
+Treatment Definition 
+Group Collection
+Columns in the 
+dcm_treatments_contacts_vw View
+The dcm_treatments_contacts_vw view contains detailed information about subject 
+contact records. The following table describes each column in the view and lists the 
+associated schema property in the Decision Management REST API.ColumnDescriptionSchema Propertycontact_idA unique identifier for the contact record. A 
+contact record with a new contact_id is created 
+when a decision determines that a subject is 
+eligible for a specific treatment and writes the 
+contact record to the database.id in the contact record subject_idThe ID of the subject if a subject ID variable is 
+defined in the properties for the decision flow.subjectId in the contact 
+recordsubject_levelThe subject level if a subject level variable is 
+defined in the decision flow. For more information, 
+see “Predefined Lookup Tables” on page 116.subjectLevel in the contact 
+recordcreated_by_nmThe ID of the user who ran the decision that 
+created contact record.createdBy in the contact 
+record318 Appendix 1 / Querying the Subject Contact Database

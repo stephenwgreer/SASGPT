@@ -1,0 +1,29 @@
+3Select Automatically map variables  if you want SAS Intelligent Decisioning  to 
+automatically map new nested decision variables in the decisions where the 
+nested decision is used.
+For information about how SAS Intelligent Decisioning  maps variables, see 
+“About Decision Variables and Mapping” on page 247.
+4Select the check boxes for the decisions that you want to upgrade, and click 
+Upgrade Decisions .
+TIP To update all of the objects that are used in a decision, see “Update 
+Decisions to Use New Object Versions” on page 253.
+Determine Which Objects Use a Decision
+To list the objects that use a specific decision:
+1On the Decisions  category page, select the check box for the decision, click , 
+and select View used by report . The All Objects that Use the Selected Item 
+window appears. This window lists all objects that use any version of the 
+selected decision.
+2(Optional) Select a specific version of the decision. SAS Intelligent Decisioning 
+narrows the list to include only the objects that use the selected version of the 
+decision.
+Note: The View used by report  option is also available from within an open 
+decision.
+In the report, you can use the Filter  field to filter the list of objects based on the 
+object names. Click on an object name to open the object. Click  next to an object 
+name to display the date on which the object was last modified and the ID of the 
+user who modified the object. For decisions and code files that have been checked 
+out, SAS Intelligent Decisioning  also displays the IDs of the users that have checked 
+out the objects. For decisions, SAS Intelligent Decisioning  includes the decision’s 
+workflow status.
+Click Export  to export the Used By report to a PDF file. In the PDF file, you can 
+click on an object name to open the object in a new browser tab.Determine Which Objects Use a Decision 271

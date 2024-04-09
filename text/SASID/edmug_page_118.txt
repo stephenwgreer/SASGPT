@@ -1,0 +1,30 @@
+6Click Paste Version , and then click Yes.
+Note: When you copy the contents of a source object into a target object, SAS 
+Intelligent Decisioning  creates a relationship between the two objects. If the source 
+object is modified after you copy its contents, and you later copy the contents of the 
+target object back into the source object, SAS Intelligent Decisioning  displays a 
+warning message. Verify that you want to replace the current contents of the source 
+object before you paste the new content.
+Delete a Version
+IMPORTANT When you delete a specific version, that version is deleted 
+permanently. It is not moved into the recycle bin, and it cannot be restored.
+Note:  In order to be able to delete a specific version of an object, you must have 
+permission to delete the object itself. Also, the configuration option 
+sas.treatmentdefinitions.deleteVersions must be turned on.
+On the Versions  tab, select the version that you want to delete, click , and select 
+Delete .
+You cannot delete the current version.
+Determine Which Objects Use a 
+Treatment or Treatment Group
+To list the objects that use a specific treatment or treatment group:
+1On the Treatments  or Treatment groups  category page, select the check box 
+for the treatment or treatment group, click , and select View used by report . 
+The All Objects that Use the Selected Item  window appears. This window lists all 
+objects that use any version of the selected treatment or treatment group.
+2(Optional) Select a specific version of the treatment or treatment group. SAS 
+Intelligent Decisioning  narrows the list to include only the objects that use the 
+selected version of the treatment or treatment group.
+Note: The View used by report  option is also available from within an open 
+treatment or treatment group.
+In the report, you can use the Filter  field to filter the list of objects based on the 
+object names. Click on an object name to open the object. Click  next to an object 106 Chapter 3 / Working with Treatments and Treatment Groups

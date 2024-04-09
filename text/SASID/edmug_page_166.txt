@@ -1,0 +1,13 @@
+Ways to Test a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+Test a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 188
+Test a Scenario  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 190
+Working with Test Output Data  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194
+Status Icons for Tests  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 194
+Manage Comments for a Code File Test  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+Introduction to Custom Code Files
+You can define custom code files to do things that are not possible in rules, models, 
+or treatments. For example, you can define a code file that makes HTTP calls to 
+REST APIs, interacts with a database, manipulates files in the file system, or 
+performs custom data transformations. You can use custom context files to define 
+functions that you can use in rule sets, in custom DS2 code files, and in custom 
+functions that are defined in the Custom Functions  category.152 Chapter 6 / Using Custom Code Files

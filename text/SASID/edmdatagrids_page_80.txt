@@ -1,0 +1,30 @@
+Category: Statistical
+Returned data 
+type:STRING
+Note: This function sorts the specified column in ascending order and returns the first value.
+Syntax
+DATAGRID_MINSTRING  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MULTISORT Function
+Sorts a data grid based on the values of one or more columns, and then populates the target data grid with 
+the sorted data.
+Category: Subset and Sort
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows in the target data grid.
+Syntax
+DATAGRID_MULTISORT  (source_dataGrid , sort_column_1 , sort_order_1
+< , sort_column_2  >< ,sort_order_2  >..., target_dataGrid )
+Required Arguments
+source_dataGrid
+specifies the name of the source data grid. This argument must be a variable of 
+type DATAGRID.
+sort_column_n
+specifies the column whose values are used to sort the rows in the target data 
+grid.74Chapter 3 / Data Grid Functions

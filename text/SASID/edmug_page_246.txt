@@ -1,0 +1,32 @@
+Click  next to nested decision names to display the list of objects within the nested 
+decision that use the selected variable. Click  and  to open and close the list 
+objects within the nested decision.
+Click Export  to export the Used By report to a PDF file. In the PDF file, you can 
+click on an object name to open the object in a new browser tab.
+Adding Objects to a Decision
+Add an Existing Object
+1On the Decision Flow  tab, click  to open the Content Selection  window, and 
+then drag the object from the list onto the diagram where you want to add it.
+On the Decision  tab:
+aClick Add and select the object type that you want to add to the decision. If 
+an object in the decision is selected, select Edit ð Add, and then select the 
+object type. The Content Selection  window appears.
+TIP If you do not have permission to update an object, SAS 
+Intelligent Decisioning displays (Read-Only)
+ in the title bar next to the 
+object name, and the buttons for modifying and saving the object are 
+disabled.
+bSelect the object that you want to add, and click OK. 
+Note: The objects that are included in a decision determine the destination 
+types to which you can publish the decision. For more information, see 
+“Where Can I Publish Decisions?” on page 279.
+IMPORTANT It is recommended that you do not add a decision as a 
+nested decision within itself.
+If you are using the default settings, and you have not already defined decision 
+variables with the same name and data type as the object’s input and output 
+variables, SAS Intelligent Decisioning  displays the following message: Some objects in the decision define variables for which no corresponding decision variables have been created.
+A decision that includes an object must define decision variables to which you 
+can map the object’s variables. If a decision does not already have a variable of 
+the same name and data type as an object’s variable, then SAS Intelligent 
+Decisioning  displays the message. For more information, see “About Decision 
+Variables and Mapping” on page 247.230 Chapter 8 / Working with Decisions

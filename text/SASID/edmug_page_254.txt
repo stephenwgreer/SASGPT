@@ -1,0 +1,34 @@
+n“Add an Existing Object” on page 230
+n“Create and Add a New Object” on page 232
+n“Adding Record Contacts Nodes” on page 233
+Add a Yes/No Branch on the Decision Tab
+Note: When you add a Yes/No branch, any objects that follow the currently 
+selected object become part of the ELSE clause. 
+1Select Add ð Branch . If an object in the decision is selected, select Edit ð Add 
+ð Branch . The Create New Branch  window appears.
+2(Optional) Enter a name for the branch.
+3Select Yes/No , and click OK. SAS Intelligent Decisioning  adds an IF-THEN-
+ELSE statement to the decision. 
+4For the IF condition, click . SAS Intelligent Decisioning  opens the expression 
+editor.
+5Define the expression for the branch. See “Using the Expression Editor” on page 
+33 for additional information.
+6Click Save  in the expression editor to save the expression and return to the 
+decision editor.
+7(Optional) Add objects to the THEN and ELSE clauses. Click Edit and select 
+either Add to yes path  ð object-type  or Add to no path  ð object-type .
+For more information, see the following topics:
+n“Add an Existing Object” on page 230
+n“Create and Add a New Object” on page 232
+n“Adding Record Contacts Nodes” on page 233
+Adding Equals, Range, or Like Branches
+About Equals Branches
+An Equals branch compares the value of the branch expression to other variables or 
+to literal values. By default, this branch has one outgoing path for each comparison 
+variable or literal value, plus a branch labeled Other  for any values that are not 
+included in the branches that you create. However, you can combine an outgoing 
+path with the path that immediately follows it by selecting the OR check box.
+For example, the following branch compares the value of the character variable 
+MODEL to the string ‘Aventador’, then to ‘Huracan’, and so on, in the order listed in 
+the property panel. The first two comparison strings and the last two strings are 
+combined into one path by using the OR operator.238 Chapter 8 / Working with Decisions

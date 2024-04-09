@@ -1,0 +1,39 @@
+Syntax
+DATAGRID_ADDCOLUMN  (dataGrid , column , type)
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column that you want to create. You can specify a 
+column name in single quotation marks or a variable that evaluates to a column 
+name.
+type
+specifies the data type of the new column. Specify one of the following data 
+types: boolean
+, bool
+, double
+, decimal
+, integer
+, int
+, long
+, or string
+. If you 
+specify an invalid data type, the new column is not created.
+DATAGRID_ADDNUMERICCOLUMN Function
+Adds a numeric column to the specified data grid.
+Category: Create, Update, or Delete
+Returned data 
+type:INTEGER
+Note: This function returns the number of columns that are in the data grid after the new 
+column has been added.
+Syntax
+DATAGRID_ADDNUMERICCOLUMN  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column that you want to create. You can specify a 
+column name in single quotation marks or a variable that evaluates to a column 
+name.38Chapter 3 / Data Grid Functions

@@ -1,0 +1,36 @@
+Click on an object name to open the object. Click  next to an object name to 
+display the date on which the object was last modified and the ID of the user who 
+modified the object. For decisions and code files that have been checked out, SAS 
+Intelligent Decisioning  also displays the IDs of the users that have checked out the 
+objects. For decisions, SAS Intelligent Decisioning  includes the decision’s workflow 
+status.
+Click  next to nested decision names to display the list of objects within the nested 
+decision that use the selected variable. Click  and  to open and close the list 
+objects within the nested decision.
+Click Export  to export the Used By report to a PDF file. In the PDF file, you can 
+click on an object name to open the object in a new browser tab.
+Defining New Rules in a Rule Set
+Add a Stand-Alone Assignment Statement
+Stand-alone assignment statements always execute unless a RETURN action stops 
+the execution of the rule set before execution reaches the assignment statement. 
+Rule-fired data is not generated for standalone assignment statements.
+1On the Rule Set  tab, click Add Assignment  if the rule set is empty or, if the rule 
+set contains at least one statement, select Add ð Add assignment . The 
+application adds an assignment statement to the top of the rule set, below any 
+existing assignment statements.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Import or create any variables that are required for the assignment statement 
+that have not already been added to the rule set. You can add or create the 
+variables on the Variables  tab, or you can define variables dynamically as you 
+author the statement. See “Managing the Variables in a Rule Set” on page 16 for 
+more information. 
+3Select the variable to which you want to assign a value.
+4Enter the expression for the variable in the expression field. See “About Defining 
+Expressions” on page 33 for additional information.
+5(Optional) Move the assignment statement to a different position in the rule set. 
+To move the statement, click  or .
+6Click  to save the rule set. SAS Intelligent Decisioning  validates the syntax of 
+the expressions. If it does not detect any problems, it saves the rule set. 24Chapter 2 / Working with Rule Sets

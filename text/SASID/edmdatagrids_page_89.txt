@@ -1,0 +1,33 @@
+Syntax
+DATAGRID_SORT  (source_dataGrid , sort_column , sort_order , target_dataGrid )
+Required Arguments
+source_dataGrid
+specifies the name of the source data grid. This argument must be a variable of 
+type DATAGRID.
+sort_column
+specifies the column whose values are used to sort the rows in the target data 
+grid.
+sort_order
+specifies whether the target data grid is sorted in ascending or descending order. 
+Specify A
+ for ascending order or D
+ for descending order. If you specify a variable 
+for the sort order, and the variable value is an empty character string, the 
+function returns a null value.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.
+DATAGRID_STDDEV Function
+Returns the standard deviation of the values in the specified column.
+Category: Statistical
+Returned data 
+type:DOUBLE
+Syntax
+DATAGRID_STDDEV  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.DATAGRID_STDDEV Function 83

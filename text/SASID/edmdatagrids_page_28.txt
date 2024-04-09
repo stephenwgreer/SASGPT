@@ -1,0 +1,14 @@
+DefaultYESRestrictionThis option is valid only if the output table is written to a CAS library.
+Example: Merging Debts and Assets Data 
+Grids with Loan Request Information
+The following example merges the scalar data in the mylib.loanRequests table with 
+the data grid columns in the tables debtsGrid
+ and assetGrid. The key column for 
+the scalar table and the data grid tables is custName. The data grid columns in the 
+resulting output table, mylib.loadRequestData, are named Debts and Assets.%dcm_mergeSerializedGrids(      mergeTable=mylib.loanRequests,      mergekey=Customer,      outputTable=mylib.loanRequestData,      gridTables=debtsGrid assetsGrid,      gridMergeKeys=custName custName      gridColumns=Debts Assets);
+Table 2.1 mylib.loanrequests Merge Table RequestIDRequestedAmtCustomerME4922Mac0120000MacKelly, 
+SaraNC2W497Smy0380495Smyth, JoeTable 2.2 debtsGrid Data Grid Table CustNameDebtsMacKelly, Sara[{"metadata":[{"DEBTTYPE":"string"},{"BALANCE":"decimal"}]}, 
+{"data":[["Mortgage",80053.16],["CreditCard",2143.68]]}]Table 2.3 assetsGrid Data Grid Table CustNameAssetsMacKelly, 
+Sara[{"metadata":[{"ASSETTYPE":"string"},{"VALUE":"decimal"}]}, {"data":
+[["Property, Primary",212000],["Property, Investment",125000]]}]Smyth, Joe[{"metadata":[{"ASSETTYPE":"string"},{"VALUE":"decimal"}]}, {"data":
+[["Property, Primary",234500]]}]24Chapter 2 / Data Grid Macros

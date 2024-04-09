@@ -1,0 +1,4 @@
+Table 2.6 assestGrid Results Table CustNameAssetsMacKelly, 
+Sara[{"metadata":[{"ASSETTYPE":"string"},{"VALUE":"decimal"}]}, {"data":
+[["Property, Primary",212000],["Property, Investment",125000]]}]Smyth, Joe[{"metadata":[{"ASSETTYPE":"string"},{"VALUE":"decimal"}]}, {"data":
+[["Property, Primary",234500]]}]%DCM_SERIALIZEGRID Macro 27

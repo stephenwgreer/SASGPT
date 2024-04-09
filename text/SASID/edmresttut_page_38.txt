@@ -1,0 +1,22 @@
+6
+Publish a Decision to the 
+maslocal Destination
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+How To  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Example Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Responses  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+See Also  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Introduction
+This example locks the current version of a decision, creates a new unlocked 
+version, and then publishes the locked version to the maslocal
+ destination.
+The maslocal
+ destination is the default SAS Micro Analytic Service destination. 
+However, your administrator might define additional SAS Micro Analytic Service 
+destinations. For more information, see “Configuring Publishing Destinations” in 
+SAS Intelligent Decisioning: Administrator’s Guide .
+How To
+1Get an access token by submitting a GET request to the /SASLogon/oauth/token
+ resource. The example described in Chapter 2, “Define Basic Methods 
+and Get an Access Token”  includes the code required to get an access token. 
+Prepend that code to the code for this example.33

@@ -1,0 +1,20 @@
+Managing Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143
+Managing Versions of Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 144
+Determine Which Objects Use a Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+Managing Version Tags for Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 146
+Manage the Global Variable Recycle Bin  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 147
+Activating a Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 148
+Chapter 6 /Using Custom Code Files . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 151
+Introduction to Custom Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
+DS2 Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+Python Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+Data Query Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+Custom Context Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163
+Create a New Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+Managing the Variables in a DS2 or Python Code File  . . . . . . . . . . . . . . . . . . . . . . . 168
+Validate SQL, DS2, or Context Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 175
+Copy a Code File URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+Compare Generated Code for Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 176
+Managing Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 177
+Managing Versions of Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 178
+Determine Which Objects Use a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 181ivContents

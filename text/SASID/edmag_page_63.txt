@@ -1,0 +1,19 @@
+Table 12 Permissions for Activating Treatment Groups FieldValueContainer 
+URIEnter the URI of the check-out folder: /folders/folders/guid
+Principal 
+typeAuthenticated UsersRule typeGrantConditionrequestUri().startsWith('/treatmentDefinitions/definitionGroups/') && requestUri().endsWith('/active')
+Permission
+sUpdateDescriptionEnable authenticated users to activate treatment groups that are in the check-out folder.
+13Click Save .
+Grant Permission to Create Versions in Check-Out 
+Folders by Using Tags
+For information about using tags to create a new version of a decision, see “Creating a New Version 
+by Using Tags” in SAS Intelligent Decisioning: User’s Guide .
+1Sign in to SAS Environment Manager  as an administrator.
+Note: If you are already logged in to SAS Intelligent Decisioning as an administrator, access SAS 
+Environment Manager  by clicking  and selecting Manage Environment .
+2Create a new group for the users to whom you want to grant permission. For instructions, see 
+“Custom Groups” in SAS Viya: Identity Management .
+3Click  to display the Rules  page.
+4Click  to open the New Rule  window, and enter the values shown in the following table.Table 13 Permissions for Creating Decision Versions in Check-Out-Enabled Folders by Using Tags FieldValueObject URIEnter the following capability: /capability/sas/sid/createVersionFromTagInCheckoutFolder
+62

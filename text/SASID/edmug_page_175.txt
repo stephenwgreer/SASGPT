@@ -1,0 +1,43 @@
+Note: You can read data from native SQL date and datetime variables. 
+However, do not rely on the accuracy of data that contains fractional seconds.
+nDo not use an asterisk (*
+) to select database columns. SAS Intelligent 
+Decisioning  does not have any metadata about the table, so it cannot determine 
+what columns are in the table.
+nWhen you create a new data query file, SAS Intelligent Decisioning  adds the 
+comment /* include sqlReturnInfo */
+ to the file. This comment enables 
+SAS Intelligent Decisioning  to define metadata for the query’s variables. Do not 
+delete this line if you want SAS Intelligent Decisioning  to create all of the 
+metadata. For more information, see “Decision Variables for Data Query Files” 
+on page 161.
+nWhen you create data query files in SAS Studio, you must specify the PROC 
+FEDSQL  output option on the Output Options  tab in SAS Studio. For more 
+information, see “Generating a FedSQL Query” in SAS Studio: User’s Guide .
+For additional information about developing SQL code, see the following topics:
+nFor information about the data sources that are supported by SAS Micro Analytic 
+Service, see “Data Sources Supported for Use with SAS Micro Analytic Service” 
+in SAS Micro Analytic Service: Programming and Administration Guide .
+nFor syntax information about SQL statements, see “FedSQL Statements” in SAS 
+FedSQL Language Reference .
+nFor the list of reserved words in FedSQL, see “FedSQL Reserved Words” in 
+SAS Viya Platform: FedSQL Programming for SAS Cloud Analytic Services .
+nFor information about the functions that are supported in SQL code, see 
+“FedSQL Functions” in SAS FedSQL Language Reference .
+nFor information about using SAS Studio to create queries, see “Creating a 
+Stand-Alone Query” in SAS Studio: User’s Guide  and “Using Macro Variables in 
+SAS Studio” on page 162.
+Decision Variables for Data Query Files
+When you create a data query file, SAS Intelligent Decisioning  automatically adds 
+the comment /* include sqlReturnInfo */
+. When this comment is present and 
+you add the data query file to a decision, SAS Intelligent Decisioning  defines the 
+metadata for decision variables for the return code, row count, and query output. If 
+this comment is not present, SAS Intelligent Decisioning  defines metadata for only 
+the query output. You can use the Add missing variables  option to add these 
+variables to the decision and map these decision variables to the query’s variables. 
+You can set the Create variables automatically in decisions  setting to 
+automatically add these variables to the decision. For more information, see “About 
+Decision Variables and Mapping” on page 247.
+The variables are mapped as shown in Table 6.1 . When the decision is run, the 
+variables are created only if the query selects data.Data Query Files 161

@@ -1,0 +1,30 @@
+4
+Working with Lookup Tables and 
+Functions
+About Lookup Tables and Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+About Labels for Lookup Keys and Values  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+Predefined Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Create a New Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Importing and Exporting Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+About Importing, Exporting, and Activating Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . 117
+Format of the Lookup CSV Import File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+Import Entries or Refresh Lookup Tables from CSV Files  . . . . . . . . . . . . . . . . . . . . . . . 117
+Export a Lookup Table to a CSV File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+Add Lookup Table Entries  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+Edit Lookup Table Entries  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+Delete Lookup Table Entries  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Edit Lookup Key or Value Labels  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Copy a Lookup Table URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Compare Lookup Table Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Generate PDF Documentation for a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Managing Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Duplicating Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Delete Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Rename a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Move Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Managing Versions of Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Set the Displayed Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Create a New Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Copy the Content of a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Delete a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Determine Which Objects Use a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128113

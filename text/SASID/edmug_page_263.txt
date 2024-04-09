@@ -1,0 +1,40 @@
+The Choose a SAS Micro Analytic Module  window appears.
+2Click , and select the decision whose module you want to call.
+3Click Browse . SAS Intelligent Decisioning  displays the list of published modules 
+for the selected decision.
+4Select the module that you want to use, and then click OK.
+For more information about MASCall packages, see “Performing Calls between SAS 
+Micro Analytic Service Modules” in SAS Micro Analytic Service: Programming and 
+Administration Guide .
+Mapping Variables within a Decision
+About Decision Variables and Mapping
+The objects that you add to a decision, such as models, treatment groups, and other 
+decisions, each define their own variables. Each decision that includes an object 
+must define decision variables to which you can map the object’s variables.
+By default, if a decision does not already have a variable of the same name and 
+data type as an object's variable, then when you add the object to a decision, SAS 
+Intelligent Decisioning  displays the following message: Some objects in the decision define variables for which no corresponding decision variables have been created.
+ You can use the Add missing variables  option to 
+add the missing decision variables, or you can turn on the Create variables 
+automatically in decisions  setting if you want SAS Intelligent Decisioning  to 
+automatically create decision variables. For information, see “Add Missing 
+Variables” on page 248 and “SAS Intelligent Decisioning Settings” on page 8. If you 
+turn on the Create variables automatically in decisions  setting, SAS Intelligent 
+Decisioning  does not display the message.
+When you add a treatment group to a decision, SAS Intelligent Decisioning  creates 
+a decision variable of type data grid with the name group_name _out. If the 
+treatment group name is longer than 32 characters, then this name is truncated.
+When you add a data query file to a decision, the decision variables that are created 
+depend on whether the query selects data and on whether the file contains the 
+comment /* include sqlReturnInfo */
+.For more information, see “Decision 
+Variables for Data Query Files” on page 161.
+You can create decision variables with different names, and then change the 
+decision variable mappings on the Input Variables  and Output Variables  property 
+panels for objects in the decision.
+For example, suppose you have a decision named Credit Approval, and this 
+decision contains a model named Loan Default and a rule set named Evaluate 
+Credit. The model has an output variable named em_prob . The value of this 
+variable must be passed as input to the Evaluate Credit rule set, but the rule set is 
+expecting a variable named probability . In order for the value to be passed to the 
+rule set, you must map the em_prob  output variable of the model to the em_prob Mapping Variables within a Decision 247

@@ -1,0 +1,2 @@
+myCustomCode.execute('msrp', meanMSRP, _carsGrid);         myCustomCode.execute('weight', meanWeight, _carsGrid);         carsGrid = DataGrid_toString(_carsGrid);         output work.profileByMake;      end;   enddata;run; quit;
+Working with Data Grids in SAS Studio 11

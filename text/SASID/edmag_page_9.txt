@@ -1,0 +1,26 @@
+decision, and the decision must be published. Rule sets can still be published by using the REST 
+API when this property is turned on.
+If you are using the SAS Intelligent Decisioning approval workflow, it is recommended that you 
+turn this option on so that all published content is developed in the workflow.DefaultOff
+Decisions Service Properties
+Verify the settings for the following configuration instances:
+n“jvm”
+n“sas.decisions”
+n“sas.decisions.checkout”
+n“sas.decisions.codefiles”
+n“sas.decisions.masnode”
+n“sas.decisions.nodetraces”
+n“sas.decisions.variable.length”
+n“sas.decisions.workflow”
+n“sas.subjectcontacts.datagrid”
+n“sas.treatmentdefinitions.datagrid”
+jvm
+Click New Configuration  to define this configuration instance.
+jvm.java_option_xmx
+Specifies the JVM heap size of the Decisions service.
+sas.decisions
+sas.decisions.additionalDS2Options
+Enables you to specify additional DS2 options that are not specified by other configuration 
+options. Separate multiple options with a space. This option affects basic tests, scenario tests, 
+and publishing validation tests for decisions.DefaultMISSING_NOTE. This setting writes a note to the SAS log when an invalid function 
+argument generates a missing value.See“DS2_OPTIONS Statement” in SAS DS2 Language Reference ExampleMISSING_NOTE DIVBYZERO=IGNORE MISSING TYPEWARN 8

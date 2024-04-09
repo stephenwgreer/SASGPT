@@ -1,0 +1,10 @@
+print("Publishing verison", versionToLock, end='\n\n')requestUrl= baseUrl1 + "/modelPublish/models"publishResponse= post(requestUrl,                      "application/vnd.sas.models.publishing.request+json",                      "application/vnd.sas.models.publishing.publish+json",                      accessToken1, publishRequestBody);print ("publish response = ", publishResponse)
+Responses
+This example produces the following output:Locking version 39.0lock response =  <Response[201]>Created new version 40.0   ID = 62b91159-bd73-4984-ad55-89bd323d0f92Publishing version 39.0publish response =  <Response[201]>
+See Also
+nGet decision content
+nGet a decision revision
+nGet decision code
+nDecisions API
+nPublish models
+nPublish a Model to a DestinationSee Also 37

@@ -1,0 +1,26 @@
+For more information, see “How DS2 Processes Nulls and SAS Missing Values” in 
+SAS DS2 Programmer’s Guide .
+TIP To specify an empty data grid that does not contain data or column 
+metadata, use empty brackets ([]). An empty data grid is not considered 
+missing. You cannot use the MISSING function to determine whether a data 
+grid is missing or empty.
+Delete Expressions or ELSE Rules
+To delete a condition or action expression, click  for that expression.
+To delete an entire ELSE rule, select the rule, right-click on the rule, and select 
+Delete the selected object .
+Managing Rules
+Duplicate a Rule
+1Click  for the rule, and select Duplicate rule . The Duplicate Rule  window 
+appears.
+2Enter a name for the duplicate rule if you do not want to use the default name.
+3If you are duplicating a rule that contains an ELSE or OR clause, specify whether 
+you want to duplicate only the IF clause or duplicate the entire rule, and click 
+Duplicate .
+Delete a Rule
+1Click  for the rule, and select Delete rule . 
+2(Optional) If the rule contains an ELSE or OR clause, SAS Intelligent Decisioning 
+prompts whether you want to delete only the IF clause or to delete the entire 
+rule. Click Delete All  to delete everything, or click Delete IF  to delete only the IF 
+clause. If you select Delete IF , then the ELSE or OR clause becomes an 
+assignment statement if it does not have any condition expressions. If it has a 
+condition expression, it becomes the new IF rule.Managing Rules 41

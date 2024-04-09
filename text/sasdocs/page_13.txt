@@ -1,0 +1,40 @@
+Milestones  
+Model Execution Proposal Page 10  
+To make the decision on the model execution platform, FCB wants to ensure the proposed SAS 
+solution is feasible with FCB’s technical and functional requirements.  Following are the success 
+criteria for a successful Phase 0 . 
+♦ Systematic workflow controls with a formal approval process  
+♦ Model execution version history  maintained across various executions  
+♦ Loss model execution with the ability to iterate and run additional scenarios  
+♦ Ability to upload and/or create new scenarios to run while maintaining a scenario library  
+♦ User playpen -type functionality t o address ad -hoc model execution request s 
+♦ Post model analytical tasks such as what -if/sensitivity analysis, slice/dice of the results, and 
+creation of the ad -hoc reports  
+ 
+SAS will provide the Phase 0  environment and implement the Credit Card Portfolio to 
+demonstrate the technical and functional richness that will address FCB’s need. The high -level 
+timeline for Phase 0 : 
+Activity / Week  1 2 3 4 5 6 7 8 
+1 Phase 0 Requirement and Success Criteria          
+2 C ontractual Readiness          
+3 Data and Model Knowledge Transfer          
+4 Ensure Data and Model are ready to implement          
+5 Implement Models and Configure Solution          
+6 Interactive Phase 0 Review & Delivery (FCB)          
+7 Pilot Decision          
+ 
+At  the end of the Phase 0  decision, SAS will continue to work with FCB on demonstrating the 
+vision towards integrated balance sheet management by incorporating the interest income 
+calculation.  
+ 
+The following assumptions are considered in Phase 0 : 
+♦ The SAS platform will be installed a nd configured in SAS’ Lab environment  
+♦ FCB to walk  through the data and model logic in detail  
+♦ FCB to provide clean and reconciled data in the landing area  
+♦ FCB will provide the list of authorized users with  their  IP address  to grant access to the Phase 
+0 environment  
+ 
+Milestone 2: Setting up the FCB Environment in SAS Cloud  
+♦ Create development and production environment s in the SAS Cloud  
+♦ Establish connectivity with the FCB infrastructure  
+♦ Migrate the Credit Card Model from Phase 0  to the FCB environment

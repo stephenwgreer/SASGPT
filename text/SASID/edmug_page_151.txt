@@ -1,0 +1,29 @@
+If an expression contains the LOOKUPVALUE function, then the expression cannot 
+contain anything else.
+Returned data 
+type:CHARACTER, INTEGER, DECIMAL, DATE, DATETIME, BOOLEAN
+Tip: Lookup tables are stored as character data. However, you can assign the results of the 
+LOOKUPVALUE function to any of the returned data types. The LOOKUPVALUE 
+function converts the results to match the type of the variable.
+Syntax
+LOOKUPVALUE  ('lookup_table_name ', variable_or_value )
+Required Arguments
+lookup_table_name
+specifies the name of the lookup table that you want to search.
+variable_or_value
+specifies either the literal key value or a variable that contains the lookup key 
+value.
+Example
+Suppose you have a Country_Codes lookup table that uses two-letter abbreviations 
+for countries as the lookup key and country names as the lookup values. The 
+Country_Codes lookup table contains the lookup key CA
+, and the lookup value that 
+corresponds to that key is Canada
+.
+If the Cntry_Key variable in the current input record contains the value CA
+, you can 
+use the following expression to retrieve the lookup value that is associated with that 
+key from the table Country_Codes:LOOKUPVALUE('Country_Codes',Cntry_Key)
+In the following rule, if the key specified by the variable Cntry_Key exists in the 
+lookup table Country_Codes, then the value that is associated with that key is 
+assigned to the variable Country_Name.LOOKUPVALUE Function 139

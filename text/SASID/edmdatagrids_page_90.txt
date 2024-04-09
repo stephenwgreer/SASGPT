@@ -1,0 +1,37 @@
+DATAGRID_SUBSETBYVALUE Function
+Populates the target data grid with the rows from the source data grid for which the specified comparison 
+evaluates to true.
+Category: Subset and Sort
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows in the target data grid.
+Syntax
+DATAGRID_SUBSETBYVALUE  (source_dataGrid , filterColumn , operator , 
+variableOrValue , target_dataGrid )
+DATAGRID_SUBSETBYVALUE  (source_dataGrid , criteria_dataGrid , 
+target_dataGrid )
+Required Arguments
+source_dataGrid
+specifies the name of the source data grid. This argument must be a variable of 
+type DATAGRID.
+filterColumn
+specifies the name of the column whose value is to be compared to 
+variableOrValue . You can specify a column name in single quotation marks or a 
+variable that evaluates to a column name.RestrictionYou can specify either the filterColumn , operator , and varOrValue 
+arguments or the criteria_dataGrid  argument. For more information, 
+see, “Details” on page 85.
+operator
+specifies one of the following operators shown in “Comparing Values in Data 
+Grids” on page 30. You can specify the name of a character variable that 
+evaluates to one of these operators, or you can specify the operator enclosed in 
+single quotation marks.
+variableOrValue
+specifies the value to compare to the value of filterColumn . You can specify a 
+number, a character string enclosed in single quotation marks, or the name of a 
+variable or of an expression. The value that you specify must be or must 
+evaluate to the same data type as filterColumn .
+criteria_dataGrid
+specifies the filter criteria for cases for which you want to filter the source data 
+grid on multiple columns. All of the criteria that are specified in the criteria data 
+grid must evaluate to true in order for a row in the source data grid to be added 
+to the target data grid.84Chapter 3 / Data Grid Functions

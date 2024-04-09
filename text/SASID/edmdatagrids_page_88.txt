@@ -1,0 +1,30 @@
+DATAGRID_SETSTRING Function
+Assigns the specified character string to the specified row and column.
+Category: Set Values
+Returned data 
+type:INTEGER
+Note: A zero return value indicates success, and a non-zero return code indicates failure.
+Syntax
+DATAGRID_SETSTRING  (dataGrid , column , rowNumber , variableOrValue )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column whose value is to be set. You can specify a 
+column name in single quotation marks or a variable that evaluates to a column 
+name. The column must be a character column.
+rowNumber
+specifies the number of the row to be set. You can specify a number or a 
+variable that evaluates to a number.
+variableOrValue
+specifies the value to be assigned to column . You can specify a character string 
+enclosed in single quotation marks, the name of a variable, or an expression. 
+The value that you specify must be or must evaluate to a character string.
+DATAGRID_SORT Function
+Sorts a data grid based on the values in a single column, and then populates the target data grid with the 
+sorted data.
+Category: Subset and Sort
+Returned data 
+type:INTEGER
+Note: This function returns zero if the sort is successful.82Chapter 3 / Data Grid Functions

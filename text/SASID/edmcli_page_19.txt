@@ -1,0 +1,15 @@
+Example 1
+The following command exports the rule set with the ID 10093:sas-viya dcmtransfer export9x rulesets --uri /SASBusinessRulesManagerWeb/rest/ruleSets/10093
+Example 2
+The following command exports the decision with the ID d246d283-
+fd80-4d37-96ad-18fd9cd508c8:sas-viya dcmtransfer export9x decisions --uri /SASDecisionManager/rest/decisions/d246d283-fd80-4d37-96ad-18fd9cd508c8
+Example 3
+The following command exports all rule flows:sas-viya dcmtransfer export9x ruleflows --uri /SASBusinessRulesManagerWeb/rest/ruleFlows?limit=2147483647
+Example 4
+The following command exports all lookup tables, writes the exported content to the 
+file lookupContent.json, and writes the mapping information to the file 
+lookupMappings.json:sas-viya dcmtransfer export9x lookups --mappings "@lookupMappings.json" --content "@lookupContent.json" --uri /SASWIPClientAccess/rest/navigation/814100/DCMFOLDER_ROOT_ID
+Example 5
+The following command exports all rule sets that use the vocabulary named 
+LoanApplications:sas-viya dcmtransfer export9x rulesets --uri /SASBusinessRulesManager/rest/ruleSets?vocabularyName="LoanApplications"
+dcmtransfer Plug-In 15

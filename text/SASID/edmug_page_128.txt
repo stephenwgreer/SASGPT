@@ -1,0 +1,25 @@
+Predefined Lookup Tables
+SAS Intelligent Decisioning  defines two lookup tables for you:
+Treatment Channels
+defines several channels for use with treatments. Channels are the route by 
+which your company and a subject are in contact. The predefined channels 
+include ATM, Agent, Call Center, Mail, Phone, and Web.
+Subject Level
+defines subject levels for use with treatments. A subject level is the type of 
+account that is associated with a subject. For example, a subject might be an 
+individual customer, a company account, or a household. The predefined levels 
+are Account, Customer, and Household.
+Your administrator can modify these tables as described in “Edit Lookup Table 
+Entries” on page 120.
+Create a New Lookup Table
+1Click  to navigate to the Lookup Tables category view.
+2Click New Lookup Table . The New Lookup Table  window appears.
+3Enter a name for the new lookup table. Lookup table names are limited to 250 
+characters. Lookup table names are case insensitive and must be unique within 
+the database.
+4(Optional) Enter a label to use for the lookup key. Labels are limited to 100 
+characters. For more information, see “About Labels for Lookup Keys and 
+Values” on page 115.
+5(Optional) Enter a label to use for the value. Labels are limited to 100 characters. 
+For more information, see “About Labels for Lookup Keys and Values” on page 
+115.116 Chapter 4 / Working with Lookup Tables and Functions

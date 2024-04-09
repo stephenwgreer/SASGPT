@@ -1,0 +1,40 @@
+3(Optional) Enter any tags that you want to associate with the published object. 
+Press Enter after each tag.
+4Either click Publish  or select Publish and Lock . 
+nTo publish the selected version without also creating a new minor version, 
+click Publish . 
+nTo lock and publish the selected version and create a new minor version at 
+the same time, click , and select Publish and Lock . 
+The Publish Decisions  window appears.
+5Select the destination to which you want to publish. The publishing destinations 
+that are available to you depend on what is configured at your site. See SAS 
+Viya Platform: Publishing Destinations  for more information.
+6(Optional) In the ITEMS TO PUBLISH  section, complete the following steps for 
+each item that you are publishing:
+aEdit the Published name  if you do not want to use the default name for the 
+published module. The maximum length and character restrictions differ 
+depending on your destination. See Table 8.4 .Table 8.4 Requirements and Restrictions for Published Names
+DestinationMaximu
+m 
+LengthRequirements And RestrictionsContainer 
+destinations127The published name must start with a letter or an 
+underscore. It cannot contain spaces, multi-byte 
+characters, or special characters other than the 
+underscore.
+The name that you enter is assigned to the 
+SAS_SCR_APP_PATH environment variable. 
+The value of this variable determines the module 
+name. For more information, see “Changing the 
+Endpoint Name for a Container” in SAS 
+Container Runtime: Programming and 
+Administration Guide .Git128The published name cannot contain forward 
+slashes (/), single quotation marks ('), or double 
+quotation marks (").SAS Micro 
+Analytic 
+Service100The published name cannot contain the following 
+characters: ! @ # $ % ^ & * ( ) | = ~` \ / . { } " ' ;SAS Cloud 
+Analytic 
+Services 
+(CAS)128The published name cannot contain single or 
+double quotation marks.Teradata128The published name must start with a letter or an 
+underscore. It cannot contain spaces, multi-byte 282 Chapter 8 / Working with Decisions

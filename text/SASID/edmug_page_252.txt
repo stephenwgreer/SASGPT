@@ -1,0 +1,16 @@
+Adding Yes/No Branches
+About Yes/No Branches
+A Yes/No branch expression is evaluated as a Boolean expression. A Yes/No 
+branch has a single condition and two outgoing paths: Yes (True) and No (False). 
+The default name for a Yes/No branch is Yes/No , but you can specify a custom 
+name. For example, the following branch tests whether the value of the DEBTINC 
+variable is less than the constant 35.5. The name in the diagram is customized to 
+display the condition that is being tested.
+The following figure shows the property panel for this branch:
+For more information, see “Add a Yes/No Branch on the Decision Flow Tab” on page 
+237 and “Yes/No Branches and THEN/ELSE Clauses” on page 236.
+Yes/No Branches and THEN/ELSE Clauses
+Objects in a THEN clause on the Decision  tab correspond to nodes in a Yes branch 
+path on the Decision Flow  tab. Objects in an ELSE clause correspond to nodes in 
+a No branch path.
+For example, suppose you have the following nodes on the Decision Flow  tab:236 Chapter 8 / Working with Decisions

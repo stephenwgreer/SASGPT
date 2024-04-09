@@ -1,0 +1,30 @@
+not defined or are set to False
+, add an underscore to the name of each 
+input variable. If these options are set to True
+, do not add underscores. 
+Your administrator can add this property to the supplementalProperties 
+section in the sas.microanalyticservice.system
+ configuration 
+definition in SAS Environment Manager. The default value for these 
+options is False
+. For additional information, see 
+“sas.microanalyticservice.system: supplementalProperties” in SAS Micro 
+Analytic Service: Programming and Administration Guide  and 
+“sas.decisions.masnode.removeTrailingUnderscoresFromInput” in SAS 
+Intelligent Decisioning: Administrator’s Guide .
+TIP To specify a missing value for a variable, specify the variable name 
+without specifying the value. For example: {"name": "debtinc_"}
+3Define the content type and the accept type for the publishing request.
+4Specify the module ID of the published decision. You specify this ID as the 
+model name when you publish the decision by using the API, or in the 
+Published Name  column in the Publish Decisions  window in SAS Intelligent 
+Decisioning. This name is also displayed on the History  tab for a decision in 
+SAS Intelligent Decisioning.
+5Execute the decision by submitting a POST request to /microanalyticScore/modules/module_ID/steps/execute
+. 
+Each module that is published to SAS Micro Analytic Service contains a step 
+named execute
+. When you post the request, this execute
+ step is executed.
+Example Code<< Include the code in "Define Basic Methods and Get an Access Token". >><< That code is required to successfully execute this example.         >># Create the request body. The request body specifies the # input values required by the decision.# Modify these key-value pairs for your decision.# Include underscores if needed.requestBody = '''{"inputs" : [   {"name": "debtinc_", "value" : 37.1136},  {"name": "delinq_", "value" : 0},  {"name": "derog_", "value" : 4},  {"name": "value_", "value" : 60850} ]}
+40Chapter 7 / Execute a Published Decision

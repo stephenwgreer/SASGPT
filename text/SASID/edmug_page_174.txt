@@ -1,0 +1,36 @@
+IMPORTANT Tests that are running in SAS Intelligent Decisioning  might 
+encounter a significant performance impact. Pre-publish testing requires SAS 
+Intelligent Decisioning  to convert the SQL code to use HTTP protocol and 
+instantiate a MAS module for each call to the SQL package. These actions 
+incur a significant performance impact and create a limitation on the size of 
+the results table. When you test a decision that uses a data query node, use 
+an input data set that is as small as possible. 
+Query Output Types and Editors
+When you create a new data query file,  you can choose to create the file in the SQL 
+editor or in SAS Studio. 
+Files that are created in the SQL editor can return either a data grid or a single row 
+of scalar variables. You can select the output type on the Properties  tab of the data 
+query file.
+Files that are created in SAS Studio are created as stand-alone queries. These files 
+return a data grid. Do not change the output type for these files. For more 
+information, see “Understanding the Differences between a Stand-Alone Query and 
+a Flow Query” in SAS Studio: User’s Guide .
+For information about data grids, see SAS Intelligent Decisioning: Using Data Grids .
+Developing SQL Code
+When you are developing your SQL code, follow these rules:
+nData query nodes support SELECT, INSERT, UPDATE, and DELETE 
+statements. They do not support any data definition language (DDL) statements 
+such as ALTER or DROP that alter the structure of the table.
+nData query nodes support only the following data types: decimal, string, date, 
+datetime, and integer. You must specify a length for string variables. You cannot 
+specify a length for other variable types. Specify input variables with a question 
+mark (?). Use the AS keyword to specify the input and output variables in the 
+decision as aliases for the database column names. Enclose the decision 
+variable specifications in braces ({}). For example, in the following SELECT 
+statement, DEBTRATIO, CAUSE, and BADLOAN are decision variables. The 
+variable BADLOAN is an input variable in the decision. This statement retrieves 
+the values of the DEBTINC, REASON, and BADLOAN columns from the 
+database and assigns their values to the decision variables.SELECT debtinc AS {:debtRatio:decimal},        reason AS {:cause:string:8}  FROM hmeq_test WHERE bad = {?:badloan:decimal}
+The following INSERT statement adds a row that contains the columns NAME 
+and AMT to the table MYTABLE:INSERT INTO mytable (name, amt)       values ({?:name:string:1000},{?:amt:integer})
+160 Chapter 6 / Using Custom Code Files

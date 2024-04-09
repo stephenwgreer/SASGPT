@@ -1,0 +1,25 @@
+2Click  to open the New Version Tags  window, or click  to open the Edit 
+Version Tags  window.
+3For each tag that you want to add, either enter a custom tag or begin typing and 
+select a tag from the list of previously entered tags. Press Enter after each tag. 
+Tags are limited to 100 characters each and cannot contain the following 
+characters: $ ' " # & ? ( ) \ /
+TIP All tags that have been previously entered for any object are saved 
+in the list that is displayed when you start typing. You cannot delete tags 
+from this list.
+TIP To filter the version list based on a tag, right-click on the Version 
+Tags  column heading, enter a filter string in the Filter  box, and press 
+Enter. To clear the filter, delete the string from the Filter  box, and press 
+Enter.
+4Click Close  to close the window.
+Remove a Version Tag
+1On the Versions  tab, position your cursor in the Version Tags  column for the 
+version whose tag you want to remove, and click .
+2Click  beside the tag that you want to remove.
+3Click OK to close the window. The tag remains in the list of previously entered 
+tags that is displayed when you add a tag, but the tag is no longer associated 
+with version.
+Modify a Version Tag
+You cannot modify a version tag that already exists. To change the content of an 
+existing tag, delete the tag as described in “Remove a Version Tag” on page 112, 
+and then add the tag again as described in “Add a Version Tag” on page 111.112 Chapter 3 / Working with Treatments and Treatment Groups

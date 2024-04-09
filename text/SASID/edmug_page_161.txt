@@ -1,0 +1,35 @@
+Controlling Where Global Variables Are Activated 
+and How They Are Used
+Your administrator can use the following configuration options to control how global 
+variables are used:
+sas.businessrules.inlineGlobalVariableValues = On | Off
+specifies whether the current values of global variables are included inline in 
+generated code when you publish a rule set to CAS or SAS Micro Analytic 
+Service destinations.
+sas.decisions.inlineGlobalVariableValues = On | Off
+specifies whether the current values of global variables are included inline in 
+generated code when you publish a decision to CAS or SAS Micro Analytic 
+Service destinations.
+When these properties are set to On, the current value of each global variable is 
+included in the code that is generated for CAS and SAS Micro Analytic Service 
+destinations. Changes to the values of the variables do not affect published objects. 
+When these properties are set to Off, the generated code uses a SAS format or a 
+SAS Micro Analytic Service module to retrieve the current value of the global 
+variable when the rule set or decision is run.
+Note: Static versions of global variables are automatically embedded in content that 
+is published to Teradata, Hadoop, and container destinations. These options are 
+ignored for those destinations.
+Activate a Global Variable
+Activating a version of a global variable locks that version. Locked variables cannot 
+be unlocked.
+You must activate a global variable before you can publish an object that uses the 
+variable. When you activate a global variable, it is activated in all of the publishing 
+destinations that are configured at your site.
+Published rule sets and decisions use activated versions of global variables. The 
+version varies according to the destination type. For more information, see “Content 
+Executed by Published Decisions” on page 309 and “Content Executed by 
+Published Rule Sets” on page 79.
+1Open the global variable that you want to activate.
+2On the Versions  tab, select the version that you want to activate, and click 
+Activate .
+3Click Save  to close the Edit Global Variable  window.Activating a Global Variable 149

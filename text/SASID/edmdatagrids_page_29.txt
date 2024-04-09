@@ -1,0 +1,39 @@
+Table 2.4 mylib.loanRequestData Results Table
+RequestIDRequestAm
+tCustomerDebtsAssetsME4922Mac0
+120000MacKelly, 
+Sara[{"metadata":
+[{"DEBTTYPE":"string"},
+{"BALANCE":"decimal"}]}, 
+{"data":
+[["Mortgage",80053.16],
+["CreditCard",2143.68]]}][{"metadata":
+[{"ASSETTYPE":"string"},
+{"VALUE":"decimal"}]}, 
+{"data":[["Property, 
+Primary",212000],
+["Property, 
+Investment",125000]]}]
+%DCM_SERIALIZEGRID Macro
+Creates a table in which one of the columns contains a JSON string that represents a data grid.
+Requirement: If you are working with SAS Cloud Analytic Services (CAS) tables, all of the tables must 
+be accessed in the same CAS session.
+Syntax
+%DCM_SERIALIZEGRID  (
+GRIDCOLNAME= data_grid_column_name ,
+GRIDSOURCETABLE= table_name ,
+OUTPUTTABLE= <libref. >table ,
+<CLASSVARS= class_variable1 < class_variable2 ...>,>
+<GRIDCOLS= column1 < column2 ...>,>
+<GRIDCOLLEN= length ,>
+<PROMOTE= YES | NO >
+)
+Required Arguments
+GRIDCOLNAME= data_grid_column_name
+specifies the name for the serialized data grid column in the results table.
+GRIDSOURCETABLE= table_name
+specifies the table that contains the columns that are to be serialized into a data 
+grid.
+OUTPUTTABLE= <libref. >table
+specifies the name of the output table that contains the data grid column. The 
+default library is WORK.%DCM_SERIALIZEGRID Macro 25

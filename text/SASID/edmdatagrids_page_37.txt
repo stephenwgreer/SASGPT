@@ -1,0 +1,13 @@
+OperatorDescriptionEQ, =, ==EqualsNE, !=, ^=, <>Not equal toGT, >Greater thanLT, <Less thanLE, <=Less than or equal toGE, >=Greater than or equal to
+IMPORTANT Unless noted otherwise in the description for a specific 
+function, the equals operator (=) trims trailing spaces before comparing 
+values. Therefore, if you compare “hello
+” to “hello 
+”, the comparison 
+evaluates to True.
+Data Grid Functions Available in SAS 
+Intelligent Decisioning
+Functions are categorized by the types of values that they return or type of 
+operation they perform.Table 3.1 Data Grid Function Categories CategoryDescriptionCreate, Update, or 
+DeleteCreate, copy, update, or clear the data in a data gridInformationReturn information about an entire data grid or about a 
+column or row in the data gridJoin or AppendJoin or append two data gridsRenameRename columns in a data gridRetrieve ValuesRetrieve values from a data gridSerializeSerialize a data grid into a JSON string Data Grid Functions Available in SAS Intelligent Decisioning 31

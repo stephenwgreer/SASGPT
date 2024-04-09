@@ -1,0 +1,40 @@
+About Attributes, Eligibility Rules, and 
+Effective Dates
+A treatment defines the details of an offer that can be sent to a subject, who is 
+eligible for the offer, and the dates during which the offer is available to be sent to a 
+subject. A treatment is a set of attributes, eligibility rules, and effective dates.
+Attributes and Attribute Aliases
+Attributes are name-value pairs that define the specific details of the offer that you 
+present to a subject. For example, for a treatment that gives subjects a 20% 
+discount, you could define an attribute named DISCOUNT that has the value 20. To 
+give subjects a special deal on a specific cell phone model, you can define an 
+attribute named MODEL whose value is the specific model name. You could use 
+treatment attributes to set values such as profitability, risk, cost, priority, or order. 
+You can use the values of these attributes to arbitrate the treatments. For more 
+information, see “Arbitrating Treatments” on page 89.
+An attribute’s value can be dynamic or fixed.
+Fixed
+You specify the value or set of values for fixed attributes when you define the 
+attribute. You cannot customize the values in treatment groups, and the decision 
+cannot set them at run time.
+Dynamic
+You can set the value or set of values for a dynamic attribute when you add a 
+treatment group to a decision, or the decision can set them at run-time. When 
+you define a dynamic attribute, you can specify default values for the attribute. 
+Within each treatment group in which the attribute appears, you can set static 
+values that are used only within that specific treatment group, or you can specify 
+that the attribute’s values are set by the decision at run time.
+When you add a treatment group to a decision, SAS Intelligent Decisioning  does the 
+following:
+ncreates an output decision variable of type data grid that contains a column for 
+each attribute in the treatment group.
+ncreates an input decision variable for each dynamic attribute whose value is set 
+by the decision.
+SAS Intelligent Decisioning  automatically maps the treatment group’s attributes to 
+the decision variables that have the same name and data type. For more 
+information, see “Mapping Variables within a Decision” on page 247.
+You can assign aliases to attributes. An alias is an alternative name that you can 
+assign to a treatment attribute after you add the treatment to a treatment group. 
+Aliases are useful when attributes in different treatments within the group represent 
+the same data but are defined with different names. For example, treatment A could 
+define an attribute named DISCOUNT, and treatment B could define an attribute 88Chapter 3 / Working with Treatments and Treatment Groups

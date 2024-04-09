@@ -1,0 +1,29 @@
+partition_number
+specifies how many partitions you want to create. Specify a whole number greater than zero.Applies togeneratePostgreSQLPartitions script only
+output_file_name .sql
+specifies the name of the file where you want to write the SQL statements.
+Examples
+The following command writes SQL statements that partition a PostgreSQL subject contacts 
+database. It writes the statements to the file /tmp/partition.sql
+. These statements partition the 
+database into five partitions. The first partitions starts on June 1st, 2020, and each partition contains 
+the data for a single three-month period (quarter). You can execute the generated SQL statements 
+in /tmp/partition.sql
+ by using a database client program such as psql.generatePostgreSQLPartitions.sh subjectcontacts "2020-6-01 12:00:00 AM" month 3 5      > /tmp/partition.sql
+The following command writes SQL statements that partition an Oracle subject contacts database. It 
+writes the statements to the file partitionSubjectContacts.sql
+ in the directory where the script is 
+run. The first partitions starts on July 1st, 2020, and each partition contains data for 15 days. You can 
+execute the generated SQL statements in partitionSubjectContacts.sql
+ by using a database 
+client that is compatible with your database.generateOraclePartitions.sh subjectcontacts "2020-07-01" day 15 > partitionSubjectContacts.sql
+Revert to the Default PostgreSQL Database
+By default, the subject contacts and treatment definitions databases are stored in the PostgresSQL 
+instance that was installed with SAS Viya. If you have previously chosen to use Oracle or a different 
+instance of PostgresSQL for either or both of these databases, you can reconfigure these databases 
+to use the default instance of PostgreSQL.
+1On the primary node of the Kubernetes cluster, export the KUBECONFIG environment variable, 
+and set the value of the Kubernetes namespace (such as d9997
+):export KUBECONFIG=/etc/kubernetes/admin.conf# List all the available namespaces. Find the namespace of the SAS Viya deployment.kubectl get namespace# Set the namespace of the SAS Viya deployment.namespace=k8s_namespace_value
+2Run the following commands to print the PostgreSQL user name and password to the terminal:kubectl -n $namespace exec -i  $(kubectl -n $namespace get pods | grep  sas-consul-server |grep Running|cut -d " " -f 1) -c sas-consul-server -- bash  -s <<< "export CONSUL_HTTP_ADDR=https://localhost:8500; export SSL_CERT_FILE=/opt/sas/viya/config/etc/SASSecurityCertificateFramework/cacerts/trustedcerts.pem; export CONSUL_TOKEN=\$(cat /opt/sas/viya/config/etc/SASSecurityCertificateFramework/tokens/consul/default/client.token); /opt/sas/viya/home/bin/sas-bootstrap-config kv read --recurse config/application/sas-crunchy-data-postgres"
+3On the primary node of the Kubernetes cluster, obtain the cluster ID:32

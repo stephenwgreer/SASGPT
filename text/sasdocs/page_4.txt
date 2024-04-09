@@ -1,0 +1,38 @@
+Executive Summary  
+Model Execution Proposal Page 1 Executive Summary  
+Through the merger of equals with CIT Group, Inc., First Citizens Bank -Trust (FCB) has now 
+eclipsed $100 billion in total assets.  While CIT Group, Inc. has previously performed the stress 
+test, extensive discussions with Treasury, Risk , and Technology  teams  at FCB over the past year  
+describe  the limitations of the current solution and processes a s: 
+♦ Current infrastructure  in place can not deliver the operational performance required to 
+support  loan/account level models  
+♦ Siloed solutions result  in time consuming , resource intensive,  and costly model 
+implementation and model execution s 
+♦ Fragmented  solutions  impose significant restrictions  on ability to  efficiently  produc e key 
+metrics  require d by the firm’s risk committee , as mandated by the regulators  
+♦ Lack of repe atable and governed processes  results in excessive manual process control  and 
+self-assessment , and increases  regulatory and internal audit scruti ny 
+ 
+FC B must improve  the current process and infrastructure  that can address the heightened audit 
+a nd regulatory standards associated with financial institutions with more than $100 billion in 
+assets.  Current fragmented, siloed and resource intensive processes from model implementation 
+to model execution are an outlier  when compa red to similarly -sized  institution s that perform the 
+CCAR exercise. Failure to establish repe atable processes of effective risk management, data 
+governance , and int ernal  controls leads  to costly remediation of  regula tory issues along with 
+reputation al loss. 
+ 
+SAS® Viya ® provides the single risk and finance integrated platform FCB is looking to employ. The 
+power of SAS now resides within one easy -to-use platform in the cloud to drive speed and 
+convenience, provide auditab ility, deliver powerful and efficient data management, a pply 
+robust/trustworthy analytics , and utilize AI with explainability.   
+ 
+SAS®  Risk and Quantitative Solutions have developed a risk and finance infrastructure based on 
+SAS Viya to provide an experience of true Integ rated Balance Sheet Management (IBSM). SAS’ 
+solution provides business and regulatory capabilities with flexibility needed to comply with risk, treasury, and finance requirements and needs  in terms of transparency, automation, speed of 
+execution , and consol idation through to the Balance Sheet and Income Statement for the firm . 
+The solution also supports models of all forms including linear and non -linear regression.  
+ 
+Additionally, the cloud -based architecture will a llow FCB the flexibility to scale and  accommodate 
+additional  use cases, purpose -built models , and solutions, and incorporate new regulatory 
+reporting needs  with minimal manual or technical effort. No other vendor solution provides  such 
+a  c omplete  breadth of cov erage.

@@ -1,0 +1,29 @@
+Note: A tag is limited to 100 characters.
+TIP All tags that have been previously entered for any object are saved 
+in the list that is displayed when you start typing. You cannot delete tags 
+from this list.
+5(Optional) Enter information about the new version in the Notes  field.
+TIP You can edit these notes at any time on the Versions  tab.
+6Click Save .
+Create a New Version Automatically When You 
+Publish a Rule Set
+You can automatically create a new version of a rule set when you publish the 
+current version by selecting Publish and Lock .For information, see “Publish Rule 
+Sets” on page 60.
+Copy the Content of a Version
+You can copy the content of an object’s version in the category view or on the 
+Version  tab for the object.
+1In the category view, complete these steps:
+aSelect the rule set whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+cSelect the version whose contents you want to copy.
+Alternatively, on the Versions  tab of the rule set whose contents you want to 
+copy:
+aSelect the version whose contents you want to copy.
+bClick , and select Copy version . The Copy Version  window appears.
+2Click , and select the target rule set into which you want to paste the contents 
+of the version. You can paste version contents only into an object of the same 
+type. If the rule set from which you are copying the version is a filtering rule set, 
+then you must paste the contents into another filtering rule set. If it is an 
+assignment rule set, then you must paste the version contents into another 
+assignment rule set.50Chapter 2 / Working with Rule Sets

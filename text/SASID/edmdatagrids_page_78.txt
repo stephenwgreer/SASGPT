@@ -1,0 +1,28 @@
+Syntax
+DATAGRID_MIN  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MINBOOL Function
+Returns the minimum value that appears in the specified column.
+Category: Statistical
+Returned data 
+type:INTEGER
+Note: If any row in the specified column contains a 0, this function returns 0. If all rows in the 
+specified column contain a 1, this function returns 1.
+Syntax
+DATAGRID_MINBOOL  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MININT Function
+Returns the minimum value that appears in the specified column.
+Category: Statistical72Chapter 3 / Data Grid Functions

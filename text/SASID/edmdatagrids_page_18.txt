@@ -1,0 +1,34 @@
+%DCM_DATAGRID_INTERFACE
+makes the data grid functions available in SAS Studio.
+%DCM_DATAGRID_JSON_TO_TABLE
+Creates a data grid from the JavaScript Object Notation (JSON) specified in the 
+input file, and writes the data grid to the specified output table.
+%DCM_JSON_TO_DATAGRID
+Converts a standard JSON string to a data grid JSON string, or vice versa.
+%DCM_SERIALIZEGRID
+creates a table in which one of the columns contains a JSON string that 
+represents a data grid. Data grids must be serialized into JSON strings before 
+you can use the data in SAS Intelligent Decisioning .
+%DCM_MERGESERIALIZEDGRIDS
+merges tables that contain data grids that have been serialized with the 
+%DCM_SERIALIZEGRIDS macro with a table that contains scalar data.
+Dictionary
+%DCM_CONVERT_DATAGRID_TO_TABLE Macro
+Converts each data grid to a separate table, and if the MERGE option is specified, merges the separate 
+tables into a single output table.
+Restriction: The maximum length of a data grid JSON string that can be processed by using this 
+macro is 1,048,576 characters.
+Syntax
+%DCM_CONVERT_DATAGRID_TO_TABLE (
+GRIDCOL= data-grid-column-name ,
+GRIDTABLE= input-table-base-name ,
+<MERGE= YES | NO , >
+<OUTLIB= libref ,>
+<PROMOTE= YES | NO >
+)
+Required Arguments
+GRIDCOL= data-grid-column-name
+specifies the name of the data grid column whose rows you want to convert to 
+individual tables. When MERGE=YES, the name of this column is used output 
+table name. When MERGE=NO, the name of this column is used as the base 
+name of the output tables. For each data grid that is converted to a separate 14Chapter 2 / Data Grid Macros

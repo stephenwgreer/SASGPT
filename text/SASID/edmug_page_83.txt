@@ -1,0 +1,10 @@
+3Click on a number in the Rule Fired Count  column. SAS Intelligent Decisioning 
+displays the Rule Fired Count  window. This window shows which rules produced 
+the selected output record.
+Note: The value in the Rule Order  column is the ordinal number of the rule as it 
+occurs in the rule set diagram. The values in this column do not indicate the 
+order in which the rules in the rule set fired.
+4Click Close  to close the Rule Fired Count  window.
+5Click Plot in the navigation panel. SAS Intelligent Decisioning  displays a bar 
+chart that shows how many times each rule fired. Position your cursor over a bar 
+to display the name of the rule and the number of times that the rule fired.72Chapter 2 / Working with Rule Sets

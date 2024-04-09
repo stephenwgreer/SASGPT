@@ -1,0 +1,35 @@
+Add a Common Rule Set Reference to an 
+Assignment Rule Set
+1Open the assignment rule set. If no variables are defined in the rule set, SAS 
+Intelligent Decisioning  displays the Variables  tab. Otherwise, it displays the Rule 
+Set tab.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Click the Rule Set  tab.
+3Do one of the following:
+nIf the rule set contains at least one rule, click Add Rule  and select Add 
+reference .
+nIf the rule set is empty, click Add Rule . In the Create New Rule  window, 
+select Common rule set reference , and click OK.
+SAS Intelligent Decisioning  opens the Add Common Rule Set References 
+wizard.
+4On the Select Common Rule Sets  page, select the check boxes for each 
+common rule set that you want to add to the assignment rule set, and click Next .
+5On the Select Common Rule Set Versions  page, select the version of each of 
+the common rule sets that you want to use in the assignment rule set, then click 
+Next .
+TIP To specify the latest version of the common rule set, you can select 
+the version number of the latest version, or you can select Use latest . If 
+you select Use latest , SAS Intelligent Decisioning  always uses the most 
+recently created version regardless of the version number.
+6(Optional) Add any global variables that are used by the common rule set to the 
+assignment rule set. For instructions, see “Add Global Variables to a Rule Set” 
+on page 19. 
+7(Optional) On the Map Inputs  page, for each common rule set variable in the 
+Input Variable  column, select the assignment rule set variable that you want to 
+map it to in the Maps To column. If the assignment rule set contains variables 
+with the same name and data type as the variables in the common rule set, SAS 
+Intelligent Decisioning  automatically maps the common rule set variables to the 
+assignment rule set variables.Defining New Rules in a Rule Set 27

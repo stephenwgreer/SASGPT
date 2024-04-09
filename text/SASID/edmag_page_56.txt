@@ -1,0 +1,17 @@
+Object URITasks/businessRules/ruleSetsCreate, read, update, and delete rule sets. Create and delete 
+versions of rule sets. Generate SAS code for rule sets./businessRules/rulesImport and export rule sets./decisionsView the Decisions category./decisions/codeFilesCreate, read, update, and delete custom code files./decisions/commons/validations/
+codeFilesValidate code file content. Code file content is validated when you 
+save the code file./decisions/flowsCreate, read, update, and delete decisions. Create and delete 
+versions of decisions. Generate SAS code for decisions./folders/foldersCreate and read folders./folders/folders/ folder-ID Create, read, update, and delete the specified folder./businessRules/
+functionCategoriesCreate, read, update, and delete custom function categories./businessRules/
+functionCategories/ category-ID /
+functionsCreate custom functions in the specified category./businessRules/functions/
+function-IDRead, update, and delete the specified custom function./modelPublish/models/**Publish rule sets, models, and decisions to a publishing destination./modelPublish/destinationsDefine new publish destinations./modelPublish/destinations/
+{destinationName }Update or delete an existing destination. Publish content to the 
+specified destination, and read published content in the specified 
+destination./referenceDataView the Lookup Tables and Global Variables categories. Create, 
+read, update, and delete lookup tables and global variables. Import 
+and export lookup tables. Create, delete, and activate versions of 
+lookup tables and global variables./referenceData/domainsCreate, read, update, and delete lookup tables. Create, delete, and 
+activate versions of lookup tables./referenceData/domainEntriesImport and export lookup tables./referenceData/globalVariablesCreate, read, update, and delete global variables. Create, delete, 
+and activate versions of global variables.55

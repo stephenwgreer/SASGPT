@@ -1,0 +1,17 @@
+codeType
+specifies whether the source code is DS2 code (ds2
+) or DATA step code 
+(datastep
+).
+modelName
+specifies the name of the decision that you are publishing.
+TIP The published name of the decision is defined in the 
+generated code for the decision.
+publishLevel
+specifies the object type that you are publishing.
+sourceUri
+specifies the URI to the generated code for the decision.
+11Publish the decision by submitting a POST request to the /modelPublish/models
+ resource.
+Example Code<< Include the code in "Define Basic Methods and Get an Access Token". >><< That code is required to successfully execute this example.         >># Specify the ID of the decision that you want to publish, for example,# "e289b21b-4be1-4739-9313-639b9629cb42".objectID = "object-ID"# Specify a name for the publishing request, for example, # "publish_SID_decision".# The request name is a descriptive name that is displayed  # when you view the log of API calls on your network.requestName = "request-name"# Specify the name of your decision, for example,# "Evaluate_Loans".modelName = "decision-name"# Get the contents of the decision.requestUrl= baseUrl1 + "/decisions/flows/" + objectIDdecisionContent,rspheads = get(requestUrl, accessToken1, "application/json")contentStr = json.loads(decisionContent)versionToLock=str(contentStr['majorRevision']) + "." + \              str(contentStr['minorRevision'])print("Locking version ", versionToLock, end='\n\n')
+Example Code 35

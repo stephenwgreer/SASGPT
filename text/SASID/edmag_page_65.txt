@@ -1,0 +1,31 @@
+2Click  to navigate to the Configuration category view.
+3In the View  menu, select Definitions .
+4Select the sas.cas.instance.config  definition. 
+5Click  beside the cas-shared-default: startup  configuration instance to edit its properties. The 
+Edit Configuration  window appears.
+6Copy and paste the following code into the contents  field.s:sessionProp_addFmtLib{caslib="Formats",fmtLibName="userformats3",name="userformats3.sashdat",promote=true}newFmtSearch = " userformats3" newFmtSearch = ((cas.fmtsearch or "") .. " " .. newFmtSearch) s:configuration_setServOpt{fmtsearch=newFmtSearch}s:table_loadTable{caslib="Formats", casOut={caslib="Formats",replication=0.0}, path="userformats3.sashdat", promote=true}
+7Click Save . 
+8Restart CAS. See “SAS Cloud Analytic Services: How To” in SAS Viya: SAS Cloud Analytic 
+Services  for more information.
+Note: The values that are specified for the CAS library and format library must match the values that 
+are specified for the casformats.backupLibrary  and casformats.formatsLibrary  configuration 
+properties. For more information, see “Reference Data Service Properties” on page 15.
+For more information, see “Configuration Page” in SAS Environment Manager: User’s Guide , SAS 
+Viya Platform: Configuration Properties , and “Managing User-Defined Formats in SAS Viya” in SAS 
+Viya: Data .
+Managing Test Data
+When you run a rule set, model, or decision test, several files are created. The URI to the test 
+definition and all of the test results are displayed on the Test Results  page.
+By default, when you re-run an existing test, the previous test results are not deleted before the new 
+results are generated. This behavior is controlled by the deleteExecutions
+ configuration property. To 
+automatically delete test results when a test is re-run, set the deleteExecutions
+ configuration 
+property to True. See “Score Execution Service Properties” on page 17 for more information.
+When a test definition is deleted, the associated test results are normally deleted. However, the 
+deletion transaction might be interrupted or the user might not have permission to delete output tables 
+on CAS. To delete results files such as log files, code files, and CAS tables that are not deleted when 
+the associated test is deleted, use the sas-scoreexecution-cli
+ command-line interface. See 
+“scoreexecution Plug-In” in SAS Intelligent Decisioning: Command-Line Interfaces  for more 
+information.64

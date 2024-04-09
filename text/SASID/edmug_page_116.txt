@@ -1,0 +1,29 @@
+Managing Versions of Treatments and 
+Treatment Groups
+Set the Displayed Version
+The displayed version is the version whose information is displayed on the other 
+tabs, such as the Properties  and Attributes  tabs. On the Versions  tab, a  in the 
+Displayed Version  column indicates the displayed version. To change the 
+displayed version, click the version number for the version that you want to view. 
+The displayed version is shown in the title bar.
+Create a New Version
+Note: For objects that are stored in locations for which the check-out and commit 
+feature is enabled, you cannot manually create a new version. The only way to 
+create a new version is to check out an existing version and commit a new version. 
+For information, see “Check Out and Commit a Treatment or Treatment Group 
+Version” on page 110.
+Note: The current version of an object is the version with the highest version 
+number. When you create a new version, SAS Intelligent Decisioning  locks the 
+current version before it creates the new version.
+IMPORTANT You cannot unlock a locked version. You cannot save 
+changes to a version that is locked. If you modify a version that is locked and 
+click , SAS Intelligent Decisioning  asks you if you want to replace the 
+current unlocked version with your edited version.
+To manually create a new version:
+1On the Versions  tab, click the version number  for the existing version that you 
+want to use as the basis for the new version.
+2Click New Version . The New Version  window appears.
+3Select the version type: Minor  or Major . Version numbers follow the format 
+major .minor . If you select Major , the number to the left of the period is 
+incremented. If you select Minor , the number to the right of the period is 
+incremented.104 Chapter 3 / Working with Treatments and Treatment Groups

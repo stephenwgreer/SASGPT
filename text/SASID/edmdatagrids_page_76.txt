@@ -1,0 +1,27 @@
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MAXSTRING Function
+Returns the maximum value for the specified column.
+Category: Statistical
+Returned data 
+type:STRING
+Note: This function sorts the specified column in ascending order and returns the last value.
+Syntax
+DATAGRID_MAXSTRING  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_MEAN Function
+Returns the mean value for the specified column.
+Category: Statistical
+Returned data 
+type:DOUBLE70Chapter 3 / Data Grid Functions

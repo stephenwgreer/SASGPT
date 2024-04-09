@@ -1,0 +1,38 @@
+test uses the checked-out versions of both the rule set and the lookup table. 
+If the rule set or lookup table are not checked out, the test uses the activated 
+version of the lookup table.
+1On the Scoring  tab, click the Scenarios  tab. 
+2Click New Test . The New Scenario Test  window appears.
+3Enter a name for the test if you do not want to use the default name. The name 
+cannot contain forward slashes (/) or curly braces ({}).
+4(Optional) Click  for the Test definition location  field, and select the folder 
+where you want to save the test definition.
+TIP Selecting a test definition location is optional, but it is highly 
+recommended. Storing test definitions in a folder simplifies the tasks of 
+setting permissions and transferring the test files.
+5Click  for the Output table location  field, and select the folder where you want 
+to save the test results.
+6(Optional) Select Enable variable change path logging  to record variable value 
+information and variable mapping information for each node in the decision. The 
+application writes this information to the CAS log. Selecting this option enables 
+you to generate a change path report in Step 16. For more information, see 
+“Using Variable Change Path Logging” on page 294.
+Note: If the decision is complicated or uses very large data grid variables, the 
+change path file might be very large, and you might encounter memory issues. 
+Do not select both the Enable variable change path logging  option and the 
+Enable variable assignment logging  option for the same test.
+TIP If you do not see the Enable variable change path logging  check 
+box, drag the horizontal divider 
+  down.
+7(Optional) Select Enable variable assignment logging  to include information in 
+the log about how a variable’s value changes as the decision executes. The 
+application writes a log entry each time a variable is assigned a value. Selecting 
+this option enables you to generate a variable assignment report in Step 17. For 
+more information, see “Using Variable Assignment Logging” on page 296.
+Note: If the decision is complicated or uses very large data grid variables, the 
+change path file might be very large, and you might encounter memory issues. 
+Do not select both the Enable variable change path logging  option and the 
+Enable variable assignment logging  option for the same test.
+8(Optional) Select the version of the decision that you want to test.
+9(Optional) Enter a description for the test. Descriptions are limited to 1000 
+characters.290 Chapter 8 / Working with Decisions

@@ -1,0 +1,44 @@
+PropertyDescriptionvalues by using the numbers 1 and 0 in the code that it generates. 
+When SAS Intelligent Decisioning  is evaluating Boolean expressions, 
+any non-zero number is considered True. When you are entering 
+expressions, specify 1
+ for True and 0
+ for False.
+Note: For content that will be published to a SAS Micro Analytic 
+Service destination, the values of date and datetime input variables 
+must be numeric. They cannot be formatted values such as 18jul2019
+. Also, integer variables are converted to decimal variables 
+when the content is published.Input  and 
+OutputA variable can be an input variable, an output variable, both, or neither 
+(a temporary variable). See “Input Variables, Output Variables, and 
+Temporary Variables” on page 224 for more information.LengthThe length for Boolean and numeric variable types is set 
+automatically.
+For output-only data grid variables, the length is set to the value that 
+you specify.
+For output-only character variables in decisions that are published to 
+container destinations or to SAS Micro Analytic Service  destinations, 
+the length that you specify is ignored unless the 
+sas.decisions.variable.length.honorOutputLengthInMAS configuration 
+option is turned on. For more information,see 
+“sas.decisions.variable.length” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+For character variables and data grid variables that are input-only or 
+input-output variables, the variableLengthOverridden configuration 
+property determines how the length is set. By default, this property is 
+set to Off, and the length is set to the length in the input data. When 
+the variableLengthOverridden property is set to On, the length of 
+input-only and input-output character variables and data grid variables 
+is set to the value that you specify. For more information, see 
+“sas.decisions.variableLengthOverridden” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+The maximum length for character variables (outside of a data grid), 
+data grid variables, binary variables, and varying-length binary 
+variables is 10485760 characters. The maximum length for character 
+variables within a data grid is 32767 characters.Initial valueYou can specify an initial value for all data types except data grid, 
+binary, and varying-length binary types. Initial values are used only at 
+run time and only for output-only variables.
+Note: For content that will be published to a SAS Micro Analytic 
+Service destination, the values of date and datetime input variables 
+must be numeric. They cannot be formatted values such as 18jul2019
+. Also, integer variables are converted to decimal variables 
+when the content is published.DescriptionDescriptions are limited to 256 characters. Managing the Variables in a Decision 223

@@ -1,0 +1,32 @@
+Requirements: You must use the SAS Customer Intelligence sasmaextract extraction utility to create the 
+extraction file that contains the objects that you want to import. For instructions, see 
+“Transfer Treatments from SAS 9.4 to SAS Viya” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+You must create a profile and sign in before you use the CLI. See “Creating and Using 
+Profiles” on page 2 for more information.
+See: “Global Options” on page 4
+“Global Commands” on page 3
+Syntax
+sas-viya  <global-options > rtdmobjectmigration  start <command-options >
+Commands
+start
+starts the SAS Real-Time Decision Manager migration command-line utility. The 
+start command is required.
+--folder folder-GUID
+specifies the globally unique identifier (GUID) for the folder into which you 
+want to import the objects. The folder option is optional.Alias-fDefaultPublic
+--input filename .xml
+specifies the XML file that contains the objects that were extracted from the 
+SAS Metadata Repository on SAS 9.4. This file is the output file that is 
+created by the sasmaextract utility. This option is required. For more 
+information, see “Transfer Treatments from SAS 9.4 to SAS Viya” in SAS 
+Intelligent Decisioning: Administrator’s Guide .Alias-i
+--type object-type
+specifies the object type to import. Currently, the only object type that is 
+supported is treatment
+.Alias-t
+Details
+Transfer Objects from SAS 9.4 to SAS Viya
+1Use the sasmaextract utility that is included with SAS Customer Intelligence to 
+extract objects from the SAS Metadata Repository on SAS 9.4. Then, copy the 
+output file from that utility to a location that is accessible from SAS Viya. The 20Chapter 2 / SAS Intelligent Decisioning CLIs

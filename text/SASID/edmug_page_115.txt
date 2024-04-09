@@ -1,0 +1,25 @@
+Note: When you duplicate a treatment or treatment group, SAS Intelligent 
+Decisioning  creates a relationship between the original treatment or treatment group 
+and the duplicate object. If either object is changed, and you later copy the contents 
+of one object into the other, SAS Intelligent Decisioning  displays a warning 
+message. Verify that you want to replace the current contents of the treatment or 
+treatment group before you paste the new content.
+Delete Treatments or Treatment Groups
+Note: You cannot delete a treatment or treatment group if it is open. 
+In the Treatments or Treatment Groups category view, select the treatments or 
+treatment groups that you want to delete, click , and select Delete . SAS Intelligent 
+Decisioning  moves the deleted items to the recycle bin. For more information, see 
+“Manage Folders and Folder Content” on page 9.
+Rename a Treatment or Treatment Group
+Note: You cannot rename a treatment or treatment group if it is open. 
+1In the Treatments or Treatment Groups category view, select the treatment or 
+treatment group that you want to rename.
+2Click , and select Rename .
+3Enter a new name for the treatment or treatment group, and click Rename .
+Move Treatments or Treatment Groups to a 
+Different Folder
+1In the Treatments or Treatment Groups category view, select the treatments or 
+treatment groups that you want to move.
+2Click  and select Move . The Choose a Location  window appears.
+3Select the location to which you want to move the treatments or treatment 
+groups, and click OK.Managing Treatments and Treatment Groups 103

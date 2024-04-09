@@ -1,0 +1,6 @@
+or a human representative enters the subject’s information into a form or a customer 
+service application.
+The subject usually has an identification number (a subject ID). The customer 
+service application or other calling application uses the subject ID to send a request 
+to SAS Intelligent Decisioning  that invokes a decision. The decision typically 
+performs the following tasks:84Chapter 3 / Working with Treatments and Treatment Groups

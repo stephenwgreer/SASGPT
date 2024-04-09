@@ -1,0 +1,39 @@
+Note: See “About Decision Variables and Mapping” on page 247 for information 
+about when variables are created and how they are mapped.
+You can include as many treatment groups in a decision as necessary. You can 
+merge multiple output data grids into a single data grid if needed.
+For more information, see the following topics:
+n“About Attributes, Eligibility Rules, and Effective Dates” on page 88
+n“About Channels” on page 90
+nSAS Intelligent Decisioning: Using Data Grids
+3The model AggregatePromoPrediction and the rule set ArbitrationRules arbitrate 
+the treatments. For example, the subject might qualify for several treatments, but 
+you might want to offer them only the two treatments that they are most likely to 
+accept. You might also want to return only the treatments that are appropriate for 
+the channel.
+nThe model calculates a probability for each treatment (each row in the data 
+grid) that indicates how likely the subject is to respond to the treatment.
+nThe rule set uses the DATAGRID_TOPN function to sort the treatment data 
+grid based on the values of the probability column. The function returns the 
+top two treatments to which the subject is most likely to respond. See 
+“DATAGRID_TOPN Function” in SAS Intelligent Decisioning: Using Data 
+Grids  for more information.
+You can use rule sets, scoring models, attribute values, or other methods to 
+arbitrate treatments. For more information, see “Arbitrating Treatments” on page 
+89.
+4The record contacts node records information that you want to track, such as the 
+treatments that are returned to the calling application and whether the record is 
+used in generating aggregate reports for the channel. You can also specify 
+variable values to track.
+In real-time destinations (SAS Micro Analytic Service destinations), this node 
+writes a record to the subject contact history. In all other destinations (SAS Cloud 
+Analytic Services [CAS], Teradata, and Apache Hadoop), this node creates an 
+output variable that contains the information that you specify that you want to 
+track.
+Record contacts nodes also create a response tracking code that the calling 
+application can use to add additional information to the subject contact history.
+TIP You can use record contacts nodes to track variable values even if 
+you are not using treatments.
+For more information, see the following topics:
+n“Adding Record Contacts Nodes” on page 233
+nSubject Contacts REST APIExample: A Decision That Includes a Treatment Group 87

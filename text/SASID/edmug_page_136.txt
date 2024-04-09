@@ -1,0 +1,34 @@
+order to duplicate an object that is in the Decision Repository, you must check out 
+the object.
+If your site has created additional folders for which the check-out and commit 
+feature is enabled, and if those folders have been assigned the same permissions 
+as those assigned to the Decision Repository, you must also check out objects in 
+those folders before you can duplicate them.
+Duplicate Lookup Tables
+Note: You can duplicate the predefined Treatment Channels or Subject Level 
+lookup tables, but the duplicates will not be used by SAS Intelligent Decisioning  to 
+determine channels or subject levels. You cannot delete the duplicates by using the 
+SAS Intelligent Decisioning  user interface because these tables are not stored in a 
+folder. You must use the REST API to delete the duplicate tables.
+To duplicate a single lookup table:
+1Select the table that you want to duplicate, click , and select Duplicate .
+2Enter a new name for the duplicate lookup table. Names are limited to 250 
+characters. Lookup table names are case insensitive and must be unique within 
+the database.
+3(Optional) Enter a description for the duplicate table. Descriptions are limited to 
+1000 characters.
+4Select the version of the lookup table that you want to duplicate.
+5Click  and select the location where you want to save the duplicate lookup 
+table.
+6Click Duplicate .
+To duplicate multiple lookup tables, select the tables that you want to duplicate, click 
+, and select Duplicate . SAS Intelligent Decisioning  duplicates the latest version of 
+the lookup tables and appends an -Copy
+ to the names of the duplicate copies. If 
+needed, a number is also appended to the duplicate table names.
+Note: When you duplicate a lookup table, SAS Intelligent Decisioning  creates a 
+relationship between the original lookup table and the duplicate lookup table. If 
+either object is changed, and you later copy the contents of one object into the 
+other, SAS Intelligent Decisioning  displays a warning message. Verify that you want 
+to replace the current contents of the lookup table before you paste the new 
+content.124 Chapter 4 / Working with Lookup Tables and Functions

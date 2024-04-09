@@ -1,0 +1,17 @@
+Determine Which Objects Use a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 271
+Checking Out and Committing Decision Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 272
+About Checking Out and Committing Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 272
+Checking Out and Committing Included Objects Together with A Decision  . . . . . . . 273
+Checking Out and Committing Objects from within A Decision  . . . . . . . . . . . . . . . . . . 274
+Concurrently Checking Out and Committing Decision Versions  . . . . . . . . . . . . . . . . . 274
+Check Out and Commit a Decision Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 275
+Determine Whether a Version Is Checked Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 276
+Determine Who Has a Version Checked Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 276
+Opening the Original Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
+Undoing a Check Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
+Managing Version Tags for Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
+Add a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
+Remove a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278
+Modify a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278
+Publishing a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278
+Introduction to Publishing  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278214 Chapter 8 / Working with Decisions

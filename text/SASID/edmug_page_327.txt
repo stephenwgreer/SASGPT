@@ -1,0 +1,9 @@
+associated tags. By default, the decisions that were published within the last 6 
+months are included.
+The table also includes the current version for each decision. You can click a 
+decision version in the Decision (Version) column to see the details for that version. 
+The decision version opens on the Decision Flow  tab. For more information about 
+viewing and editing decisions, see “About Decisions” on page 215 .
+You can search for a decision by name by typing in the search field. Click 
+Advanced search  to search for deployed decisions that were published on a 
+specific date or within a range of dates.View All Published Decisions 311

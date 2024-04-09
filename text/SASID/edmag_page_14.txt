@@ -1,0 +1,28 @@
+DefaultOn
+sas.decisions.codefiles.quoteStudioQueryIdentifiers
+Specifies whether SAS Intelligent Decisioning encloses table and column identifiers in quotation 
+marks when it generates DS2 code for custom data query files.
+It is recommended that you turn this option on if you do not have existing query files that rely on 
+table or column names that are not enclosed in quotation marks. For more information, see 
+“Handling Table and Column Names in Data Query Files” in SAS Intelligent Decisioning: User’s 
+Guide .DefaultOff
+sas.decisions.masnode
+Click New Configuration  to define this configuration instance.
+sas.decisions.masnode.removeTrailingUnderscoresFromInput
+Determines whether underscores are appended to input-output and input-only variable names that 
+are passed to the SAS Micro Analytic Service when a Micro Analytic Module node in a decision is 
+executed. If this property is set to Off, SAS Intelligent Decisioning adds an underscore to the 
+names of the variables. If this property is set to On, SAS Intelligent Decisioning does not add 
+underscores.DefaultOffRequirementThe setting of this configuration property must match the setting of the 
+service.removetrailingunderscoresfrominputs  property for the SAS Micro Analytic 
+Service.NoteWhen both this property and the service.removetrailingunderscoresfrominputs 
+property are set to On, publishing validation tests will fail for content that has been 
+published to a SAS Micro Analytic Service destination.See“sas.microanalyticservice.system: supplementalProperties” in SAS Micro Analytic 
+Service: Programming and Administration Guide“Executing Content Published to SAS Micro Analytic Service Destinations” in SAS 
+Intelligent Decisioning: User’s Guide
+sas.decisions.nodetraces
+Click New Configuration  to define this configuration instance.
+sas.decisions.nodetraces.includeRuleFiredPathTrackInfoInVariableAssignmentLogging
+Determines whether rule-fired information and path-tracking information is included in the log 
+when variable assignment logging is enabled.DefaultOnTipTurning this option off reduces the size of the log and the space that is required to store 
+it.See“Enabling Variable Assignment Logging” on page 38 13

@@ -1,0 +1,28 @@
+5Save the code file or click Sync to Code  to add the variables to the code that is 
+on the Code  tab. For more information, see “Syncing Variables and Code” on 
+page 203.
+Importing and Exporting Variables
+Import Variables
+You can import variables from either comma-delimited (CSV) files or from 
+JavaScript Object Notation (JSON) files. These files must conform to formats 
+described in Appendix 2, “Import File Formats,” on page 325. These formats are the 
+same formats that are created when you export variables.
+1Open the code file into which you want to import variables.
+2On the Variables  tab, click Import , and select either Comma-delimited (*.csv) 
+or JSON (*.json) . The Import File  window appears.
+3Click Browse  and select the file from which you want to import variables. 
+4Specify the encoding of the CSV file.
+5Select Add variables  to append the variables to the current list of variables, or 
+select Replace variables  to replace the current list of variables with the 
+imported variables.
+TIP To add new columns to an existing data grid variable, select 
+Replace variables .
+6Click Import , and then click  to import the variables and save the code file.
+Export Variables
+1Open the code file from which you want to export variables.
+2On the Variables  tab, select the variables that you want to export.
+3Click Export , and select the file type to which you want to export the variables. 
+The result depends on which browser you are using and the browser’s default 
+download actions. The browser might automatically download the file and display 
+a notification in the bar at the bottom of the browser window. Alternatively, the 
+browser might prompt you to save the file or open it with a specific application.174 Chapter 6 / Using Custom Code Files

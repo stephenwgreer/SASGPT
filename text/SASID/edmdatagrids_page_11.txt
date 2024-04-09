@@ -1,0 +1,32 @@
+Mapping Data Grid Variables in a Decision
+When you add an object to a decision and the object contains a data grid variable, 
+SAS Intelligent Decisioning creates a decision variable for the data grid in the same 
+way that it creates decision variables for object variables of other data types. When 
+you select Score rows in this data grid  for an object that uses a data grid, you can 
+choose to map the columns in the object’s data grid variable either to columns in the 
+decision’s data grid variable or to other decision variables. In the lists of variables in 
+the Input Variables  property pane, the decision’s scalar variables are identified by 
+the  icon, and the decision’s data grid columns are identified by the  icon.
+For more information, see “Map Object Variables to Decision Variables” in SAS 
+Intelligent Decisioning: User’s Guide  and “Scoring Rows in a Data Grid” on page 6.
+Editing Data Grid Variable Metadata
+For existing data grid variables, you can add or delete columns in the data grid 
+variable.
+Note: Changes to the metadata for an object’s data grid affect the data grid only in 
+the latest and subsequent versions of the object. Data grids in earlier versions of the 
+object are not affected.
+Add Columns to a Data Grid
+To add a column to a data grid:
+1On the Variables  tab of a rule set, code file, or decision, click on the data grid 
+variable that you want to edit. The Edit Variable  window appears.
+2Click  on columns field to open the Edit Columns  window.
+3(Optional) To add new custom columns to the data grid:
+aSelect Add a new column , and enter the name of the new column in the 
+columns field.
+bSelect the data type of the column, and click Add.
+4(Optional) To add columns from a data table:
+aSelect Add columns from a data table , and click Browse . The Choose 
+Data  window appears.
+bSelect the data table, and click OK. SAS Intelligent Decisioning  closes the 
+Choose Data  window, and adds all of the columns in the data table to the 
+columns field in the Edit Columns  window.Working with Data Grids 7

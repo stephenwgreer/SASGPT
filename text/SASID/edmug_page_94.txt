@@ -1,0 +1,31 @@
+3
+Working with Treatments and 
+Treatment Groups
+About Treatments and Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 84
+Example: A Decision That Includes a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . 85
+About Attributes, Eligibility Rules, and Effective Dates  . . . . . . . . . . . . . . . . . . . . . . . . . 88
+Attributes and Attribute Aliases  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 88
+Eligibility Rules  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+Effective Dates  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+Arbitrating Treatments  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 89
+About Channels  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+Define a Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 90
+Define a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 91
+Activating a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+What Does Activating a Treatment Group Do?  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 93
+Controlling Where Treatment Groups Are Activated and How They Are Used  . . . . . 94
+Activate a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 94
+Managing Attributes and Aliases  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95
+About Attributes and Aliases  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95
+Define Custom Attributes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 95
+Add Attributes from a Different Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+Duplicate Attributes  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+Delete Attributes from a Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 96
+View Attribute Aliases for a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Remove an Attribute Alias from a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Determine Which Treatments Use an Attribute  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Delete Treatments from a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Managing Eligibility Rules for a Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Remove Eligibility Rule Set from a Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+Change the Eligibility Rule Set for a Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+Copy a Treatment or Treatment Group URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9883

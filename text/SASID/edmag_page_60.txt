@@ -1,0 +1,37 @@
+nSAS Administrators. Members of this group can view and modify workflow history items, but they 
+have access to workflow history items only if the Workflow Administrator group is not defined. For 
+more information, see “Predefined Custom Groups” in SAS Viya: Identity Management .
+nApplication Administrators. Members of this group can view and modify workflow history items, but 
+they have access to workflow history items only if the Workflow Administrator group is not defined. 
+For more information, see “Predefined Custom Groups” in SAS Viya: Identity Management .
+nWorkflow Administrator. Members of this group can view and modify workflow history items. For 
+more information, see “Configure the Default Workflow Administrator Group” in SAS Workflow 
+Manager: Administrator’s Guide .
+nWorkflowHistoryView. Members of this group can view workflow history records, but they cannot 
+modify the workflow history. This group can view workflow history items even if the Workflow 
+Administrator group is defined. For more information, see “Define the WorkflowHistoryView 
+Administrators Group” on page 59.
+Define the WorkflowHistoryView Administrators Group
+1Sign in to SAS Environment Manager as an administrator.
+Note: If you are already logged in to SAS Intelligent Decisioning as an administrator, access SAS 
+Environment Manager by clicking  and selecting Manage Environment .
+2Click  to navigate to the Users category view.
+3In the View  menu, select Custom groups .
+4Click . The New Custom Group  window appears.
+5Enter a name for the group.
+6Enter the group ID WorkflowHistoryView
+.
+7(Optional) Enter View the workflow status change history
+ as the group description.
+8Click Save .
+9Add the appropriate users to the new group. For instructions, see “Add or Remove Custom Group 
+Members” in SAS Environment Manager: User’s Guide .
+Set Permissions for Check-Out Folders
+TIP If your site needs separate folders that are enabled for the check-out and commit feature, 
+it is recommended that you create these folders in the /Decision Repository
+ folder. 
+Subfolders in the repository inherit the default settings for the decision repository. 
+If you create check-out folders outside of the /Decision Repository
+ folder, you must manually set 
+permissions for these folders in order to force users to check out the objects in these folders before 
+modifying the objects. To manually set the permissions for check-out folders:59

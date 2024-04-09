@@ -1,0 +1,16 @@
+Contents
+Chapter 1 /Using Data Grids in SAS Intelligent Decisioning . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Introduction to Data Grids  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Serialize and Import Data Grids Into a Table Column  . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+Working with Data Grids  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Using Data Grid Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Using Data Grids in a Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Working with Data Grids in SAS Studio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+Chapter 2 /Data Grid Macros . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Using the Data Grid Macros  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Data Grid Macros Available with SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . 13
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Chapter 3 /Data Grid Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Comparing Values in Data Grids  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Data Grid Functions Available in SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . 31
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37

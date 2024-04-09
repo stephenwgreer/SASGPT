@@ -1,0 +1,29 @@
+NoteThis option applies to both published code and test code.See“LOGICALEXPR=STANDARD | OPTIMIZED” in SAS DS2 Language Reference
+sas.businessrules.lookupStaticBinding
+Specifies whether published rule sets and decisions use new versions of lookup tables that were 
+activated after the rule set or decision was published. When this property is set to On, SAS 
+Intelligent Decisioning generates a static version of the active version of the lookup table and 
+embeds it in the code that is generated for the published object. Newly activated versions of 
+lookup tables are ignored by the published objects.
+IMPORTANT If you publish an object that uses a lookup table to a Teradata or Hadoop 
+destination, set this option to On. Code that is generated for Teradata and Hadoop 
+destinations work correctly only when lookup tables are included in the generated code.
+Lookup tables are automatically embedded in objects published to container destinations. 
+This configuration option is ignored for container destinations.
+For more information, see “Controlling Where Lookup Tables Are Activated And How They Are 
+Used” in SAS Intelligent Decisioning: User’s Guide .DefaultOff
+sas.businessrules.messageLimit
+Specifies whether SAS Intelligent Decisioning adds the DS2 option MSGLIMIT= to the code that it 
+generates for rule sets. The MSGLIMIT= option specifies the maximum number of error, warning, 
+and note messages that can be written to the SAS log while the code executes.Default1024RestrictionThis configuration option is valid only when sas.businessrules.messageOrder  is set 
+to TEMPORAL.See“MSGLIMIT=n | MIN | MAX” in SAS DS2 Language Reference
+sas.businessrules.messageOrder
+Specifies whether SAS Intelligent Decisioning adds the DS2 option MSGORDER= to the code that 
+it generates for rule sets. The MSGORDER= option specifies whether DS2 writes error, warning, 
+and note messages to the SAS log as they are produced or after the code executes. Valid option 
+values are STANDARD and TEMPORAL.STANDARDspecifies that DS2 writes the messages after the code executes. PUT 
+statement messages precede the diagnostic messages in the log.TEMPORALspecifies that DS2 writes the messages as they are produced. PUT statement 
+messages are interspersed with the diagnostic messages in the log.DefaultSTANDARDNoteThis option applies to both published code and test code.See“MSGORDER=STANDARD | TEMPORAL” in SAS DS2 Language Reference
+sas.businessrules.scond
+Specifies whether SAS Intelligent Decisioning adds the DS2 option SCOND= to the code that it 
+generates for rule sets. The SCOND= option specifies the level of the messages that are 6

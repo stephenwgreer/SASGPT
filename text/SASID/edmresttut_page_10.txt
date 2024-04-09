@@ -1,0 +1,18 @@
+2
+Define Basic Methods and Get an 
+Access Token
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Updating Objects with the put() Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Example Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+See Also  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Introduction
+The code shown in “Example Code”  defines the get(), post(), put(), and 
+getAccessToken() functions for use with the examples in this document.  The code 
+calls the getAccessToken() function to request an access token and returns the 
+token in the variable accessToken1
+. You must specify this access token with all 
+subsequent requests to SAS Viya APIs.Important:  This code is required by all of the other examples in this document. 
+Prepend this code to each example before you run it.
+Updating Objects with the put() Function
+When you submit PUT requests that update existing resources, you must specify a 
+header name and value that identify the specific state of the resource that you are 5

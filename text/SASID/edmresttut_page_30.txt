@@ -1,0 +1,23 @@
+5
+Activate Treatment Groups
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+How To  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Example Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+Responses  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Getting the Treatment Group Collection  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Getting a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Getting the Treatment Group Revision List  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+Activating the Treatment Group Revision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+See Also  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Introduction
+This example activates the treatment groups that meet a specified search criteria.
+How To
+1Get an access token by submitting a GET request to the /SASLogon/oauth/token
+ resource. The example described in Chapter 2, “Define Basic Methods 
+and Get an Access Token”  includes the code required to get an access token. 
+Prepend that code to the code for this example.
+2Get the collection of treatment group definitions that you want to activate.
+Modify the search criteria in the initial GET request to 
+the /treatmentDefinitions/definitionGroups
+ resource so that it returns the 
+collection of treatment groups that you want to activate.25

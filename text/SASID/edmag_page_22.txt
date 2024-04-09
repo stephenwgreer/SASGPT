@@ -1,0 +1,32 @@
+Properties for Third-Party Subject Contacts and 
+Treatment Definition Databases
+About the Databases and Schemas
+By default, the subject contacts and treatment definitions are stored in the PostgreSQL instance that 
+was installed with SAS Viya. You can use Oracle or a different instance of PostgreSQL for these 
+databases.
+The best practice for configuring third-party databases for subject contacts and treatment definitions 
+is to use different schemas (owners and passwords) for each database. SAS Intelligent Decisioning 
+uses Liquibase to manage a database changelog. Liquibase uses this changelog to determine how to 
+update the database on your behalf during installation and updates. If you use a different schema for 
+each database, then the database changelog tables that are used by Liquibase are not shared. Using 
+different schemas makes it easier to destroy all of the tables that are associated with a service in 
+case you need to re-create a database.
+An Oracle user has only one schema, and it has the same name as the user. To use different 
+schemas in Oracle, different users must own the databases.
+Third-Party Database Properties
+Note: SAS Intelligent Decisioning provides database drivers for PostgreSQL and Oracle within the 
+containers for each database. You cannot customize the database drivers.
+To use a third-party database, you must add the configuration properties for the appropriate service in 
+SAS Environment Manager.
+Note: Before you configure a third-party database for subject contacts or treatment definitions, verify 
+that the SharedServices database and the schemas for your third-party databases (subjectcontacts or 
+treatmentdefinitions) are already configured with the correct ID and privileges.
+1Sign in to SAS Environment Manager as an administrator.
+Note: If you are already logged in to SAS Intelligent Decisioning, access SAS Environment 
+Manager by clicking  and selecting Manage Environment .
+2Click  to navigate to the Configuration category view.
+3In the View  menu, select Definitions .
+4Complete these steps for each definition listed in Table 1 on page 22:
+aSelect the definition. Definitions are listed in Table 1 on page 22.
+bClick New Configuration . The New Configuration  window appears. By default, the new 
+configurations apply to both the Subject Contacts service and the Treatment Definition service.21

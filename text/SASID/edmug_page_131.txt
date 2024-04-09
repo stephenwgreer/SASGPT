@@ -1,0 +1,27 @@
+information, see “jvm.java_option_xmx” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+Note: Lookup key names and values that contain two hash signs (##) are not 
+supported.
+You can import entries into an empty table, and you can refresh an existing lookup 
+table by re-importing the same table.
+1Open the lookup table to which you want to import entries.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Click Import . The Import Lookup Table  window appears.
+3Click , and select the CSV file that contains the lookup table entries.
+4Select the encoding for the lookup table, and click Import .
+Export a Lookup Table to a CSV File
+IMPORTANT Do not modify the file structure or the header row in the 
+exported CSV file. You can modify the data values.
+To export a lookup table, open the lookup table and click Export . The result 
+depends on which browser you are using and the browser’s default download 
+actions. The browser might automatically download the file and display a notification 
+in the bar at the bottom of the browser window. Alternatively, the browser might 
+prompt you to save the file or open it with a specific application.
+Add Lookup Table Entries
+Note: It is recommended that a single lookup table contains no more than 10,000 
+entries.
+TIP You cannot add new entries to a lookup table version that has been 
+activated. In order to edit the table, you must create a new version.Add Lookup Table Entries 119

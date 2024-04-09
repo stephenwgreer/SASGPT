@@ -1,0 +1,31 @@
+eSpecify the value or the list of values for the attribute. For dynamic attributes, 
+these values are used as the default values if the attribute’s values are not 
+customized in treatment groups.
+For attributes that are character, integer, or decimal attributes, you can 
+specify a single value or a list of values. Select the List of values  check box 
+to specify a list of possible values for the attribute. In the Value  field, press 
+Enter after each specific value.
+For attributes of other data types, you can specify only a single value.
+fClick Add to add the attribute to the table.
+3Click OK to save the attributes.
+Add Attributes from a Different Treatment
+1On the Attributes  tab of a treatment, click Add Attribute , and select Treatment . 
+The Choose an Item  window appears.
+2Select the treatment from which you want to copy an attribute, and click OK. The 
+Add Attributes  window appears.
+3Click  to select all of the attributes, or select one or more individual attributes 
+and click .
+4Click Add to add the attributes, or click Add and replace  to replace existing 
+attributes that have the same name.
+Duplicate Attributes
+1On the Attributes  tab of a treatment, select the attribute that you want to 
+duplicate.
+2Click , and select Duplicate . The Duplicate Attributes  window appears.
+3Enter a new name for the duplicate attribute, and click Duplicate .
+Delete Attributes from a Treatment
+On the Attributes  tab of a treatment, select the attribute that you want to delete, 
+click , and select Delete .
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.96Chapter 3 / Working with Treatments and Treatment Groups

@@ -1,0 +1,33 @@
+Using SAS Workflow with SAS Intelligent 
+Decisioning
+About the SID Asset Approval Workflow
+SAS Intelligent Decisioning  provides a predefined approval workflow for decisions. 
+This workflow is named SID Asset Approval. Your administrator can enable this 
+workflow for decisions in SAS Intelligent Decisioning  by turning on the 
+sas.decisions.workflow.enabled  configuration property. For more information, see 
+“Enable the Asset Approval Workflow” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+When the workflow is enabled, a new instance of the workflow is started each time a 
+new decision or a new version of an existing decision is created in SAS Intelligent 
+Decisioning . A workflow is associated with a specific version of a decision. Each 
+decision version that is actively being worked on has its own workflow instance.
+Decisions that already existed before the workflow was enabled are not 
+automatically put into the workflow. To put these decisions into the workflow, you 
+must create a new version of the decision.
+As the users who are responsible for developing, testing, reviewing, approving, and 
+deploying a particular version of a decision each finish their tasks, they set the 
+status of the workflow to the appropriate value. To set workflow status values, you 
+must be included in the appropriate SAS Intelligent Decisioning  workflow 
+permissions group. See “User Roles in the Workflow” on page 216 for more 
+information.
+IMPORTANT Do not modify the SID Asset Approval workflow. Updates to 
+your system will overwrite any customized changes to the workflow.
+User Roles in the Workflow
+Users that participate in the SID Asset Approval workflow can have up to four 
+different roles:
+Author
+creates, develops, and tests the decision in SAS Intelligent Decisioning . When 
+the workflow is enabled, and the author creates a new decision or a new version 
+of an existing decision, the decision status is automatically set to Developing. 
+When the author is ready for the new decision version to be reviewed, the author 
+sets the status to Review-ready. Before the author sets the status to Review-216 Chapter 8 / Working with Decisions

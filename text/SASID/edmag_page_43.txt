@@ -1,0 +1,33 @@
+n“Transfer Business Rules Content from SAS 9.4 to SAS Viya”
+n“Transfer Treatments from SAS 9.4 to SAS Viya”
+n“Transfer Content from SAS Viya 3.5 Environments”
+n“Transfer Content between SAS Viya 4 Environments”
+n“Transfer Content That Was Published to a CAS Destination”
+Transfer Business Rules Content from SAS 9.4 to 
+SAS Viya
+Note: The transfer process does not support transferring content to SAS Viya from SAS Business 
+Rules Manager 2.2, or earlier or from SAS Decision Manager 2.2.
+To transfer content from SAS Business Rules Manager on SAS 9.4 or SAS Decision Manager on 
+SAS 9.4 to SAS Intelligent Decisioning on SAS Viya, use the dcmtransfer plug-in to the sas-viya 
+command-line interface.To transfer content from SAS Business Rules Manager on SAS 9.4 or SAS 
+Decision Manager on SAS 9.4 to SAS Intelligent Decisioning on SAS Viya, use the dcmtransfer plug-
+in to the sas-admin command-line interface. For more information, see the following topics:
+n“About the SAS Intelligent Decisioning CLIs” in SAS Intelligent Decisioning: Command-Line 
+Interfaces
+n“Command-Line Interface: Preliminary Instructions” in SAS Viya Platform: Using the Command-
+Line Interface
+n“dcmtransfer Plug-In” in SAS Intelligent Decisioning: Command-Line Interfaces
+IMPORTANT SAS Intelligent Decisioning on SAS Viya does not support rule flows. Simple 
+rule flows are transferred as decisions. You cannot transfer complex rule flows (rule flows that 
+use BY-group processing) from SAS 9.4 to SAS Viya. You must recreate these rule flows as 
+rule sets in the target environment.
+Note: For rule expressions that use macros, the macros are transferred, but you must replace the 
+macros in the rule sets after the rule sets are imported to SAS Viya.
+IMPORTANT In order to use a lookup table that has been transferred to a new environment, 
+you must do one of the following:
+nactivate the table in the new environment. For instructions for activating a lookup table by 
+using the user interface, see “Activating a Lookup Table” in SAS Intelligent Decisioning: 
+User’s Guide .
+ntransfer the formats data on SAS Cloud Analytic Services (CAS) and the SAS Micro 
+Analytic Service module for the SAS Micro Analytic Service destination. The module name 
+is shown on the Properties  tab for the lookup table. 42

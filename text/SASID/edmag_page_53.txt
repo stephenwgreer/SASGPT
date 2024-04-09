@@ -1,0 +1,9 @@
+setting permissions in this window, see SAS Viya: General Authorization Window  and “Folder-
+Based Permission Settings for SAS Intelligent Decisioning Tasks” on page 52.
+6Click Save  to save your changes and close the Edit Authorization  window.
+Folder-Based Permission Settings for SAS Intelligent 
+Decisioning  Tasks
+The following table lists the folder permissions that are required to work with the objects that are 
+stored in a folder. The permissions listed in this table assume that the permissions described in 
+“Default Permissions”  have not been customized.Table 4 Folder-Based Permission Settings for Tasks in SAS Intelligent Decisioning TaskFolder PermissionsMake objects in a folder visible to usersReadSave an object in a folderUpdateCreate a new objectAddCreate a new version of an objectUpdateDuplicate an objectAdd, UpdateRename an objectUpdateCopy a version of an objectUpdateActivate a lookup table or a treatment groupUpdateDelete an objectDeleteMove an object from folder A to folder BRemove (folder A)
+Add (folder B)Validate a decisionReadCreate a test definitionAddRun a testAddRerun a previously run testAdd, DeleteCheck out and commit objectsRead, Add, Update 52

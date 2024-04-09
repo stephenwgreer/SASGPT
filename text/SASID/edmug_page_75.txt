@@ -1,0 +1,37 @@
+1On the Scoring  tab, click the Tests  tab. 
+2Click New Test . The New Test  window appears.
+3Enter a name for the test if you do not want to use the default name. The name 
+cannot contain forward slashes (/) or curly braces ({}).
+4(Optional) Enter a description for the test. Descriptions are limited to 1000 
+characters.
+5(Optional) Click  for the Location  field, and select the folder where you want to 
+save the test definition and results.
+TIP Selecting a location is optional, but it is highly recommended. 
+Storing test definitions and test results in a folder simplifies the tasks of 
+setting permissions and transferring the test files.
+6Click  for the Input table  field, select the input table for the test, and click OK. 
+7Verify or change the variable mappings. To run a full test, map all of the input 
+variables to columns in the input table that you selected for the test. To run a 
+partial test, you can map only the input variables that are needed for the test.
+SAS Intelligent Decisioning  automatically maps the input variables in the rule set 
+to columns in the input table when the names and data types of the variables 
+match those of the table columns.
+If any input variables are not mapped to input columns or to static values, the 
+application displays a warning message. At run time, SAS Intelligent Decisioning 
+assigns missing values to input variables that are not mapped.
+You can change the automatic variable mappings in the Variable Mappings 
+window.
+To change variable mappings:
+aClick Variables . The Variable Mappings  window appears.
+bFor each input variable, select the table column to which the variable should 
+be mapped. If the input table contains more than 25 columns, click More 
+columns  to display additional column names. Alternatively, for Decimal, 
+Integer, and Character variables, you can select Use value  for the table 
+column, and specify a literal value in the Value  column. When you are 
+entering literal values, remember these rules:
+nDo not enclose character strings in quotation marks.
+nTo specify a missing value for character variables, select Use value  and 
+leave the Value  column empty. When SAS Intelligent Decisioning 
+generates code, it generates an empty string (''
+). For numeric values, 
+enter a period (.).64Chapter 2 / Working with Rule Sets

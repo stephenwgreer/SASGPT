@@ -1,0 +1,18 @@
+Manage Comments for Any Object
+In the category views, you can associate comments and attachments with any 
+object.
+To open the Comments  pane for an object, select the check box for the object, and 
+click  in the properties pane.
+To add a new comment, enter the comment in the text box and click  Post .
+To add an attachment to a comment, click , select the file that you want to attach, 
+and click Post . (The attachment icon appears after you enter text in text box.) You 
+cannot attach executable files such as BAT and EXE files.
+To reply to a comment, click Reply , enter your reply in the text box, and click Post .
+To delete a comment, click  for that comment.
+Note: You can also add comments to rule set tests, code file tests, decision tests, 
+and to the Start and End nodes within a decision. Comments that you add to tests 
+are not displayed with the comments in the category views. Comments that you add 
+to the Start and End nodes in a decision are displayed in the Decisions category 
+view. For more information, see “Manage Comments for a Rule Set Test” on page 
+76, “Manage Comments for a Code File Test” on page 195, and “Manage 
+Comments for Decision Nodes and Tests” on page 306.10 Chapter 1 / Introduction to SAS Intelligent Decisioning

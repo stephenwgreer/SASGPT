@@ -1,0 +1,18 @@
+Figure 4.1 CSV File Imported Into SAS Intelligent Decisioning
+In a lookup table, each lookup key  is associated with a lookup value . Lookup keys 
+must be unique within each lookup table.
+SAS Intelligent Decisioning  provides two functions, LOOKUP and LOOKUPVALUE, 
+that enable you to determine whether a lookup key exists in a lookup table and to 
+retrieve a lookup value from a lookup table.
+About Labels for Lookup Keys and 
+Values
+You can specify labels to use for lookup keys and lookup values. For example, for 
+the lookup table shown in Figure 4.2 on page 115, you could specify Country Abbreviation
+ for the key and Country Name
+ for the value.  You could specify the 
+names of variables that are used to store the keys or values as the labels.
+The labels that you enter are added to the Properties  tab for the lookup table. They 
+are also included in windows that contain fields where you enter keys or values. For 
+example, if you add labels to the lookup table shown in Figure 4.2 on page 115 and 
+open the Add Table Entries  window, the labels are displayed in parentheses after 
+the existing Key and Value  field labels.About Labels for Lookup Keys and Values 115

@@ -1,0 +1,6 @@
+"folderPath": "/B"            },            "target": {                "id": "2e95e765-1242-4c06-ad5a-e05fdc3932fb"            }        }    ]}
+If you export rule flow that references two rule sets, the mapping file might look like 
+this:{    "folders": [        {            "source": {                "folderPath": "/A"            },            "target": {                "folderPath": "/A"            }        },    ],    "ruleSets": [        {            "source": {                "id": 10043,                "name": "RuleSetXYZ",                "folderPath": "/A"            },            "target": {                "id": "",                "revisionId": ""            }        },        {            "source": {                "id": 10044,                "name": "RuleSetABC",                "folderPath": "/A"            },            "target": {                "id": "3619e4d5-3046-4a91-b940-df9dc9c8bd45",                "revisionId": "b9195eb0-5a1c-4d0a-a833-254bc1ce5a33"            }        }    ], }
+Examples
+The following examples use the default profile. For information about defining and 
+specifying a profile, see “Creating and Using Profiles” on page 2.14Chapter 2 / SAS Intelligent Decisioning CLIs

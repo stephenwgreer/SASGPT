@@ -1,0 +1,13 @@
+Responses
+Getting the Treatment Group Collection
+The treatment group collection returned by the initial GET request contains, in this 
+case, only one treatment definition group. The group name is “Treat_Group_1”, and 
+the group ID is 8daf2af7-ecde-4c83-ba0f-eab69bcf4860
+.responseObj =   {    "links": [               <<lines deleted>>    ],    "name": "treatmentDefinitionGroups",    "accept": "application/vnd.sas.summary",    "start": 0,    "count": 1,    "items": [        {            "creationTimeStamp": "2019-07-16T03:24:27.181Z",            "modifiedTimeStamp": "2019-08-09T17:35:43.584Z",            "createdBy": "user-ID",            "modifiedBy": "user-ID",            "id": "8daf2af7-ecde-4c83-ba0f-eab69bcf4860",            "type": "treatmentGroup",            "name": "Treat_Group_1",            "links": [                      <<lines deleted>>            ],            "version": 1        }    ],    "limit": 10,    "version": 2}
+Getting a Treatment Group
+You can extract the IDs of the individual treatment groups from the collection and 
+use the ID to retrieve the treatment group definition. The GET request for the 
+treatment group with the ID 8daf2af7-ecde-4c83-ba0f-eab69bcf4860
+ returned the 
+following response:group responseBody =   {
+Responses 29

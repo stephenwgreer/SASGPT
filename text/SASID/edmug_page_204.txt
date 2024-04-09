@@ -1,0 +1,31 @@
+TIP You can click on the values of character variables to display the 
+entire value in a separate window. For data grid variables, you can 
+choose to view the variable value in three different formats:
+nClick the Data Grid  tab to view the data grid value as a table.
+nClick the Formatted  tab to view the data grid as a formatted JSON 
+character string.
+nClick the Plain  tab to view the data grid as an unformatted character 
+string.
+TIP On the Log page, you can click  to download the log file.
+Debugging Code File Tests
+When you create a test, you can specify a variable to use as a debugging variable 
+in the Input debug variable  field. You can specify an input-only variable or an input-
+output variable. For more information, see Step 12  of “Create and Run a New Test” 
+on page 188.
+When you specify an input debug variable, SAS Intelligent Decisioning  automatically 
+sets the maximum number of threads that can be allocated for the test to 1. Setting 
+the thread count to 1 ensures that the variable's values are written to the log in the 
+correct order and are not affected by different threads completing at different times.
+To capture variable values for input-only or temporary variables after the code file 
+logic has executed for a specific record, you can specify that the variable is an 
+output variable, and then re-run the test. Before incorporating the code file into a 
+production system, return the input and output settings for the variable to their 
+previous settings. For more information, see “Input Variables and Output Variables” 
+on page 170 and “Edit Variable Properties” on page 175.
+Test a Scenario
+Create and Run a Scenario Test
+IMPORTANT If you are testing a DS2 or SQL code file that uses functions 
+that are defined in a custom context file, verify that the context file is specified 
+in the Test custom context  field on the Properties  before running the test.
+1On the Scoring  tab, click the Scenarios  tab. 
+2Click New Test . The New Scenario Test  window appears.190 Chapter 6 / Using Custom Code Files

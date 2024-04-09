@@ -1,0 +1,35 @@
+TIP Usage Notes for the Treatment Definitions API  lists the members of 
+the collection that you use to filter and sort the collection. For additional 
+information, see SAS REST APIs: Filtering .
+3Use the json.loads
+ method to convert the collection to a JSON object. This 
+conversion enables you to access the key-value pairs in the JSON object by 
+using the key name.
+4Define the content type for submitting GET requests to retrieve treatment group 
+definitions.
+5For each treatment group in the collection that was returned in Step 2 , complete 
+these steps:
+aRetrieve the treatment group ID from the collection that was returned in Step 
+2.
+bGet the treatment group definition by submitting a GET request to /treatmentDefinitions/definitionGroups/group-ID
+. The response body 
+is a byte object that contains the definition of the treatment group.
+cUse the json.loads()
+ method to convert the treatment group definition to a 
+string. 
+dSet the Accept type for retrieving individual treatments.
+eFor each treatment in the treatment group, complete these steps:
+1Retrieve the treatment definition ID from the members
+ property of the 
+treatment group definition that was returned in Step 5b .
+2Get the treatment definition by submitting a GET request to /treatmentDefinitions/definitions/definition-ID
+. 
+3Create a new revision of the treatment definition by submitting a POST 
+request to /treatmentDefinitions/definitions/definition-ID/revisions
+. Specify the response body that was returned in Step 5e.ii  as 
+the request body for this POST request.
+By default, this POST request creates a new minor version. To specify a 
+new major version, include the ?revisionType=major
+ query parameter.
+Example Code<< Include the code in "Define Basic Methods and GEt an Access Token. >><< That code is required to successfully execute this example.         >># Get the treatment groups based on filter criteria.# Modify the filter criteria as needed for your application.requestUrl= baseUrl1 + \
+20Chapter 4 / Lock Treatments

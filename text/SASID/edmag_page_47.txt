@@ -1,0 +1,37 @@
+nactivate the table in the new environment. For instructions for activating a lookup table by 
+using the user interface, see “Activating a Lookup Table” in SAS Intelligent Decisioning: 
+User’s Guide .
+ntransfer the formats data on SAS Cloud Analytic Services (CAS) and the SAS Micro 
+Analytic Service module for the SAS Micro Analytic Service destination. The module name 
+is shown on the Properties  tab for the lookup table. 
+Test definitions and test results for rule sets, models, and decisions are not transferred automatically 
+when rule sets, models, and decisions are transferred. To transfer test definitions and test results that 
+are in a folder, you can transfer the folder. To transfer test definitions and test results that were not 
+saved in a folder, you must list the URI for each definition and results table in the transfer request. 
+(Beginning with SAS Intelligent Decisioning 5.3, you can save test definitions and test results in a 
+folder.)
+Output tables in CAS must be transferred manually. However, it is recommended that you re-create 
+and rerun the test in the target environment instead of transferring the old output tables and test 
+information.
+Transfer Content That Was Published to a CAS 
+Destination
+You can transfer the published module for a rule set, decision, or model by using the transfer plug-in 
+to the sas-viyasas-admin CLI. In the CLI command, identify the module that you want to transfer by 
+specifying its URI in the following format:/modelPublish/destinations/destination_name/models/published_name
+Only the content that was included inline in the generated module is transferred. For CAS 
+destinations, treatment groups and global variables are always included in the generated module. 
+Lookup tables are included in the generated module only if the sas.businessrules.lookupStaticBinding 
+configuration option was set to On when the content was published. If this option is set to Off when 
+the content was published, you must transfer the lookup format library. When you transfer the library, 
+all of the lookup tables that are activated in the source environment are also transferred. For more 
+information, see the following topics:
+n“sas.businessrules.lookupStaticBinding ” on page 6
+n“sas.referencedata.casformats.formatsLibrary ” on page 16
+n“sas.referencedata.activation.activateLookupOnImport ” on page 16
+n“Content Executed by Published Decisions” in SAS Intelligent Decisioning: User’s Guide
+To transfer a published module between SAS Viya environments:
+1Export the published module. For example, to export a module named card_offers1_0 that was 
+published to the destination CASPublic, specify the following CLI command:sas-admin --profile source-profile transfer export     --resource-uri "/modelPublish/destinations/CASPublic/models/card_offers1_0"sas-viya --profile source-profile transfer export     --resource-uri "/modelPublish/destinations/CASPublic/models/card_offers1_0"
+If the export
+ command is successful, the CLI returns the package ID:The package with the ID 8f32140f-34e1-42dd-8d85-f8129ff5dabb was created.
+46

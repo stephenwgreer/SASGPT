@@ -1,0 +1,38 @@
+TIP To create assignment rule set variables that have the same name 
+and data type as the variables in the common rule set, click Add Missing 
+Variables . If you want to create new variables with different names in the 
+assignment rule set, you can ignore the error markers, and continue with 
+the next step. After you click Finish  in Step 12 , you can create new 
+variables in the assignment rule set, then edit the properties of the 
+common rule set reference to change the variable mappings.  For more 
+information, see “Edit the Properties of a Common Rule Set Reference” 
+on page 29.
+For additional information, see “About Rule Set Variables and Mapping” on page 
+26.
+8Click Next . 
+9(Optional) On the Map Outputs  page, for each common rule set variable in the 
+Output Variable  column, select the assignment rule set variable that you want to 
+map it to in the Maps To column. If the assignment rule set contains variables 
+with the same name and data type as the variables in the common rule set, then 
+SAS Intelligent Decisioning  automatically maps the common rule set variables to 
+the assignment rule set variables. 
+TIP To create assignment rule set variables that have the same name 
+and data type as the variables in the common rule set, click Add Missing 
+Variables . If you want to create new variables with different names in the 
+assignment rule set, you can ignore the error markers, and continue with 
+the next step. After you click Finish  in Step 12 , you can create new 
+variables in the assignment rule set, then edit the properties of the 
+common rule set reference to change the variable mappings.  For more 
+information, see “Edit the Properties of a Common Rule Set Reference” 
+on page 29.
+For more information, see “About Rule Set Variables and Mapping” on page 26.
+10Click Next . 
+11(Optional) On the Order Rules , page, change the order in which the common 
+rule sets are included in the assignment rule set. To move a common rule set up 
+or down within the assignment rule set, select the common rule set and click 
+or .
+12Click Finish . SAS Intelligent Decisioning  adds the common rule set reference to 
+your assignment rule set. You can click  to display the content of the common 
+rule set inline in the assignment rule set, but the content is read-only. You can 
+use the rule-specific actions menu to edit the reference  or to open the common 
+rule set.28Chapter 2 / Working with Rule Sets

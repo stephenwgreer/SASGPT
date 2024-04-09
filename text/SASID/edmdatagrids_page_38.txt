@@ -1,0 +1,25 @@
+CategoryDescriptionSet ValuesSet the value of cells in a data gridStatisticalPerform statistical calculations on values in the data gridSubset and SortSubset or sort a data grid
+The following table provides brief descriptions of the data grid functions.CategoryLanguage ElementsDescriptionCreate, Update, 
+or DeleteDATAGRID_ADDCHARACT
+ERCOLUMN Function (p. 
+37)Adds a character column to the specified data grid.DATAGRID_ADDCOLUMN 
+Function (p. 37)Adds a column of the specified type to the specified data 
+grid.DATAGRID_ADDNUMERIC
+COLUMN Function (p. 38)Adds a numeric column to the specified data grid.DATAGRID_ADDROW 
+Function (p. 39)Appends new rows to the specified data grid.DATAGRID_CLEAR 
+Function (p. 41)Deletes all rows and all column metadata from the specified 
+data grid.DATAGRID_CLEARCOLUM
+N Function (p. 41)Deletes the data in the specified columns.DATAGRID_CLEARDATA 
+Function (p. 42)Deletes all rows from the specified data grid but does not 
+remove the column metadata.DATAGRID_CONFORM 
+Function (p. 46)Adds the columns that are exclusive to dataGrid1 to 
+dataGrid2, and adds the columns that are exclusive to 
+dataGrid2 to dataGrid1.DATAGRID_COPY Function 
+(p. 46)Copies the source data grid into the target data grid.DATAGRID_COPYCOLUMN 
+Function (p. 47)Copies the specified column in the source data grid into the 
+target data grid.DATAGRID_CREATE 
+Function (p. 49)Creates the data grid columns that are defined in the 
+specified JSON string, and assigns to those columns any 
+values that are specified in the JSON string.DATAGRID_DELETECOLU
+MN Function (p. 50)Deletes the specified column from the specified data grid.DATAGRID_DELETEROW 
+Function (p. 50)Deletes one or more rows from the specified data grid. 32Chapter 3 / Data Grid Functions

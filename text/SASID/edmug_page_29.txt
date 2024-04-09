@@ -1,0 +1,37 @@
+check box for any variable that you do not want to be mapped to a column in an 
+input table or for which you do not want to specify a value.
+TIP If the sas.businessrules.inputVariableReadOnly configuration option 
+is set to Off and the value of an input-only character variable is modified in 
+a rule set, the modified value is passed back to the parent decision and is 
+available to the remaining objects in the decision. For more information, 
+see “sas.businessrules.inputVariableReadOnly” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+nOutput variables are variables that are written to the output table that is created 
+when a rule set is run. When you create or edit a variable, clear the Output 
+check box for any variable that you want to exclude from the output data. 
+nTemporary variables are variables that are not present in the input data, and they 
+are not written to the output table. To create a temporary variable for use only 
+while a rule set is executing, clear both the Input  and Output  check boxes.
+When you create a new variable, it is created as an input-output variable by default.
+Note: Binary variables are supported in decisions only as input variables or 
+temporary variables in order to support models that require binary data.
+Add Variables from a Data Table
+1On the Variables  tab, click the Rule Set Variables  subtab.
+2Click Add variable  and select Data table . The Choose Data  window appears, 
+and the list of SAS Cloud Analytic Services (CAS) tables that are loaded into 
+memory is displayed on the Available  tab. 
+If the table that you need does not appear in the list of available tables, try the 
+following solutions:
+nIf the table appears on the Data Sources  tab, right-click on the table, and 
+select Load  to load the table into memory. If the table does not appear on the 
+Available  tab, click .
+nIf the table does not appear on the Data Sources  tab, import the data. The 
+process of importing the data loads it into memory. For information about 
+importing data from different sources, see “Making Data Available to CAS” in 
+SAS Data Explorer: User’s Guide .
+3Select the table from which you want to import variables, and click OK. The Add 
+Variables  window appears.
+4Select the variables that you want to import and click . To import all of the 
+variables in the table, click .
+5Click Add to add the select variables, or click Add and replace  to replace 
+existing variables that have the same name.18Chapter 2 / Working with Rule Sets

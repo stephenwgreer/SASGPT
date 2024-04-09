@@ -1,0 +1,17 @@
+specified treatment was presented to subject 98 between May 15, 2022 and June 
+30, 2022.select count(distinct contact_id)from subjectcontacts.dcm_treatment_contacts_vwwhere creation_dttm >='2022-05-15 00:00:00.000' and creation_dttm <= '2022-06-30 23:59:59.999'and subject_id='98' and treatment_ID = 'fcdfabaf-9932-430e-8cf3-149b212881d7'and presentation_dttm is not null;
+Example 5: Determine Whether a Subject 
+Responded to a Treatment within a Specified Time 
+Frame
+The presence of a timestamp in the response_dttm column indicates that the 
+subject responded to the treatment. The following query determines whether subject 
+98 responded to the specified treatment between May 15, 2022 and June 30, 2022.select count(distinct contact_id)from subjectcontacts.dcm_treatment_contacts_vwwhere creation_dttm >='2022-05-15 00:00:00.000' and creation_dttm <= '2022-06-30 23:59:59.999'and subject_id='98' and treatment_ID = 'fcdfabaf-9932-430e-8cf3-149b212881d7'and response_dttm is not null;
+Example 6: Determine Whether a Subject 
+Responded to a Treatment with a Specific Attribute 
+Value within a Specified Time Frame
+The following query determines whether subject 98 responded to the specified 
+treatment at a price of 100.00 euros between January 1, 2022 and March 15, 2022. 
+The price is a dynamic attribute that has been assigned a static value in the 
+treatment group, so the query joins the dcm_treatment_contacts_vs view and the 
+dcm_trt_dynamic_attr_vw view.select count(distinct contact_id)from subjectcontacts.dcm_treatment_contacts_vw sub,treatmentdefinitions.dcm_trt_dynamic_attr_vw treatwhere creation_dttm >='2022-01-01 00:00:00.000' and creation_dttm <= '2022-03-15 23:59:59.999'and subject_id='98' and treat.treatment_ID = 'fcdfabaf-9932-430e-8cf3-149b212881d7'and attribute_nm='price' and attribute_val='100.00' 
+Example: Determine Whether a Subject Responded to a Treatment 323

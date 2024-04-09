@@ -1,0 +1,27 @@
+kubectl -n $namespace get service sas-crunchy-data-postgres -o wide
+Specify this cluster ID as the host ID in the JDBC URI when you define the spring.datasource.uri 
+property in Step 4 .
+4In SAS Environment Manager, edit the configuration properties for the database. For more 
+information, see “Properties for Third-Party Subject Contacts and Treatment Definition Databases” 
+on page 21.
+5Shut down the subject contacts service, the treatment definitions service, or both services, 
+depending on which databases you are reconfiguring:kubectl scale deployment sas-subject-contacts -n $namespace --replicas=0kubectl scale deployment sas-decisions-definitions -n $namespace --replicas=0
+6Start new instances of the services that you shut down in Step 5 :kubectl scale deployment sas-subject-contacts -n $namespace --replicas=1kubectl scale deployment sas-decisions-definitions -n $namespace --replicas=1
+For more information, see “SAS Infrastructure Data Server” in SAS Viya: Infrastructure Servers  and 
+Crunchy PostgreSQL Operator .
+Delete Third-Party Database Configurations
+If a configuration instance is not specified correctly, and the associated services do not start, remove 
+all the third-party database configurations.
+1Determine the configuration instance IDs for your third-party database.
+You might have recorded the configuration instance IDs when you completed Step 4f  in “Third-
+Party Database Properties” on page 21.
+If you did not record the IDs when you configured the database, you can retrieve the instance IDs 
+by completing these steps:
+aOn the primary node of the Kubernetes cluster, export the KUBECONFIG environment 
+variable, and set the value of the Kubernetes namespace (such as d9997
+):export KUBECONFIG=/etc/kubernetes/admin.conf# List all the available namespaces. Find the namespace of the SAS Viya deployment.kubectl get namespace# Set the namespace of the SAS Viya deployment.namespace=k8s_namespace_value
+bRun the following commands to export the configuration information to a file such as /tmp/consul.txt
+:kubectl -n $namespace exec -i  $(kubectl -n $namespace get pods | grep  sas-consul-server |grep Running|cut -d " " -f 1) -c sas-consul-server -- bash  -s <<< "export CONSUL_HTTP_ADDR=https://localhost:8500; export SSL_CERT_FILE=/opt/sas/viya/config/etc/SASSecurityCertificateFramework/cacerts/trustedcerts.pem; export CONSUL_TOKEN=\$(cat /opt/sas/viya/config/etc/SASSecurityCertificateFramework/tokens/consul/default/client.token); /opt/sas/viya/home/bin/sas-bootstrap-config kv read --recurse config" > /tmp/consul.txt
+cDelete the static keys from Consul. Open a UNIX shell on the server where Consul is running, 
+and enter the appropriate commands for the database whose configuration you are removing.
+To delete the keys for the subject contacts database, enter the following commands:33

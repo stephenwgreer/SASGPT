@@ -1,0 +1,18 @@
+<<lines for additional revisions deleted>>     
+Activating the Treatment Group Revision
+If the treatment group is activated, the request returns the HTTP response code 
+200.Activating treatment group  Treat_Group_1  Revision  b4c19e0d-3342-4994-80a1-72f6017c42e8Activation response = <Response [200]>
+See Also
+nGet a collection of the treatment definition groups
+nGet a treatmentDefinitionGroup
+nCreate a new revision of a treatmentDefinitionGroup
+nLock the current revision and create a new revision of a Treatment Definition 
+Group
+nGet a collection of the revisions of the specified treatmentDefinitionGroup
+nGet a revision of the specified treatmentDefinitionGroup
+nActivate a revision of a treatmentDefinitionGroup
+nActivate a Treatment Definition Group revision
+nSAS REST APIs: Sorting
+nSAS REST APIs: Filtering
+nUsage Notes  for the Treatment Definitions API (see the topic on “Sorting and 
+Filtering”)32Chapter 5 / Activate Treatment Groups

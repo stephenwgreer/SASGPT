@@ -1,0 +1,20 @@
+Status Icons for TestsIconStatusThe test is not ready to run. The test definition is not complete, or it might 
+contain errors.The test has been defined and can be run. Some input variables have not 
+been mapped or have not been assigned a value, so the test might 
+execute only a single path through the decision flow.The test is defined correctly and is ready to run.The test is running.The test completed successfully.The test completed, but warnings were issued in the SAS log. The URI to 
+the log file is shown on the Test Results  page. On the Test Results  page, 
+click Test Results  in the navigation panel to display the URI.The test did not run successfully. Check the SAS log for information. The 
+URI to the log file is shown on the Test Results  page. On the Test Results 
+page, click Test Results  in the navigation panel to display the URI.
+Manage Comments for Decision Nodes 
+and Tests
+You can associate comments and attachments with the Start and End nodes in a 
+decision and with decision tests.
+To open the Comments  properties pane, open the decision, select the Start node, 
+End node, or decision test, and click  in the property pane.
+To add a new comment, enter the comment in the text box and click Post .
+To add an attachment to a comment, click , select the file that you want to attach, 
+and click Post . (The attachment icon appears after you enter text in text box.) You 
+cannot attach executable files such as BAT and EXE files.
+To reply to a comment, click Reply , enter your reply in the text box, and click Post .
+To delete a comment, click  for that comment.306 Chapter 8 / Working with Decisions

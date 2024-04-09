@@ -1,0 +1,23 @@
+2Click  in the navigation bar to view the list of publishing destinations.
+3Select the publishing destination and click .
+Examples
+The following examples use the default profile. For information about defining and 
+specifying a profile, see “Creating and Using Profiles” on page 2.
+Example 1
+The following command deploys the decision module named loan_offer1_0 from the 
+local Git repository named gitMAS into the SAS Micro Analytic Service destination 
+on the target server that is defined in the default profile:sas-viya decisiongitdeploy deploy ../gitMAS/loan_offer1_0
+Example 2
+The following command deploys the decision module named loan_offer1_0 from the 
+local Git repository named gitCAS into the CAS model table named loanDecisions in 
+the Public library on the server cas-shared-default:sas-viya decisiongitdeploy deploy --tablename loanDecisions -d CAS ../gitCAS/loan_offer1_0
+Example 3
+The following command specifies the input directory as you would enter it at a 
+Microsoft Windows shell prompt. This command deploys the published rule set 
+named masgit_rs_hmeq_value_11feb21 to the SAS Micro Analytic Service 
+destination on the target server that is defined in the default profile. If a module of 
+the same name already exists on the target server, the CLI overwrites the existing 
+module.sas-viya decisiongitdeploy deploy -f true c:\Users\userid\gitMAS\masgit_rs_hmeq_value_11feb21
+rtdmobjectmigration Plug-In
+Imports SAS Real-Time Decision Manager objects that have been extracted from metadata in a SAS 9.4 
+environment into a SAS Viya environment.rtdmobjectmigration Plug-In 19

@@ -1,0 +1,27 @@
+DATAGRID_ADDROW Function
+Appends new rows to the specified data grid.
+Categories: Create, Update, or Delete
+Join or Append
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows that are in the data grid after the new row has 
+been added.
+Syntax
+DATAGRID_ADDROW  (dataGrid <, numberOfRows= n>)
+Required Argument
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+Optional Argument
+numberOfRows= n
+specifies the number of rows that you want to add to the data grid. If you do not 
+specify this argument, the DATAGRID_ADDROW function adds only one row to 
+the data grid.Default1
+DATAGRID_APPEND Function
+Appends dataGrid2  to dataGrid1 .
+Category: Join or Append
+Requirement: The two data grids must contain the same columns. You can use the 
+DATAGRID_CONFORM function to make the two data grids have the same columns.
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows that are in the data grid after the append.DATAGRID_APPEND Function 39

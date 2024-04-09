@@ -1,0 +1,34 @@
+7(Optional) Define treatment attributes. A treatment can have zero or more 
+attributes. For more information about attributes, see “About Attributes, Eligibility 
+Rules, and Effective Dates” on page 88.
+You can add new custom attributes, add attributes from other treatments, or 
+duplicate attributes within the same treatment. For more information, see the 
+following topics:
+n“Define Custom Attributes” on page 95
+n“Add Attributes from a Different Treatment” on page 96
+n“Duplicate Attributes” on page 96
+Specify Eligibility Rules
+You specify eligibility rules in a filtering rule set. See “About Rules and Rule Set 
+Types” on page 13 for more information.
+8On the Eligibility Rule Set  tab, click Add Rule Set . The Select Rule Set  window 
+appears.
+9Select the filtering rule set that you want to use as the eligibility rule set for the 
+treatment, and click OK.
+10At the top of the Eligibility Rule Set  tab, select the version of the eligibility rule 
+set that you want to use.
+TIP You can view or edit an eligibility rule set from the Eligibility Rule 
+Set tab by clicking Open .
+(Optional) Specify Effective Dates
+11On the Properties  tab, select the Start date  and End date  for the period in 
+which the treatment can be sent to a subject. If you do not specify effective 
+dates, the treatment is considered as always active. Specify the time based on 
+the Coordinated Universal Time (UTC) time zone.
+Note: The effective dates are always based on the time zone of the server 
+where the decision is executed. See “Effective Dates” on page 89.
+Define a Treatment Group
+Create a New Treatment Group
+1Click , and then click New Treatment Group . The New Treatment Group 
+window appears.
+2Enter a name for the treatment group.
+3(Optional) Enter a description for the treatment group. Descriptions are limited to 
+1000 characters.Define a Treatment Group 91

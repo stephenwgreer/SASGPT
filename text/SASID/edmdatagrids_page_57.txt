@@ -1,0 +1,26 @@
+Syntax
+DATAGRID_DELETEROW  (dataGrid , start_row_number <, end_row_number >)
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+start_row_number
+specifies the index of the first row that you want to delete.
+Optional Argument
+end_row_number
+specifies the index of the last row that you want to delete.
+DATAGRID_DISTINCTROWCOUNT Function
+Returns the number of unique rows in the specified data grid.
+Category: Information
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_DISTINCTROWCOUNT  (dataGrid )
+Required Argument
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+DATAGRID_EQUALS Function
+Compares the column count, row count, column names, data types, and values in specified data grids and 
+determines whether they are identical.
+Category: InformationDATAGRID_EQUALS Function 51

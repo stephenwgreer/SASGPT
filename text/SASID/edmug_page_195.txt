@@ -1,0 +1,31 @@
+Note:  In order to be able to delete a specific version of an object, you must have 
+permission to delete the object itself. Also, the configuration option 
+sas.decisions.codeFiles.deleteVersions must be turned on.
+On the Versions  tab, select the version that you want to delete, click , and select 
+Delete .
+You cannot delete the current version.
+Upgrade Decisions to Use a New Version of a Code 
+File
+If you create a new version of a code file that is already used in other decisions, you 
+can upgrade the decisions to use the new version.
+1On the Versions  tab for the code file, click , and select Upgrade decisions . 
+The Upgrade Decisions  window appears. This window lists all of the decisions 
+that include the code file
+2In the Version to upgrade to  field, select the version of the code file to which 
+you want to upgrade the decisions.
+3Select Automatically map variables  if you want SAS Intelligent Decisioning  to 
+automatically map new code file variables in the decisions where the code file is 
+used.
+For information about how SAS Intelligent Decisioning  maps variables, see 
+“About Decision Variables and Mapping” on page 247.
+4Select the check boxes for the decisions that you want to upgrade, and click 
+Upgrade Decisions .
+TIP To update all of the objects that are used in a decision, see “Update 
+Decisions to Use New Object Versions” on page 253.
+Determine Which Objects Use a Code 
+File
+To list the objects that use a specific code file:
+1On the Code files  category page, select the check box for the code file, click , 
+and select View used by report . The All Objects that Use the Selected Item 
+window appears. This window lists all objects that use any version of the 
+selected code file.Determine Which Objects Use a Code File 181

@@ -1,0 +1,33 @@
+Checking Out and Committing Code File Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . 182
+Managing Version Tags for Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 186
+Testing Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 187
+Manage Comments for a Code File Test  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195
+Chapter 7 /Using Custom Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 197
+About Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 198
+Using Custom Functions in a Rule Set or Code File  . . . . . . . . . . . . . . . . . . . . . . . . . 198
+Create a Custom Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 199
+Using the Custom Function Editor  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 200
+Rules for Writing Custom Function Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 201
+Managing the Variables in a Custom Function File  . . . . . . . . . . . . . . . . . . . . . . . . . . 202
+Validate a Custom Function File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Testing a Custom Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 207
+Compare Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+Managing Custom Function Categories  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 208
+Managing Custom Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 209
+Restore or Permanently Delete Hidden Functions or Hidden Categories  . . . . . . . 211
+Chapter 8 /Working with Decisions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 213
+About Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 215
+Using SAS Workflow with SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . . . . . 216
+Create a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 220
+Views for Editing a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 221
+Managing the Variables in a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 222
+Adding Objects to a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 230
+Mapping Variables within a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 247
+Searching for Objects in a Decision Diagram  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 251
+Editing the Objects in a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 251
+Update Decisions to Use New Object Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+Validate a Decision in the Decision Editor  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254
+Change the Workflow Status of a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254
+Copy a Decision URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 255
+Compare Decision Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 255
+Compare Decision Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 258

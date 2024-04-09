@@ -1,0 +1,34 @@
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.
+Details
+The DATAGRID_INNERJOIN function performs an inner join of two data grids for 
+which dataGrid1 .keyColumn1  equals dataGrid2 .keyColumn2  and populates the 
+target data grid with the results of the join. The target table includes all rows from 
+dataGrid1  that match rows in dataGrid2 . Unmatched rows from both data grids are 
+discarded.
+When the column names in the two data grids are identical, the columns from the 
+left side of the join are added to the resulting data grid.
+DATAGRID_LEFTJOIN Function
+Performs a left join of two data grids, returns the resulting data grid, and populates the target data grid with 
+the results of the join.
+Category: Join or Append
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows in the target data grid.
+Syntax
+DATAGRID_LEFTJOIN  (dataGrid1 , dataGrid2 , keyColumn1 , keyColumn2 , 
+target_dataGrid )
+Required Arguments
+dataGrid1
+dataGrid2
+specifies the names of the two data grids to be joined.
+keyColumn1
+specifies the name of the key column in dataGrid1 . You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+keyColumn2
+specifies the name of the key column in dataGrid2 . You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.66Chapter 3 / Data Grid Functions

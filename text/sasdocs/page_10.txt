@@ -1,0 +1,38 @@
+SAS® Viya® Model Execution Solution  
+Model Execution Proposal Page 7 Orchestration and Risk Consolidation  
+A customizable and controlled workflow process with multiple  user  approval levels enables 
+orchestration of CCAR/CECL and other processes. The workflow feature also provides the option 
+to segregate different process phases into different flows or sub flows and provide task -level 
+status tracking capabilities for moni toring the project and identifying performance issues.  It 
+ensures a repeatable process with governance and controls  expected by regulators or auditors.  
+ 
+ 
+Dynamic Reporting  
+The solution leverages the in -memory reporting 
+capabilities and user -friendly drag -and-drop 
+interface of SAS  Viya  to provide the business users 
+with a powerful reporting tool to analyze and 
+investigate portfolio data, ECL results , and/or any 
+other data collected or calculated within the system, 
+with no need of specific programming capabilities.  
+ 
+The customizable reporting dashboards enable users 
+to visually communicate stress testing data and trends to auditors, regulators, and internal 
+stakeholders. It enables users to interactively explore and drill into information, from high -level 
+graphs and figures down to individual data points.  
+ 
+Tech nology  
+SAS Viya is a cloud -enabled, in -memory 
+analytics engine. It uses elastic, scalable, and 
+fault -tolerant processing to address complex 
+analytical challenges. SAS Viya provides f aster 
+processing for analytics by using a 
+standardized code base that supports programming in SAS, Python, R, Java, and Lua. 
+It also supports cloud, on -premises, or hybrid 
+environments and deploys seamlessly to any 
+infrastructure or application ecosystem.   
+ 
+The platform supports an open architecture  and enables REST API -based integration with 
+external systems. In addition, the solution provides deployment flexibility to any environment, 
+such as on -premises  at FCB, hosted in SAS cloud (ASP) , or deployed in a third -party cloud of your 
+choice.

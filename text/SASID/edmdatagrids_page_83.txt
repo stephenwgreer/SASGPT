@@ -1,0 +1,31 @@
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows in the target data grid.
+Syntax
+DATAGRID_RIGHTJOIN  (dataGrid1 , dataGrid2 , keyColumn1 , keyColumn2 , 
+target_dataGrid )
+Required Arguments
+dataGrid1
+dataGrid2
+specifies the names of the two data grids to be joined.
+keyColumn1
+specifies the name of the key column in dataGrid1 . You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+keyColumn2
+specifies the name of the key column in dataGrid2 . You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.
+Details
+The DATAGRID_RIGHTJOIN function performs a right join of two data grids for 
+which dataGrid1 .keyColumn1  equals dataGrid2 .keyColumn2 . It populates the target 
+data grid with the results of the join. The target data grid contains all rows from 
+dataGrid2  plus all matching rows from dataGrid1 .
+When the column names in the two data grids are identical, the columns from the 
+right side of the join are added to the resulting data grid.
+DATAGRID_SET Function
+Assigns the specified value to the specified row and column.
+Category: Set Values
+Returned data 
+type:INTEGERDATAGRID_SET Function 77

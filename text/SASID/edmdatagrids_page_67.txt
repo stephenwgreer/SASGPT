@@ -1,0 +1,25 @@
+DATAGRID_GETINT Function
+Returns the value of the cell in the specified row and column as an integer.
+Category: Retrieve Values
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_GETINT  (dataGrid , column , rowNumber )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+rowNumber
+specifies the row number in the data grid. You can specify a number or a 
+variable that evaluates to a number.
+DATAGRID_GETLASTINDEXBYVALUE Function
+Returns the index of the last row that contains the specified value in the specified column.
+Category: Information
+Returned data 
+type:INTEGER
+Note: This function returns a zero if the specified value does not exist in the specified column.
+Syntax
+DATAGRID_GETLASTINDEXBYVALUE  (dataGrid , column , variableOrValue )DATAGRID_GETLASTINDEXBYVALUE Function 61

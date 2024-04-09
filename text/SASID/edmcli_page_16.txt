@@ -1,0 +1,35 @@
+Object 
+TypeAvailable ParametersObjects ReturnedDecisioning does not 
+support complex rule 
+flows.Decisionsname="
+decision-name"
+Decisions that match the 
+specified name. This 
+parameter is case 
+sensitive.vocabularyName="
+vocabulary-name"
+Decisions that use the 
+specified vocabulary
+Modifying the Mapping File
+The mapping file is a JSON file that provides information about exported content 
+and any associated objects. The content of the mapping file depends on the content 
+that is exported. For example, if you export rule flows, then the mapping file contains 
+information about the rule sets that are included in the rule flows and all folders 
+where the rule sets and rule flows reside. If you export decisions, the mapping file 
+contains information about the models and rule sets that are referenced in the 
+decision. (Rule flows are exported as rule sets. Also, in SAS 9.4, decisions are not 
+in folders, so the mapping file for decisions does not contain folder information.)
+By default, rule flows that are imported as decisions, rule sets, and lookup tables are 
+imported into a folder that has the same name as the folder in which it resided in the 
+SAS 9.4 environment. To import the content into a different folder, edit the mapping 
+file.
+You can change some of the information in the mapping file. You can change the target.*
+ fields, but do not change the source.*
+ fields. For example, you can 
+change the folders into which the content is imported and the IDs that are assigned 
+to the imported content. The following table lists the fields in the mapping file for 
+each object type and specifies whether you can change the field before the content 
+is imported.Table 2.1 Fields in the sas-dcmtransfer CLI Mapping File
+ObjectFieldDescriptionCan Be 
+Changedfolderssource.folderPathFolder path in the SAS 9.4 environmentNotarget.folderPathFolder path in the SAS Viya environment. By default, 
+this field is set to the same path as source.folderPath.Yeslookupssource.idLookup table ID in the SAS 9.4 environmentNosource.nameLookup table nameNosource.folderPathLookup folder path in the SAS 9.4 environmentNo 12Chapter 2 / SAS Intelligent Decisioning CLIs

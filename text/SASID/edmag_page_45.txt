@@ -1,0 +1,29 @@
+3Change to the directory C:\Program Files\SASHome\SASMarketingAutomationIntegrationUtilities\release
+.
+4Copy the two stylesheets from the download package into the current directory.
+5Create a file named extract_request.xml
+ that contains the <MAExtractRequest>
+ extract 
+request. Specify the criteria for the treatments that you want to transfer. For example, to extract all 
+of the treatments in the folder MyTreatments, specify the following request:<?xml version="1.0"?><MAExtractRequest detail="ALL">    <TreatmentDO>        <Folder operator="=">            <Name operator="=">MyTreatments</Name>        </Folder>    </TreatmentDO></MAExtractRequest>
+You can also extract treatments based on treatment names, IDs, descriptions, and other criteria. 
+For more information about information on specifying the criteria in this file, see “Treatments” in 
+SAS Customer Intelligence Integration Utilities: User’s Guide .
+6Execute the sasmaextract command. Specify pass_thru.xslt
+ as the input style sheet and transform_treatments.xslt
+ as the output style sheet.sasmaextract domain\user-ID password authorization-domain     business-context-of-the-treatments     extract_request.xml     output-filename     pass_thru.xslt     transform_treatments.xslt
+For more information about the sasmaextract command, see “Using the Extract Utility 
+(Sasmaextract)” in SAS Customer Intelligence Integration Utilities: User’s Guide .
+7Copy the output file to a location where it can be accessed by the sas-rtdmobjectmigration-cli CLI.
+8Log off from the machine where SAS 9.4 is installed.
+9On SAS Viya, run the sas-rtdmobjectmigration-cli CLI to import the treatments. For more 
+information, see “Transfer Objects from SAS 9.4 to SAS Viya” in SAS Intelligent Decisioning: 
+Command-Line Interfaces .
+Transfer Content from SAS Viya 3.5 Environments
+To transfer content from SAS Decision Manager 5.x or SAS Intelligent Decisioning 5.x on Viya 3.5 to 
+the latest release of SAS Intelligent Decisioning on SAS Viya 4, use the SAS Administrative CLI on 
+Viya 3.5 to export the content. For information, see SAS Viya 3.5 Administration: Promotion (Import 
+and Export) . Notes that are associated with specific versions of the object are not transferred with the 
+object. You can add notes to the source objects in the new environment, or manually transfer the 
+notes. For more information about transferring version notes, see “Transfer Version Comments” in 
+SAS Intelligent Decisioning: Command-Line Interfaces .44

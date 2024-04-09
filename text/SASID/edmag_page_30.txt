@@ -1,0 +1,28 @@
+Manager, or specify the --include-dependencies
+ option in the sas-viya CLI. If you include 
+dependencies in the transfer package, the package includes the eligibility rule sets for the 
+treatments and any version notes that are associated with different versions of the treatments. For 
+more information about exporting and importing content, see SAS Viya Platform: Content 
+Migration from SAS Viya 4 .
+Note: You cannot transfer subject contacts records between databases.
+2Delete any existing third-party configuration settings for the database. For more information, see 
+“Delete Third-Party Database Configurations” on page 33.
+3In SAS Environment Manager, edit the configuration properties for the database. For more 
+information, see “Properties for Third-Party Subject Contacts and Treatment Definition Databases” 
+on page 21.
+4On the primary node of the Kubernetes cluster, export the KUBECONFIG environment variable, 
+and set the value of the Kubernetes namespace (such as d9997
+):export KUBECONFIG=/etc/kubernetes/admin.conf# List all the available namespaces. Find the namespace of the SAS Viya deployment.kubectl get namespace# Set the namespace of the SAS Viya deployment.namespace=k8s_namespace_value
+5Shut down the subject contacts service, the treatment definitions service, or both services, 
+depending on which databases you are reconfiguring:kubectl scale deployment sas-subject-contacts -n $namespace --replicas=0kubectl scale deployment sas-decisions-definitions -n $namespace --replicas=0
+6Start new instances of the services that you shut down in Step 5 :kubectl scale deployment sas-subject-contacts -n $namespace --replicas=1kubectl scale deployment sas-decisions-definitions -n $namespace --replicas=1
+7(Optional) Import the treatment groups that you exported in Step 1  into the third-party database.
+IMPORTANT After a treatment group is imported into a new database, you must activate 
+the group in order to use the group in a decision. For more information, see “Activate a 
+Treatment Group” in SAS Intelligent Decisioning: User’s Guide  or “Activate Treatment 
+Groups” in SAS Intelligent Decisioning: Decision Management REST API Examples .
+IMPORTANT The backup and restore processes described in SAS Viya Platform: Backup 
+and Restore  apply only to services that do not use a third-party configuration. They do not 
+apply to third-party configuration settings or to content stored in a third-party database. You 
+must implement your own backup and restore processes for any services that use a third-party 
+configuration.29

@@ -1,0 +1,41 @@
+name to display the date on which the object was last modified and the ID of the 
+user who modified the object. For decisions and code files that have been checked 
+out, SAS Intelligent Decisioning  also displays the IDs of the users that have checked 
+out the objects. For decisions, SAS Intelligent Decisioning  includes the decision’s 
+workflow status.
+Click Export  to export the Used By report to a PDF file. In the PDF file, you can 
+click on an object name to open the object in a new browser tab.
+Checking Out and Committing Treatment 
+or Treatment Group Versions
+About Checking Out and Committing Versions
+Your administrator can enable the check-out and commit feature for treatments and 
+treatment groups that are in any folder by specifying the folder in the 
+sas.treatmentdefinitions.checkout.checkoutEnabledFolderPaths configuration 
+option. Enabling this feature for a folder does not automatically modify the 
+permissions for the folder or for the objects in it. You can still modify a treatment or a 
+treatment group in the folder without checking it out, but you are expected to check 
+out the latest version before you edit it. However, your administrator might also set 
+permissions that require you to check out treatments and treatment groups in these 
+folders before you can edit them. For more information, see 
+“sas.treatmentdefinitions.checkout” in SAS Intelligent Decisioning: Administrator’s 
+Guide  and “Set Permissions for Check-Out Folders” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+By default, SAS Intelligent Decisioning  defines a folder where you can store 
+treatments and treatment groups that must be checked out before they can be 
+edited. This folder is the Decision Repository
+ folder, and it is the default value for 
+the sas.treatmentdefinitions.checkout.checkoutEnabledFolderPaths configuration 
+option. The default permissions for this folder require that non-administrative users 
+check out a version and commit their changes to the checked-out version. Users 
+who do not have administrative permissions cannot edit the treatments or treatment 
+groups in Decision Repository
+ without first checking them out.
+If a version can be or must be checked out before it is modified, the Check Out 
+button appears at the top of the Versions  tab for that object. You can check out any 
+version of an object. You can check out only one copy of a version at a time.
+TIP If the sas.treatmentdefinitions.checkout.allowConcurrentCheckout 
+option is turned off, and a user has checked out a treatment version or 
+treatment group version, the Check Out  button for that treatment or 
+treatment group is disabled for all other users. For more information, see 
+“Concurrently Checking Out and Committing a Treatment or Treatment Group 
+Versions” on page 109.Checking Out and Committing Treatment or Treatment Group Versions 107

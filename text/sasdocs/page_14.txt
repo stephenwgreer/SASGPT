@@ -1,0 +1,14 @@
+Milestones  
+Model Execution Proposal Page 11 Milestone 3: Establish an end -to-end Process for One 
+Portfolio  
+♦ Establish end to end process for the model execution for one portfolio  
+♦ Perform deploy ment for UAT testing  
+♦ Provide initial user training  
+♦ Gather initial business feedback  
+ 
+Milestone 4: Expansion of Portfolio Coverage  
+♦ Provide enhancement s based on the previous UAT testing  
+♦ Add additional portfolios  
+♦ Perform deployment for UAT testing  
+♦ Migrate deployment to production  
+♦ Provide user training

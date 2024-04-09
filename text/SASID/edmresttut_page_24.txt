@@ -1,0 +1,23 @@
+4
+Lock Treatments
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+How To  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Example Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Responses  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Retrieving the Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Locking and Creating Versions of Individual Treatments  . . . . . . . . . . . . . . . . . . . . . . . . . 23
+See Also  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Introduction
+This example retrieves the treatment groups that match the specified criteria and 
+creates new, numbered and locked versions of the individual treatments in the 
+treatment groups.
+How To
+1Get an access token by submitting a GET request to the /SASLogon/oauth/token
+ resource. The example described in Chapter 2, “Define Basic Methods 
+and Get an Access Token”  includes the code required to get an access token. 
+Prepend that code to the code for this example.
+2Get the collection of treatment groups for which you want to lock the individual 
+treatments.
+Modify the search criteria in the initial GET request to the treatmentDefinitions/definitionGroups
+ resource so that the request returns 
+the collection of treatment groups for which you want to lock the treatments.19

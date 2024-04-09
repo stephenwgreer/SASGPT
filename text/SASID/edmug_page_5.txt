@@ -1,0 +1,34 @@
+Managing Eligibility Rules for a Treatment  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 97
+Copy a Treatment or Treatment Group URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 98
+Compare Treatment or Treatment Group Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+Compare Treatment Group Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Generate PDF Documentation for a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . 101
+Managing Treatments and Treatment Groups  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+Managing Versions of Treatments and Treatment Groups  . . . . . . . . . . . . . . . . . . . . 104
+Determine Which Objects Use a Treatment or Treatment Group  . . . . . . . . . . . . . . 106
+Checking Out and Committing Treatment or Treatment Group Versions  . . . . . . . . 107
+Managing Version Tags for Treatment and Treatment Groups  . . . . . . . . . . . . . . . . . 111
+Chapter 4 /Working with Lookup Tables and Functions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 113
+About Lookup Tables and Functions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 114
+About Labels for Lookup Keys and Values  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 115
+Predefined Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Create a New Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 116
+Importing and Exporting Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 117
+Add Lookup Table Entries  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 119
+Edit Lookup Table Entries  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 120
+Delete Lookup Table Entries  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Edit Lookup Key or Value Labels  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Copy a Lookup Table URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Compare Lookup Table Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 121
+Generate PDF Documentation for a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Managing Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 123
+Managing Versions of Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 125
+Determine Which Objects Use a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 128
+Checking Out and Committing Lookup Table Versions  . . . . . . . . . . . . . . . . . . . . . . . 128
+Managing Version Tags for Lookup Tables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 133
+Activating a Lookup Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 137
+Chapter 5 /Managing Global Variables . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+Using Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 141
+Create a New Global Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 142
+Managing Global Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 143

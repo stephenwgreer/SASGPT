@@ -1,0 +1,27 @@
+6Click Save , and then click Close .
+Edit a Custom Function Category
+1In the Custom Functions  category view, click  and select Manage categories . 
+The Manage Categories  window appears.
+2Select the category that you want to edit, click , and select Edit. The Edit 
+Custom Function Category  window appears.
+3Modify the category name and description as needed, and click Save .
+Hide A Custom Function Category
+When you hide a custom function category, the category and all of its custom 
+functions are removed from the category list. These items are hidden from view. 
+They are not moved to the recycle bin, and they are not deleted. You cannot create 
+a new category or new functions that have the same names as the hidden items 
+unless you delete the hidden items. You can unhide (restore) or permanently delete 
+the hidden items  by using the Manage hidden functions  menu option.
+To hide a custom function category:
+1In the Custom Functions  category view, click  and select Manage categories . 
+The Manage Categories  window appears.
+2Select the category that you want to hide, click , and select Hide . SAS 
+Intelligent Decisioning  prompts you to confirm whether you want to hide the 
+category and all of its functions. 
+Managing Custom Functions
+Duplicate Custom Functions
+Note: You cannot duplicate a custom function if it is open. 
+To duplicate a single custom function:
+1In the Custom Functions  category view, select the custom function that you want 
+to duplicate.
+2Click  and select Duplicate . The Duplicate Custom Function  window appears.Managing Custom Functions 209

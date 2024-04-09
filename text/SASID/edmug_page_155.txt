@@ -1,0 +1,27 @@
+Managing Global Variables
+Duplicate a Global Variable
+To duplicate a single global variable:
+1Select the variable that you want to duplicate, click , and select Duplicate .
+2Enter a new name for the duplicate global variable. Names are limited to 250 
+characters. Global variable names are case insensitive and must be unique 
+within the database.
+3(Optional) Enter a description for the duplicate variable. Descriptions are limited 
+to 1000 characters.
+4Select the version of the global variable that you want to duplicate.
+5Click Duplicate .
+To duplicate multiple global variables, select the variables that you want to duplicate, 
+click , and select Duplicate . SAS Intelligent Decisioning  duplicates the latest 
+version of the global variables and appends -Copy
+ to the names of the duplicate 
+copies. If needed, a number is also appended to the duplicate variable names.
+Remove a Global Variable from the List
+You cannot publish an object that uses a global variable that has been removed 
+from the list.
+In the Global Variables  category view, select the variables that you want to remove, 
+click , and select Delete . SAS Intelligent Decisioning  moves the deleted global 
+variables to the global variables recycle bin. See “Manage the Global Variable 
+Recycle Bin” on page 147 for more information.
+TIP A global variable that has been removed from the list might be 
+referenced in objects that have already been published. To remove 
+references to global variables from a published object, you must republish the 
+object.Managing Global Variables 143

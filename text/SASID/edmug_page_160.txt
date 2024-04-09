@@ -1,0 +1,35 @@
+Activating a Global Variable
+What Does Activating a Global Variable Do?
+Activating a global variable makes that variable available for use by published 
+objects. Published objects can use only activated versions. By default, when you 
+activate a global variable, the value of the global variable is included inline in code 
+that is generated when you publish rule sets and decisions. However, this behavior 
+is controlled by the inlineGlobalVariables configuration options  that your 
+administrator can set.
+If these configuration options are set to Off, then when you activate a global 
+variable, the global variable is converted into executable code in the form of a SAS 
+Cloud Analytic Services (CAS) format. If your site has a SAS Micro Analytic Service 
+publishing destination, then a SAS Micro Analytic Service module is also created for 
+the variable. The CAS format and SAS Micro Analytic Service module enable 
+objects that are published to those destination types to use the most recently 
+activated version of a global variable instead of using a static copy.
+The active version of a global variable is the version that is used when you run basic 
+tests, scenario tests, and publishing validation tests for a rule set or decision that 
+uses the global variable.
+Teradata, Hadoop, and container destinations do not support the format or module 
+that is created when you activate a global variable. Objects that are published to 
+these destinations always include a static version of each global variable.
+Note: In multi-tenant environments, each tenant has its own global variables that 
+are unique to that tenant.
+You must activate a version of any global variable that is used in a rule set or in a 
+decision. When you activate a version of a global variable, that version is locked and 
+cannot be edited. Each global variable can have only one active version.
+The active version of a global variable is used in the following ways:
+nto generate a static copy of the variable when you publish an object if a static 
+copy is needed, such as when you publish the object to Teradata, Hadoop, or 
+container destinations. Static copies are always generated for these 
+destinations.
+nby published objects in CAS and SAS Micro Analytic Service destinations if the 
+inlineGlobalVariableValues configuration properties are set to Off. See 
+“Controlling Where Global Variables Are Activated and How They Are Used” on 
+page 149 for more information.148 Chapter 5 / Managing Global Variables

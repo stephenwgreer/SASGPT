@@ -1,0 +1,17 @@
+About Custom Functions
+You can use custom functions to perform actions that are not available with the 
+standard functions that SAS provides. Custom functions also enable you to 
+encapsulate and reuse business logic. You can use custom functions in rule sets 
+and in DS2 code files.
+When SAS Intelligent Decisioning  generates the code for a published object, the 
+definitions for custom functions are duplicated each time the function is referenced.
+Using Custom Functions in a Rule Set or 
+Code File
+When you add a function category and custom function to SAS Intelligent 
+Decisioning , SAS Intelligent Decisioning  adds the category and function to the list of 
+functions in the rule set expression editor. Custom categories appear as 
+subcategories under the category Custom. For example, if you add a function 
+category named Exponential and a function named square
+, these appear above the 
+SAS functions in the expression editor:
+198 Chapter 7 / Using Custom Functions

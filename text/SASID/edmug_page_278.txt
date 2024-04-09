@@ -1,0 +1,21 @@
+Delete Decisions
+Note: You cannot delete a decision if it is open. 
+In the Decisions  category view, select the decisions that you want to delete, click , 
+and select Delete . SAS Intelligent Decisioning  moves the decisions to the recycle 
+bin. For more information, see “Manage Folders and Folder Content” on page 9.
+Rename a Decision
+Note: You cannot rename a decision if it is open. 
+1In the Decisions  category view, select the decision that you want to rename.
+2Click  and select Rename . The Rename  window appears.
+3Enter a new name for the decision, and click Rename .
+Move Decisions to a Different Folder
+1In the Decisions  category view, select the decisions that you want to move.
+2Click  and select Move . The Choose a Location  window appears.
+3Select the location to which you want to move the decisions, and click OK.
+Managing Versions of Decisions
+Set the Displayed Version
+The displayed version is the version whose information is displayed on the other 
+tabs, such as the Properties , Decision , and Variables  tabs. On the Versions  tab, 
+a  in the Displayed Version  column indicates the displayed version. To change 
+the displayed version, click the version number for the version that you want to view. 
+The displayed version is shown in the title bar.262 Chapter 8 / Working with Decisions

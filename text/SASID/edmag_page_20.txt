@@ -1,0 +1,26 @@
+n“sas.treatmentdefinitions.checkout” on page 20
+n“sas.treatmentdefinitions.datagrid”
+n“sas.treatmentdefinitions.import”
+sas.treatmentdefinitions
+sas.treatmentdefinitions.activation.activateTreatmentGroupOnImport
+Specifies whether the version of a treatment group that was active in the source environment is 
+automatically activated in the target environment when it is imported by using the SAS Viya 
+Command-Line (sas-viya)SAS administrative CLI (sas-admin).
+IMPORTANT When this option is set to On, you must transfer the treatments that are 
+used in the treatment group before you transfer the group. If you do not transfer the 
+individual treatments first, attempts to transfer the treatment group will fail when the group 
+tries to activate itself. Because you must transfer objects in a specific order, the 
+recommended setting is Off.DefaultOffNoteTurning this option on might increase the time required to import content.See“sas.treatmentdefinitions.import.resetActiveVersionOfTreatmentGroupOnImport ” on page 
+20“Activate a Treatment Group” in SAS Intelligent Decisioning: User’s Guide
+sas.treatmentdefinitions.activation.destinations
+Specifies the SAS Micro Analytic Service publishing destinations in which treatment groups are 
+activated. Only one SAS Micro Analytic Service destination is supported on localhost
+. By default, 
+that destination is named maslocal.
+This property is ignored if no SAS Micro Analytic Service publishing destinations exist.DefaultmaslocalSee“Activate a Treatment Group” in SAS Intelligent Decisioning: User’s Guide
+sas.treatmentdefinitions.activation.timeout
+Specifies the time limit in seconds after which an attempt to activate a treatment group is 
+considered to have failed.Default3600
+sas.treatmentdefinitions.deleteVersions
+Enables users who have permission to delete treatments or treatment groups to delete specific 
+versions of treatments or treatment groups.DefaultOn 19

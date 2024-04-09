@@ -1,0 +1,32 @@
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_TOPN Function
+Populates the target data grid with the rows from the source data grid that contain the highest number 
+values in the specified column.
+Category: Subset and Sort
+Returned data 
+type:INTEGER
+Note: This function returns the number of rows in the target data grid. The target data grid is 
+sorted in descending order of the specified column.
+Syntax
+DATAGRID_TOPN  (source_dataGrid , column , number , target_dataGrid )
+Required Arguments
+source_dataGrid
+specifies the name of the source data grid. This argument must be a variable of 
+type DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+number
+specifies the number of rows to return.
+target_dataGrid
+specifies the name of the target data grid. This argument must be a variable of 
+type DATAGRID. Any existing data in the target data grid is overwritten.
+DATAGRID_TOSTRING Function
+Returns the JSON string for the specified data grid.
+Category: SerializeDATAGRID_TOSTRING Function 87

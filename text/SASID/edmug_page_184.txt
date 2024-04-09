@@ -1,0 +1,35 @@
+PropertyDescriptionThe maximum length for character variables (outside of a data grid) 
+and data grid variables is 10485760 characters. The maximum length 
+for character variables within a data grid is 32767 characters.Initial valueYou can specify an initial value for all data types except data grids. 
+Initial values are used only when you test a code file in SAS Intelligent 
+Decisioning .
+Note: For content that will be published to a SAS Micro Analytic 
+Service destination, the values of date and datetime input variables 
+must be numeric. They cannot be formatted values such as 18jul2019
+. Also, integer variables are converted to decimal variables 
+when the content is published.DescriptionDescriptions are limited to 256 characters.
+Input Variables and Output Variables
+For each variable in an SQL query, a DS2 method signature, or a Python function 
+signature, you must specify whether the variable is an input variable, an output 
+variable, or, in the case of DS2 files, both an input variable and an output variable.
+nInput variables are variables that are present in the input table for a decision. 
+When a decision that uses a code file is deployed in a production system, all 
+input variables must be mapped to table columns in input data. When you test a 
+code file in SAS Intelligent Decisioning , for each input variable, you can either 
+map it to a table column or specify a constant as its input value. If you choose 
+not to map a variable to either a table column or a static value, SAS Intelligent 
+Decisioning  displays a warning message. When you create or edit a variable, 
+clear the Input  check box for any variable that you do not want to be mapped to 
+a column in an input table or for which you do not want to specify a value.
+nOutput variables are variables that are written to the output table that is created 
+when a decision that uses a code file is run. When you create or edit a variable, 
+clear the Output  check box for any variable that you want to exclude from the 
+output data. 
+When you create a new variable, it is created as an output-only variable by default.
+Syncing Variables and Code
+To propagate changes that you enter on the Variables  tab to the code that is shown 
+on the Code  tab, click Sync to Code  on the Variables  tab. For Python code files, 
+changes to input variables are propagated to the signature of the EXECUTE 
+function, and changes to output variables are propagated both to the docString and 
+to the RETURN statement. For DS2 files, changes to input-only, output-only, and 
+input-and-output variables are propagated to the signature of the EXECUTE 170 Chapter 6 / Using Custom Code Files

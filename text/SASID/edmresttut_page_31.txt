@@ -1,0 +1,42 @@
+TIP The Usage Notes for the Treatment Definitions API  list the members 
+of the collection that you use to filter and sort the collection. For additional 
+information, see SAS REST APIs: Filtering .
+3Use the json.loads
+ method to convert the collection to a JSON object. This 
+enables you to access the key-value pairs in the JSON by using the key name.
+4Define the URL for the treatment group definitions resource and the accept type 
+for submitting GET requests to this resource.
+5For each treatment group in the collection that was returned in Step 2 , complete 
+these steps:
+aRetrieve the treatment group ID from the collection returned in Step 2 on 
+page 25.
+bGet the treatment group definition by submitting a GET request to /treatmentDefinitions/definitionGroups/group-ID
+. The response body 
+is a byte object that contains the definition of the treatment group. 
+cUse the decode()
+ method to convert the treatment group definition to a 
+string. Specify this string as the requestBody parameter to the POST request 
+in Step 5d . 
+dLock the current version of the treatment group, and create a new current 
+version by submitting a POST request to /treatmentDefinitions/definitionGroups/group-ID/revisions
+.
+TIP Creating a new version of the treatment group generates a new 
+ETag value for the group.
+eGet the treatment group definition again, and extract the new ETag value for 
+the group from the response header. For information about ETag values, see 
+“Updating Objects with the put() Function” on page 5.
+fGet the list of revisions for the treatment group by submitting a GET request 
+to /treatmentDefinitions/definitionGroups/group-ID/revisions
+. 
+Specify the following parameters:start=0&limit=100
+requests the first 100 revisions. By default, the request returns only 10 
+revisions. If your treatment group has more than 10 revisions, specify a 
+higher limit.sortBy=sortBy=majorRevision:descending,minorRevision:descending
+sorts the list of revisions in descending order by revision numbers. This 
+sort order ensures that the query returns the most recently locked version 
+as the second item in the list.
+gUse the json.loads
+ method to convert the response body to a JSON object. 
+hRetrieve the ID of the second revision in the list that was returned in Step 5f .
+iActivate the revision of the treatment group by submitting a PUT request to /treatmentDefinitions/definitionGroups/group-ID/revisions/
+26Chapter 5 / Activate Treatment Groups

@@ -1,0 +1,31 @@
+Content Security Policy Properties
+A Content Security Policy (CSP) provides protection against cross-site scripting, clickjacking, and 
+cross-site leak vulnerabilities. SAS Intelligent Decisioning  provides a default CSP that uses the latest 
+secure CSP recommendations.
+To override the default CSP:
+1Sign in to SAS Environment Manager  as an administrator.
+Note: If you are already logged in to SAS Intelligent Decisioning, access SAS Environment 
+Manager  by clicking  and selecting Manage Environment .
+2Click  to navigate to the Configuration category view.
+3In the View  menu, select Definitions .
+4Enter commons
+ in the filter field, and select sas.commons.web.security
+ from the list.
+5Click  beside the SAS Intelligent Decisioning  configuration instance in order to edit its 
+properties.
+6Modify the configuration instance properties as needed. See “SAS Intelligent Decisioning” in SAS 
+Viya Platform: Configuration Properties  for a description of the properties.
+7Click Save  to save your changes.
+Configuring Publishing Destinations
+About Configuring Publishing Destinations
+You can publish content to destinations on SAS Cloud Analytic Services (CAS), Apache Hadoop, 
+SAS Micro Analytic Service, Teradata, and Git. You can also publish content to container destinations 
+on Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP) and private Docker 
+repositories. By default, a SAS Micro Analytic Service destination named maslocal  is defined for you. 
+You must configure all other publishing destinations.
+You can define and manage publishing destinations by using the following application or interfaces:
+nPublishing Destinations page  in SAS Environment Manager.
+nSAS Viya: Models Command-Line Interface .
+nModel Publish API . For additional information about using the API, see the following resources:
+oModel Publish API examples on GitHub
+oPython examples for defining CAS and Git publishing destinations24

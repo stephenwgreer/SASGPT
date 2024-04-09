@@ -1,0 +1,29 @@
+CategoryLanguage ElementsDescriptionDATAGRID_INITIALIZE 
+Function (p. 64)Replaces all of the values in the specified data grid with the 
+specified default values.DATAGRID_SET Function 
+(p. 77)Assigns the specified value to the specified row and column.DATAGRID_SETALL 
+Function (p. 78)Assigns the specified value to all rows in the specified 
+column.DATAGRID_SETBOOL 
+Function (p. 79)Assigns the specified Boolean value to the specified row 
+and column.DATAGRID_SETDOUBLE 
+Function (p. 79)Assigns the specified decimal value to the specified row and 
+column.DATAGRID_SETINT 
+Function (p. 80)Assigns the specified integer value to the specified row and 
+column.DATAGRID_SETLONG 
+Function (p. 81)Assigns the specified long integer value to the specified row 
+and column.DATAGRID_SETSTRING 
+Function (p. 82)Assigns the specified character string to the specified row 
+and column.StatisticalDATAGRID_CORR Function 
+(p. 47)Returns the Pearson product-moment correlation coefficient 
+for the specified columns in the specified data grid.DATAGRID_FREQ Function 
+(p. 57)Returns the number of distinct values for the specified 
+column.DATAGRID_MAX Function 
+(p. 68)Returns the maximum value for the specified column.DATAGRID_MAXBOOL 
+Function (p. 68)Returns the maximum value for the specified column.DATAGRID_MAXINT 
+Function (p. 69)Returns the maximum value for the specified column.DATAGRID_MAXLONG 
+Function (p. 69)Returns the maximum value for the specified column.DATAGRID_MAXSTRING 
+Function (p. 70)Returns the maximum value for the specified column.DATAGRID_MEAN Function 
+(p. 70)Returns the mean value for the specified column.DATAGRID_MEDIAN 
+Function (p. 71)Returns the median value for the specified column.DATAGRID_MIN Function (p. 
+71)Returns the minimum value that appears in the specified 
+column.Data Grid Functions Available in SAS Intelligent Decisioning 35

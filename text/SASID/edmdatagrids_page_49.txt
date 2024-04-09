@@ -1,0 +1,27 @@
+Syntax
+DATAGRID_COLUMNCOUNT  (dataGrid )
+Required Argument
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+DATAGRID_COLUMNINDEX Function
+Returns the index of the specified column in the specified data grid.
+Category: Information
+Returned data 
+type:INTEGER
+Note: If the column does not exist in the specified data grid, an error is written to the log.
+Syntax
+DATAGRID_COLUMNINDEX  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_COLUMNISNUMERIC Function
+Determines whether the data type of the specified data grid column is numeric.
+Category: Information
+Returned data 
+type:INTEGER
+Note: This function returns a 1 if the column data type is numeric and a 0 if it is not numeric.DATAGRID_COLUMNISNUMERIC Function 43

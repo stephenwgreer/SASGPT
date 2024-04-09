@@ -1,0 +1,25 @@
+Example 6
+The following command imports all of the rule sets in the file content.json. It uses 
+the mapping file mappings.json:sas-viya dcmtransfer import9x rulesets
+Example 7
+The following command imports all lookup tables in the file lookupContent.json. It 
+uses the mapping file lookupMappings.json.sas-viya dcmtransfer import9x lookups --content "@lookupContent.json" --mappings "@lookupMappings.json"
+Example 8
+The following command imports all rule flows in the file content.json. It uses the 
+mapping file mappings.json. The rule flows are imported as decisions.sas-viya dcmtransfer import9x ruleflows
+Example 9
+The following command imports the decisions in the contents.json file. The 
+decisions are imported into the folder named /LoanApplications. Any decision in that 
+folder that has the same name as the decision that is being imported is replaced.sas-viya dcmtransfer import9x decisions --force --target-folder-path /LoanApplications
+decisiongitdeploy Plug-In
+Enables you to deploy decisions and rule sets from a local Git repository to the SAS Micro Analytic Service 
+destination (maslocal) or to a SAS Cloud Analytic Services (CAS) destination.
+Requirements: You must create a profile and sign in before you use the CLI. See “Creating and Using 
+Profiles” on page 2 for more information.
+You must publish the decisions and rule sets to a Git publishing destination. Then, you 
+must copy the published objects from the Git publishing destination into your local Git 
+repository (by using either the Git clone command or the Git pull command) before you 
+use this CLI to deploy the objects.
+You must have Read access to the Git repository.
+See: “Global Options” on page 4
+“Global Commands” on page 316Chapter 2 / SAS Intelligent Decisioning CLIs

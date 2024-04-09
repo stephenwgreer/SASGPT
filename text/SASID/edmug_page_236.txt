@@ -1,0 +1,33 @@
+3Select either CSV or PDF, and click Create . The result depends on which 
+browser you are using and the browser’s default download actions. The browser 
+might automatically download the file and display a notification in the bar at the 
+bottom of the browser window. Alternatively, the browser might prompt you to 
+save the file or open it with a specific application.
+Note: Approving a decision does not automatically lock the objects that are 
+included in the decision. If you do not lock the included objects before a decision is 
+approved, the included objects can be modified after the decision is approved.
+Create a Decision
+1Click  to navigate to the Decisions category view.
+2Click New Decision . The New Decision  window appears.
+3Enter a name for the decision if you do not want to use the default name. 
+Decision names are limited to 100 characters and must be unique within a folder.
+Note: Some publishing destinations restrict the characters that can be used in 
+the published name of a decision. For more information, see Table 8.4 on page 
+282.
+4(Optional) Enter a description for the new decision. Descriptions are limited to 
+1000 characters.
+TIP You can edit the description later on the Properties  tab.
+5Click , and select the folder where you want to save the decision.
+6Click Save . SAS Intelligent Decisioning  opens the new decision and displays the 
+Decision Flow  tab.
+TIP Objects that are saved in a folder for which the check-out and 
+commit feature is enabled, such as the Decision Repository
+ folder, 
+must be checked out before they can be edited. 
+7(Optional) If the decision is in a folder for which the check-out and commit 
+feature is enabled, click the Versions  tab and check out the latest version of the 
+decision. For more information, see “Check Out and Commit a Decision Version” 
+on page 275.
+8Add objects, and if needed, add variables to the decision. For more information, 
+see “Adding Objects to a Decision” on page 230 and “Managing the Variables in 
+a Decision” on page 222.220 Chapter 8 / Working with Decisions

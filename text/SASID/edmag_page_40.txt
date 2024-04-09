@@ -1,0 +1,24 @@
+the /tmp directory when a new session starts. Setting the CAS_SESSION_LOGGING environment 
+variable to True enables this appender.
+You must also set this variable to True in order to enable the appender for variable assignment 
+logging. If do not want to enable the ProcessFile appender, delete or comment out the example 
+appender definition and modify the root logger definition. See Step 2  of “Enable Variable Assignment 
+Logging” .
+Enable Variable Assignment Logging
+IMPORTANT All the CAS configuration instances are disabled by default, which means that 
+processing is not enabled for any modifications to the configuration instances in SAS 
+Environment Manager. In order to modify the cas-shared-default configuration instances, a 
+Kubernetes administrator must set SAS_ALLOW_ADMIN_SCRIPTS to True in sas-shared-config configMap
+. For instructions, see the file $deploy/sas-bases/overlays/sas-programming-environment/README.md
+. For more information, see “Edit Server Configuration 
+Instances” in SAS Environment Manager: User’s Guide .
+Also, you must restart the CAS server after you make changes to the cas-shared-default 
+configuration settings.
+To enable variable assignment logging, make the following configuration changes:
+1In SAS Environment Manager, edit the sas.cas.instance.config: sessionlogconfig 
+configuration instance for the cas-shared-default  service. 
+2(Optional) Delete or comment out the ProcessFile example appender definition , and delete or 
+comment out the following line from the root logger definition:<appender-ref ref="ProcessFile"/>
+3Add the App.TableServices.DS2.Runtime.TraceVariables logger. Copy and paste the following 
+appender and logger definitions above the root logger definition: <!-- Arke Session Logging --> <appender name="CASArkeAppender" class="ArkeAppender">  <param name="Client" value="sas-cas-server-controller"/>  <param name="Address" value="sas.edm.tracing.decisions"/>  <param name="Type" value="Queue"/>  <param name="Subject" value="variable.assignment"/>  <param name="Durable" value="TRUE"/>  <layout type="Json">   <param name="Individual" value="true"/>   <param name="version#" value="%S{eventModel.version}"/>   <param name="type" value="%S{eventModel.type}"/>   <param name="payloadType" value="%S{eventModel.payloadtype}"/>   <param name="timeStamp" value="%d{LEMZone}"/>   <param name="headers.__tenant" value="%S{eventModel.headers.__tenant}"/>   <param name="headers.sas-content-type" value="%S{eventModel.headers.sas-content-type}"/>   <param name="headers.sas-deployment-id" value="%S{OSENV.SAS_DEPLOYMENT_ID|viya}"/>   <param name="headers.sas-event-source" value="%S{eventModel.headers.sas-event-source}"/>   <param name="headers.sas-published-timestamp" value="%d{LEMZone}"/>
+39

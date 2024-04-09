@@ -1,0 +1,29 @@
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+Optional Arguments
+start_row_number
+specifies the index of the first row from which you want to delete the data in the 
+specified column.InteractionIf you specify start_row_number , then you must also specify 
+end_row_number . To delete the data in a single row, specify the 
+same value for both arguments.
+end_row_number
+specifies the index of the last row from which you want to delete the data in the 
+specified column.
+DATAGRID_CLEARDATA Function
+Deletes all rows from the specified data grid but does not remove the column metadata.
+Category: Create, Update, or Delete
+Returned data 
+type:INTEGER
+Note: This function always returns a zero.
+Syntax
+DATAGRID_CLEARDATA  (dataGrid )
+Required Argument
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+DATAGRID_COLUMNCOUNT Function
+Returns the number of columns in the specified data grid.
+Category: Information
+Returned data 
+type:INTEGER42Chapter 3 / Data Grid Functions

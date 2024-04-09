@@ -1,0 +1,31 @@
+6On the Variables  tab, select or clear the Input  and Output  check boxes as 
+necessary. See “Input Variables, Output Variables, and Temporary Variables” on 
+page 17 for more information.
+TIP To filter the variable list, right-click on the Variable  column heading, 
+enter a filter string in the Filter  box, and press Enter. To clear the filter, 
+delete the string from the Filter  box, and press Enter.
+Add Variables from a Rule Set, Decision, or Code 
+File
+1On the Variables  tab, click the Rule Set Variables  subtab.
+2Click Add variable , and select Rule set , Decision , or Code file . The Choose an 
+Item window appears.
+3Select the object from which you want to import variables, and click OK. The Add 
+Variables  window appears.
+4Select the variables that you want to import and click . To import all of the 
+variables in the table, click .
+5Click Add to add the selected variables, or select Add and replace  to replace 
+existing variables that have the same name.
+6On the Variables  tab, select or clear the Input  and Output  check boxes as 
+necessary. See “Input Variables, Output Variables, and Temporary Variables” on 
+page 17 for more information.
+Add Global Variables to a Rule Set
+In order to use a global variable in a rule set, the global variable must be activated. 
+Instructions for defining and activating global variables are in “Create a New Global 
+Variable” on page 142 and “Activate a Global Variable” on page 149.
+Note: You can add a global variable that has not been activated to a rule set and 
+publish the rule set, but the variable’s value is set to missing until the global variable 
+is activated
+1On the Variables  tab, click the Global Variables  subtab.
+2Click Select Variables . The Select Variables  window appears.
+3Select the check boxes for the variables that you want to add to the rule set, and 
+click OK.Managing the Variables in a Rule Set 19

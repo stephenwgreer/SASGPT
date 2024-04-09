@@ -1,0 +1,31 @@
+Returned data 
+type:DOUBLE
+Syntax
+DATAGRID_CORR  (dataGrid , column1 , column2 )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column1
+column2
+specifies the numeric data grid columns for which you want to compute the 
+correlation coefficient.
+Details
+The Pearson product-moment correlation is a parametric measure of association for 
+two variables. It measures both the strength and the direction of a linear 
+relationship. If one variable X is an exact linear function of another variable Y, a 
+positive relationship exists if the correlation is 1, and a negative relationship exists if 
+the correlation is –1. If there is no linear predictability between the two variables, the 
+correlation is 0. If the two variables jointly have a normal distribution with a zero 
+correlation, the two variables are independent. However, correlation does not imply 
+causality because, in some cases, an underlying causal relationship might not exist.
+The formula for the Pearson product-moment correlation, denoted by ρxy
+, is as 
+follows:ρxy=Cov x,y
+VxVy=Ex− E xy− E y
+Ex− E x2Ey− E y2
+DATAGRID_COUNT Function
+Returns the number of rows in the specified data grid.
+Category: Information
+Returned data 
+type:INTEGER48Chapter 3 / Data Grid Functions

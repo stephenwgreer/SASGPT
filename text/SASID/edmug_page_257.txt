@@ -1,0 +1,18 @@
+The following figure shows the properties panel for this branch:
+For more information, see “Add Equals, Range, or Like Branches” on page 241.
+Add Equals, Range, or Like Branches
+1Select , and drag the Branch  object from the list of objects onto the diagram 
+where you want to add it. The Create New Branch  window appears.
+2(Optional) Enter a name for the branch.
+3Select Equals , Range , or Like, and click OK. SAS Intelligent Decisioning  adds 
+the branch and, if you are working on the Decision Flow  tab, opens the 
+Properties  panel.
+4If you are working on the Decision  tab, click  to open the Properties 
+window. For more information, see “The Decision Flow Tab versus the Decision 
+Tab” on page 221.
+5In the Properties  panel or window, click  to open the branch expression editor.
+6Define the expression for the branch. See “Using the Expression Editor” on page 
+33 for additional information.
+7If you are defining an Equals branch or a Range branch, select the Expression 
+result type . For Like branches, the result of the expression must be a character 
+value.Adding Objects to a Decision 241

@@ -1,0 +1,24 @@
+3Select All services  in the View  menu, and then select Micro Analytic Score service .
+4Click New Configuration . The Select Definition  window appears.
+5Select logging.level . The New logging.level Configuration  window appears.
+6Select DEBUG  for the logging level.
+7Enter App.tk.SID.Perf
+ for the logger name, and click Save .
+8Restart the SAS Micro Analytic Score service. Use the Kubernetes commands that are described 
+in “Managing a Specific Server or Service” in SAS Viya Platform: General Management of Servers 
+and Services .
+Enabling Variable Assignment Logging
+About Variable Assignment Logging
+When variable assignment logging is enabled, users can select the Enable variable assignment 
+logging  option for scenario tests, which are run in CAS. This option adds the following statement to 
+the code that is generated when the test is run:DS2_OPTIONS TRACEVARIABLES;
+Variable assignment logging writes detailed information to a CAS log each time the value of a variable 
+changes. This information enables the user to track how a variable’s value changes as a decision 
+executes. For more information, see “Using Variable Assignment Logging” in SAS Intelligent 
+Decisioning: User’s Guide .
+About The sessionlogconfig Configuration Instance
+The contents of the sas.cas.instance.config: sessionlogconfig
+ configuration instance for the 
+cas-shared-default  service has the following structure:<?xml version="1.0" encoding="UTF-8"?><logging:configuration xmlns:logging="http://www.sas.com/xml/logging/1.0/">appender and logger definitions<!--Root logger --><root>   root logger definition</root></logging:configuration>
+By default, the contents defines an example configuration for an appender named ProcessFile and 
+the root logger. The example appender, if enabled, causes CAS sessions to write debug log files to 38

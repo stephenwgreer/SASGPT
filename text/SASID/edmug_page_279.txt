@@ -1,0 +1,30 @@
+Create a New Version
+Note: For objects that are stored in locations for which the check-out and commit 
+feature is enabled, you cannot manually create a new version. The only way to 
+create a new version is to check out an existing version and commit a new version. 
+For information, see “Check Out and Commit a Decision Version” on page 275.
+Note: The current version of an object is the version with the highest version 
+number. When you create a new version, SAS Intelligent Decisioning  locks the 
+current version before it creates the new version.
+IMPORTANT You cannot unlock a locked version. You cannot save 
+changes to a version that is locked. If you modify a version that is locked and 
+click , SAS Intelligent Decisioning  asks you if you want to replace the 
+current unlocked version with your edited version.
+To manually create a new version:
+1On the Versions  tab, click the version number  for the existing version that you 
+want to use as the basis for the new version.
+2Click New Version . The New Version  window appears.
+3Select the version type: Minor  or Major . Version numbers follow the format 
+major .minor . If you select Major , the number to the left of the period is 
+incremented. If you select Minor , the number to the right of the period is 
+incremented.
+4(Optional) For each version tag that you want to add, either enter a custom tag 
+or begin typing and select a tag from the list of previously entered tags. Press 
+Enter after each tag.
+Note: A tag is limited to 100 characters.
+TIP All tags that have been previously entered for any object are saved 
+in the list that is displayed when you start typing. You cannot delete tags 
+from this list.
+5(Optional) Enter information about the new version in the Notes  field.
+TIP You can edit these notes at any time on the Versions  tab.
+6Click Save .Managing Versions of Decisions 263

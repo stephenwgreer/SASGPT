@@ -1,0 +1,38 @@
+A decision can contain multiple record contacts nodes. For example, your decision 
+might have different paths for different channels, and you might want a record 
+contacts node on each path.
+Add a Record Contacts Node
+1On the Decision Flow  tab, select , and drag the Record Contacts  object onto 
+the diagram where you want to add it. SAS Intelligent Decisioning  opens the 
+Properties  panel for the node.
+Alternatively, on the Decision  tab, select Add ð Record contacts . If an object 
+in the decision is selected, select Edit ð Add below  ð Record contacts .
+2(Recommended) Rename the record contacts node. Record contacts node 
+names must be unique within the decision. To rename the node:
+aOn the Decision Flow  tab, click  for the node, and select Rename . 
+Alternatively, on the Decision  tab, select the node, and select Edit ð 
+Rename . The Rename  window appears.
+bEnter a new name and click Rename .
+TIP When a decision is executed in a destination other than a SAS 
+Micro Analytic Service destination, the record contacts node writes 
+information to a variable. The name of this variable is based on the name 
+of the record contacts node: rt_node-name
+. If you define a variable with 
+this name on the Variables  tab, the data in your decision variable will be 
+overwritten by the record contacts node. To avoid this, rename either the 
+record contacts node or the decision variable.
+3Click  to edit the properties of the record contacts node.
+4(Optional) Select the variable that contains the channel information to which you 
+want to attribute the contact data that is recorded by the node.
+5(Optional) Select the variables whose values you want to record.
+Note: You cannot track data grids in record contacts node because of the 
+amount of space required to store the data. For character variables, SAS 
+Intelligent Decisioning  stores only the first 4000 characters of the value.
+6(Optional) Select Track treatments  if you want to record which treatments are 
+sent to the calling application. Then, select the data grid variable for the specific 
+set of treatments that you want to track.
+TIP If you specify a subject ID or subject level in the decision properties, 
+this information is included in the records that are generated for the record 
+contacts node. If you do not specify the subject ID or subject level, the 
+subject ID or subject level is recorded as NONE
+.234 Chapter 8 / Working with Decisions

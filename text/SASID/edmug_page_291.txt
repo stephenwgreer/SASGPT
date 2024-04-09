@@ -1,0 +1,37 @@
+in each user’s My Folder
+ location, the default permissions allow individual users to 
+see only the copies that they have checked out.
+When this option is turned off and a user has checked out an object, the Check Out 
+button for that object is disabled for all other users.
+If multiple users check out the same version of the same object at the same time, 
+each user’s changes are preserved in a new version when they commit their 
+changes. One user’s changes do not overwrite another user’s changes.
+IMPORTANT If two users attempt to commit changes to the same object 
+simultaneously, the first user's attempt will succeed but the second user 
+might see an error message that the commit has failed. If the second user 
+subsequently commits their changes, the Modified By  column on the 
+Versions  tab for both the version committed by the first user and the version 
+committed by the second user displays the user ID of the second user.
+Check Out and Commit a Decision Version
+1On the Versions  tab, click Check Out . The Choose Objects to Check Out 
+window appears. This window displays the list of object versions that are used in 
+the decision.
+2(Optional) Select the objects that you want to check out, and click . See 
+“Checking Out and Committing Included Objects Together with A Decision” on 
+page 273 for more information.
+Note: If you select an object that is used only in a nested decision, ensure that 
+you select the nested decision also. If you do not check out the nested decision, 
+the object that is used in the nested decision is not committed when you commit 
+your work.
+3(Optional) Select the check box Update the decision to use the latest version 
+of the selected objects  to confirm that you want to replace references to the 
+selected versions of the objects with references to the latest version.
+Note: If your decision uses an older version of an object or different versions of 
+the same object, you must select this check box in order to check out the object. 
+See “Checking Out and Committing Included Objects Together with A Decision” 
+on page 273 for more information.
+4Click Check Out  in the Choose Objects to Check Out  window to check out the 
+decision and any additional objects that you selected.
+SAS Intelligent Decisioning  updates the Properties  tab to indicate that the 
+version is checked out.
+5Modify the checked-out version as needed, and save it.Checking Out and Committing Decision Versions 275

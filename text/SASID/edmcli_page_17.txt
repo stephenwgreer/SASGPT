@@ -1,0 +1,9 @@
+ObjectFieldDescriptionCan Be 
+Changedtarget.idLookup table ID in the SAS Viya environmentYesruleSetssource.idRule set ID in the SAS 9.4 environmentNosource.nameRule set nameNosource.folderPathRule set folder pathNotarget.idRule set ID in the SAS Viya environmentYestarget.revisionIdRule set version ID in the SAS Viya environment. If no 
+version ID is specified, then the revision ID is set to current
+. When the rule set information is displayed in 
+the user interface, the current version number is 
+displayed.Yesmodelssource.idModel ID in the SAS 9.4 environmentNosource.nameModel nameNotarget.idModel ID in the SAS Viya environmentYes
+For example, if you export a rule set that references two lookup tables, the 
+mappings file might look like this:{    "folders": [        {            "source": {                "folderPath": "/A"            },            "target": {                "folderPath": "/B"            }        },    ],    "lookups": [        {            "source": {                "id": 10093,                "name": "LookupXYZ",                "folderPath": "/A"            },            "target": {                "id": ""            }        },        {            "source": {                "id": 10094,                "name": "LookupABC",
+dcmtransfer Plug-In 13

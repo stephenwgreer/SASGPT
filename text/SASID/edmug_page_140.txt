@@ -1,0 +1,30 @@
+Note:  In order to be able to delete a specific version of an object, you must have 
+permission to delete the object itself. Also, the configuration option 
+sas.referencedata.deleteVersions must be turned on.
+On the Versions  tab, select the version that you want to delete, click , and select 
+Delete .
+You cannot delete the current version.
+Determine Which Objects Use a Lookup 
+Table
+On the Lookup tables  category page, select the check box for the lookup table, 
+click , and select View used by report . The All Objects that Use the Selected 
+Item window appears. This window lists all objects that use any version of the 
+selected lookup table.
+Note: The View used by report  option is also available from within an open lookup 
+table.
+In the report, you can use the Filter  field to filter the list of objects based on the 
+object names. Click on an object name to open the object. Click  next to an object 
+name to display the date on which the object was last modified and the ID of the 
+user who modified the object. For decisions and code files that have been checked 
+out, SAS Intelligent Decisioning  also displays the IDs of the users that have checked 
+out the objects. For decisions, SAS Intelligent Decisioning  includes the decision’s 
+workflow status.
+Click Export  to export the Used By report to a PDF file. In the PDF file, you can 
+click on an object name to open the object in a new browser tab.
+Checking Out and Committing Lookup 
+Table Versions
+About Checking Out and Committing Versions
+Your administrator can enable the check-out and commit feature for lookup tables 
+that are in any folder by specifying the folder in the 
+sas.referencedata.checkout.checkoutEnabledFolderPaths configuration option. 
+Enabling this feature for a folder does not automatically modify the permissions for 128 Chapter 4 / Working with Lookup Tables and Functions

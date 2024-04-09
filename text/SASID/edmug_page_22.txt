@@ -1,0 +1,31 @@
+Managing Rules  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+Duplicate a Rule  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+Delete a Rule  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+Rename a Rule  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Edit a Rule Description  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Reorder Rules  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Copy a Rule Set URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Compare Rule Set Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Compare Rule Set Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+Generate PDF Documentation for a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Managing Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+Duplicating Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+Delete Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Rename Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Move Rule Sets to a Different Folder  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Managing Versions of Rule Sets  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Set the Displayed Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Create a New Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Create a New Version Automatically When You Publish a Rule Set  . . . . . . . . . . . . . . 50
+Copy the Content of a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Delete a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Upgrade Decisions to Use a New Version of a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Determine Which Objects Use a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+Checking Out and Committing Rule Set Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+About Checking Out and Committing Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Checking Out a Rule Set from within a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Checking Out and Committing a Common Rule Set from within an 
+Assignment Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+Checking Out and Committing a Lookup Table from within a Rule Set  . . . . . . . . . . . . 55
+Committing a Lookup Table Together with a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . 55
+Concurrently Checking Out and Committing Rule Set Versions  . . . . . . . . . . . . . . . . . . 56

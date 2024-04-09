@@ -1,0 +1,32 @@
+--locale locale
+specifies the locale to use, such as en
+ (English) or de
+ (German).TipYou can set either the environment variable $LC_ALL or $LANG instead of 
+specifying this option.Seehttps://www.w3schools.com/tags/ref_language_codes.asp
+–log-file filename
+specifies the name of the log file.TipYou can set the environment variable $SAS_LOG_FILE instead of 
+specifying this option.
+--output format
+specifies the format for the output from the CLI. Specify text
+, json
+, or fulljson
+.TipYou can set the environment variable $SAS_OUTPUT instead of 
+specifying this option.See“Output Type” in SAS Viya: Using the Command-Line Interface
+--profile profile_name
+specifies the name of the profile to use.Alias-pDefaultDefaultTipsYou can set the environment variable $SAS_CLI_PROFILE instead of 
+specifying this option.You can use the command CLI-name profile list
+ to see the list of 
+available profiles.
+--quiet
+suppresses all output from the CLI except the data.Alias-q
+--sas-endpoint URL
+specifies the URL for the SAS Viya environment.TipYou can set the environment variable $SAS_SERVICES_ENDPOINT 
+instead of specifying this option.
+--verbose
+displays additional details about the commands that are processed, in addition to 
+the output data.
+--version
+prints the version of the CLI.Alias-v
+--yes-to-all
+suppresses all confirmation prompts by defaulting to yes
+.Alias-y Global Options 5

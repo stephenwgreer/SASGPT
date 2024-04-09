@@ -1,0 +1,24 @@
+Compare Treatment or Treatment Group 
+Content
+You can compare the contents of two different treatments or treatment groups, or 
+you can compare the contents of two different versions of the same treatment or 
+treatment group.
+1Select the objects that you want to compare.
+nTo compare the contents of two different treatments or treatment groups, 
+select the treatments or treatment groups in the category view, click , and 
+select Compare object contents .
+nTo compare the contents of two versions of the same treatment or treatment 
+group, open the treatment or treatment group, click  on the Versions  tab, 
+and select Compare object contents .
+The Select Versions  window appears.
+2Select the versions that you want to compare, and click Compare . SAS 
+Intelligent Decisioning  opens the two objects side-by-side in the Compare Object 
+Contents  window. 
+For treatment groups, the Compare Object Contents  window displays the name 
+and version number of the treatments that differ in each object. To display all of 
+the treatments in each group, click Show All . For example, in the following 
+figure, both treatment groups contain the card_preferred treatment and the 
+card_silver treatment. The card_gold treatment appears only in the card_offers 
+group, and the card_gold_plus_special treatment appears only in the 
+card_offers_special treatment group.
+Compare Treatment or Treatment Group Content 99

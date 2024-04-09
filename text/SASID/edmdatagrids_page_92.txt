@@ -1,0 +1,22 @@
+The SUBCRITERIA data grid is defined as follows:subCriteria = cat('[{"metadata":[{"filterCol":"string"},               {"operator":"string"},{"varOrValue":"string"}]},',               '{"data":[["income", "gt", "50000"],',               '["loanAmt", "lt", "equity"]]}]');
+DATAGRID_SUM Function
+Returns the sum of the values in the specified column.
+Category: Statistical
+Returned data 
+type:DOUBLE
+Syntax
+DATAGRID_SUM  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_SUMLONG Function
+Returns the sum of the values in the specified column.
+Category: Statistical
+Returned data 
+type:LONG
+Syntax
+DATAGRID_SUMLONG  (dataGrid , column )86Chapter 3 / Data Grid Functions

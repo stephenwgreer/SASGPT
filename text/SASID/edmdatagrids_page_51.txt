@@ -1,0 +1,30 @@
+Syntax
+DATAGRID_COLUMNTYPE  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+DATAGRID_COLUMNVALUESTOLIST Function
+Creates a comma-separated list of the values in the specified data grid column.
+Category: Retrieve Values
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_COLUMNVALUESTOLIST  (dataGrid , column , valueList )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column in the data grid. You can specify a column 
+name in single quotation marks or a variable that evaluates to a column name.
+valueList
+specifies a name for the list of values.
+Details
+Trailing blanks are removed from the values in the data grid before they are added 
+to the list. Missing values in the data grid are indicated in the value list by two 
+comma separators without any content between them. All values are added to the 
+list as character values. The list is enclosed in square brackets. For example:DATAGRID_COLUMNVALUESTOLIST Function 45

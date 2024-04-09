@@ -1,0 +1,11 @@
+Contents
+Chapter 1 /Using SAS Intelligent Decisioning Command-Line Interfaces . . . . . . . . . . . . . . . . . . . . . . 1
+About the SAS Intelligent Decisioning CLIs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Downloading and Installing the CLIs  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Creating and Using Profiles  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+Chapter 2 /SAS Intelligent Decisioning CLIs . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Global Commands  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Global Options  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Chapter 3 /Transferring Version Comments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Transfer Version Comments  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29

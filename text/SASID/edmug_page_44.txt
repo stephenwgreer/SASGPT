@@ -1,0 +1,25 @@
+Defining Expressions in Rules and 
+Assignment Statements
+About Defining Expressions
+Expressions can be up to 1024 characters long. They can contain numeric 
+constants, character strings, variables, operators, SAS DS2 functions, data grid 
+functions, and the SAS Intelligent Decisioning  LOOKUP and LOOKUPVALUE 
+functions. You can enter expressions directly into the expression fields, or you can 
+use the Expression Editor to create and edit expressions.
+TIP Use caution when you test for equality by using scientific notation. Two 
+numbers that appear to be the same might evaluate to different numbers 
+because of the precision involved in scientific notation.
+For more information about entering expressions, see the following topics:
+n“Using the Expression Editor” on page 33
+n“Enter LOOKUP and LOOKUPVALUE Expressions” on page 35
+n“Entering Literal Data Values” on page 36
+n“Operators for Use in Expressions” on page 37
+n“Using the LIKE Operator” on page 38
+n“Using Functions in Expressions” on page 40
+n“Working with Missing Values” on page 40
+n“Data Grid Functions” in SAS Intelligent Decisioning: Using Data Grids
+Using the Expression Editor
+You can use the Expression Editor to enter expressions that do not use the 
+LOOKUP or LOOKUPVALUE functions. You must use the Expression Editor to enter 
+expressions that use the concatenation (||) operator or the exponent operator (**).
+To open the Expression Editor, click  for the expression that you want to edit.Defining Expressions in Rules and Assignment Statements 33

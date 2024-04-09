@@ -1,0 +1,35 @@
+3
+Data Grid Functions
+Comparing Values in Data Grids  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Data Grid Functions Available in SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . 31
+Dictionary . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+DATAGRID_ADDCHARACTERCOLUMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+DATAGRID_ADDCOLUMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+DATAGRID_ADDNUMERICCOLUMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+DATAGRID_ADDROW Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+DATAGRID_APPEND Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+DATAGRID_BOTTOMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+DATAGRID_CLEAR Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+DATAGRID_CLEARCOLUMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+DATAGRID_CLEARDATA Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+DATAGRID_COLUMNCOUNT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+DATAGRID_COLUMNINDEX Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+DATAGRID_COLUMNISNUMERIC Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+DATAGRID_COLUMNNAME Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+DATAGRID_COLUMNTYPE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+DATAGRID_COLUMNVALUESTOLIST Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+DATAGRID_CONFORM Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+DATAGRID_COPY Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 46
+DATAGRID_COPYCOLUMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+DATAGRID_CORR Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 47
+DATAGRID_COUNT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+DATAGRID_CREATE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+DATAGRID_DELETECOLUMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+DATAGRID_DELETEROW Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+DATAGRID_DISTINCTROWCOUNT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+DATAGRID_EQUALS Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+DATAGRID_FILTEREDGET Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 52
+DATAGRID_FILTEREDGETINDEX Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+DATAGRID_FILTEREDSET Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54
+DATAGRID_FILTEREDSETALL Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 56
+DATAGRID_FREQ Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 57

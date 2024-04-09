@@ -1,0 +1,18 @@
+Appendix 2
+Import File Formats
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 325
+CSV Format of the Variable Import File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 325
+JSON Format of the Variable Import File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 327
+Introduction
+You can import rule set and decision variables from either comma-delimited (CSV) 
+files or JavaScript Object Notation (JSON) files. These files must conform to formats 
+described in “CSV Format of the Variable Import File” on page 325 and “JSON 
+Format of the Variable Import File” on page 327. For more information, see 
+“Importing and Exporting Variables” on page 227.
+CSV Format of the Variable Import File
+Each row of the CSV input file contains the name of either a decision or rule set 
+variable or of a data grid column if one of the decision or rule set variables is a data 
+grid. The first line of the input file must be a header row. The CSV file must contain 
+all of the columns listed in the following table, in the order listed. The value for some 
+columns can be blank, as noted in the table. To create a blank column in the CSV 
+file, specify two comma separators without any content between them.325

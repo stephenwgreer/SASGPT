@@ -1,0 +1,9 @@
+Returned data 
+type:CHARACTER
+See: “Introduction to Data Grids” on page 1
+Syntax
+DATAGRID_TOSTRING  (dataGrid )
+Required Argument
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.88Chapter 3 / Data Grid Functions

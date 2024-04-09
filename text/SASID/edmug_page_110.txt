@@ -1,0 +1,20 @@
+Remove Eligibility Rule Set from a Treatment
+On the Eligibility Rule Set  tab of a treatment, click Remove .
+Change the Eligibility Rule Set for a Treatment
+1On the Eligibility Rule Set  tab of a treatment, click Replace . The Select Rule 
+Set window appears.
+2Select the filtering rule set that you want to use as the eligibility rule set for the 
+treatment, and click OK.
+3At the top of the Eligibility Rule Set  tab, select the version of the eligibility rule 
+set that you want to use.
+TIP You can view or edit an eligibility rule set on the Eligibility Rule Set 
+tab by clicking Open .
+Copy a Treatment or Treatment Group 
+URL
+To create a link for external documentation that automatically opens a treatment or 
+treatment group in SAS Intelligent Decisioning :
+1Open the treatment or treatment group.
+2Click , and select either Copy treatment URL  or Copy treatment group URL . 
+The Copy URL  window appears, and the URL is automatically selected.
+3Click Copy , and then click Close .
+Paste the link into your documentation.98Chapter 3 / Working with Treatments and Treatment Groups

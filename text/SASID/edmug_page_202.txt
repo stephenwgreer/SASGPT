@@ -1,0 +1,29 @@
+Test a Code File
+Create and Run a New Test
+Testing a code file is optional, but doing so is a best practice. Testing enables you to 
+discover any problems before the code file is incorporated into a production system.
+IMPORTANT If you are testing a DS2 or SQL code file that uses functions 
+that are defined in a custom context file, verify that the context file is specified 
+in the Test custom context  field on the Properties  before running the test.
+1On the Scoring  tab, click the Tests  tab. 
+2Click New Test . The New Test  window appears.
+3Enter a name for the test if you do not want to use the default name. The name 
+cannot contain forward slashes (/) or curly braces ({}).
+4(Optional) Enter a description for the test. Descriptions are limited to 1000 
+characters.
+5(Optional) Click  for the Location  field, and select the folder where you want to 
+save the test definition and results.
+TIP Selecting a location is optional, but it is highly recommended. 
+Storing test definitions and test results in a folder simplifies the tasks of 
+setting permissions and transferring the test files.
+6Click  for the Input table  field, select the input table for the test, and click OK. 
+7Verify or change the variable mappings. To run a full test, map all of the input 
+variables to columns in the input table that you selected for the test. To run a 
+partial test, you can map only the input variables that are needed for the test.
+SAS Intelligent Decisioning  automatically maps the input variables in the code 
+file to columns in the input table when the names and data types of the variables 
+match those of the table columns.
+If any input variables are not mapped to input columns or to static values, the 
+application displays a warning message. At run time, SAS Intelligent Decisioning 
+assigns missing values to input variables that are not mapped.
+188 Chapter 6 / Using Custom Code Files

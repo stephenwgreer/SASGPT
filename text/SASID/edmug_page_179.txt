@@ -1,0 +1,32 @@
+nCustom context  specifies the context file to use when the decision is 
+published to SAS Cloud Analytic Services (CAS), Git destinations that are 
+compatible with CAS, Teradata, Apache Hadoop, or container destinations. 
+You must specify the custom context file in this field in order to run scoring 
+tests, scenario tests, and publishing validation tests on the decision.
+nCustom context for SAS Micro Analytic Service  specifies the context file 
+to use when the decision is published to SAS Micro Analytic Service 
+destinations and Git destinations that are compatible with SAS Micro Analytic 
+Service. Specify the context file in this field if you plan to publish the decision 
+to one of these destinations.
+3Select the version of the custom context file.
+Testing or Validating a Rule Set, DS2 File, or 
+Custom Function
+To test or validate rule sets, DS2 code files, or custom functions that use context 
+functions, you must specify the custom context file in the Test custom context  field 
+on the Properties  tab before you test or validate the object. For instructions, see 
+“Validate SQL, DS2, or Context Files” on page 175 and “Testing Code Files” on 
+page 187.
+Referencing a Function That Is Defined in a Context 
+File
+When you add a custom context file to an object’s properties, SAS Intelligent 
+Decisioning  defines a variable in the generated code for the object that is named application
+. This variable appears only in the generated code. It does not appear 
+in the Variables  tab for the object.
+You must use the application
+ variable to refer to functions that are defined in the 
+custom context file. To call a custom context function from within a rule set, DS2 
+code file, or custom function, use the following format:application.method_name(arguments);
+For example, you could create a custom context file that defines a custom function 
+named squareIt:package CustomContext;   method squareIt(in_out double i) returns double;     dcl double squared;     squared=i*i;     return squared;   end;endpackage;
+In a rule set, you could call the squareIt function as follows:mySquare = application.squareIt(i)
+Custom Context Files 165

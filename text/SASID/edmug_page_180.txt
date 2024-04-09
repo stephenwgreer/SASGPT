@@ -1,0 +1,22 @@
+In the Custom Functions  category, you can define a custom function that calls the 
+squareIt context function as follows:method addSquares() returns double;    dcl double tally;    dcl double squared;    dcl double i;    tally = 0;    do i= 1 to 5;       squared = application.squareIt(i);       tally + squared;    end;    return tally;end;
+Referencing a Variable That Is Defined in a Context 
+File
+When you add a custom context file to an object’s properties, SAS Intelligent 
+Decisioning  defines a variable in the generated code for the object that is named application
+. This variable appears only in the generated code. It does not appear 
+in the Variables  tab for the object.
+You must use the application
+ variable to refer to variables that are defined in the 
+custom context file. To refer to a custom context variable from within a rule set, DS2 
+code file, or custom function, use the following format:application.variable_name
+For example, you could create a custom context file that sets the value of a variable 
+named grade
+ based on the value of the variable score
+:package CustomContext;   dcl varchar(20) grade;   method execute(in_out double score);     if score >= 90 then grade='A';     else if score >= 80 then grade='B';     else if score >= 70 then grade='C';     else if score >= 60 then grade='D';     else grade='F';   end;endpackage;
+In a rule set, you can execute the custom context file and set the value of the rule 
+set variable finalGrade
+ to the value of the custom context variable grade
+ as 
+follows:application.execute(score);finalGrade=application.grade;
+166 Chapter 6 / Using Custom Code Files

@@ -1,0 +1,28 @@
+displayed in the SAS log for the DS2 variable declaration strict mode. This mode requires that 
+every variable must be declared in the DS2 program. This option affects basic tests, scenario 
+tests, and publishing validation tests for rule sets. You can specify the following settings:WARNINGwrites warning messages to the SAS log.NONEno messages are written to the SAS log.NOTEwrites notes to the SAS log.ERRORwrites error messages to the SAS log.DefaultWARNINGSee“SCOND” in SAS DS2 Language Reference
+sas.businessrules.variableLengthOverridden
+Specifies whether you can override the default length for input-only and input-output character 
+variables in rule sets. When this property is set to Off, the lengths for these variables are based on 
+the length of the input columns to which the variables are mapped. When this property is set to 
+On, SAS Intelligent Decisioning uses the lengths that you specify when you create the variables. 
+For more information, see “Managing the Variables in a Decision” in SAS Intelligent Decisioning: 
+User’s Guide .DefaultOff
+sas.businessrules.checkout
+sas.businessrules.checkout.allowConcurrentCheckout
+Controls whether the same rule set can be checked-out by multiple users at the same time.DefaultONSee“Concurrently Checking Out and Committing Rule Set Versions” in SAS Intelligent 
+Decisioning: User’s Guide
+sas.businessrules.checkout.checkoutEnabledFolderPaths
+Specifies the list of folder paths whose rule sets can be or must be checked out before they can 
+be edited. Separate path names with commas.Default/Decision Repository
+TipPermissions are set on the default folder, /Decision Repository
+, so that users are 
+required to check out the objects in this folder before they can be edited. Similar 
+permissions are not automatically set on any additional folders that you specify with this 
+configuration option. You must explicitly set the permissions in order to require that the 
+objects in the additional folders are checked out before they are modified. See “Set 
+Permissions for Check-Out Folders” on page 59 for more information.Example/Public/checkout
+sas.businessrules.publish
+sas.businessrules.publish.hideRuleSetPublish
+Specifies whether to hide the Publish  button for rule sets. When this property is turned on, rule 
+sets cannot be published independently from the user interface. They must be included in a 7

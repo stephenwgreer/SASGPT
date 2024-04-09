@@ -1,0 +1,34 @@
+6
+Using Custom Code Files
+Introduction to Custom Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 152
+DS2 Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+Rules for Creating DS2 Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 153
+Example: Custom DS2 Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 154
+Testing DS2 Code Files in SAS Studio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 155
+Python Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+About Publishing Destinations and Python Distributions  . . . . . . . . . . . . . . . . . . . . . . . . 157
+Rules For Developing Python Code Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 157
+Required Dependencies For Python Files in SAS Container 
+Runtime Destinations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 158
+Data Query Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+Using Data Query Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 159
+Query Output Types and Editors  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
+Developing SQL Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 160
+Decision Variables for Data Query Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 161
+Using Macro Variables in SAS Studio  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 162
+Handling Table and Column Names in Data Query Files  . . . . . . . . . . . . . . . . . . . . . . . 163
+Custom Context Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163
+Using Custom Context Files  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 163
+Adding an INIT Method to a Custom Context File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
+Associating a Custom Context File with a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 164
+Testing or Validating a Rule Set, DS2 File, or Custom Function  . . . . . . . . . . . . . . . . . 165
+Referencing a Function That Is Defined in a Context File  . . . . . . . . . . . . . . . . . . . . . . 165
+Referencing a Variable That Is Defined in a Context File  . . . . . . . . . . . . . . . . . . . . . . . 166
+Create a New Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 167
+Managing the Variables in a DS2 or Python Code File  . . . . . . . . . . . . . . . . . . . . . . . . . 168
+About Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 168
+Syncing Variables and Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 170
+Add Variables from a Data Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 171
+Add Variables from a Rule Set, Decision, or Code File  . . . . . . . . . . . . . . . . . . . . . . . . . 172
+Create Custom VariablesCreate Custom Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . 172
+Duplicate a Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 173

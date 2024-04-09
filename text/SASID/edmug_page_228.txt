@@ -1,0 +1,4 @@
+Add a Micro Analytic Module  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 246
+Mapping Variables within a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 247
+About Decision Variables and Mapping  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 247
+Add Missing Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 248213

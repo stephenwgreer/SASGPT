@@ -1,0 +1,34 @@
+2
+Working with Rule Sets
+About Rules and Rule Set Types  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+About Condition and Action Expressions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Create a New Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+Managing the Variables in a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+About Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Add Variables from a Data Table  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Add Variables from a Rule Set, Decision, or Code File  . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Add Global Variables to a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+Create a Custom Variable Dynamically  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Create Custom Variables on the Variables Tab  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Duplicate a Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Importing and Exporting Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+Delete Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Edit Variable Properties  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Edit Metadata for Data Grid Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Determine Which Objects Use a Particular Variable  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+Defining New Rules in a Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Add a Stand-Alone Assignment Statement  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+Add an IF-THEN or IF-THEN-ELSE Rule to an Assignment or Common Rule Set  . 25
+Adding a Common Rule Set Reference to an Assignment Rule Set  . . . . . . . . . . . . . . 26
+Add a New Rule in a Filtering Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+Copy Rules From Another Rule Set  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Controlling Which Conditions Are Evaluated  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+How Rules Are Evaluated and When Rule-Fired Records Are Generated  . . . . . . . . . 32
+Defining Expressions in Rules and Assignment Statements  . . . . . . . . . . . . . . . . . . . . 33
+About Defining Expressions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Using the Expression Editor  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Enter LOOKUP and LOOKUPVALUE Expressions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35
+Entering Literal Data Values  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Operators for Use in Expressions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Using the LIKE Operator  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Using Functions in Expressions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40

@@ -1,0 +1,37 @@
+Details
+Transfer Content from a SAS 9.4 Environment to a 
+SAS Viya Environment
+Note: See “Command-Line Interface: Preliminary Instructions” in SAS Viya: Using 
+the Command-Line Interface  for additional information.
+To transfer business rules and decision content from a SAS 9.4 environment to a 
+SAS Viya environment:
+1Log on to the machine where SAS Viya is running. For example, on Linux 
+systems, you can use the ssh
+ command:ssh -y machine-name
+2Use the cd
+ command to change to the directory where you downloaded the plug-
+in files.
+3Create a default profile if you have not already done so:sas-viya profile init
+The CLI prompts you for the URL (service endpoint) for SAS Viya, for the output 
+type that you want, and whether you want to enable color output. For more 
+information, see “Create at Least One Profile” in SAS Viya: Using the Command-
+Line Interface .
+4Log on to the SAS Viya environment:sas-viya auth login
+The CLI prompts you for the user ID and password for the SAS Viya 
+environment.
+5Log on to the SAS 9.4 environment:sas-viya dcmtransfer auth9x login
+The CLI prompts you for the URL (service endpoint) for the SAS 9.4 environment 
+and the user ID and password for that environment.
+6Export the SAS 9.4 content:sas-viya dcmtransfer export9x object-type <export-options>
+If you do not specify any options, the CLI prompts you for the required 
+information.
+By default, the export9x
+ command creates three files:
+contents.json
+This file contains the exported content. Do not modify the contents of this file.
+mappings.json
+This file describes the relationships between the exported content and any 
+associated objects. For example, if you export rule sets, the mapping file 
+contains information about any lookup tables that are referenced in the rule 
+sets and all folders where the rule sets and lookup tables reside. You can 
+modify some of the data in this file before you import content into the SAS 10Chapter 2 / SAS Intelligent Decisioning CLIs

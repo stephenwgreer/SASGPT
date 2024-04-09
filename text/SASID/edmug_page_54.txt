@@ -1,0 +1,27 @@
+Reorder Rules
+To move a rule up or down within an IF clause, an ELSE clause, or an OR clause 
+select the rule, and click  or .
+Copy a Rule Set URL
+To create a link for external documentation that automatically opens a rule set in 
+SAS Intelligent Decisioning :
+1Open the rule set.
+2Click , and select Copy rule set URL . The Copy URL  window appears, and 
+the URL is automatically selected.
+3Click Copy , and then click Close .
+Paste the link into your documentation.
+Compare Rule Set Content
+You can compare the contents of two different rule sets, or you can compare the 
+contents of two different versions of the same rule set.
+1Select the objects that you want to compare.
+nTo compare the contents of two different rule sets, select the rule sets in the 
+category view, click , and select Compare object contents .
+nTo compare the contents of two versions of the same rule set, open the rule 
+set, click  on the Versions  tab, and select Compare object contents .
+The Select Versions  window appears.
+2Select the versions that you want to compare, and click Compare . SAS 
+Intelligent Decisioning  opens the two objects side-by-side in the Compare Object 
+Contents  window. 
+By default, the Rule Sets  tab displays a simplified version of the rules that are 
+different in each object. To display a simplified version of all of the rules in each 
+object, click Show All .
+TIP Click  beside a rule set name to display its location.Compare Rule Set Content 43

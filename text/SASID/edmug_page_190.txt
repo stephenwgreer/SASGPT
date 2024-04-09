@@ -1,0 +1,29 @@
+dcl package datagrid variable;
+For SQL query files, SAS Intelligent Decisioning  runs the query in order to verify the 
+SAS Micro Analytic Service connection string, scans the SQL statements for syntax 
+errors, and looks for references to non-existent tables and columns.
+IMPORTANT Do not validate a query that uses dynamic parameters to alter 
+data. In order to validate a query, SAS Intelligent Decisioning  generates 
+values to use for the query parameters and executes the query. These 
+parameter values might not match the values that are passed to the query 
+during normal execution and can produce unintended changes in the 
+database. For example, data might be deleted that should not be deleted.
+If your query does not use dynamic parameters but does alter the data, be 
+aware that validating the query will alter the data.
+Copy a Code File URL
+To create a link for external documentation that automatically opens a code file in 
+SAS Intelligent Decisioning :
+1Open the code file.
+2Click , and select Copy code file URL . The Copy URL  window appears, and 
+the URL is automatically selected.
+3Click Copy , and then click Close .
+Paste the link into your documentation.
+Compare Generated Code for Code Files
+You can compare the generated code of two different code files, or you can 
+compare the generated code of two different versions of the same code file.
+1Select the objects that you want to compare.
+nTo compare the generated code of two different code files, select the code 
+files in the category view, click , and select Compare code .
+nTo compare the generated code of two versions of the same code file, open 
+the code file, click  on the Versions  tab, and select Compare code .
+The Select Versions  window appears.176 Chapter 6 / Using Custom Code Files

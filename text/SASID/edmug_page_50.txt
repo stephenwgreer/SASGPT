@@ -1,0 +1,18 @@
+LIKE ' pattern-matching-expression '
+If a variable’s value matches the pattern that is specified by pattern-matching-
+expression , the expression evaluates to true (1). Otherwise, the expression 
+evaluates to false (0).
+There are three classes of pattern-matching characters.Table 2.2 Pattern-Matching Characters CharacterDescriptionunderscore (_)Matches any single characterpercent sign (%)Matches any sequence of zero or more characters
+Note: Be aware of the effect of trailing blanks. To match 
+values, you might have to use the TRIM function to 
+remove trailing blanks. any other characterMatches that character
+The LIKE expression is case sensitive. To search for mixed-case strings, use the 
+UPCASE function to create an uppercase version of the variable that you want to 
+search. You can use a temporary variable to store the results of the UPCASE 
+function. Use the LIKE operator to search the uppercase version of the variable. For 
+example, you can search the variable Part_Number for mixed-case strings that 
+begin with HS and end with PP by using the two rules shown in the following figure.
+The following table shows examples of the matches that result if you search a 
+variable that could have these values: Smith, Smooth, Smothers, Smart, Smuggle.Table 2.3 Examples of LIKE Expressions LIKE Expression ExampleMatching Resultslike 'Sm%'Smith, Smooth, Smothers, Smart, Smugglelike '%th'Smith, Smoothlike 'S__gg%'Smugglelike 'S_o'
+(no matches)like 'S_o%'Smooth, Smothers
+Defining Expressions in Rules and Assignment Statements 39

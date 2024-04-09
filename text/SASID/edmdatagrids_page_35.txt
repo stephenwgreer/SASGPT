@@ -1,0 +1,33 @@
+DATAGRID_GETFIRSTINDEXBYVALUE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 59
+DATAGRID_GETFIRSTMISSINGINDEX Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 60
+DATAGRID_GETINT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+DATAGRID_GETLASTINDEXBYVALUE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 61
+DATAGRID_GETLASTMISSINGINDEX Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+DATAGRID_GETLONG Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 62
+DATAGRID_GETSTRING Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 63
+DATAGRID_GRIDMATCHCOUNT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+DATAGRID_INITIALIZE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+DATAGRID_INNERJOIN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+DATAGRID_LEFTJOIN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 66
+DATAGRID_MATCHCOUNT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 67
+DATAGRID_MAX Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+DATAGRID_MAXBOOL Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 68
+DATAGRID_MAXINT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+DATAGRID_MAXLONG Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 69
+DATAGRID_MAXSTRING Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+DATAGRID_MEAN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 70
+DATAGRID_MEDIAN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+DATAGRID_MIN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 71
+DATAGRID_MINBOOL Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+DATAGRID_MININT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+DATAGRID_MINLONG Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+DATAGRID_MINSTRING Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 73
+DATAGRID_MULTISORT Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 74
+DATAGRID_NMISS Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+DATAGRID_NVALID Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+DATAGRID_RENAMECOLUMN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+DATAGRID_RIGHTJOIN Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+DATAGRID_SET Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+DATAGRID_SETALL Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 78
+DATAGRID_SETBOOL Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79
+DATAGRID_SETDOUBLE Function  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 79

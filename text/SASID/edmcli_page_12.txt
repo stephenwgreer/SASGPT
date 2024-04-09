@@ -1,0 +1,32 @@
+--mappings @ filename
+specifies the name of the mapping file. This file describes the relationship 
+between the exported content and any associated objects.Defaultmappings.jsonSee“Modifying the Mapping File” on page 12
+--report @ filename
+specifies the file to which you want the CLI to write messages that are generated 
+while the content is exported.Defaultexport_report.json
+--uri URI
+specifies the URI for the objects that you want to export. This option is required.
+You can specify the URI in any of the following forms.
+--uri /SASBusinessRulesManagerWeb/rest/ object-type ?limit=214783647
+--uri /SASDecisionManager/rest/decisions?limit=214783647
+specifies all objects of the type object-type  up to a maximum of 21478367. 
+(This number is the maximum value for an integer.)
+--uri /SASBusinessRulesManagerWeb/rest/ object-type ?filter_query
+--uri /SASDecisionManager/rest/decisions? filter_query
+specifies all objects that meet the filter criteria and that are of the type 
+specified by the object-type  argument.RestrictionYou cannot use a filter query to specify lookup tables.See“Query Parameters for the --uri Option” on page 11
+--uri /SASBusinessRulesManagerWeb/rest/ object-type /object-ID
+--uri /SASDecisionManager/rest/decisions/ object-ID
+specifies the object with the ID object-ID  that matches the type specified by 
+the object-type  argument.
+--uri /SASWIPClientAccess/rest/navigation/814100/ folder-ID
+specifies all of the objects in the folder with the ID folder-ID  that match the 
+type specified by the object-type  argument.RestrictionThis form is not valid for exporting decisions.TipThe number 814100 is the object type for a business rules 
+folder.
+--uri /SASWIPClientAccess/rest/navigation/814100/DCMFOLDER_ROOT_ID
+specifies all objects in the business rules database that match the type 
+specified by the object-type  argument.RestrictionThis form is not valid for exporting decisions.TipDCMFOLDER_ROOT_ID is the ID for the root folder.
+--uri @ filename .txt
+specifies all of the objects that are identified by the URIs in the specified text 
+file. The URIs in the text file must all be URIs for objects of the type specified 
+by the object-type  argument. Each URI must be on a separate line.8Chapter 2 / SAS Intelligent Decisioning CLIs

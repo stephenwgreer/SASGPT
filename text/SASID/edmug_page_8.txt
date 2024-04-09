@@ -1,0 +1,20 @@
+Compare Decision Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 258
+Generate PDF Documentation for a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 258
+Managing Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 260
+Managing Versions of Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
+Determine Which Objects Use a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 271
+Checking Out and Committing Decision Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . 272
+Managing Version Tags for Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 277
+Publishing a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 278
+Testing Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 284
+Manage Comments for Decision Nodes and Tests  . . . . . . . . . . . . . . . . . . . . . . . . . . 306
+Executing Published Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 307
+View All Published Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 310
+Appendix 1 /Querying the Subject Contact Database . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 313
+About the Subject Contact Database  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 313
+How to Query the Subject Contacts Database  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 314
+Using Views Defined by SAS Intelligent Decisioning  . . . . . . . . . . . . . . . . . . . . . . . . . 315
+Columns in the dcm_trt_fixed_attr_vw and dcm_trt_dynamic_attr_vw Views  . . . . 316
+Columns in the dcm_treatments_contacts_vw View  . . . . . . . . . . . . . . . . . . . . . . . . . 318
+Appendix 2 /Import File Formats . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 325
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 325Contents v

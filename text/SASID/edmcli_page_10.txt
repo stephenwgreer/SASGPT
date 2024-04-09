@@ -1,0 +1,33 @@
+Dictionary
+dcmtransfer Plug-In
+Enables you to transfer rule sets, rule flows, lookup tables, and decisions from a SAS 9.4 environment to a 
+SAS Viya environment.
+Requirement: You must create a profile and sign in before you use the CLI. See “Creating and Using 
+Profiles” on page 2 for more information.
+Notes: Data tables, tests, comments, attachments, and version information are not transferred 
+from SAS 9.4 to SAS Viya. Vocabularies are not transferred, but the terms used in rule 
+sets and decisions are transferred within those objects.
+Lookup tables must be activated in the target environment. See “Activating a Lookup 
+Table” in SAS Intelligent Decisioning: User’s Guide  for more information.
+To transfer content between SAS Viya environments, use the transfer plug-in to the sas-
+viya CLI. All of the content is transferred except for notes that are associated with 
+specific versions of the objects. For more information, see “Command-Line Interface: 
+Overview” in SAS Viya: Using the Command-Line Interface  and “Transfer Version 
+Comments” on page 29.
+See: “Global Options” on page 4
+“Global Commands” on page 3
+Syntax
+sas-viya  <global-options > dcmtransfer  command  <command-options >
+Commands
+In addition to the global commands in “Global Commands” on page 3, you can 
+specify the following commands:
+authenticate9x subcommand <options >
+logs you in to and out of the SAS 9.4 environment. You can specify the following 
+subcommands:
+login
+logs you in to the SAS 9.4 environment. The login subcommand accepts 
+these options:
+--password password
+specifies your password.
+--service-endpoint protocol ://host_name :port
+specifies the URI for the SAS 9.4 environment.6Chapter 2 / SAS Intelligent Decisioning CLIs

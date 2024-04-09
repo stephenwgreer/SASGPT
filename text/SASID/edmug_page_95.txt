@@ -1,0 +1,39 @@
+Compare Treatment or Treatment Group Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 99
+Compare Treatment Group Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Generate PDF Documentation for a Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . 101
+Managing Treatments and Treatment Groups  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+Duplicate Treatments or Treatment Groups  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 102
+Delete Treatments or Treatment Groups  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Rename a Treatment or Treatment Group  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 103
+Move Treatments or Treatment Groups to a Different Folder  . . . . . . . . . . . . . . . . . . . 103
+Managing Versions of Treatments and Treatment Groups  . . . . . . . . . . . . . . . . . . . . . 104
+Set the Displayed Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Create a New Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 104
+Copy the Content of a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 105
+Delete a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 106
+Determine Which Objects Use a Treatment or Treatment Group  . . . . . . . . . . . . . . . 106
+Checking Out and Committing Treatment or Treatment Group Versions  . . . . . . . 107
+About Checking Out and Committing Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 107
+Checking Out a Treatment Group from within a Decision  . . . . . . . . . . . . . . . . . . . . . . . 108
+Checking Out and Committing Treatments from within a Treatment Group . . . . . . 108
+Concurrently Checking Out and Committing a Treatment or 
+Treatment Group Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 109
+Check Out and Commit a Treatment or Treatment Group Version  . . . . . . . . . . . . . . . 110
+Determine Who Has a Version Checked Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 110
+Opening the Original Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+Undoing a Check Out  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+Managing Version Tags for Treatment and Treatment Groups  . . . . . . . . . . . . . . . . . . 111
+Add a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 111
+Remove a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+Modify a Version Tag  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 112
+About Treatments and Decisions
+In SAS Intelligent Decisioning , you use treatments to define offers that you might 
+want to present to subjects that contact your company as a result of an inbound 
+marketing campaign.
+In an inbound marketing campaign, a subject initiates contact with a company 
+through a specific channel such as email, a website, or a phone call. A subject can 
+be an individual customer, a company account, a household, or other entity. 
+Depending on the channel, an application or website captures the subject’s behavior 
+or a human representative enters the subject’s information into a form or a customer 
+service application.
+The subject usually has an identification number (a subject ID). The customer

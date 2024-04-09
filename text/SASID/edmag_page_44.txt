@@ -1,0 +1,42 @@
+Test definitions and test results for rule sets, models, and decisions are not transferred automatically 
+when rule sets, models, and decisions are transferred. To transfer test definitions and test results that 
+are in a folder, you can transfer the folder. To transfer test definitions and test results that were not 
+saved in a folder, you must list the URI for each definition and results table in the transfer request. 
+(Beginning with SAS Intelligent Decisioning 5.3, you can save test definitions and test results in a 
+folder.)
+Output tables in CAS must be transferred manually. However, it is recommended that you re-create 
+and rerun the test in the target environment instead of transferring the old output tables and test 
+information.
+Transfer Treatments from SAS 9.4 to SAS Viya
+You can transfer treatments from SAS Real-Time Decision Manager on SAS 9.4 to SAS Intelligent 
+Decisioning on SAS Viya. This process uses the sasmaextract integration utility that is distributed with 
+SAS Customer Intelligence.
+The transfer process transfers custom detail names, values, and whether the custom details are 
+dynamic or static. Custom details in SAS Real-Time Decision Manager become treatment attributes in 
+SAS Intelligent Decisioning. The detail label becomes the attribute name. Static details become fixed 
+attributes.
+Some custom detail properties such as whether a detail is required and the number of decimal places 
+for a detail value are not applicable in SAS Intelligent Decisioning and are not transferred.
+Some custom detail properties are transferred but handled differently in SAS Intelligent Decisioning.
+nSAS Intelligent Decisioning does not support the data types time, week, month, quarter, or year. 
+Custom details of these types become character attributes in SAS Intelligent Decisioning.
+nThe Decision Management API enables you to create attributes that define a range of values, but 
+the SAS Intelligent Decisioning user interface displays range values as [object Object]
+.
+nIf a custom detail has a drop-down list of numeric values, the detail is transferred as an attribute 
+that has a list of values. However, the list of attribute values contains only the default value from 
+the drop-down list in SAS Real-Time Decision Manager.
+nIf a custom detail has a drop-down list of date values, the detail is not transferred as a list. It is 
+transferred as a date attribute with the default value from the drop-down list in SAS Real-Time 
+Decision Manager.
+To transfer treatments from a SAS 9.4 environment to a SAS Viya environment, complete these 
+steps:
+1Download and unpack or unzip the SAS Intelligent Decisioning CLIs for your platform. The 
+download file is available at https://support.sas.com/downloads/browse.htm?fil=&cat=612 . For 
+more information about the download file, see “About the SAS Intelligent Decisioning CLIs” in SAS 
+Intelligent Decisioning: Command-Line Interfaces  and “Downloading and Installing the CLIs” in 
+SAS Intelligent Decisioning: Command-Line Interfaces .
+This download file contains an input stylesheet and an output stylesheet for use with the 
+sasmaextract command: pass_thru.xslt and transform_treatments.xslt.
+IMPORTANT Do not modify these stylesheets.
+2Log on to the machine where SAS Customer Intelligence on SAS 9.4 is running.43

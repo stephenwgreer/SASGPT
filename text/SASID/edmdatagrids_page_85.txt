@@ -1,0 +1,32 @@
+expression. The value that you specify must evaluate to the same data type as 
+column .
+DATAGRID_SETBOOL Function
+Assigns the specified Boolean value to the specified row and column.
+Category: Set Values
+Returned data 
+type:INTEGER
+Note: A zero return value indicates success, and a non-zero return code indicates failure.
+Syntax
+DATAGRID_SETBOOL  (dataGrid , column , rowNumber , variableOrValue )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+column
+specifies the name of the column whose value is to be set. You can specify a 
+column name in single quotation marks or a variable that evaluates to a column 
+name. The column must be a Boolean column.
+rowNumber
+specifies the number of the row to be set. You can specify a number or a 
+variable that evaluates to a number.
+variableOrValue
+specifies the numeric boolean value to be assigned to column . You can specify 1 
+for True or 0
+ for False. Alternatively, you can specify the name of a boolean 
+variable or a numeric variable that evaluates to 0 or 1.NoteDo not specify the character strings "True" or "False".
+DATAGRID_SETDOUBLE Function
+Assigns the specified decimal value to the specified row and column.
+Category: Set Values
+Returned data 
+type:INTEGER
+Note: A zero return value indicates success, and a non-zero return code indicates failure.DATAGRID_SETDOUBLE Function 79

@@ -1,0 +1,19 @@
+The same nodes appear on the Decision  tab as an IF-THEN-ELSE statement:
+Add a Yes/No Branch on the Decision Flow Tab
+Note: When you add a Yes/No branch, any objects that follow the currently 
+selected object become part of the No path. 
+1Select , and drag the Branch  object from the list of objects onto the diagram 
+where you want to add it. The Create New Branch  window appears.
+2(Optional) Enter a name for the branch if you do not want to use the default 
+name. The default name is Yes/No .
+3Select Yes/No , and click OK. SAS Intelligent Decisioning  adds the branch and 
+opens the Properties  panel.
+4On the Properties  panel, click . SAS Intelligent Decisioning  opens the 
+expression editor.
+5Define the expression for the branch. See “Using the Expression Editor” on page 
+33 for additional information.
+6Click Save  in the expression editor to save the expression and return to the 
+decision editor.
+7(Optional) Add objects to the Yes and No branch paths. Right-click on the branch 
+node, and select either Add to yes path  ð object  or Add to no path  ð object .
+For more information, see the following topics:Adding Objects to a Decision 237

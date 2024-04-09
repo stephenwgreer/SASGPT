@@ -1,0 +1,32 @@
+Opening the Original Object
+When you check out an object, SAS Intelligent Decisioning  adds the field Original 
+object link  to the Properties  tab for the checked-out object. This field contains a 
+link to the original object that was checked out. You can use this link to verify that 
+you have checked out the correct version and to compare the original content with 
+the modified content in the checked-out version.
+Undoing a Check Out
+If both an object and a decision that uses the object are checked out at the same 
+time, or if you checked out the object from within the decision , click  on the 
+object's node in the decision diagram, and select Cancel checkout .
+You can discard a checked-out version and any changes that you made by deleting 
+the working copy of the version from your My Folder
+ folder if the following 
+conditions are true:
+nYou have not checked out a decision that uses the object.
+nThe object was not checked out at the same time as a decision  that uses the 
+object,  or the object was not checked out from within the decision  after the 
+decision was checked out.
+The deleted version is moved to the recycle bin. See “Delete Decisions” on page 
+262.
+Managing Version Tags for Decisions
+Add a Version Tag
+Version tags enable you to better organize and group your content. Version tags are 
+associated with specific versions of an object and not with the entire object. You can 
+add the same tag to any version of any object. To add a tag to a decision version:
+1On the Versions  tab, position your cursor in the Version Tags  column for the 
+version that you want to tag. If the version is not tagged,  appears. If the 
+version has at least one tag,  appears.
+2Click  to open the New Version Tags  window, or click  to open the Edit 
+Version Tags  window.
+3For each tag that you want to add, either enter a custom tag or begin typing and 
+select a tag from the list of previously entered tags. Press Enter after each tag. Managing Version Tags for Decisions 277

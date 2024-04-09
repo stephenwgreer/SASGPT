@@ -1,0 +1,25 @@
+DATAGRID_CLEAR Function
+Deletes all rows and all column metadata from the specified data grid.
+Category: Create, Update, or Delete
+Returned data 
+type:INTEGER
+Note: This function always returns a zero.
+Syntax
+DATAGRID_CLEAR  (dataGrid )
+Required Argument
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+DATAGRID_CLEARCOLUMN Function
+Deletes the data in the specified columns.
+Category: Create, Update, or Delete
+Returned data 
+type:INTEGER
+Note: This function always returns a zero.
+Syntax
+DATAGRID_CLEARCOLUMN  (dataGrid , column <, start_row_number , 
+end_row_number >)
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.DATAGRID_CLEARCOLUMN Function 41

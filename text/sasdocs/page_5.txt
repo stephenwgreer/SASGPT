@@ -1,0 +1,26 @@
+Executive Summary  
+Model Execution Proposal Page 2 FCB is looking for a model execution solution in preparation  for the CCAR 2024 production cycle. 
+The model execution capability is part of a single risk and finance platform, purpose -built for a 
+heavily regulated industry and provides expansion cap abilities to support multiple lines of 
+business  and a diverse array of model -based solutions .  
+ 
+The model implementation and execution capabilities leverage a common data model  in a 
+standardized platform  and allow s business users to run models under v arious scenarios avoiding 
+data hand -offs (via automation of model  and data lineage and dependency management ) to 
+produce timely analytics. The solution delivers operational performance, a repeatable process, 
+governance, and controls to meet business expectations and ensure a well -run regulatory 
+examination. Capabilities also extend into model performance monitoring activities required as 
+part of model monitoring and governance.  
+ SAS is suggesting the following milestones  to meet  FCB’s  require ment s for the model 
+implementation and execution:  
+♦ Milestone  1: Implement Phase 0  to validate technical and functional feasibility  
+♦ Milestone  2:  Set up the FCB environment  in SAS Cloud  
+♦ Milestone  3:  Establish an end -to-end process for one portfolio 
+♦ Milestone  4:  Expansion of portfolio coverage  
+ Upon  ensuring the quick success for a more CCAR -compliant organization , the plan is to evolve 
+the infrastructure towards the incorporation of CECL and an integrated balance sheet 
+management  solution .  
+ SAS is 100% committed to ongoing innovation in risk analytics and to surpassing our clients’ expectations. We reinvest a quarter of our annual revenue into R&D to ensure we provide 
+customers like FCB  with cutting -edge technology solutions that en able them to prosper in a 
+continuously evolving business environment. We look forward to discussing our response with 
+the FCB team and proving that we are the right partner to help FCB deliver on this initiative.

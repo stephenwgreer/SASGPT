@@ -1,0 +1,22 @@
+7
+Execute a Published Decision
+Introduction  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+How To  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+Example Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40
+Responses  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+See Also  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+Introduction
+This example executes a decision that has been published to the maslocal 
+destination.
+How To
+1Get an access token by submitting a GET request to the /SASLogon/oauth/token
+ resource. The example described in Chapter 2, “Define Basic Methods 
+and Get an Access Token”  includes the code required to get an access token. 
+Prepend that code to the code for this example.
+2Create the input body for the request. The input body defines the input data that 
+you want to use to execute the decision. Specify the name and value for each 
+input-only and input-output variable.
+IMPORTANT If the SAS Micro Analytic Service configuration property service.removetrailingunderscoresfrominputs
+ and the SAS 
+Intelligent Decisioning property sas.decisions.masnode.removeTrailingUnderscoresFromInput
+ are 39

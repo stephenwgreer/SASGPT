@@ -1,0 +1,30 @@
+Note: A period (.) indicates a missing value. Boolean values are recorded as 0 
+(false) and 1 (true).
+For data grid variables, SAS Intelligent Decisioning  creates a log entry for any 
+assignment that changes the value of the variable and that is performed by using 
+data grid functions or methods. For example, if the generated code uses the SAS 
+Micro Analytic Service setValue method to set the value of a cell in a data grid 
+named zero_offers_out_grid, the log might include the following entry:Line 556 (package "71a328a8_7336_4c26_70c7_b5901f39d692_credit_card_offers_zero_offers"     line 44):Cell for column index 1 added for DataGrid "zero_offers_out_grid"     with value 8d9bee3d-45f0-4249-b4d7-9aa92b865a92
+SAS Intelligent Decisioning  does not write log entries for direct assignments from 
+one data grid variable to another such as gridVar1 = gridVar2
+.
+If the data grid variable is an output variable, the log contains the entire value of the 
+variable that is written to the output table. The log entry includes both the column 
+metadata and the values for each column. For example, if the decision includes a 
+treatment group named tg_hmeq, the decision creates an output data grid variable 
+for the treatment group named tg_hmeq_out. In the following log entry, the value of 
+the tg_hmeq_out variable was set on line 2847 in the generated code:Line 2847 (thread "56b88b7c_60c8_4c30_c8ec_82ea1b788180_decisionflowthread" line 205): "tg_hmeq_out"=[{"metadata":[{"TREATMENT_DEFINITION_GROUP_ID":"string"},{"TREATMENT_DEFINITION_GROUP_REVISION_ID":"string"},{"TREATMENT_DEFINITION_ID":"string"},{"TREATMENT_DEFINITION_REVISION_ID":"string"},{"TREATMENT_DEFINITION_NAME":"string"},{"CLNO":"decimal"},{"DEBTINC":"decimal"},{"DELINQ":"decimal"},{"DEROG":"decimal"},{"DISCOUNT":"decimal"},{"OFFERCODE":"string"},{"OBJECTNODEID":"string"}]},{"data":[["e4c3c86d-419f-41d8-8e7f-4ba4dfc01f80","2389be10-0445-4647-bc63-0221a078431d","7ab57211-a67a-4e03-adee-dae8436255b5","bbbbe7cd-e11b-49a4-b7f1-afa736503397","hmeq_online_marketing_services",23.2,33,2,234,20,"OMS01","8b758d75-1e60-4787-9e44-3421faf1548e"]]}]
+For information about the JSON strings that are used to represent data grid 
+variables, see “Introduction to Data Grids” in SAS Intelligent Decisioning: Using 
+Data Grids .
+If the 
+sas.decisions.nodetraces.includeRuleFiredPathTrackInfoInVariableAssignmentLogging
+configuration option is turned on, the log includes rule-fired information and path-
+tracking information. However, if this configuration option is turned off, you cannot 
+run rule-fired analyses or path-tracking analyses for scenario tests. For more 
+information about the configuration option, see “Decisions Service Properties” in 
+SAS Intelligent Decisioning: Administrator’s Guide .
+After the scenario test has run, select the Generate assignment report  menu 
+option to generate a report from the log entries. The application creates the report in 
+a text file and adds this text file to the scenario test as a comment with an 
+attachment.Testing Decisions 297

@@ -1,0 +1,19 @@
+sas-viya sid-functions add "Exponential" "myCustomFunctions/squareFx.ds2"
+Example 4
+To modify the code for an existing custom function, use the --replace
+ option. The 
+following command replaces the custom function that was defined in the previous 
+example with the updated contents of the squareFx.ds2 file:sas-viya sid-functions add --replace "Exponential" "myCustomFunctions/squareFx.ds2"
+Example 5
+The following command lists the names and parameters for all of the custom 
+functions that are defined in the environment:sas-viya sid-functions list
+Example 6
+The following command deletes the custom function named square
+:sas-viya sid-functions delete "square"
+Example 7
+The following command deletes the custom function category Exponential and 
+deletes all of the custom functions in that category:sas-viya sid-functions categories delete "Exponential"
+Example 8
+The following command downloads the code for all of the custom functions that are 
+defined in the environment and writes that code to the file name customFunctions:sas-viya sid-functions download-code > customFunctions
+sid-functions Plug-In 27

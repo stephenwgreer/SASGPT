@@ -1,0 +1,26 @@
+%DCM_DATAGRID_JSON_TO_TABLE Macro
+Creates a data grid from the JavaScript Object Notation (JSON) string that is specified in the input file, and 
+writes the data grid to the specified output table.
+Restriction: The maximum length of a data grid JSON string that can be processed by using this 
+macro is 1,048,576 characters.
+Syntax
+%DCM_DATAGRID_JSON_TO_TABLE (
+JSONFILE= data-grid-JSON-file ,
+OUTPUTTABLE= <libref. >table ,
+<PROMOTE= YES | NO >
+)
+Required Arguments
+JSONFILE= JSON-input-file
+specifies the name of a file that contains a JSON string that defines a data grid. 
+The JSON string must follow the same format as the serialzed JSON string that 
+is produced by the %DCM_SERIALIZEGRID macro.See“How Are Data Grids Stored?” on page 2 “%DCM_SERIALIZEGRID Macro” on page 25
+OUTPUTTABLE= <libref. >table
+specifies the libref and name of the output table. The output table can be a CAS 
+table that is stored in the PUBLIC library or in another CAS library, or it can be a 
+BASE table that is stored in the WORK library. The default library is WORK.
+Optional Argument
+PROMOTE= YES | NO
+promotes the merged data grid table from session scope to global scope.DefaultYESRestrictionThis option is valid only if the output table is written to a CAS library.
+Example
+The following code defines a temporary file named DG_JSON that contains a JSON 
+string that defines a data grid. The data grid contains two columns: ASSETTYPE %DCM_DATAGRID_JSON_TO_TABLE Macro 17

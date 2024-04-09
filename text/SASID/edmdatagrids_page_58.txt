@@ -1,0 +1,31 @@
+Returned data 
+type:INTEGER
+Note: This function returns 1 if the two data grids are identical and 0 if they are not identical.
+Syntax
+DATAGRID_EQUALS  (dataGrid1 , dataGrid2 )
+Required Argument
+dataGrid1
+dataGrid2
+specifies the names of the two data grids that you want to compare.
+DATAGRID_FILTEREDGET Function
+Returns the value in the first row in the specified column for which the specified comparison evaluates to 
+true.
+Category: Retrieve Values
+Returned data 
+type:STRING
+Note: If no rows match the specified comparison, an error is written to the log.
+Syntax
+DATAGRID_FILTEREDGET  (dataGrid , columnToSearch , filterColumn , operator , 
+variableOrValue )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.
+columnToSearch
+specifies the name of the column whose value you want to retrieve. You can 
+specify a column name in single quotation marks or a variable that evaluates to a 
+column name.
+filterColumn
+specifies the name of the column whose value is to be compared to 
+variableOrValue . You can specify a column name in single quotation marks or a 
+variable that evaluates to a column name.52Chapter 3 / Data Grid Functions

@@ -1,0 +1,37 @@
+8For each outgoing path that you want to add to the branch node, complete the 
+following steps:
+aClick  to add the path. 
+Note: SAS Intelligent Decisioning  automatically adds a path labeled Other .
+bSpecify the values or expressions for the path.Branch 
+TypeValues or ExpressionsEqualsSpecify a comparison variable or constant of the branch variable 
+for the path. See “About Equals Branches” on page 238 for more 
+information.RangeSpecify a minimum value, a maximum value, or both for the 
+branch variable. Minimum and maximum values are optional. If 
+you do not specify a minimum value, the minimum is treated as 
+negative infinity. If you do not specify a maximum value, the 
+maximum is treated as positive infinity. If the minimum and 
+maximum are the same value, the path is followed only if the 
+branch variable is equal to that value. The minimum and 
+maximum boundary values are inclusive.
+If the minimum or maximum values for any ranges are static and 
+overlapping, SAS Intelligent Decisioning  displays a warning, but 
+you can still publish the decision. See “About Range Branches” 
+on page 239 for more information.LikeSpecify the LIKE expression for the path in single quotation 
+marks. See “Using the LIKE Operator” on page 38 and “About 
+Like Branches” on page 240 for more information.
+9(Optional) Click  or  to reorder the paths. Branch paths are evaluated in 
+order. The decision follows the first path that evaluates to True.
+10(Optional) Combine branch paths. For Equals and Like branches, you can select 
+the OR check box to combine a branch path with the path that immediately 
+follows it. The application combines the conditions for the branch paths by using 
+the OR operator.
+11If you are working on the Decision  tab, click OK to add the branches to the 
+decision and close the Properties panel.
+12In the decision diagram, add objects to the outgoing branch paths.
+On the Decision Flow  tab, right-click on the branch node, and select Add to 
+branch path  ð Branch label  ð Object type .
+On the Decision  tab, select Edit ð Add to branch path  ð Branch label  ð 
+Object type .
+SAS Intelligent Decisioning  opens the appropriate window, depending on the 
+object type.
+For more information, see the following topics:242 Chapter 8 / Working with Decisions

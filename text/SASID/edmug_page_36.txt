@@ -1,0 +1,37 @@
+Add an IF-THEN or IF-THEN-ELSE Rule to an 
+Assignment or Common Rule Set
+1Create or open the rule set. If no variables are defined in the rule set, SAS 
+Intelligent Decisioning  displays the Variables  tab. Otherwise, it displays the Rule 
+Set tab.
+TIP If you do not have permission to update an object, SAS Intelligent 
+Decisioning displays (Read-Only)
+ in the title bar next to the object name, 
+and the buttons for modifying and saving the object are disabled.
+2Import or create any variables that are required for the new rule that have not 
+already been added to the rule set. You can add or create the variables on the 
+Variables  tab, or you can define variables dynamically as you author the rule. 
+See “Managing the Variables in a Rule Set” on page 16 for more information.
+3Click the Rule Set  tab.
+4Click Add Rule  if the rule set is empty. If the rule set contains at least one 
+statement, click Add Rule  or select Add ð Add rule . SAS Intelligent 
+Decisioning  adds a new IF-THEN rule to the rule set.
+5(Optional) Define the condition expression for the rule. See “About Defining 
+Expressions” on page 33 for additional information.
+To add additional condition expressions to the selected rule, select Add ð 
+Condition .
+6Define the action expressions for the rule. See “About Defining Expressions” on 
+page 33 for additional information.
+To add additional action expressions to the selected rule, select Add ð Action .
+TIP To move condition or action expressions up or down within an IF, 
+THEN, or ELSE clause, select the expression and click  or .
+7(Optional) Change the rule operator to ELSE  or OR. If the rule is the first rule in 
+a rule set, the rule operator must be IF.
+When you change the operator on a rule from IF to ELSE, the condition 
+expression is preserved, and the rule becomes an ELSE clause with a condition. 
+If you change IF or ELSE to OR, the condition expression is preserved, but the 
+action expression is deleted. For more information, see “Controlling Which 
+Conditions Are Evaluated” on page 31.
+8(Optional) Change the operator on the THEN clause from ASSIGN  to RETURN . 
+The RETURN action stops the execution of any additional statements in the rule 
+set. See “Controlling Which Conditions Are Evaluated” on page 31 for more 
+information.Defining New Rules in a Rule Set 25

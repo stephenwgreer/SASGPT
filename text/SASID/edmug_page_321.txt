@@ -1,0 +1,36 @@
+TIP You can click on the values of character variables to display the 
+entire value in a separate window. For data grid variables, you can 
+choose to view the variable value in three different formats:
+nClick the Data Grid  tab to view the data grid value as a table.
+nClick the Formatted  tab to view the data grid as a formatted JSON 
+character string.
+nClick the Plain  tab to view the data grid as an unformatted character 
+string.
+TIP On the Log page, you can click  to download the log file.
+9Click Close  to close the decision.
+Working with Test and Validation Test Output Data
+After you run a test or a publishing validation test, you can work with the output table 
+in other SAS applications to analyze the data, create and compare models, discover 
+relationships hidden in the data, and generate reports based on the data.
+Note: The actions available to you depend on the applications that are available at 
+your site.
+On the Test Results  page, select the Output  table in the navigation pane, click 
+Actions , and select one of the following options:
+Explore Lineage
+opens SAS Lineage Viewer. SAS Lineage Viewer enables you to better 
+understand the relationships between objects in your SAS Viya applications. 
+These objects include data, transformation processes, reports, and 
+visualizations. For more information, see SAS Lineage: User’s Guide .
+Explore and Visualize Data
+opens the output table in SAS Visual Analytics. SAS Visual Analytics enables 
+you to create, test, and compare models based on the patterns discovered 
+during exploration of the data. You can export the model before or after 
+performing model comparison for use with other SAS products or to put the 
+model into production. SAS Visual Analytics supports a range of visualization, 
+discovery, and reporting features. For more information, see Welcome to SAS 
+Visual Analytics .
+Prepare Data
+opens the output table in SAS Data Studio. SAS Data Studio enables you to 
+perform data transforms such as joining tables, appending data to a table, 
+transposing columns, creating calculated columns, and so on. For more 
+information, see SAS Data Studio: User’s Guide .Testing Decisions 305

@@ -1,0 +1,38 @@
+TIP You can edit the description later on the Properties  tab.
+4Click , and select the folder where you want to save the treatment group.
+5Click Save  to save the treatment group. SAS Intelligent Decisioning  opens the 
+new treatment group and displays the Treatments  tab.
+TIP Objects that are saved in a folder for which the check-out and 
+commit feature is enabled, such as the Decision Repository
+ folder, 
+must be checked out before they can be edited. 
+6(Optional) If the treatment group is in a folder for which the check-out and 
+commit feature is enabled, click the Versions  tab and check out the latest 
+version of the treatment group. For more information, see “Check Out and 
+Commit a Treatment or Treatment Group Version” on page 110.
+Add Treatments
+7On the Treatments  tab, click Add Treatments . The Add Treatments  window 
+appears.
+8Select the treatments that you want to add to the treatment group, and click OK.
+TIP After you add a treatment to a treatment group, the variables in the 
+eligibility rule set are added to the list of eligibility variables for the 
+treatment group. You can view the eligibility variables for a treatment 
+group on the Eligibility Variables  tab.
+9(Optional) Select the version of each treatment that you want to use in the 
+treatment group.
+TIP You can change the version of a treatment at any time on the 
+Treatments  tab. 
+Customize Dynamic Treatment Attributes
+For information about dynamic and fixed attributes, see “Define Custom Attributes” 
+on page 95.
+10On the Treatments  tab, click Set Attributes . The Set Attributes  window 
+appears. By default, dynamic attributes are automatically selected, and their 
+values are set at run-time by the decision flow.
+11For each dynamic variable, verify that its setting is correct for the current 
+treatment group.
+nIf you want the attribute’s value to be set by the decision flow, leave the 
+attribute selected.
+nIf you want to enter a static value or list of values for the attribute, clear the 
+check box, and then enter the value or values that you want to be used in the 
+current treatment group. To delete a value from a list, click the X for that 
+value. To enter new values, press Enter after each new value.92Chapter 3 / Working with Treatments and Treatment Groups

@@ -1,0 +1,35 @@
+Publish without reloading
+publishes the decisions but does not reload the CAS destination table. You 
+must manually reload the table in order for the newly published items to be 
+accessible.
+Publish and lock
+locks and publishes the decision and creates a new minor version, but does 
+not reload the CAS destination table. You must manually reload the table in 
+order for the newly published items to be accessible.
+Note: This option is not available unless you chose Publish and Lock  in 
+Step 4 .
+The Publishing Results  window appears. It displays the names of the published 
+items, their status, and a link to the log that was generated during the publishing 
+process.
+8After the status changes to Published successfully , click Close  to close the 
+Publishing Results  window.
+TIP To view the publishing history for a decision, click the History  tab.
+9(Optional) Click Close  to close the decision.
+Testing Decisions
+Ways to Test a Decision
+There are three types of tests:
+Basic test
+executes the decision in the SAS Cloud Analytic Services (CAS) destination 
+using the input table that you specify. You can also specify a debugging variable 
+and enable value tracing. For more information, see “Create and Run a New 
+Test” on page 285.
+Scenario test
+enables you to enter specific input values and the output values that you expect 
+the test to generate. A scenario test identifies differences between the output 
+that you expect to see and the actual output that is generated when the test is 
+run. You can also compare the test definitions and test results of different 
+scenarios. Scenario tests are also run in CAS. For more information, see “Test a 
+Scenario” on page 289.
+Publishing validation test
+executes the decision in a publishing destination using the input table that you 
+specify. When you publish the decision, a validation test is automatically defined 284 Chapter 8 / Working with Decisions

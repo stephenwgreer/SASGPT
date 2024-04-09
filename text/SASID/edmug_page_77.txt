@@ -1,0 +1,31 @@
+TIP You can click on the values of character variables to display the 
+entire value in a separate window. For data grid variables, you can 
+choose to view the variable value in three different formats:
+nClick the Data Grid  tab to view the data grid value as a table.
+nClick the Formatted  tab to view the data grid as a formatted JSON 
+character string.
+nClick the Plain  tab to view the data grid as an unformatted character 
+string.
+TIP On the Log page, you can click  to download the log file.
+Debugging Rule Set Tests
+When you create a test, you can specify a variable to use as a debugging variable 
+in the Input debug variable  field. You can specify an input-only variable or an input-
+output variable. The rule set writes the name and value of this variable to the log for 
+each input record that is processed. It writes the value just before the logic of the 
+rule set is executed for the input record. For more information, see Step 12  of 
+“Create and Run a New Test” on page 63.
+When you specify an input debug variable, you can use the 
+sas.businessRules.messageOrder configuration option to control whether the log 
+messages are written as they are produced or after the rule set executes. For more 
+information, see “sas.businessrules.messageOrder” in SAS Intelligent Decisioning: 
+Administrator’s Guide .
+When you specify an input debug variable, SAS Intelligent Decisioning  automatically 
+sets the maximum number of threads that can be allocated for the test to 1. Setting 
+the thread count to 1 ensures that the variable's values are written to the log in the 
+correct order and are not affected by different threads completing at different times.
+To capture variable values for input-only or temporary variables after the rule set 
+logic has executed for a specific record, you can specify that the variable is an 
+output variable, and then re-run the test. Before publishing the rule set to a 
+production environment, return the input and output settings for the variable to their 
+previous settings. For more information, see “Input Variables, Output Variables, and 
+Temporary Variables” on page 17 and “Edit Variable Properties” on page 23.66Chapter 2 / Working with Rule Sets

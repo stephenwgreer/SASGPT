@@ -1,0 +1,28 @@
+You can enter expressions directly into the expression field, or you can use the lists 
+of operators, function names, and variable names to add them to the expression.
+nTo add a variable, click the Variables  tab, and double-click the variable name.
+nTo add a function call, click the Functions  tab, expand the appropriate function 
+category, select a function name, and click . The Expression Editor adds a 
+basic syntax template for the function to the expression field.
+The icon beside each function name indicates the return type of the function. 
+Functions that return character data are displayed with the  icon, and functions 
+that return numeric data are displayed with the  icon.
+nTo invert an entire condition expression, click Invert Condition . SAS Intelligent 
+Decisioning  wraps the entire expression in parentheses and adds the keyword NOT
+:NOT(condition)
+TIP The Invert Condition  button is a toggle. If the entire condition is 
+already enclosed in NOT()
+, clicking this button removes the keyword NOT 
+and the parentheses surrounding the expression. This button does not 
+affect NOT conditions that are embedded within the expression. (This 
+button is available only if you are editing a condition expression in a rule 
+set. It is not available for action expressions or for variable initial values.)
+nClick Validate  at any time to check the syntax of the expression that you are 
+building.
+Note: If you invert the condition and click Validate , the validation process might 
+return incorrect results. 
+nTo clear the expression field, click Clear .
+nTo save the expression, click Save .
+IMPORTANT After you save a rule set expression in the Expression 
+Editor, the expression field on the Rule Set  tab becomes a read-only field. 
+You can edit it only by launching the Expression Editor again.34Chapter 2 / Working with Rule Sets

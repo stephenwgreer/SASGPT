@@ -1,0 +1,36 @@
+2(Optional) Click  in the toolbar, and select Add missing variables  to add any 
+missing variables to the decision. For more information, see “Add Missing 
+Variables” .
+3(Optional) Reorder the objects in the decision. For more information, see “Editing 
+the Objects in a Decision” on page 251.
+4(Optional) For rule sets, code files, models, and nested decisions, select the 
+version of the object that you want to include in the decision in the Properties 
+panel for the object. For models, if you select a specific version, the decision 
+always uses that version, even if newer versions of the model are deployed. If 
+you select latest , the decision always uses the most recently deployed version 
+of the model.
+TIP You can change the version of most objects at any time by changing 
+the version on the Properties  panel. See “Edit the Properties of a 
+Decision Node” on page 252 for more information.  You cannot specify the 
+version of a treatment group that is used in a decision. For more 
+information, see “Content That Is Used by Tests and Scenarios for 
+Decisions” on page 303 and “Content Executed by Published Decisions” 
+on page 309.
+5(Optional) If you are adding an object that uses a function that is defined in a 
+custom context file, specify the custom context file on the Properties  tab. See 
+“Associating a Custom Context File with a Decision” on page 164 for more 
+information. 
+6(Optional) On the Properties  tab, select the Subject ID  variable and the 
+Subject level  variable that you want to associate with subject contact records 
+that are recorded by the decision.
+TIP If you do not specify the subject ID or subject level, the subject ID or 
+subject level is recorded as NONE
+ in the subject contact history.
+For more information about subjects and subject contact histories, see the 
+following topics:
+n“About Treatments and Decisions” on page 84
+n“Example: A Decision That Includes a Treatment Group” on page 85
+n“Adding Record Contacts Nodes” on page 233
+n“Predefined Lookup Tables” on page 116
+7Verify that the object’s variables are mapped to the correct decision variables. 
+For more information, see “Mapping Variables within a Decision” on page 247.Adding Objects to a Decision 231

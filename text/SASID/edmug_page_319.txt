@@ -1,0 +1,21 @@
+4Click Node Count  in the navigation panel to display a table showing the number 
+of input records evaluated at each rule set, code file, and model node in the 
+decision.
+5Click Close  to close the Test Results  window.
+Content That Is Used by Tests and Scenarios for 
+Decisions
+For each object in a decision, the content that is used when the decision is tested 
+depends on the object type.Object TypeObject Content that Is UsedNested decisionThe version that you select when you add the nested decision to 
+the decisionRule setThe version that you select when you add the rule set to the 
+decisionModelThe latest versionTreatment groupThe active versionLookup tableThe active versionGlobal variableThe active versionCustom code fileThe version that you select when you add the code file to the 
+decision
+Validate a Published Decision
+You can test the published decision in the publishing destination. When you publish 
+the decision to any destination type except Git, a validation test is automatically 
+defined for that decision in that destination.
+Note: When both the SAS Intelligent Decisioning 
+sas.decisions.masnode.removeTrailingUnderscoresFromInput  property and the 
+SAS Micro Analytic Service service.removetrailingunderscoresfrominputs  property 
+are set to On, publishing validation tests will fail for content that has been published 
+to a SAS Micro Analytic Service destination.
+To run the publishing validation test:Testing Decisions 303

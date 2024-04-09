@@ -1,0 +1,36 @@
+LIKE Expression ExampleMatching Resultslike 'S%th'Smith, Smooth
+Using Functions in Expressions
+SAS Intelligent Decisioning  supports the following functions in expressions:
+nLOOKUP and LOOKUPVALUE functions. Condition expressions can contain the 
+LOOKUP function, and action expressions can contain the LOOKUPVALUE 
+function. However, if the expression contains the LOOKUP or LOOKUPVALUE 
+function, then the expression cannot contain anything else. For more 
+information, see “Enter LOOKUP and LOOKUPVALUE Expressions” on page 35, 
+“LOOKUP Function” on page 137, and “LOOKUPVALUE Function” on page 138.
+nSAS DS2 functions. For additional information about these functions and 
+additional DS2 functions, see SAS DS2 Language Reference .
+nSAS Data Quality Server functions. For information about these functions, see 
+“Functions and CALL Routines” in SAS Data Quality and SAS Data Quality 
+Server: Language Reference . These functions appear in the expression editor 
+only if SAS Data Quality Server is installed.
+Note: You cannot publish rule sets that use SAS Data Quality functions to 
+container destinations. Also, rule sets that use these functions fail when they are 
+run inside the database.
+nData grid functions. For more information about these functions, see “Data Grid 
+Functions” in SAS Intelligent Decisioning: Using Data Grids .
+nCustom DS2 functions that you define in SAS Intelligent Decisioning  or by using 
+the sid-functions CLI. For more information, see Chapter 7, “Using Custom 
+Functions,” on page 197 and “sid-functions Plug-In” in SAS Intelligent 
+Decisioning: Command-Line Interfaces .
+To enter a function in an expression, use the Expression Editor. See “Using the 
+Expression Editor” on page 33 for more information.
+Working with Missing Values
+You can use the MISSING function to check for missing numeric and character 
+values. This function returns 0 (false) or 1 (true). Missing values have a value of false
+ when you use them with logical operators such as AND or OR. You can use 
+the MISSING function to eliminate errors, notes, and warnings in the SAS log that 
+are caused by missing values.
+In expressions, you can use the period (.) to denote missing numeric values, and 
+two single quotation marks with no space (the empty string ''
+ ) to denote missing 
+character values.40Chapter 2 / Working with Rule Sets

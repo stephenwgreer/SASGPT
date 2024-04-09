@@ -1,0 +1,51 @@
+How To
+1Get an access token by submitting a GET request to the /SASLogon/oauth/token
+ resource. The example described in Chapter 2, “Define Basic Methods 
+and Get an Access Token”  includes the code required to get an access token. 
+Prepend that code to the code for this example.
+2Specify the tracking code of the subject contact record and treatment ID of the 
+treatment that you want to update. These values are returned by the decision 
+that determines the treatments for which the subject is eligible.
+3Define the record-level updates that you want to make to the subject contact 
+record. You can update the following properties of the record:
+conclusionResponseValue
+the subject’s response to the results of the decision. You can use this 
+property to record a response when a decision does not include treatments. 
+When the decision includes treatments, this value might represent an overall 
+response to all of the treatments in the subject contact record.
+conclusionResponseType
+a summary value, category name, or other description for the response that 
+is specified in the conclusionResponseValue property. For example, you 
+could assign the type of Evaluating
+, No response
+, or Closed-Lost
+ to the 
+response. This value can be used as a target value in modeling.
+4Define the treatment-level updates that you want to make to the individual 
+treatment. You can update the following properties of individual treatments:
+presented
+specifies whether the treatment has been presented to the subject. Specify True
+ or False
+.
+presentedTimeStamp
+timestamp that indicates when the treatment was presented to the subject. 
+Enter the timestamp in the following format:yyyy-mm-ddThh:mm:ss.sssZ
+Include the Coordinated Universal Time designator Z
+ (for example, 2019-11-14T18:47:40.719Z
+).
+For more information about timestamps, see Date and Time Formats .
+responseValue
+the subject’s response to the treatment. For example, this value could be a 
+value or code such as Purchased
+, Rejected
+, Requested quote
+, Email opened
+, rt1
+, or em
+.
+responseChannel
+the channel through which the user responded to the treatment. The 
+response channel might be different from the contact channel. The possible 
+values for the channel are defined in the Treatment Channels lookup table. 
+For more information, see “Predefined Lookup Tables” in SAS Intelligent 
+Decisioning: User’s Guide .44Chapter 8 / Update Subject Contact History

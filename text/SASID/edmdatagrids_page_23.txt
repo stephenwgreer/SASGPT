@@ -1,0 +1,44 @@
+)
+Required Arguments
+CONVERTTYPE= JSONTOGRID  | GRIDTOJSON
+specifies the conversion type. Specify GRIDTOJSON
+ to convert the data grid JSON 
+in the file that is specified by the GRIDFILE= option to standard JSON. Specify JSONTOGRID
+ to convert standard JSON in the file that is specified by the 
+JSONFILE= option to data grid JSON.
+JSONFILE= standard-JSON-file-name
+specifies the name of the file for standard JSON data. If you are converting 
+standard JSON to data grid JSON, this file is the input file. If you are converting 
+data grid JSON to standard JSON, this file is the output file.
+GRIDFILE= data-grid-JSON-file-name
+specifies the name of a file for the data grid JSON string. If you are converting 
+data grid JSON to standard JSON, this file is the input file. If you are converting 
+standard JSON to data grid JSON, the macro determines the output file as 
+follows:
+nIf you specify RETRIEVE_NEST=YES and the input file does not contain 
+nested JSON, or if you specify RETRIEVE_NEST=NO, then the macro writes 
+the output to the file that is specified by the GRIDFILE= option.
+nIf you specify RETRIEVE_NEST=YES and the input file contains nested 
+JSON, then the macro writes the output to the table that is specified by the 
+GRIDTABLE= option. The GRIDFILE= option is ignored.
+Optional Arguments
+RETRIEVE_NEST= YES | NO
+specifies whether to convert nested JSON when you convert standard JSON to 
+data grid JSON. If you specify NO
+, the macro converts only the top-level JSON 
+structure in the input file and writes the output to the file that is specified by the 
+GRIDFILE= option. If you specify YES
+, then you must specify the GRIDTABLE= 
+option, and if the input JSON contains nested structures, the macro writes the 
+data grid JSON to the table that is specified by the GRIDTABLE= option.DefaultNORestrictionThis option is valid only if you also specify the 
+CONVERTTYPE=JSONTOGRID option.
+GRIDTABLE= <libref .>table-name
+specifies the table that contains the data grid JSON that is produced by the 
+macro if you specify CONVERTTYPE=JSONTOGRID and 
+RETRIEVE_NEST=YES. The output table can be a CAS table that is stored in 
+the PUBLIC library or in another CAS library, or it can be a BASE table that is 
+stored in the WORK library. The default library is WORK. If the data grid is very 
+large, specify a CAS table name.NoteThis option is ignored if you specify the RETRIEVE_NEST=NO option or if 
+the input file does not contain nested JSON.
+PROMOTE= YES | NO
+promotes the merged data grid table from session scope to global scope.%DCM_JSON_TO_DATAGRID Macro 19

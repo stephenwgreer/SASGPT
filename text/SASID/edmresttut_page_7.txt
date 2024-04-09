@@ -1,0 +1,24 @@
+Client ID
+Before you use these APIs, your administrator must register a client identifier. You 
+must specify this ID to obtain an access token to use with REST API requests. For 
+more information, see SAS Viya REST APIs: Authentication to SAS Viya .
+Authorization
+The REST APIs require authentication for all operations. Authentication is a means 
+of verifying the identity of the user or agent that is making the request. 
+Authentication is handled with an OAuth2-based service in the SAS Logon 
+Manager. You must obtain an access token, and use that token on all requests. The 
+example code shown in Chapter 2, “Define Basic Methods and Get an Access 
+Token,” on page 5 provides a function for obtaining an access token.
+Code Files for These Examples
+The ZIP file that contains the code for the examples in this document is named 
+REST_API_Examples.zip and is available at 
+https://support.sas.com/en/software/intelligent-decisioning-support.html#documentation .
+To extract these files to your computer:
+1Save the ZIP file into a folder on your machine.
+2In Microsoft Windows Explorer, right-click REST_API_Examples.zip , and select 
+WinZip  ð Extract to here . 
+Windows creates a folder named REST_API_Examples, which contains the 
+example files.
+Additional Documentation and Examples
+Complete reference information for the Decision Management API is available on 
+the web at https://developer.sas.com/apis/rest/DecisionManagement/ .2Chapter 1 / About the Examples

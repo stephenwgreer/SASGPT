@@ -1,0 +1,28 @@
+Table A3.1 CSV Format of the Variable Import File ColumnDescriptionnameThe name of a rule set variable, a decision variable, or a data grid 
+column. If one of the rule set or decision variables is a data grid 
+variable, then specify the name of a column within the data grid.dataGridNameIf the name column contains the name of a data grid column, then 
+the dataGridName column contains the name of the rule set or 
+decision variable that contains the data grid.dataTypeThe data type of the variable. You can specify decimal
+, integer
+, date
+, datetime
+, boolean
+, or datagrid
+. For character variables, 
+specify string
+.directionWhether the rule set or decision variable is an input-only variable 
+(input
+), an output-only variable (output
+), both (inOut
+). Do not 
+specify a direction for data grid columns. If you do not specify a 
+direction for a rule set or decision variable, the direction is imported 
+as inOut
+. To designate a variable as a temporary variable, edit the 
+variable properties on the Variables  tab.lengthThe length of the variable. Specify lengths for character variables 
+only (strings or data grids).descriptionA description of the variable. Descriptions are limited to 256 
+characters.defaultValueAn initial (default) value for the variable.
+The following example specifies nine variables. The variable card_offers_out is a 
+data grid. The variables annual_fee, APR, and card_type are columns in the data 
+grid. The variable i is a temporary variable that has an initial value of zero.name,dataGridName,dataType,direction,length,description,defaultValueACCOUNT,,string,inOut,13,,ACCTSCORE,,decimal,inOut,,,card_offers_out,,dataGrid,output,,,annual_fee,card_offers_out,decimal,,,,APR,card_offers_out,decimal,,,,card_type,card_offers_out,string,,32767,,DEBTINC,,decimal,input,,,i,,decimal,inOut,,temporary,0zero_offers,,boolean,output,,,
+In a spreadsheet application, this CSV file appears as shown in the following figure.326 Appendix 2 / Import File Formats

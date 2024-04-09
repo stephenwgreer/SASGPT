@@ -1,0 +1,33 @@
+Alternatively, you can check out a rule set that uses a lookup table, open the lookup 
+table in the Lookup tables  category view and check it out, then change the 
+reference in the rule set to use the checked-out version of the lookup table. The 
+lookup table is committed when you commit the rule set.
+The newly committed version of the lookup table is not automatically activated when 
+they are committed. You must activate the newly committed version of the lookup 
+table. For more instructions, see “Activate a Lookup Table” on page 137.
+Concurrently Checking Out and Committing Rule 
+Set Versions
+The ability for multiple users to check out the same rule set at the same time is 
+controlled by the sas.businessrules.checkout.allowConcurrentCheckout 
+configuration option.  This option is turned on by default.
+When this option is turned on, different users can check out the same version of the 
+same object at the same time. Because the objects that are checked out are saved 
+in each user’s My Folder
+ location, the default permissions allow individual users to 
+see only the copies that they have checked out.
+When this option is turned off and a user has checked out an object, the Check Out 
+button for that object is disabled for all other users.
+If multiple users check out the same version of the same object at the same time, 
+each user’s changes are preserved in a new version when they commit their 
+changes. One user’s changes do not overwrite another user’s changes.
+IMPORTANT If two users attempt to commit changes to the same object 
+simultaneously, the first user's attempt will succeed but the second user 
+might see an error message that the commit has failed. If the second user 
+subsequently commits their changes, the Modified By  column on the 
+Versions  tab for both the version committed by the first user and the version 
+committed by the second user displays the user ID of the second user.
+Check Out and Commit a Rule Set Version
+1On the Versions  tab, click Check Out . 
+SAS Intelligent Decisioning  updates the Properties  tab to indicate that the 
+version is checked out.
+2Modify the checked-out version as needed, and save it.56Chapter 2 / Working with Rule Sets

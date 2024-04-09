@@ -1,0 +1,30 @@
+3(Optional) Enter a comment. It is recommended that you enter a comment for 
+governance purposes. For example, if you are the author and you are setting the 
+status to Review-ready, describe the changes that you made and the reasons for 
+making the changes.
+4Click Submit . 
+TIP The Status  column on the Versions  tab displays the status value for 
+each version. You can click  to view or change the version’s status and to 
+edit the comments that are associated with the version’s status. Only the user 
+who changed a decision’s status to its current setting can edit the comments 
+for that setting.
+Copy a Decision URL
+To create a link for external documentation that automatically opens a decision in 
+SAS Intelligent Decisioning :
+1Open the decision.
+2Click , and select Copy decision URL . The Copy URL  window appears, and 
+the URL is automatically selected.
+3Click Copy , and then click Close .
+Paste the link into your documentation.
+Compare Decision Content
+You can compare the contents of two different decisions, or you can compare the 
+contents of two different versions of the same decision.
+1Select the objects that you want to compare.
+nTo compare the contents of two different decisions, select the decisions in the 
+category view, click , and select Compare object contents .
+nTo compare the contents of two versions of the same decision, open the 
+decision, click  on the Versions  tab, and select Compare object contents .
+The Select Versions  window appears.
+2Select the versions that you want to compare, and click Compare . SAS 
+Intelligent Decisioning  opens the two objects side-by-side in the Compare Object 
+Contents  window. Compare Decision Content 255

@@ -1,0 +1,34 @@
+Note: A workflow can be canceled by an administrator in SAS Workflow Manager if 
+its status has not been set to Deployed.
+View the Status Change History
+You must have permission to view the status history. For more information, see 
+“Granting Access to the History of Workflow Status Changes” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+To view the history of workflow status changes for a decision:
+1Open the decision, click , and select View status change history . The Status 
+Change History Range  window appears.
+2Select the dates or versions for which you want to view the history:
+nSelect Dates , select a start date, and, if needed, select an end date.
+nSelect Versions , and, if needed, select a different start version and end 
+version.
+3Click OK. The Status Change History  window appears.
+To download a status history report in the Status Change History  window, click 
+Download . SAS Intelligent Decisioning  downloads the report as a comma-
+separated values (CSV) file. The result depends on which browser you are using 
+and the browser’s default download actions. The browser might automatically 
+download the file and display a notification in the bar at the bottom of the browser 
+window. Alternatively, the browser might prompt you to save the file or open it with a 
+specific application.
+Display and Export the Included Object Report for 
+Decisions That Are in a Workflow
+To display the versions of the objects that are included in a decision version that is 
+in a workflow, click  in the Status  column on the Versions  tab for that decision 
+version. The Included Objects  window appears. For assignment rule sets, filtering 
+rule sets, nested decisions, and code files, this window lists each object and the 
+version that is used in the decision. For treatment groups and for lookup tables that 
+are referenced by other objects, the window lists the active version.
+Note: This report does not list common rule sets.
+To export the Included Objects report:
+1Click Export  in the Included Objects  window. The Create Document  window 
+appears.
+2Enter a file name for the report.Using SAS Workflow with SAS Intelligent Decisioning 219

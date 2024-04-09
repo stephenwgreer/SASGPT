@@ -1,0 +1,9 @@
+Figure 8.1 Cross-Branch Links Displayed as Arcs
+You can display cross-branch links as either arcs or nodes. By default, cross-branch 
+links are displayed as arcs. To switch between the two views, click  in the upper 
+right corner of the diagram.
+Figure 8.2 Cross-Branch Links Displayed as Nodes
+TIP To remove or edit a cross-branch link that is displayed as an arc, right-
+click on the dashed line and select Remove  or Properties .
+When you select a cross-branch link node, both the selected node and the 
+link’s target node are highlighted.Adding Objects to a Decision 245

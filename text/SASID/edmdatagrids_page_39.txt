@@ -1,0 +1,37 @@
+CategoryLanguage ElementsDescriptionDATAGRID_INITIALIZE 
+Function (p. 64)Replaces all of the values in the specified data grid with the 
+specified default values.InformationDATAGRID_COLUMNCOUN
+T Function (p. 42)Returns the number of columns in the specified data grid.DATAGRID_COLUMNINDEX 
+Function (p. 43)Returns the index of the specified column in the specified 
+data grid.DATAGRID_COLUMNISNU
+MERIC Function (p. 43)Determines whether the data type of the specified data grid 
+column is numeric.DATAGRID_COLUMNNAME 
+Function (p. 44)Returns the name of the column that is in the specified 
+ordinal position in the specified data grid.DATAGRID_COLUMNTYPE 
+Function (p. 44)Returns the data type of the specified column in the 
+specified data grid.DATAGRID_COUNT 
+Function (p. 48)Returns the number of rows in the specified data grid.DATAGRID_DISTINCTROW
+COUNT Function (p. 51)Returns the number of unique rows in the specified data 
+grid.DATAGRID_EQUALS 
+Function (p. 51)Compares the column count, row count, column names, 
+data types, and values in specified data grids and 
+determines whether they are identical.DATAGRID_FILTEREDGETI
+NDEX Function (p. 53)Returns the index of the first row in the specified column for 
+which the specified comparison evaluates to true.DATAGRID_GETFIRSTINDE
+XBYVALUE Function (p. 
+59)Returns the index of the first row that contains the specified 
+value in the specified column.DATAGRID_GETFIRSTMISS
+INGINDEX Function (p. 60)Returns the index of the first row that contains a missing 
+value in the specified column.DATAGRID_GETLASTINDE
+XBYVALUE Function (p. 
+61)Returns the index of the last row that contains the specified 
+value in the specified column.DATAGRID_GETLASTMISSI
+NGINDEX Function (p. 62)Returns the index of the last row that contains a missing 
+value in the specified column.DATAGRID_GRIDMATCHC
+OUNT Function (p. 64)Returns the number of rows for which the value in the 
+specified column in one data grid matches the value in the 
+specified column in another data grid.DATAGRID_MATCHCOUNT 
+Function (p. 67)Returns the number of rows in the specified column for 
+which the specified comparison evaluates to true.DATAGRID_NVALID 
+Function (p. 75)Returns the number of valid nonmissing numeric values in 
+the specified column of the specified data grid.Data Grid Functions Available in SAS Intelligent Decisioning 33

@@ -1,0 +1,40 @@
+When you check out a version, SAS Intelligent Decisioning  writes a working copy of 
+the version into your My Folder
+ folder and opens the working copy. SAS Intelligent 
+Decisioning  adds “(Checked Out)
+” to the name that is displayed at the top of the 
+window.
+While you have a version checked out, the Treatments  or Treatment Group  category 
+view shows two treatments or treatment groups with the same name, but the folders 
+listed in the Location  column differ for each object. The original version is in the 
+location specified by the 
+sas.treatmentdefinitions.checkout.checkoutEnabledFolderPaths configuration 
+option, and the checked-out copy is in your My Folder
+ folder.
+TIP If an object that you have checked out does not appear in the category 
+view, click  to refresh the category view.
+Note: When a decision that uses a treatment group is deployed to a production 
+environment, the decision always uses the active version of a treatment group. 
+When you edit a decision that uses a treatment group that you have checked out, 
+the properties panel for the treatment group shows the location of the treatment 
+group in the original folder. The panel does not list the location of the treatment 
+group that is checked out because that copy is not the active version.
+A Commit  button appears at the top of the Versions  tab for the checked-out 
+version. When you are finished editing the checked-out version, you must commit 
+your changes in order for other users to be able to see them. When you commit 
+your changes, SAS Intelligent Decisioning  creates a new version with your changes.
+If the parent object is deleted before you commit your changes, you will not be able 
+to commit your changes.
+You cannot activate the checked-out version that is in My Folder
+. To activate a 
+version with your changes, you must commit your changes, and activate the 
+committed version.
+Checking Out a Treatment Group from within a 
+Decision
+See “Checking Out and Committing Objects from within A Decision” on page 274 for 
+information.
+Checking Out and Committing Treatments from 
+within a Treatment Group
+You can check out a treatment from within a treatment group if the following 
+conditions are true:
+nThe treatment group is checked out.108 Chapter 3 / Working with Treatments and Treatment Groups

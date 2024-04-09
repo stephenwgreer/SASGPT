@@ -1,0 +1,36 @@
+sas.businessrules.dataGridMetadataGenerating
+Specifies whether DS2 packages that are published to SAS Micro Analytic Service destinations 
+have two methods (step IDs), datagrid_metadata
+ and datagrid_metadata_skel
+, that you can 
+use to determine the data grid metadata that is applicable to the rule flow. When this property is 
+set to On, you can post a request to these steps to get data grid metadata. See Execute a step  in 
+the SAS Viya REST API documentation.DefaultOff
+sas.businessrules.deleteVersions
+Enables users who have permission to delete rule sets to delete specific versions of rule sets.DefaultOn
+sas.businessrules.execution.threadCount
+Specifies the maximum number of threads that can be allocated for executing DS2 code 
+packages.Default4
+sas.businessrules.inlineGlobalVariableValues
+specifies whether the current values of global variables are included inline in generated code 
+when you publish a rule set to CAS or to SAS Micro Analytic Service destinations. When this 
+property is set to On, the current value of each global variable is included in the code that is 
+generated for these destinations. Changes to the values of the variables do not affect published 
+rule sets. When this property is set to Off, the generated code uses a SAS format or a SAS Micro 
+Analytic Service module to retrieve the current value of the global variable when the rule set is 
+run.DefaultOnSee“Activating a Global Variable” in SAS Intelligent Decisioning: User’s Guide
+sas.businessrules.inputVariableReadOnly
+Determines whether the values of character variables that are designated as input-only variables 
+are available to all objects in a decision. When inputVariableReadOnly is set to Off and the value 
+of an input-only character variable is modified in a rule set, the modified value is passed back to 
+the parent decision and is available to the remaining objects in the decision. When this property is 
+set to On, modified values are not passed back to the parent decision and are available only 
+within the rule set in which the value was modified.DefaultOff
+sas.businessrules.logicalExpression
+Specifies whether SAS Intelligent Decisioning adds the DS2 option LOGICALEXPR= to the code 
+that it generates for rule sets. The LOGICALEXPR= option specifies how logical AND and OR 
+expressions are evaluated. Valid option values are STANDARD and OPTIMIZED.STANDARDspecifies that DS2 can evaluate both operands of a logical AND or OR 
+expression before returning a result.OPTIMIZEDspecifies that DS2 optimizes the evaluation of the operands of logical AND and 
+OR expressions by returning a result that is based on the first operand when 
+possible. Specifying OPTIMIZED can enable the code to run faster and can 
+simplify the processing of complex rule conditions.DefaultSTANDARD 5

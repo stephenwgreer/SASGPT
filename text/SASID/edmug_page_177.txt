@@ -1,0 +1,40 @@
+You can use custom SQL code for your data query instead of using a quick filter. 
+However, SAS Intelligent Decisioning  cannot determine the variable’s data type 
+when it is creating the decision variable. SAS Intelligent Decisioning  assumes that 
+the variable is a numeric unless its name ends with char
+ or string
+. The char
+ and string
+ suffixes are not case sensitive.
+For more information, see “Filtering Data” in SAS Studio: User’s Guide  and “Macro 
+Variables Defined by Users” in SAS Macro Language: Reference .
+Handling Table and Column Names in Data Query 
+Files
+FedSQL performs case folding to make all table and column names uppercase if 
+they are not enclosed in quotation marks. This case folding might cause issues with 
+databases that perform case folding on unquoted references to make them 
+lowercase. To avoid issues with running your query code in both SAS Studio and in 
+SAS Intelligent Decisioning , do the following
+nIn SAS Studio, if you refer to a table column by using a table alias in a JOIN, 
+WHERE, or HAVING clause, do not enclose the table alias in quotation marks. 
+Alternatively, you can refer to the column by using only the column name or by 
+using the full table name instead of the alias.
+nWhen you define a libref in SAS Studio to connect to your PostgreSQL 
+database, set the PRESERVE_COL_NAMES and PERSERVE_TAB_NAMES 
+options on the LIBNAME statement to Yes. For additional information, see 
+“PRESERVE_COL_NAMES= LIBNAME Statement Option” in SAS/ACCESS  for 
+Relational Databases: Reference  and “PRESERVE_TAB_NAMES= LIBNAME 
+Statement Option” in SAS/ACCESS  for Relational Databases: Reference .
+nSet the SAS Intelligent Decisioning  configuration option 
+quoteStudioQueryIdentifiers to On. For additional information, see 
+“sas.decisions.codefiles.quoteStudioQueryIdentifiers” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+Custom Context Files
+Using Custom Context Files
+A custom context file is a custom DS2 package file in which you can define context 
+functions that you can use in rule sets, in DS2 code files, and in custom functions 
+that are defined in the Custom Functions  category. When SAS Intelligent 
+Decisioning  generates the code for a decision, each context function is defined only 
+once in the generated code.
+You can test or validate rule sets, DS2 code files, and custom functions that use 
+context functions before you publish them. In a production environment, you can Custom Context Files 163

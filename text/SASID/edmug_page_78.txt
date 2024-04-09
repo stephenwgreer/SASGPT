@@ -1,0 +1,32 @@
+Test a Scenario
+Create and Run a Scenario Test
+IMPORTANT If you are a testing rule set that uses functions that are 
+defined in a custom context file, verify that the context file is specified in the 
+Test custom context  field on the Properties  tab before running the test.
+If you are testing a rule set that uses a lookup table and both the rule set and 
+the lookup table are checked out, the rule set test uses the checked-out 
+version of the lookup table. If the lookup table is not checked out, the test 
+uses the activated version of the lookup table.
+1On the Scoring  tab, click the Scenarios  tab. 
+2Click New Test . The New Scenario Test  window appears.
+3Enter a name for the test if you do not want to use the default name. The name 
+cannot contain forward slashes (/) or curly braces ({}).
+4(Optional) Click  for the Test definition location  field, and select the folder 
+where you want to save the test definition.
+TIP Selecting a test definition location is optional, but it is highly 
+recommended. Storing test definitions in a folder simplifies the tasks of 
+setting permissions and transferring the test files.
+5Click  for the Output table location  field, and select the folder where you want 
+to save the test results.
+6(Optional) Select the version of the rule set that you want to test.
+7(Optional) Enter a description for the test. Descriptions are limited to 1000 
+characters.
+8Enter the values that you want to use for each input variable. You do not have to 
+enter values for every input variable. At run time, SAS Intelligent Decisioning 
+uses missing values to input variables for which you do not specify a value. 
+Note: Values longer than 32767 characters for character variables that are 
+either input-only or input-output will be truncated. You cannot enter input values 
+for variables of type binary or of type varying-length binary.
+To enter values for the columns in a data grid variable:
+aClick in the Value  field, and then click . The Edit Data Grid  window 
+appears.Testing Rule Sets 67

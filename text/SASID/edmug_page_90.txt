@@ -1,0 +1,40 @@
+nGetting Started with CASL Programming
+nSAS Cloud Analytic Services: CASL Reference
+n“Model Publishing and Scoring Action Set” in SAS Visual Analytics: 
+Programming Guide
+nSAS Cloud Analytic Services: User’s Guide
+Content Executed by Published Rule Sets
+When you execute a published rule set, the version of the content that is executed 
+depends on the publishing destination.Destination 
+TypeContent That Is Executed by Published Rule SetsSAS Micro 
+Analytic 
+ServiceGlobal variables are not locked. If a new version of a global variable 
+is activated, the newly activated version is used by the published 
+module.
+Lookup tables are embedded in decisions if the lookupStaticBinding 
+configuration option is turned on. If this option is off, lookup tables 
+are not embedded, and published modules use newly activated 
+versions of lookup tables. For more information, see 
+“sas.businessrules.lookupStaticBinding” in SAS Intelligent 
+Decisioning: Administrator’s Guide .SAS Cloud 
+Analytic 
+ServicesThe current values of global variables are included in generated 
+code if the inlineGlobalVariableValues configuration option is turned 
+on, and published modules do not use newly activated versions of 
+global variables. If this option is turned off, the generated code uses 
+a SAS format to retrieve the current value of the global variable 
+when the published module is run. For more information, see 
+“sas.businessrules.inlineGlobalVariableValues” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+Lookup tables are locked if the lookupStaticBinding configuration 
+option is turned on. If this option is off, lookup tables are not locked, 
+and published modules use newly activated versions of lookup 
+tables. For more information, see 
+“sas.businessrules.lookupStaticBinding” in SAS Intelligent 
+Decisioning: Administrator’s Guide .Teradata, 
+Hadoop, and 
+Container 
+DestinationsAll of the published rule set’s content, including custom functions, 
+lookup tables, and global variables is included inline in the published 
+module. Updates to the objects used in the rule set are not used by 
+the published module.Executing Published Content 79

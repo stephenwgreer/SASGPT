@@ -1,0 +1,29 @@
+variable or of an expression. The value that you specify must be or must 
+evaluate to the same data type as filterColumn .
+valueToAssign
+specifies the value to assign to the appropriate cells in columnToAssign . You can 
+specify a number, a character value enclosed in single quotation marks, the 
+name of a variable, or an expression. The value that you specify must be or must 
+evaluate to the same data type as columnToAssign .
+Details
+For each row in the data grid, the DATAGRID_FILTEREDSETALL function 
+compares the value of filterColumn  to the value of variableOrValue  by using the 
+comparison operator. The comparison is as follows:filterColumn  operator  variableOrValue
+If the comparison evaluates to true, this function sets the value of the cell in column 
+columnToAssign  to the value specified by valueToAssign .
+Example
+This example sets the value of the cell in column riskGroup to the value of the highGroup
+ variable for all rows in the data grid DebtEval for which the value of the 
+Debts column is greater than the value of the assets
+ variable:DATAGRID_FILTEREDSETALL(DebtEval,'riskGroup','debts','GT',assets,highGroup)
+DATAGRID_FREQ Function
+Returns the number of distinct values for the specified column.
+Category: Statistical
+Returned data 
+type:INTEGER
+Syntax
+DATAGRID_FREQ  (dataGrid , column )
+Required Arguments
+dataGrid
+specifies the name of the data grid. This argument must be a variable of type 
+DATAGRID.DATAGRID_FREQ Function 57

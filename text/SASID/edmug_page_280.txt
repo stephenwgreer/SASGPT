@@ -1,0 +1,30 @@
+Creating a New Version by Using Tags
+About Using Tags to Create a Version
+If the objects in a decision are tagged with version tags, you can create a new 
+version of the decision by using these object tags to select which version of the 
+included objects to use in the new decision version. This feature is useful when, for 
+example, multiple users are developing the objects that are used within a decision. 
+Each user can assign tags to object versions that they have developed for a new 
+decision version. The person who is creating the new decision version can then use 
+these tags to easily create the new version.
+When you use version tags to create a new decision version, the versions of the 
+included objects are ignored. Suppose your current decision uses version 1 of a rule 
+set that has four versions. Versions 2 and 3 of the rule set are tagged with Tag_1, 
+but versions 1 and 4 are not tagged. If you create a new decision version by 
+specifying the tag Tag_1, you will be able to select either version 2 or 3 of the rule 
+set for use in the new decision version. You cannot select version 4 of the rule set 
+because it is not tagged with Tag_1.
+Note: You cannot use tags to create new versions of common rule sets. To create a 
+new version of a common rule set, open the rule set and select New Version  on the 
+Versions  tab.
+Create a New Version by Using Tags
+TIP Before you begin, you need to know the version tags of the objects that 
+you want to include in the new decision. 
+1Open the decision for which you want to create a new version.
+TIP For decisions that are in folders for which the check-out feature has 
+been enabled, your administrator must give you permission to create a 
+new version by using tags. For more information, see “Grant Permission 
+to Create Versions in Check-Out Folders by Using Tags” in SAS Intelligent 
+Decisioning: Administrator’s Guide .
+2On the Versions  tab, click  and select Create version from tags . The Create 
+Version From Tags  wizard opens.264 Chapter 8 / Working with Decisions

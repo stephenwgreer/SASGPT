@@ -1,0 +1,30 @@
+Configure Third-Party Databases  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+Partition the Subject Contacts Database  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+Revert to the Default PostgreSQL Database  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+Delete Third-Party Database Configurations  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+Enable the Check-Out and Commit Feature  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Enabling Performance Logging  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+About Performance Logging  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36
+Enable Performance Logging  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Create the App.tk.SID.Perf Logger  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+Enabling Variable Assignment Logging  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+About Variable Assignment Logging  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+About The sessionlogconfig Configuration Instance  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38
+Enable Variable Assignment Logging  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+Enable the Asset Approval Workflow  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+Migrating Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+About Migration  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+Transfer Business Rules Content from SAS 9.4 to SAS Viya  . . . . . . . . . . . . . . . . . . . . . . . . 42
+Transfer Treatments from SAS 9.4 to SAS Viya  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+Transfer Content from SAS Viya 3.5 Environments  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 44
+Transfer Content between SAS Viya 4 Environments  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+Transfer Content That Was Published to a CAS Destination  . . . . . . . . . . . . . . . . . . . . . . . . . 46
+Managing Permissions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+About Permissions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 48
+Default Permissions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+Modifying Permissions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+About Permission Types  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+Best Practices for Setting Permissions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Folder-Based Permissions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+Rules-Based Permissions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 53
+Full Access and Service Endpoints  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 54

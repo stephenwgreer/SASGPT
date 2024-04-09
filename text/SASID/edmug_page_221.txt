@@ -1,0 +1,22 @@
+Delete Variables
+1On the Variables  tab, select the check box for the variables that you want to 
+delete, click , and select Delete .
+2Click Sync to Code  to delete the variables from the code that is on the Code 
+tab.
+Edit Variable Properties
+On the Variables  tab, click on the name of the variable that you want to edit. The 
+Edit Variable  window appears. Edit the properties as needed, and then click OK.
+Note: When you rename a variable, click Sync to Code  to change references to 
+that variable within the same object change to use the new name.
+See “The Properties of a Variable” on page 202 for additional information.
+Edit Metadata for Data Grid Variables
+For information, see “Editing Data Grid Variable Metadata” in SAS Intelligent 
+Decisioning: Using Data Grids .
+Validate a Custom Function File
+To validate a custom function file, open the file, click , and select Validate . For 
+custom function files that use a custom context file, specify the custom context file in 
+the Test custom context  field on the Properties  tab.
+Testing a Custom Function
+Before you use a custom function in a rule set, test the function code by including it 
+in a DS2 custom code file and running a scenario test on the code file. For example, 
+you can test the SQUARE custom function with the following custom code file:Testing a Custom Function 207

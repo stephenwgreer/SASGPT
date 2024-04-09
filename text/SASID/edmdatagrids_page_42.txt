@@ -1,0 +1,29 @@
+CategoryLanguage ElementsDescriptionDATAGRID_MINBOOL 
+Function (p. 72)Returns the minimum value that appears in the specified 
+column.DATAGRID_MININT 
+Function (p. 72)Returns the minimum value that appears in the specified 
+column.DATAGRID_MINLONG 
+Function (p. 73)Returns the minimum value that appears in the specified 
+column.DATAGRID_MINSTRING 
+Function (p. 73)Returns the minimum value that appears in the specified 
+column.DATAGRID_NMISS Function 
+(p. 75)Returns the number of missing values for the specified 
+column of the specified data grid.DATAGRID_STDDEV 
+Function (p. 83)Returns the standard deviation of the values in the specified 
+column.DATAGRID_SUM Function 
+(p. 86)Returns the sum of the values in the specified column.DATAGRID_SUMLONG 
+Function (p. 86)Returns the sum of the values in the specified column.Subset and SortDATAGRID_BOTTOMN 
+Function (p. 40)Populates the target data grid with the rows from the source 
+data grid that contain the lowest number values in the 
+specified column.DATAGRID_MULTISORT 
+Function (p. 74)Sorts a data grid based on the values of one or more 
+columns, and then populates the target data grid with the 
+sorted data.DATAGRID_SORT Function 
+(p. 82)Sorts a data grid based on the values in a single column, 
+and then populates the target data grid with the sorted data.DATAGRID_SUBSETBYVAL
+UE Function (p. 84)Populates the target data grid with the rows from the source 
+data grid for which the specified comparison evaluates to 
+true.DATAGRID_TOPN Function 
+(p. 87)Populates the target data grid with the rows from the source 
+data grid that contain the highest number values in the 
+specified column.36Chapter 3 / Data Grid Functions

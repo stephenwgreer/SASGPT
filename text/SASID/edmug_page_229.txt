@@ -1,0 +1,31 @@
+Scoring Rows in a Data Grid  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 249
+Mapping Data Grid Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 249
+Map Object Variables to Decision Variables  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 250
+Searching for Objects in a Decision Diagram  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 251
+Editing the Objects in a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 251
+Open an Object from within a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 251
+Edit the Properties of a Decision Node  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 252
+Reorder Objects  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 252
+Remove an Object from a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+Replace an Object  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+Update Decisions to Use New Object Versions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 253
+Validate a Decision in the Decision Editor  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254
+Change the Workflow Status of a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 254
+Copy a Decision URL  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 255
+Compare Decision Content  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 255
+Compare Decision Code  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 258
+Generate PDF Documentation for a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 258
+Managing Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 260
+Duplicating Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 260
+Delete Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
+Rename a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
+Move Decisions to a Different Folder  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
+Managing Versions of Decisions  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
+Set the Displayed Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 262
+Create a New Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 263
+Creating a New Version by Using Tags  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 264
+Create a New Version Automatically When You Publish a Decision  . . . . . . . . . . . . . 269
+Copy the Content of a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 269
+Delete a Version  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 270
+Upgrade Decisions to Use a New Version of a Nested Decision  . . . . . . . . . . . . . . . . 270
+Determine Which Objects Use a Decision  . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 271

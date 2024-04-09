@@ -1,0 +1,37 @@
+TIP You can turn on the Create variables automatically in decisions 
+setting if you want SAS Intelligent Decisioning  to automatically create 
+decision variables. For more information, see “SAS Intelligent Decisioning 
+Settings” on page 8 and “Mapping Variables within a Decision” on page 247.
+If you change a setting, you must sign out and sign back in to SAS Intelligent 
+Decisioning  in order for the changes to take effect.
+Scoring Rows in a Data Grid
+Data grid variables are processed like any other character variable unless you do 
+one of the following:
+nuse data grid functions to process the individual data values within the data grid. 
+For more information, see “Using Data Grid Functions” in SAS Intelligent 
+Decisioning: Using Data Grids .
+nuse the Score rows in this data grid  option to process each row in the data 
+grid.
+To process the rows within a data grid, select the Score rows in this data grid 
+option on the Input Variables  property panel when you are mapping decision 
+variables for the node. If you select this option, you can map the node’s input 
+variables to columns in the data grid instead of to columns in the input table. SAS 
+Intelligent Decisioning  changes the default variable mappings to columns in the data 
+grid if columns exist that have the same names as the node's input variables. You 
+can customize the variable mappings as needed. When you select this option, the 
+decision node processes all of the rows in the data grid before execution moves to 
+the next node in the decision.
+IMPORTANT When the node object is a filtering rule set, and you select 
+Score rows in this data grid , rows that do not meet the criteria defined by 
+the rules are removed from the data grid.
+Mapping Data Grid Variables
+When you add an object to a decision and the object contains a data grid variable, 
+SAS Intelligent Decisioning creates a decision variable for the data grid in the same 
+way that it creates decision variables for object variables of other data types. When 
+you select Score rows in this data grid  for an object that uses a data grid, you can 
+choose to map the columns in the object’s data grid variable either to columns in the 
+decision’s data grid variable or to other decision variables. In the lists of variables in 
+the Input Variables  property pane, the decision’s scalar variables are identified by 
+the  icon, and the decision’s data grid columns are identified by the  icon.
+For more information, see “Map Object Variables to Decision Variables” on page 
+250 and “Scoring Rows in a Data Grid” on page 249.Mapping Variables within a Decision 249

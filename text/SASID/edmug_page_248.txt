@@ -1,0 +1,36 @@
+Create and Add a New Object
+On the Decision Flow  tab, you can create and add new objects of any type except 
+models. On the Decision  tab, you can create and add new data query files, DS2 
+code files, or Python code files.
+1On the Decision Flow  tab, click , and drag the new object type onto the 
+diagram where you want to add it. The New object  window appears.
+On the Decision  tab:
+aClick Add and select Data query , DS2 code file , or Python code file . If an 
+object in the decision is selected, select Edit ð Add, and then select the 
+object type. The Content Selection  window appears.
+bClick New object type . The New object type  window appears.
+2Enter a name for the new object if you do not want to use the default name. File 
+names are limited to 32 characters and must be unique within a folder.
+3(Optional) Enter a description. Descriptions are limited to 1000 characters.
+TIP You can edit the description at any time in the Properties  panel.
+4Click , and select the folder in which you want to save the object.
+5(Optional) If you are creating a new data query file, select the editor that you 
+want to use to create the file.
+TIP For data query files that you choose to edit in SAS Studio, SAS 
+Intelligent Decisioning  adds .cqy.df
+ to the file name, and the file type is 
+displayed as Data Query . 
+For data query files that you choose to edit in the SQL editor, the file type 
+is displayed as SQL. These files can return either a data grid or a single 
+row of scalar variables. You can select the output type on the Properties 
+tab.
+For more information, see “Query Output Types and Editors” on page 160.
+6Click Save . SAS Intelligent Decisioning  creates a new object and adds it to the 
+decision.
+7Click  to save the decision.
+8In the Properties  panel on the Decision Flow  tab, click Open  to open the new 
+file in the editor. 
+Alternatively, on the Decision  tab, click , click the Properties  tab, and then 
+click Open  to open the new file in the editor.
+9Define the content for the new object. For more information, see the following 
+topics:232 Chapter 8 / Working with Decisions

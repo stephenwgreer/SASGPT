@@ -1,0 +1,38 @@
+bSelect the record whose key you want to use in the expression, and click 
+Save .
+For example, suppose you have a lookup table in which the lookup keys are ZIP 
+codes and the lookup values are city names. You could use the following rule to test 
+whether the lookup table contains an entry for the ZIP code, and, if the entry exists, 
+retrieve the city name that is associated with the ZIP code.
+Entering Literal Data Values
+Depending on whether you use the Expression Editor or enter expressions directly 
+into the expression fields, you must enter some values differently.Data TypeHow To Enter ValuesExampleCharacterEnclose character strings in quotation 
+marks. If the character string contains 
+embedded quotation marks, use 
+different quotation marks for the 
+embedded and enclosing quotation 
+marks.'Gold Account'"d'oscail"'d"oscail'
+Data gridEnclose data grid JSON strings in single 
+quotation marks.
+Note: The only time you might need to 
+enter JSON strings manually is when 
+you are using the DATAGRID_CREATE 
+function.See SAS Intelligent Decisioning: Using 
+Data Grids  for an explanation of the 
+JSON syntax and a description of the 
+DATAGRID_CREATE function.DateIn the rule set editor, enter Date values 
+by using the format DDMMMYYYY. 
+Enclose each value in single quotation 
+marks followed by d
+.'01AUG2017'd
+In the Expression Editor, use the DS2 
+function TO_DOUBLE and specify the 
+DATE data type in order to cast the Date 
+value so that it can be compared 
+correctly to other variables. See SAS 
+DS2 Programmer’s Guide  for 
+information about date, time, and 
+timestamp values, and see SAS DS2 
+Language Reference  for information 
+about the TO_DOUBLE function.to_double(date '2017-11-04')
+36Chapter 2 / Working with Rule Sets

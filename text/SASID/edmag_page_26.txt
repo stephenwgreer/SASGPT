@@ -1,0 +1,33 @@
+o“Configuring Git Publishing Destinations by Using the REST API” on page 25
+For information about configuring a publishing destination to support querying a database, see 
+“Configuring Support for Querying Databases” on page 25.
+Configuring Git Publishing Destinations by Using 
+the REST API
+When you define a Git publishing destination by using the REST API, you can specify whether the 
+code that is generated for the destination is compatible with CAS environments (CAS
+) or with SAS 
+Micro Analytic Service (MAS
+) environments. The code that is generated for an object when it is 
+published can be run only in a destination that matches the destination type for which the code 
+generated. If you deploy a published object to a destination with which it is not compatible, an error 
+occurs when you run the code.
+To specify the destination type for which you want SAS Intelligent Decisioning to generate the code 
+that is published to the Git destination, include the codeGenerationMode
+ property in the specification 
+for the target destination. Specify CAS
+ or MAS
+ as the value of the property. For example:targetDestination= {    "properties":[        {"name": "codeGenerationMode",        "value": "CAS"}    ]}
+The default setting is MAS
+. If you do not include this property, the code that is generated for the 
+destination will be compatible with SAS Micro Analytic Service destinations.
+Verifying Publishing Destinations
+You can use the SAS Intelligent Decisioning tutorials to verify that your publishing destinations are 
+configured properly. For more information, see SAS Intelligent Decisioning: Tutorials .
+Configuring Support for Querying 
+Databases
+You can publish decisions that use data query files, DS2 code files that contain SQL queries, or 
+custom code files that contain data queries to SAS Micro Analytic Service destinations and to 
+container destinations.
+For SAS Micro Analytic Service destinations, you must configure SAS Micro Analytic Service support 
+for your database. You can supply the database connection string in code, but SAS recommends that 
+you supply it by using the sas.microanalyticservice.service.connectionstring  property for the Micro 25

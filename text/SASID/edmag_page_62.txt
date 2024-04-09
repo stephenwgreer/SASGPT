@@ -1,0 +1,15 @@
+Table 10 Permissions for Committing Updated Versions FieldValueContainer 
+URIEnter the URI of the check-out folder: /folders/folders/guid
+Principal 
+typeAuthenticated UsersRule typeGrantConditionrequestUri().endsWith('/revisions')
+Permission
+sUpdateDescriptionEnable authenticated users to create new versions in the check-out folder.
+9Click Save .
+10Click , and enter the values shown in the following table in the New Rule  window.Table 11 Permissions for Committing Lookup Tables FieldValueContainer 
+URIEnter the URI of the check-out folder: /folders/folders/guid
+Principal 
+typeAuthenticated UsersRule typeGrantConditionrequestUri().startsWith('/referenceData/domains/') && requestUri().contains('/contents') && !requestUri().endsWith('/entries')
+Permission
+sUpdateDescriptionEnable authenticated users to commit lookup tables that are in the check-out folder.
+11Click Save .
+12Click , and enter the values shown in the following table in the New Rule  window.61

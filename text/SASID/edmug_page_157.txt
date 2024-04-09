@@ -1,0 +1,23 @@
+2Click New Version . The New Version  window appears.
+3Select the version type: Minor  or Major . Version numbers follow the format 
+major .minor . If you select Major , the number to the left of the period is 
+incremented. If you select Minor , the number to the right of the period is 
+incremented.
+4(Optional) For each version tag that you want to add, either enter a custom tag 
+or begin typing and select a tag from the list of previously entered tags. Press 
+Enter after each tag.
+Note: A tag is limited to 100 characters.
+TIP All tags that have been previously entered for any object are saved 
+in the list that is displayed when you start typing. You cannot delete tags 
+from this list.
+5(Optional) Enter information about the new version in the Notes  field.
+TIP You can edit these notes at any time on the Versions  tab.
+6Click Save .
+Delete a Version
+IMPORTANT When you delete a specific version, that version is deleted 
+permanently. It is not moved into the recycle bin, and it cannot be restored.
+Note:  In order to be able to delete a specific version of an object, you must have 
+permission to delete the object itself. 
+On the Versions  tab, select the version that you want to delete, click , and select 
+Delete .
+You cannot delete the current version.Managing Versions of Global Variables 145

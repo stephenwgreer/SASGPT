@@ -1,0 +1,40 @@
+nChapter 2, “Working with Rule Sets”
+nChapter 3, “Working with Treatments and Treatment Groups”
+nChapter 6, “Using Custom Code Files”
+nChapter 8, “Working with Decisions”
+10Click  and Close  to save and close the new object.
+If you added new variables to the object, SAS Intelligent Decisioning  displays the 
+message Some objects in the decision define variables for which no corresponding decision variables have been created.
+11(Optional) Click  in the toolbar, and select Add missing variables  to add any 
+missing variables to the decision. For more information, see “About Decision 
+Variables and Mapping”  and “Add Missing Variables” .
+Adding Record Contacts Nodes
+About Recording Contacts
+The primary purpose of record contacts nodes is to record the outcome of a 
+decision. You can use record contacts nodes to record the values of specific 
+variables at specific points in a decision. For treatment groups, a record contacts 
+node records metadata for the treatments.
+IMPORTANT Decisions that include record contacts nodes cannot be 
+published to container destinations.
+Record contacts nodes record information when the decision that they are in is 
+executed in the publishing destination. The behavior of record contacts nodes differs 
+based on whether the decision is published to a SAS Micro Analytic destination or to 
+a destination of another type.
+nFor decisions that are published to a SAS Micro Analytic Services destination, 
+the record contacts node writes a record to the subject contact history. The 
+record contains the information that you specified that you want to track, such as 
+the data grid of treatments returned by the decision and the values of other 
+variables. In addition, the record contacts node creates an output variable, the 
+record contacts variable, that contains a response tracking code. An application, 
+such as a customer service application, can use this response tracking code to 
+add additional data to the subject contacts history.
+nFor destinations of other types, the record contacts node does not write a record 
+to the subject contact history. Instead, the information that you specified that you 
+want to track is written to the record contacts variable. The name of this variable 
+is based on the name of the record contacts node: rt_node-name
+. This variable 
+is a character string, and it also contains the response tracking code. You can 
+issue a POST request to post the data to the subject contact history. The POST 
+request type is application/vnd.sas.decision.subject.contact+json
+. For 
+more information, see the Subject Contacts API  documentation.Adding Objects to a Decision 233
