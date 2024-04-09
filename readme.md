@@ -23,3 +23,4 @@ Each step of the RAG process has been broken up into different Jupyter notebook 
 
 ### Contact
 
+https://twitter.com/StephenG729
